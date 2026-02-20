@@ -80,6 +80,16 @@ export default function WellnessPartnersPage() {
             </p>
           </div>
 
+          {/* Note: original page is under construction */}
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8 flex items-center gap-4">
+            <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 flex-shrink-0 text-amber-500" stroke="currentColor" strokeWidth="2">
+              <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <p className="text-amber-800 text-sm">
+              <strong>Note:</strong> This page is currently under construction on the original amsterdamchiropractic.com website. The content below reflects our current wellness partner network.
+            </p>
+          </div>
+
           <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 mb-12">
             <div className="flex items-start gap-5">
               <div className="w-14 h-14 rounded-full bg-[#45321A] flex-shrink-0 flex items-center justify-center">

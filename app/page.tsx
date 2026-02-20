@@ -504,8 +504,8 @@ export default function ChiroPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/chiro-hero.mov" type="video/quicktime" />
-          <source src="/videos/chiro-hero.mov" type="video/mp4" />
+          <source src="/chiro-hero.mov" type="video/quicktime" />
+          <source src="/chiro-hero.mov" type="video/mp4" />
         </video>
 
         {/* Dark overlay */}
@@ -790,7 +790,7 @@ export default function ChiroPage() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <div className="aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
             <img
-              src="/images/dr-jahani.webp"
+              src="/dr-jahani.webp"
               alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam"
               className="w-full h-full object-cover object-[center_55%]"
             />

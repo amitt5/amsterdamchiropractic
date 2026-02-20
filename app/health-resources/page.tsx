@@ -9,42 +9,66 @@ const plusJakarta = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
 });
 
-export default function HealthResourcesPage() {
-  const categories = [
-    {
-      title: 'Chiropractic Care Basics',
-      articles: [
-        { title: 'What is Chiropractic?', time: '5 min read' },
-        { title: 'Benefits of Regular Adjustments', time: '7 min read' },
-        { title: 'Understanding Spinal Health', time: '6 min read' },
-      ],
-    },
-    {
-      title: 'Common Conditions',
-      articles: [
-        { title: 'Managing Chronic Lower Back Pain', time: '8 min read' },
-        { title: 'Neck Pain Relief Strategies', time: '6 min read' },
-        { title: 'Preventing Sports Injuries', time: '5 min read' },
-      ],
-    },
-    {
-      title: 'Wellness & Prevention',
-      articles: [
-        { title: 'Ergonomics for Office Workers', time: '7 min read' },
-        { title: 'Nutrition for Spinal Health', time: '9 min read' },
-        { title: 'Sleep Posture Guidelines', time: '4 min read' },
-      ],
-    },
-    {
-      title: 'Exercise & Stretching',
-      articles: [
-        { title: 'Core Strengthening Exercises', time: '10 min read' },
-        { title: 'Daily Stretches for Back Pain', time: '5 min read' },
-        { title: 'Posture Correction Techniques', time: '8 min read' },
-      ],
-    },
-  ];
+const resourceCategories = [
+  {
+    title: 'Chiropractic Services',
+    description: 'Directories, professional organisations, and wellness coaching resources.',
+    links: [
+      { label: 'Chiropractic Directory', href: 'https://www.chiropractic.nl', external: true },
+      { label: 'Netherlands Chiropractic Association (NCA)', href: 'https://www.chiropractors.nl', external: true },
+      { label: 'Dutch Chiropractic Foundation (SCN)', href: 'https://www.stichtingchiropractienederland.nl', external: true },
+      { label: 'Wellness Coaching Resources', href: 'https://www.chiropractievergoeding.nl', external: true },
+    ],
+  },
+  {
+    title: 'Health & Wellness — Kids',
+    description: 'Resources focused on children\'s health, development, and wellness.',
+    links: [
+      { label: 'Wellness for Kids', href: '#', external: false },
+      { label: 'Pediatric Chiropractic Care', href: '/klachten/kinderen', external: false },
+      { label: 'Baby\'s & KISS Syndrome', href: '/klachten/baby-s', external: false },
+    ],
+  },
+  {
+    title: 'Exercise & Nutrition',
+    description: 'Guidance on physical activity and diet to support your spinal health.',
+    links: [
+      { label: 'Exercise & Nutrition Guidelines', href: '#', external: false },
+      { label: 'Fitness Centres Amsterdam', href: '#', external: false },
+      { label: 'Posture Correction Exercises', href: '#', external: false },
+    ],
+  },
+  {
+    title: 'Complementary Therapies',
+    description: 'Explore integrative and complementary health approaches we work alongside.',
+    links: [
+      { label: 'Acupuncture Information', href: '#', external: false },
+      { label: 'Pilates & Core Strength', href: '#', external: false },
+      { label: 'Yoga for Back Pain', href: '#', external: false },
+      { label: 'Naturopathy', href: '#', external: false },
+      { label: 'Homeopathy', href: '#', external: false },
+    ],
+  },
+  {
+    title: 'Mind & Lifestyle',
+    description: 'Resources for mental well-being, stress management, and life coaching.',
+    links: [
+      { label: 'Thought & Meditation', href: '#', external: false },
+      { label: 'Life Coaching', href: '#', external: false },
+      { label: 'Stress & Tension Headaches', href: '/klachten/hoofdpijn-spanningshoofdpijn', external: false },
+    ],
+  },
+  {
+    title: 'Dental & Other Health',
+    description: 'Additional health resources including dentistry and jaw joint concerns.',
+    links: [
+      { label: 'Dentistry & Jaw Joint (TMJ)', href: '#', external: false },
+      { label: 'Chiropractic & Dentistry Connection', href: '#', external: false },
+    ],
+  },
+];
 
+export default function HealthResourcesPage() {
   return (
     <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
       <nav className="sticky top-0 z-50 bg-white shadow-sm">
@@ -57,7 +81,7 @@ export default function HealthResourcesPage() {
             </div>
             <div>
               <div className="font-extrabold text-base text-[#191919] leading-tight">Health4Life</div>
-              <div className="text-[#10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
+              <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
             </div>
           </Link>
           <Link href="/" className="bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors">
@@ -72,35 +96,51 @@ export default function HealthResourcesPage() {
             <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">Education</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">Health Resources</h1>
             <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">
-              Expert guides, articles, and resources to support your wellness journey and help you understand your treatment.
+              The following resources have been assembled to provide you with more chiropractic wellness care information available on the internet.
             </p>
+            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
           </div>
 
-          <div className="space-y-12">
-            {categories.map((category, idx) => (
-              <div key={idx}>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-6">{category.title}</h2>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {category.articles.map((article, i) => (
-                    <div key={i} className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-md transition-all hover:scale-[1.02] cursor-pointer group">
-                      <div className="flex items-start justify-between mb-3">
-                        <div className="w-10 h-10 rounded-lg bg-[#45321A]/10 group-hover:bg-[#45321A] flex items-center justify-center transition-colors">
-                          <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 group-hover:stroke-white stroke-[#45321A] transition-colors" strokeWidth="2">
-                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </div>
-                        <span className="text-xs text-[#403F3F] bg-white px-2 py-1 rounded-full">{article.time}</span>
-                      </div>
-                      <h3 className="font-bold text-[#191919] mb-2 group-hover:text-[#45321A] transition-colors">{article.title}</h3>
-                      <p className="text-[#403F3F] text-sm flex items-center gap-1 group-hover:text-[#45321A] transition-colors">
-                        Read article
-                        <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">
-                          <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
-                        </svg>
-                      </p>
-                    </div>
-                  ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {resourceCategories.map((category, idx) => (
+              <div key={idx} className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 rounded-xl bg-[#45321A] flex items-center justify-center mb-5">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="white" strokeWidth="2">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
+                <h3 className="font-bold text-[#191919] text-lg mb-2">{category.title}</h3>
+                <p className="text-[#403F3F] text-sm mb-4 leading-relaxed">{category.description}</p>
+                <ul className="space-y-2">
+                  {category.links.map((link, i) => (
+                    <li key={i}>
+                      {link.external ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-[#45321A] hover:underline flex items-center gap-1"
+                        >
+                          {link.label}
+                          <svg viewBox="0 0 20 20" className="w-3 h-3 fill-current opacity-70">
+                            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                          </svg>
+                        </a>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className="text-sm text-[#45321A] hover:underline flex items-center gap-1"
+                        >
+                          {link.label}
+                          <svg viewBox="0 0 20 20" className="w-3 h-3 fill-current opacity-70">
+                            <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
+                          </svg>
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -119,6 +159,52 @@ export default function HealthResourcesPage() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-[#191919] text-white py-14 mt-20">
+        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div>
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center">
+                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
+                  <path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-extrabold text-base leading-tight">Health4Life</div>
+                <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
+              </div>
+            </div>
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs">
+              Chiropractic Specialist and Pain Management Clinic in Amsterdam Zuid.
+            </p>
+          </div>
+          <div>
+            <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">Quick Links</div>
+            <ul className="space-y-2.5 text-sm text-white/60">
+              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/techniques" className="hover:text-white transition-colors">Techniques</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/vacatures" className="hover:text-white transition-colors">Vacatures</Link></li>
+            </ul>
+          </div>
+          <div>
+            <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">Contact</div>
+            <ul className="space-y-2.5 text-sm text-white/60">
+              <li>Maasstraat 103</li>
+              <li>1078 HH Amsterdam</li>
+              <li>020-673 1800</li>
+              <li>06-1882-0000 (WhatsApp)</li>
+              <li className="pt-1">Mon – Fri: 10:00 – 17:00</li>
+              <li>Sat: 10:00 – 14:00</li>
+            </ul>
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 text-center text-xs text-white/40">
+          © 2026 Health4Life Chiropractic Amsterdam. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }

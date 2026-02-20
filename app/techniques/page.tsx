@@ -64,6 +64,42 @@ const techniques = [
       </svg>
     ),
   },
+  {
+    title: 'Percussor Adjustment',
+    description: 'Instrument-based therapy using a mechanical percussion device to deliver rapid, rhythmic impulses to muscles and joints. Reduces muscle tension, improves circulation, and prepares tissues for spinal correction.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M15.536 8.464a5 5 0 010 7.072M12 6a7 7 0 010 14M8.464 8.464a5 5 0 000 7.072" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Spinal Decompression Therapy',
+    description: 'Non-surgical traction-based treatment that gently stretches the spine, relieving pressure on compressed discs and nerves. Particularly effective for disc herniations and degenerative disc conditions.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M8 9l4-4 4 4m0 6l-4 4-4-4" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Myovision Scan',
+    description: 'Advanced surface electromyography (sEMG) technology that measures electrical activity in paraspinal muscles. Provides objective data to assess nerve interference and track treatment progress.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Digital Foot Scan (Foot Levelers)',
+    description: 'High-tech computerized foot scan that analyzes pressure distribution and arch support needs. Results are used to prescribe custom-made orthotics (Foot Levelers) that correct posture from the ground up.',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 ];
 
 export default function TechniquesPage() {
