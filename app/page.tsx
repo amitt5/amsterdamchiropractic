@@ -438,6 +438,7 @@ export default function ChiroPage() {
   const [showVoiceBot, setShowVoiceBot] = useState(false);
   const [language, setLanguage] = useState<'en' | 'nl'>('en');
   const [selectedCondition, setSelectedCondition] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white`}>
@@ -486,12 +487,72 @@ export default function ChiroPage() {
 
             <a
               href="#booking"
-              className="bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
+              className="hidden md:block bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
             >
               Book Appointment
             </a>
+
+            {/* Hamburger */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 rounded-lg hover:bg-[#F6F6F6] transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="2">
+                  <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Hamburger menu panel */}
+        {mobileMenuOpen && (
+          <div className="absolute top-full left-0 right-0 bg-white shadow-xl border-t border-gray-100 z-50">
+            <div className="max-w-6xl mx-auto px-6 py-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {/* On-page links */}
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">This Page</div>
+                <ul className="space-y-2">
+                  {[['Services','#services'],['Approach','#approach'],['Pricing','#pricing'],['About','#about'],['Reviews','#testimonials'],['FAQ','#faq'],['Book','#booking']].map(([label, href]) => (
+                    <li key={href}>
+                      <a href={href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">{label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Klachten */}
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">Klachten</div>
+                <ul className="space-y-2">
+                  {[['Alle klachten','/klachten'],['Lage Rugpijn','/klachten/lage-rugpijn'],['Nek','/klachten/nek'],['Hernia','/klachten/hernia'],['Whiplash','/klachten/whiplash'],['Hoofdpijn & Migraine','/klachten/hoofdpijn-en-migraine'],['Zwangerschap','/klachten/zwangerschap'],['Sportblessures','/klachten/sportblessures'],['Baby\'s','/klachten/baby-s'],['Kinderen','/klachten/kinderen'],['Artrose / Slijtage','/klachten/artrose-slijtage']].map(([label, href]) => (
+                    <li key={href}>
+                      <Link href={href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">{label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* More pages */}
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">More</div>
+                <ul className="space-y-2">
+                  {[['New Patient Center','/new-patient-center'],['Your First Visit','/new-patient-center/your-first-visit'],['What to Expect','/new-patient-center/what-to-expect'],['Payment Options','/new-patient-center/payment-options'],['Meet Your Doctor','/about/meet-your-doctor'],['Techniques','/techniques'],['Health Resources','/health-resources'],['Videos','/videos'],['Wellness Partners','/wellness-partners'],['Patient Forms','/patient-forms'],['Office Tour','/office-tour']].map(([label, href]) => (
+                    <li key={href}>
+                      <Link href={href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">{label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
