@@ -30,51 +30,49 @@ export default function WhiplashPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-8">
+
               <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Wat is whiplash?</h2>
                 <p className="text-[#403F3F] leading-relaxed">
-                  Whiplash is een snelle, plotselinge beweging van het hoofd — voorwaarts en achterwaarts, of van zij naar zij — die ontstaat bij auto-ongelukken, valpartijen of andere botsingen. Hierdoor kunnen wervels, spieren, pezen, zenuwen en gewrichtskapsels in de nek beschadigd raken.
-                </p>
-                <p className="text-[#403F3F] leading-relaxed mt-3">
-                  Het werd historisch &ldquo;railway spine&rdquo; genoemd na treinongelukken. Tijdens een botsing versnellen de lichaamsdelen ongelijk, waardoor de structuren in de nek overmatig worden uitgerekt.
+                  Whiplash is een snelle, plotselinge beweging bij een verkeersongeluk of een val. De beweging kan letsel veroorzaken aan wervels en weefsels (spieren, zenuwen) in de nek. Dat kan een whiplash-trauma tot gevolg hebben: pijn, stijfheid en andere klachten die soms pas maanden na het ongeval tot uiting komen. De chiropractor beschikt over methoden waarmee whiplash-klachten kunnen worden verholpen of verlicht.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Symptomen</h2>
-                <ul className="grid grid-cols-2 gap-2">
-                  {[
-                    'Nekpijn en stijfheid',
-                    'Hoofdpijn',
-                    'Lage rugpijn',
-                    'Uitstralende arm- of gezichtspijn',
-                    'Zwakte in armen/handen',
-                    'Duizeligheid en balansproblemen',
-                    'Misselijkheid',
-                    'Oorsuizen (tinnitus)',
-                    'Wazig zicht',
-                    'Slaap- en concentratieproblemen',
-                  ].map((s, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-[#403F3F]">
-                      <svg viewBox="0 0 20 20" className="w-4 h-4 text-[#45321A] fill-current flex-shrink-0 mt-0.5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-[#403F3F] text-sm mt-4 leading-relaxed">
-                  Ongeveer de helft van de mensen herstelt binnen een maand. Bij anderen kunnen klachten maanden of zelfs jaren aanhouden en leiden tot arbeidsongeschiktheid.
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  De meest voorkomende whiplashklacht is een pijnlijke, vaak stijve nek. Veel whiplash-patiënten hebben daarnaast last van hoofdpijn, lage rugpijn en uitstralende pijn naar armen en gezicht. Er zijn echter nog veel meer klachten die deel uit kunnen maken van het whiplash-trauma, zoals krachtsverlies in de armen, duizeligheid, evenwichtsstoornissen, misselijkheid, oorsuizen, slecht zien of vlekken voor de ogen en slaap- en concentratieproblemen. Niet alleen de aard, maar ook de ernst van de klachten verschilt sterk. De helft van de patiënten is binnen een maand hersteld, maar soms zijn de gevolgen zo ernstig dat het tot arbeidsongeschiktheid leidt.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Oorzaken</h2>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Whiplash is een bekende veel voorkomende term vaak gerelateerd naar auto-ongelukken. Vroeger met treinongelukken, bij zelfs kleine impacts, konden mensen een zelfde soort klachtenpatroon krijgen als bij een whiplash, dit werd &quot;railway spine&quot; genoemd. Lange tijd werd dit niet erkend en kregen deze &quot;railwayspine&quot; slachtoffers ook geen compensatie na het ongeval.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Whiplash is Engels voor zweepslag, de term slaat op de snelle, geforceerde hoofdbeweging die tot bovengenoemde klachten kan leiden. Whiplash heeft dus niet alleen met verkeersongelukken te maken, maar kan ook komen door een val van de trap of een ski-ongeluk.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Gezien er veel krachten werken op het lichaam tijdens een kopstaart ongeluk, versnellen bepaalde gedeeltes van het lichaam verschillend. En dat is de reden waarom een whiplash ongeluk zo traumatisch kan zijn. Allereerst bewegen de torso of het onderste gedeelte met de schouders naar voren en een aantal milliseconde later accelereert het hoofd. Door deze krachtige beweging kunnen de gewrichtskapsels, spieren, pezen, en zenuwen worden opgerekt, met als gevolg pijn en andere klachten.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Behandeling</h2>
                 <p className="text-[#403F3F] leading-relaxed mb-3">
-                  Dr. Jahani start met een uitgebreid onderzoek: anamnese, lichamelijk onderzoek gericht op gewrichtsmobiliteit en eventuele beeldvorming (röntgen, CT of MRI).
+                  De chiropractor stelt u allereerst vragen over uw klachten om een beeld te krijgen van uw gezondheidstoestand. Daarnaast zal duidelijk gemaakt moeten worden in hoeverre het ongeluk een whiplash reactie heeft veroorzaakt. Daarop volgt een grondig lichamelijk onderzoek, waarbij vooral wordt gekeken naar de beweeglijkheid van de gewrichten. Indien er sprake is van een whiplash, zal de chiropractor nagaan welke graad whiplash u heeft, staande voor de heftigheid van uw klachten.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Indien er een röntgenfoto, CT of MRI scan beschikbaar is of kan worden aangevraagd dan kan dit nuttig zijn voor de chiropractor om de prognose te bepalen en de behandeling daarop af te stemmen. De chiropractor kan u ook het advies geven diagnostisch onderzoek te ondergaan. Dit gaat in samenspraak met de huisarts of medisch specialist.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Afhankelijk van hoe acuut en ernstig de klacht is kan de chiropractor met de behandeling beginnen. Door de wervels voorzichtig in beweging te brengen met behulp van druktechnieken, kunnen spieren en zenuwen weer normaal gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich weer en krijgen omliggende zenuwen weer de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat.
                 </p>
                 <p className="text-[#403F3F] leading-relaxed">
-                  De behandeling bestaat uit zachte manipulatietechnieken om de gewrichten te mobiliseren, spierspanning te verminderen en zenuwdruk te verlichten. Aanvullend krijgt u adviezen over houding, ergonomie, oefeningen en voeding. Nekspierversterking is essentieel om herhaling te voorkomen.
+                  Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding. Zowel ter voorkoming als ter genezing is beweging goed. Verkeerd bewegen kan de klachten juist verergeren. Het is daarom van groot belang dat u zich laat adviseren. Sterke nekspieren ontwikkelen is van groot belang. Hierdoor wordt uw wervelkolom meer ontzien en wordt de kans op het terug krijgen van de klacht steeds kleiner.
                 </p>
               </div>
+
             </div>
 
             <div className="space-y-5">

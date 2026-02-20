@@ -30,60 +30,66 @@ export default function HoofdpijnMigrainePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-8">
-              <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <p className="text-white/90 leading-relaxed">
-                  Iedereen krijgt weleens hoofdpijn. Migraine treft ongeveer <strong className="text-white">1 op de 10 volwassenen</strong> en 5% van de kinderen voor de leeftijd van 11 jaar.
+
+              <div>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Iedereen heeft er weleens last van: hoofdpijn. Er zijn vele vormen van hoofdpijn, zoals spanningshoofdpijn, migraine, aangezichtspijn en hoofdpijn als gevolg van whiplash.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Migraine is een bekende soort hoofdpijn en wordt vaak met andere hoofdpijnen verward. Migraine komt voor bij ongeveer 1 op de 10 volwassenen. Naar schatting 5% van de kinderen krijgt migraine tot het 11e levensjaar. Migraine wordt veroorzaakt door veranderingen in de diameter van de bloedvaten in het hoofd, waar de beweeglijkheid van de nekwervels en prikkeling van de zenuwen mogelijk een rol bij spelen. Een chiropractische behandeling kan daarom bij bepaalde vormen van migraine verlichting geven.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-4">Soorten migraine</h2>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="bg-[#F6F6F6] rounded-xl p-5">
-                    <h3 className="font-bold text-[#191919] mb-2">Migraine met aura</h3>
-                    <p className="text-[#403F3F] text-sm leading-relaxed">
-                      Begint met visuele stoornissen zoals flikkeren en vlekken voor de ogen, gevolgd door stekende pijn aan één kant van het hoofd.
-                    </p>
-                  </div>
-                  <div className="bg-[#F6F6F6] rounded-xl p-5">
-                    <h3 className="font-bold text-[#191919] mb-2">Migraine zonder aura</h3>
-                    <p className="text-[#403F3F] text-sm leading-relaxed">
-                      Veroorzaakt pijn rondom één oog of aan één kant van het gezicht, zonder voorafgaande visuele waarschuwingssignalen.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Triggers</h2>
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Symptomen</h2>
                 <p className="text-[#403F3F] leading-relaxed mb-3">
-                  Bepaalde voedingsmiddelen, medicijnen of alcohol kunnen migraineaanvallen uitlokken — denk aan rode wijn, chocolade en oude kazen. Bij vrouwen is er ook een verband met de menstruatiecyclus.
+                  Migraine kan voorkomen als migraine met aura of migraine zonder aura. Migraine zonder aura komt het meest voor. Iemand met migraine met aura krijgt tijdens de aanval neurologische verschijnselen. Deze vorm van migraine begint met flikkeringen en vlekken voor de ogen. Dit gaat over in een stekende pijn aan één kant van het hoofd. Migraine zonder aura heeft geen invloed op het zien, maar geeft meestal hoofdpijn rond één oog of aan één gezichtshelft.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Bepaalde voedingsstoffen, medicijnen of alcohol kunnen ook een migraine aanval veroorzaken. Voorbeelden hiervan zijn onder andere wijn, chocola of kaas. Migraine wordt bij vrouwen ook vaak geassocieerd met de menstruatiecyclus. Migraine is dan ook tot drie keer meer voorkomend bij vrouwen, waarschijnlijk door een andere hormoonspiegel en het effect daarvan op de bloedvaten.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed">
+                  De chiropractor onderzoekt of er een verband is tussen uw migraine en problemen met wervels, gewrichten of zenuwen. Blijkt dat het geval te zijn, dan is chiropractische behandeling zinvol.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Behandeling</h2>
                 <p className="text-[#403F3F] leading-relaxed mb-3">
-                  Dr. Jahani start met een uitgebreid gesprek over de aard en geschiedenis van de hoofdpijn, gevolgd door een lichamelijk onderzoek inclusief beoordeling van wervel- en gewrichtsmobiliteit.
+                  Allereerst stelt de chiropractor u vragen over uw hoofdpijn en over uw algehele gezondheidstoestand. De hoofdpijn kan namelijk samenhangen met andere gezondheidsklachten. Dan volgt een grondig lichamelijk onderzoek. De chiropractor maakt gebruik van verschillende medische methoden om te kijken waar de pijn vandaan komt en hoe het gesteld is met de beweeglijkheid van de gewrichten die met de pijn te maken kunnen hebben.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Na het vraaggesprek en het onderzoek kan geconcludeerd worden dat uw klacht niet behandeld kan worden door een chiropractor en dat dit verder onderzocht dient te worden. De chiropractor kan het advies geven contact op te nemen met de huisarts voor advies of om verder diagnostisch onderzoek te ondergaan.
                 </p>
                 <p className="text-[#403F3F] leading-relaxed">
-                  Druktechnieken op de wervels verbeteren de spier- en zenuwfunctie. Aanvullend ontvangt u adviezen over houding, ergonomie, oefeningen en voeding om aanvallen te verminderen.
+                  Afhankelijk van uw klacht kan de chiropractor met de behandeling beginnen. Met behulp van druktechnieken op de wervels kunnen spieren en zenuwen weer beter gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich en krijgen omliggende zenuwen de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat. Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding.
                 </p>
               </div>
+
             </div>
 
             <div className="space-y-5">
               <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <h3 className="font-bold text-lg mb-3">Afspraak maken</h3>
+                <h3 className="font-bold text-lg mb-3">Maak een afspraak</h3>
+                <p className="text-white/80 text-sm mb-4">Neem contact op voor een vrijblijvend gesprek over uw klachten.</p>
                 <Link href="/#booking" className="block bg-white text-[#45321A] font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors">
-                  Online boeken
+                  Afspraak maken
                 </Link>
                 <a href="tel:0206731800" className="block text-center text-white/80 text-sm mt-3 hover:text-white">020-673 1800</a>
               </div>
               <div className="bg-[#F6F6F6] rounded-2xl p-6">
+                <h3 className="font-semibold text-[#191919] mb-3">Openingstijden</h3>
+                <ul className="text-sm text-[#403F3F] space-y-1">
+                  <li>Ma – Vr: 10:00 – 17:00</li>
+                  <li>Za: 10:00 – 14:00</li>
+                  <li>Zo: Gesloten</li>
+                </ul>
+                <p className="text-sm text-[#403F3F] mt-3">Maasstraat 103<br />1078 HH Amsterdam</p>
+              </div>
+              <div className="bg-[#F6F6F6] rounded-2xl p-6">
                 <h3 className="font-semibold text-[#191919] mb-3">Gerelateerde klachten</h3>
                 <ul className="space-y-2">
-                  {[['Spanningshoofdpijn', '/klachten/hoofdpijn-spanningshoofdpijn'], ['Nekklachten', '/klachten/nek'], ['Whiplash', '/klachten/whiplash']].map(([l, h]) => (
+                  {[['Spanningshoofdpijn', '/klachten/hoofdpijn-spanningshoofdpijn'], ['Nekpijn', '/klachten/nek'], ['Whiplash', '/klachten/whiplash']].map(([l, h]) => (
                     <li key={h}><Link href={h} className="text-sm text-[#45321A] hover:underline">{l}</Link></li>
                   ))}
                 </ul>

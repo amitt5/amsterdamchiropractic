@@ -25,59 +25,72 @@ export default function ZwangerschapPage() {
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#191919]">Zwangerschap</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#191919]">Chiropractie en Zwangerschap</h1>
           <div className="w-20 h-1 bg-[#45321A] rounded-full mb-10" />
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-8">
-              <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <p className="text-white/90 leading-relaxed">
-                  Chiropractische zorg is <strong className="text-white">veilig gedurende de gehele zwangerschap</strong> — ook met een grote buik — en vormt geen risico voor het ongeboren kind.
+
+              <div>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Chiropractie kan een uitkomst zijn voor de zwangere vrouw. Ook met een dikke buik is het mogelijk om behandeld te worden, zelfs tot en met de uitgerekende datum. Bovendien is het veilig voor het kindje wat groeit in de buik.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Lage rugklachten tijdens zwangerschap</h2>
-                <p className="text-[#403F3F] leading-relaxed">
-                  Lage rugpijn is een van de meest voorkomende klachten tijdens de zwangerschap. Door hormonale veranderingen, gewichtstoename en verandering in houding verschuift het zwaartepunt naar voren. Het bekken kantelt, waardoor de lumbale wervelkolom holler wordt. Dit leidt tot gewrichtsirritatie en spierkrampen — soms uitstralend naar de benen (zwangerschapsischias).
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Lage rugklachten</h2>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Het is niet ongebruikelijk dat zwangere vrouwen tijdens de zwangerschap klachten in de lage rug en het bekkengebied krijgen. Dit heeft te maken met de verandering in de hormoonspiegel, toename van het lichaamsgewicht en de verandering van de lichaamshouding. Als de klachten vroeg in de zwangerschap ontstaan of toenemend erger worden kan dit te wijten zijn aan een probleem in het functioneren van het bekken of de wervelkolom.
                 </p>
-                <p className="text-[#403F3F] leading-relaxed mt-3">
-                  De behandeling is gericht op verbetering van de functie van de lage rug en het bekken, terwijl er tegelijkertijd voldoende ruimte voor het kind in de buik wordt behouden.
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Lage rug klachten tijdens de zwangerschap zijn vaak te wijten aan de veranderde stand van het bekken en de lage rug. Doordat het kindje steeds groter en zwaarder wordt, wordt de neerwaartse trekkracht aan de voorkant van de wervelkolom steeds groter, met als gevolg dat het bekken naar voren kantelt, en de onderrug wat holler wordt. Dit leidt tot irritatie van de gewrichten tussen de wervels, en verkramping van bepaalde spiergroepen, en dus pijn.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Chiropractie kan het functioneren van de lage rug en het bekken verbeteren, en tegelijk ook een maximale ruimte in de buikholte bevorderen. Bovendien verbetert chiropractie de functie van het bekken, en daarmee de voorbereiding op de bevalling.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Bekkeninstabiliteit</h2>
-                <p className="text-[#403F3F] leading-relaxed">
-                  In het laatste trimester zorgen hormonen voor versoepeling van de gewrichtsbanden. Soms leidt dit tot overmatige gewrichtsbewegelijkheid (bekkeninstabiliteit). Symptomen zijn pijn rondom het staartbeen, het schaambeen of uitstralend naar de benen — bij staan, zitten, lopen of draaien in bed.
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Instabiliteit van het bekken komt vaak voor tijdens of na de zwangerschap. Bekkeninstabiliteit veroorzaakt pijn rond de bekkengewrichten en het schaambeen, als gevolg van de aanmaak van een hormoon welke tijdens het laatste trimester van de zwangerschap de gewrichtsbanden in het lichaam helpt te ontspannen.
                 </p>
-                <p className="text-[#403F3F] leading-relaxed mt-3">
-                  De behandeling richt zich op stabilisering van het bekken via correcties en oefeningen die de werking van het zenuwstelsel optimaliseren.
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  Vrouwen ervaren dan pijn rond het staartbotje, schaambeen of uitstralende pijn naar de benen met zitten, staan, lopen en uiteindelijk ook met liggen.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  De chiropractische behandeling voor bekkeninstabiliteit is niet te vergelijken met de behandeling voor een geblokkeerd bekken. Bij bekkeninstabiliteit beweegt het bekken te veel en is het juist het doel om dit weer stabiel te krijgen door middel van correcties en oefeningen, en het optimaal laten functioneren van het zenuwstelsel, de aansturing van de spieren.
+                </p>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Omdat chiropractie een dusdanig effect heeft op het functioneren van het zenuwstelsel, kan chiropractie op andere vlakken ook uitkomst bieden, bijvoorbeeld bij extreme misselijkheid.
                 </p>
               </div>
 
-              <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Misselijkheid</h2>
-                <p className="text-[#403F3F] leading-relaxed">
-                  Chiropractische zorg kan ook helpen bij ernstige misselijkheid tijdens de zwangerschap, via positieve invloed op het zenuwstelsel.
-                </p>
-              </div>
             </div>
 
             <div className="space-y-5">
               <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <h3 className="font-bold text-lg mb-3">Afspraak maken</h3>
-                <p className="text-white/80 text-sm mb-4">Veilige, zachte zorg voor moeder en kind.</p>
+                <h3 className="font-bold text-lg mb-3">Maak een afspraak</h3>
+                <p className="text-white/80 text-sm mb-4">Neem contact op voor een vrijblijvend gesprek over uw klachten.</p>
                 <Link href="/#booking" className="block bg-white text-[#45321A] font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors">
-                  Online boeken
+                  Afspraak maken
                 </Link>
                 <a href="tel:0206731800" className="block text-center text-white/80 text-sm mt-3 hover:text-white">020-673 1800</a>
               </div>
               <div className="bg-[#F6F6F6] rounded-2xl p-6">
+                <h3 className="font-semibold text-[#191919] mb-3">Openingstijden</h3>
+                <ul className="text-sm text-[#403F3F] space-y-1">
+                  <li>Ma – Vr: 10:00 – 17:00</li>
+                  <li>Za: 10:00 – 14:00</li>
+                  <li>Zo: Gesloten</li>
+                </ul>
+                <p className="text-sm text-[#403F3F] mt-3">Maasstraat 103<br />1078 HH Amsterdam</p>
+              </div>
+              <div className="bg-[#F6F6F6] rounded-2xl p-6">
                 <h3 className="font-semibold text-[#191919] mb-3">Gerelateerde klachten</h3>
                 <ul className="space-y-2">
-                  {[['Lage Rugpijn', '/klachten/lage-rugpijn'], ["Baby's", '/klachten/baby-s'], ['Bekkeninstabiliteit', '/klachten/zwangerschap']].map(([l, h]) => (
-                    <li key={h}><Link href={h} className="text-sm text-[#45321A] hover:underline">{l}</Link></li>
+                  {[["Lage Rugpijn", "/klachten/lage-rugpijn"], ["Baby's", "/klachten/baby-s"], ["Kinderen", "/klachten/kinderen"]].map(([l, h]) => (
+                    <li key={l}><Link href={h} className="text-sm text-[#45321A] hover:underline">{l}</Link></li>
                   ))}
                 </ul>
               </div>

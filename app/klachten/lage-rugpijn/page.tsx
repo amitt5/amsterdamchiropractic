@@ -30,31 +30,46 @@ export default function LageRugpijnPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-8">
-              <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <p className="text-white/90 leading-relaxed text-lg font-medium">
-                  80% van de bevolking krijgt op enig moment in hun leven te maken met lage rugpijn.
+
+              <div>
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Algemeen</h2>
+                <p className="text-[#403F3F] leading-relaxed">
+                  Pijn in de lage rug komt veel voor. Maar liefst 80% van de bevolking zal tenminste één keer in het leven lage rugpijn krijgen. Problemen in de lage rug kunnen zich op verschillende manieren uiten. Veel mensen klagen over een zeurende pijn of een stijve rug, maar de pijn kan ook gevoeld worden als een zenuwpijn (bijv. uitstralend naar de benen). Om te begrijpen hoe rugpijn ontstaat moet men eerst meer weten over de anatomie van de lage rug.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Anatomie van de lage rug</h2>
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Anatomie</h2>
+                <p className="text-[#403F3F] leading-relaxed mb-3">
+                  De lage rug bestaat uit 5 lendenwervels. Tussen elk van deze wervels zit een tussenwervelschijf. De tussenwervelschijf fungeert als schokdemper. Aan de achterzijde worden de wervels verbonden met elkaar door middel van twee gewrichten, één links en één rechts. Langs de wervelkolom lopen verschillende spieren, welke er onder andere voor zorgen dat we rechtop kunnen blijven zitten en staan, en kunnen bewegen.
+                </p>
                 <p className="text-[#403F3F] leading-relaxed">
-                  De lage rug bestaat uit 5 lumbale wervels, tussenwervelschijven (schokdempers), posterieure gewrichten (twee per niveau), ondersteunende musculatuur en het bekken (met het heiligbeen en heupbotten verbonden via de sacro-iliacale gewrichten).
+                  Het bekken vormt de basis waar de wervelkolom op rust en draagt het lichaamsgewicht. Het bekken bestaat uit een centraal driehoekig gedeelte (het heiligbeen) dat een gewricht vormt aan weerszijden met de twee heupbeenderen. Deze gewrichten worden door sterke banden bij elkaar gehouden. Dit worden de Sacro-Iliacale gewrichten (SI gewrichten) genoemd.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Klachten</h2>
+                <p className="text-[#403F3F] leading-relaxed">
+                  De klachten die ontstaan in de onderrug zijn afhankelijk van de structuur waar het probleem optreedt. De spieren, de gewrichten en de tussenwervelschijven op de hoogte van de lendenwervels kunnen ieder klachten veroorzaken. Ondanks dat klachten vrijwel identiek kunnen lijken, zijn de oorzaken vaak verschillend. Een goede diagnose is dus erg belangrijk. Aangezien verschillende oorzaken ook vaak verschillende behandelingen vereisen, moet er voldoende tijd worden uitgetrokken tijdens het onderzoek. Een chiropractor is volledig opgeleid om de juiste oorzaak op te sporen en vervolgens accuraat te behandelen.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-extrabold text-[#191919] mb-4">Oorzaken</h2>
+                <p className="text-[#403F3F] leading-relaxed mb-4">
+                  Oorzaken van lage rugpijn of bekkenpijn zijn te verdelen in geleidelijk en plotseling.
+                </p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="bg-[#F6F6F6] rounded-xl p-5">
-                    <h3 className="font-bold text-[#191919] mb-3">Geleidelijk ontstaan</h3>
+                    <h3 className="font-bold text-[#191919] mb-3">Geleidelijke oorzaken</h3>
                     <ul className="space-y-2 text-sm text-[#403F3F]">
                       {[
-                        'Slechte houding / weinig beweging (bureauwerk)',
-                        'Eenzijdige belasting (zware tassen)',
-                        'Kraakbeenslijtage / artrose',
-                        'Stress, vermoeidheid, kou',
-                        'Hormonale veranderingen tijdens zwangerschap',
+                        'Weinig afwisseling in de houding en weinig beweging (zoals bij bureauwerk).',
+                        'Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).',
+                        'De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).',
+                        'Spanning, stress, vermoeidheid, ziekte, kou, vocht enzovoort.',
+                        'De veranderingen in de hormoonspiegel in een zwangerschap.',
                       ].map((i, idx) => (
                         <li key={idx} className="flex items-start gap-2">
                           <span className="text-[#45321A] font-bold mt-0.5">·</span> {i}
@@ -63,13 +78,11 @@ export default function LageRugpijnPage() {
                     </ul>
                   </div>
                   <div className="bg-[#F6F6F6] rounded-xl p-5">
-                    <h3 className="font-bold text-[#191919] mb-3">Plotseling ontstaan</h3>
+                    <h3 className="font-bold text-[#191919] mb-3">Plotselinge oorzaken</h3>
                     <ul className="space-y-2 text-sm text-[#403F3F]">
                       {[
-                        'Verkeersongelukken',
-                        'Onjuiste bewegingen (bukken, draaien)',
-                        'Tillen met verkeerde techniek',
-                        'Sportblessures',
+                        'Een verkeersongeluk.',
+                        'Een verkeerde beweging of verdraaiing, zoals bijvoorbeeld met vegen of spitten, een buk-draaibeweging (bijvoorbeeld door iets uit de kofferbak te tillen).',
                       ].map((i, idx) => (
                         <li key={idx} className="flex items-start gap-2">
                           <span className="text-[#45321A] font-bold mt-0.5">·</span> {i}
@@ -80,15 +93,6 @@ export default function LageRugpijnPage() {
                 </div>
               </div>
 
-              <div>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-3">Behandeling</h2>
-                <p className="text-[#403F3F] leading-relaxed mb-3">
-                  De klachten variëren afhankelijk van de aangedane structuur (spieren, gewrichten of schijven). Verschillende oorzaken vereisen een andere aanpak — daarom begint de behandeling altijd met een uitgebreid onderzoek.
-                </p>
-                <p className="text-[#403F3F] leading-relaxed">
-                  Dr. Jahani past chiropractische technieken toe om de wervelgewrichten te mobiliseren, spierspanning te verminderen en zenuwirritatie op te heffen. Aanvullend ontvangt u oefeningen, houdingsadvies en voedingsadvies om recidief te voorkomen.
-                </p>
-              </div>
             </div>
 
             <div className="space-y-5">
@@ -105,7 +109,9 @@ export default function LageRugpijnPage() {
                 <ul className="text-sm text-[#403F3F] space-y-1">
                   <li>Ma – Vr: 10:00 – 17:00</li>
                   <li>Za: 10:00 – 14:00</li>
+                  <li>Zo: Gesloten</li>
                 </ul>
+                <p className="text-sm text-[#403F3F] mt-3">Maasstraat 103<br />1078 HH Amsterdam</p>
               </div>
               <div className="bg-[#F6F6F6] rounded-2xl p-6">
                 <h3 className="font-semibold text-[#191919] mb-3">Gerelateerde klachten</h3>
