@@ -2,49 +2,92 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/language-context';
 
-interface NavigationProps {
-  language?: 'en' | 'nl';
-  onLanguageChange?: (lang: 'en' | 'nl') => void;
-}
-
-const mainNavLinks = [
-  { label: 'Services', href: '/#services' },
-  { label: 'Approach', href: '/#approach' },
-  { label: 'Pricing', href: '/#pricing' },
-  { label: 'About', href: '/#about' },
-  { label: 'Reviews', href: '/#testimonials' },
-  { label: 'FAQ', href: '/#faq' },
-  { label: 'Book', href: '/#booking' },
-];
-
-const klachtenLinks = [
-  { label: 'Alle klachten', href: '/klachten' },
-  { label: 'Lage Rugpijn', href: '/klachten/lage-rugpijn' },
-  { label: 'Nek', href: '/klachten/nek' },
-  { label: 'Hernia', href: '/klachten/hernia' },
-  { label: 'Whiplash', href: '/klachten/whiplash' },
-  { label: 'Hoofdpijn & Migraine', href: '/klachten/hoofdpijn-en-migraine' },
-  { label: 'Zwangerschap', href: '/klachten/zwangerschap' },
-  { label: 'Sportblessures', href: '/klachten/sportblessures' },
-  { label: "Baby's", href: '/klachten/baby-s' },
-  { label: 'Kinderen', href: '/klachten/kinderen' },
-  { label: 'Artrose / Slijtage', href: '/klachten/artrose-slijtage' },
-];
-
-const moreLinks = [
-  { label: 'New Patient Center', href: '/new-patient-center' },
-  { label: 'Your First Visit', href: '/new-patient-center/your-first-visit' },
-  { label: 'What to Expect', href: '/new-patient-center/what-to-expect' },
-  { label: 'Payment Options', href: '/new-patient-center/payment-options' },
-  { label: 'Meet Your Doctor', href: '/about/meet-your-doctor' },
-  { label: 'Health Resources', href: '/health-resources' },
-  { label: 'Patient Forms', href: '/patient-forms' },
-  { label: 'Office Tour', href: '/office-tour' },
-];
-
-export default function Navigation({ language, onLanguageChange }: NavigationProps) {
+export default function Navigation() {
+  const { language, setLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const t = {
+    en: {
+      book: 'Book Appointment',
+      thisPage: 'This Page',
+      conditionsLabel: 'Conditions',
+      moreLabel: 'More',
+      mainNav: [
+        { label: 'Services', href: '/#services' },
+        { label: 'Approach', href: '/#approach' },
+        { label: 'Pricing', href: '/#pricing' },
+        { label: 'About', href: '/#about' },
+        { label: 'Reviews', href: '/#testimonials' },
+        { label: 'FAQ', href: '/#faq' },
+        { label: 'Book', href: '/#booking' },
+      ],
+      klachten: [
+        { label: 'All Conditions', href: '/klachten' },
+        { label: 'Lower Back Pain', href: '/klachten/lage-rugpijn' },
+        { label: 'Neck Pain', href: '/klachten/nek' },
+        { label: 'Herniated Disc', href: '/klachten/hernia' },
+        { label: 'Whiplash', href: '/klachten/whiplash' },
+        { label: 'Headache & Migraine', href: '/klachten/hoofdpijn-en-migraine' },
+        { label: 'Pregnancy', href: '/klachten/zwangerschap' },
+        { label: 'Sports Injuries', href: '/klachten/sportblessures' },
+        { label: "Baby's", href: '/klachten/baby-s' },
+        { label: 'Children', href: '/klachten/kinderen' },
+        { label: 'Arthrosis / Wear', href: '/klachten/artrose-slijtage' },
+      ],
+      moreLinks: [
+        { label: 'New Patient Center', href: '/new-patient-center' },
+        { label: 'Your First Visit', href: '/new-patient-center/your-first-visit' },
+        { label: 'What to Expect', href: '/new-patient-center/what-to-expect' },
+        { label: 'Payment Options', href: '/new-patient-center/payment-options' },
+        { label: 'Meet Your Doctor', href: '/about/meet-your-doctor' },
+        { label: 'Health Resources', href: '/health-resources' },
+        { label: 'Patient Forms', href: '/patient-forms' },
+        { label: 'Office Tour', href: '/office-tour' },
+      ],
+    },
+    nl: {
+      book: 'Maak Afspraak',
+      thisPage: 'Deze Pagina',
+      conditionsLabel: 'Klachten',
+      moreLabel: 'Meer',
+      mainNav: [
+        { label: 'Diensten', href: '/#services' },
+        { label: 'Aanpak', href: '/#approach' },
+        { label: 'Tarieven', href: '/#pricing' },
+        { label: 'Over Ons', href: '/#about' },
+        { label: 'Reviews', href: '/#testimonials' },
+        { label: 'FAQ', href: '/#faq' },
+        { label: 'Boek', href: '/#booking' },
+      ],
+      klachten: [
+        { label: 'Alle klachten', href: '/klachten' },
+        { label: 'Lage Rugpijn', href: '/klachten/lage-rugpijn' },
+        { label: 'Nek', href: '/klachten/nek' },
+        { label: 'Hernia', href: '/klachten/hernia' },
+        { label: 'Whiplash', href: '/klachten/whiplash' },
+        { label: 'Hoofdpijn & Migraine', href: '/klachten/hoofdpijn-en-migraine' },
+        { label: 'Zwangerschap', href: '/klachten/zwangerschap' },
+        { label: 'Sportblessures', href: '/klachten/sportblessures' },
+        { label: "Baby's", href: '/klachten/baby-s' },
+        { label: 'Kinderen', href: '/klachten/kinderen' },
+        { label: 'Artrose / Slijtage', href: '/klachten/artrose-slijtage' },
+      ],
+      moreLinks: [
+        { label: 'Nieuwe Patiënten', href: '/new-patient-center' },
+        { label: 'Uw Eerste Bezoek', href: '/new-patient-center/your-first-visit' },
+        { label: 'Wat te Verwachten', href: '/new-patient-center/what-to-expect' },
+        { label: 'Betalingsopties', href: '/new-patient-center/payment-options' },
+        { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
+        { label: 'Gezondheidsinfo', href: '/health-resources' },
+        { label: 'Patiëntformulieren', href: '/patient-forms' },
+        { label: 'Praktijkrondleiding', href: '/office-tour' },
+      ],
+    },
+  };
+
+  const c = t[language];
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-sm">
@@ -64,7 +107,7 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
 
         {/* Desktop nav links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#403F3F]">
-          {mainNavLinks.map(({ label, href }) => (
+          {c.mainNav.map(({ label, href }) => (
             <Link key={href} href={href} className="hover:text-[#45321A] transition-colors">
               {label}
             </Link>
@@ -73,29 +116,27 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
 
         {/* Right side */}
         <div className="flex items-center gap-3">
-          {/* EN/NL toggle — only shown when props are provided */}
-          {language && onLanguageChange && (
-            <div className="flex items-center bg-[#F6F6F6] rounded-full p-1">
-              <button
-                onClick={() => onLanguageChange('en')}
-                className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'en' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => onLanguageChange('nl')}
-                className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'nl' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
-              >
-                NL
-              </button>
-            </div>
-          )}
+          {/* EN/NL toggle — always visible */}
+          <div className="flex items-center bg-[#F6F6F6] rounded-full p-1">
+            <button
+              onClick={() => setLanguage('en')}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'en' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => setLanguage('nl')}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'nl' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
+            >
+              NL
+            </button>
+          </div>
 
           <Link
             href="/#booking"
             className="hidden md:block bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
           >
-            Book Appointment
+            {c.book}
           </Link>
 
           {/* Hamburger */}
@@ -123,9 +164,9 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
           <div className="max-w-6xl mx-auto px-6 py-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* This Page */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">This Page</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.thisPage}</div>
               <ul className="space-y-2">
-                {mainNavLinks.map(({ label, href }) => (
+                {c.mainNav.map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
                       {label}
@@ -135,11 +176,11 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
               </ul>
             </div>
 
-            {/* Klachten */}
+            {/* Klachten / Conditions */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">Klachten</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.conditionsLabel}</div>
               <ul className="space-y-2">
-                {klachtenLinks.map(({ label, href }) => (
+                {c.klachten.map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
                       {label}
@@ -151,9 +192,9 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
 
             {/* More */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">More</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.moreLabel}</div>
               <ul className="space-y-2">
-                {moreLinks.map(({ label, href }) => (
+                {c.moreLinks.map(({ label, href }) => (
                   <li key={href}>
                     <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
                       {label}

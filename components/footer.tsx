@@ -1,8 +1,64 @@
 'use client';
 
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/language-context';
 
 export default function Footer() {
+  const { language } = useLanguage();
+
+  const t = {
+    en: {
+      tagline: 'Chiropractic specialist in Amsterdam Zuid. Maasstraat 103, 1078 HH Amsterdam.',
+      treatmentLabel: 'Treatment',
+      treatment: [
+        { label: 'Conditions', href: '/klachten' },
+        { label: 'Treatment', href: '/behandeling' },
+        { label: 'Techniques', href: '/techniques' },
+        { label: 'Physio-Chiro Therapy', href: '/fysio-chiro-gecombineerde-therapie' },
+        { label: 'Rates & Insurance', href: '/behandeling/tarieven-vergoedingen' },
+      ],
+      infoLabel: 'Information',
+      info: [
+        { label: 'About Us', href: '/about' },
+        { label: 'Meet Dr. Jahani', href: '/about/meet-your-doctor' },
+        { label: 'Testimonials', href: '/testimonials' },
+        { label: 'Videos', href: '/videos' },
+        { label: 'Office Hours', href: '/office-hours' },
+        { label: 'Vacancies', href: '/vacatures' },
+      ],
+      contactLabel: 'Contact',
+      hours: ['Mon – Fri: 10:00 – 17:00', 'Sat: 10:00 – 14:00'],
+      rights: '© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.',
+      legal: 'Privacy Policy · Terms of Service',
+    },
+    nl: {
+      tagline: 'Chiropractie specialist in Amsterdam Zuid. Maasstraat 103, 1078 HH Amsterdam.',
+      treatmentLabel: 'Behandeling',
+      treatment: [
+        { label: 'Klachten', href: '/klachten' },
+        { label: 'Behandeling', href: '/behandeling' },
+        { label: 'Technieken', href: '/techniques' },
+        { label: 'Fysio-Chiro Therapie', href: '/fysio-chiro-gecombineerde-therapie' },
+        { label: 'Tarieven & Vergoedingen', href: '/behandeling/tarieven-vergoedingen' },
+      ],
+      infoLabel: 'Informatie',
+      info: [
+        { label: 'Over Ons', href: '/about' },
+        { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
+        { label: 'Testimonials', href: '/testimonials' },
+        { label: "Video's", href: '/videos' },
+        { label: 'Openingstijden', href: '/office-hours' },
+        { label: 'Vacatures', href: '/vacatures' },
+      ],
+      contactLabel: 'Contact',
+      hours: ['Ma – Vr: 10:00 – 17:00', 'Za: 10:00 – 14:00'],
+      rights: '© 2026 Health4Life Chiropractic Amsterdam. Alle rechten voorbehouden.',
+      legal: 'Privacybeleid · Algemene Voorwaarden',
+    },
+  };
+
+  const c = t[language];
+
   return (
     <footer className="bg-[#191919] text-white py-14 mt-20">
       <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
@@ -19,56 +75,45 @@ export default function Footer() {
               <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
             </div>
           </div>
-          <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-            Chiropractie specialist in Amsterdam Zuid. Maasstraat 103, 1078 HH Amsterdam.
-          </p>
+          <p className="text-white/60 text-sm leading-relaxed max-w-xs">{c.tagline}</p>
         </div>
 
-        {/* Services */}
+        {/* Treatment */}
         <div>
-          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">Behandeling</div>
+          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.treatmentLabel}</div>
           <ul className="space-y-2.5 text-sm text-white/60">
-            <li><Link href="/klachten" className="hover:text-white transition-colors">Klachten</Link></li>
-            <li><Link href="/behandeling" className="hover:text-white transition-colors">Behandeling</Link></li>
-            <li><Link href="/techniques" className="hover:text-white transition-colors">Technieken</Link></li>
-            <li><Link href="/fysio-chiro-gecombineerde-therapie" className="hover:text-white transition-colors">Fysio-Chiro Therapie</Link></li>
-            <li><Link href="/behandeling/tarieven-vergoedingen" className="hover:text-white transition-colors">Tarieven & Vergoedingen</Link></li>
+            {c.treatment.map(({ label, href }) => (
+              <li key={href}><Link href={href} className="hover:text-white transition-colors">{label}</Link></li>
+            ))}
           </ul>
         </div>
 
         {/* Info */}
         <div>
-          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">Informatie</div>
+          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.infoLabel}</div>
           <ul className="space-y-2.5 text-sm text-white/60">
-            <li><Link href="/about" className="hover:text-white transition-colors">Over Ons</Link></li>
-            <li><Link href="/about/meet-your-doctor" className="hover:text-white transition-colors">Ontmoet Dr. Jahani</Link></li>
-            <li><Link href="/testimonials" className="hover:text-white transition-colors">Testimonials</Link></li>
-            <li><Link href="/videos" className="hover:text-white transition-colors">Video&apos;s</Link></li>
-            <li><Link href="/office-hours" className="hover:text-white transition-colors">Openingstijden</Link></li>
-            <li><Link href="/vacatures" className="hover:text-white transition-colors">Vacatures</Link></li>
+            {c.info.map(({ label, href }) => (
+              <li key={href}><Link href={href} className="hover:text-white transition-colors">{label}</Link></li>
+            ))}
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">Contact</div>
+          <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.contactLabel}</div>
           <ul className="space-y-2.5 text-sm text-white/60">
             <li>Maasstraat 103</li>
             <li>1078 HH Amsterdam</li>
-            <li>
-              <a href="tel:0206731800" className="hover:text-white transition-colors">020-673 1800</a>
-            </li>
-            <li>
-              <a href="https://wa.me/31618820000" className="hover:text-white transition-colors">06-1882-0000 (WhatsApp)</a>
-            </li>
-            <li className="pt-1">Ma – Vr: 10:00 – 17:00</li>
-            <li>Za: 10:00 – 14:00</li>
+            <li><a href="tel:0206731800" className="hover:text-white transition-colors">020-673 1800</a></li>
+            <li><a href="https://wa.me/31618820000" className="hover:text-white transition-colors">06-1882-0000 (WhatsApp)</a></li>
+            <li className="pt-1">{c.hours[0]}</li>
+            <li>{c.hours[1]}</li>
           </ul>
         </div>
       </div>
       <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
-        <span>© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.</span>
-        <span>Privacy Policy · Terms of Service</span>
+        <span>{c.rights}</span>
+        <span>{c.legal}</span>
       </div>
     </footer>
   );
