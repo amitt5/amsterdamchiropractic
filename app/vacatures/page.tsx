@@ -74,13 +74,13 @@ export default function VacaturesPage() {
                 Please send your CV and motivation letter to:
               </p>
               <a
-                href="mailto:Dr_mJahani@yahoo.ca?subject=Vacature"
+                href="mailto:health4life@amsterdamchiropractic.com?subject=Vacature"
                 className="inline-flex items-center gap-2 bg-[#45321A] text-white font-semibold px-6 py-3.5 rounded-full hover:bg-[#5a4228] transition-colors text-sm"
               >
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                Dr_mJahani@yahoo.ca
+                health4life@amsterdamchiropractic.com
               </a>
               <p className="text-xs text-[#403F3F]/70 mt-4">
                 Subject line: <span className="font-semibold text-[#191919]">&quot;Vacature&quot;</span>

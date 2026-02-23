@@ -581,7 +581,7 @@ export default function ChiroPage() {
         { label: 'Address', value: 'Maasstraat 103, 1078 HH Amsterdam' },
         { label: 'Phone', value: '020-673 1800' },
         { label: 'WhatsApp', value: '06-1882-0000' },
-        { label: 'Email', value: 'Dr_mJahani@yahoo.ca' },
+        { label: 'Email', value: 'health4life@amsterdamchiropractic.com' },
         { label: 'Hours', value: 'Mon – Fri 10:00 – 17:00 · Sat 10:00 – 14:00' },
       ],
       // Voice bot
@@ -723,7 +723,7 @@ export default function ChiroPage() {
         { label: 'Adres', value: 'Maasstraat 103, 1078 HH Amsterdam' },
         { label: 'Telefoon', value: '020-673 1800' },
         { label: 'WhatsApp', value: '06-1882-0000' },
-        { label: 'E-mail', value: 'Dr_mJahani@yahoo.ca' },
+        { label: 'E-mail', value: 'health4life@amsterdamchiropractic.com' },
         { label: 'Uren', value: 'Ma – Vr 10:00 – 17:00 · Za 10:00 – 14:00' },
       ],
       // Voice bot

@@ -60,8 +60,8 @@ export default function PatientFormsPage() {
                 <h3 className="font-bold text-[#191919] mb-2 text-lg">Instructions</h3>
                 <p className="text-[#403F3F] text-sm leading-relaxed">
                   Please complete these forms and bring them to your first appointment, or email them to{' '}
-                  <a href="mailto:Dr_mJahani@yahoo.ca" className="text-[#45321A] font-semibold hover:underline">
-                    Dr_mJahani@yahoo.ca
+                  <a href="mailto:health4life@amsterdamchiropractic.com" className="text-[#45321A] font-semibold hover:underline">
+                    health4life@amsterdamchiropractic.com
                   </a>{' '}
                   24 hours before your visit.
                 </p>

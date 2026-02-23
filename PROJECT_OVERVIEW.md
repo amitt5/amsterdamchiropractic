@@ -244,7 +244,7 @@ vercel
 **Location:** Maasstraat 103, 1078 HH Amsterdam  
 **Phone:** 020-673 1800  
 **WhatsApp:** 06-1882-0000  
-**Email:** Dr_mJahani@yahoo.ca  
+**Email:** health4life@amsterdamchiropractic.com  
 **Website:** www.amsterdamchiropractic.com (original)
 
 **Hours:**
