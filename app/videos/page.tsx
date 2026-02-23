@@ -42,70 +42,16 @@ export default function VideosPage() {
             <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
           </div>
 
-          {/* Featured highlights from original site */}
-          <div className="space-y-10 mb-16">
-            {/* Video 1 */}
-            <div className="bg-[#F6F6F6] rounded-3xl overflow-hidden flex flex-col md:flex-row gap-0">
-              <div className="md:w-1/2 aspect-video md:aspect-auto relative bg-[#45321A]/10 flex items-center justify-center min-h-[220px]">
-                <div className="w-20 h-20 rounded-full bg-[#45321A] flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-white ml-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <span className="text-[#45321A] text-xs font-semibold uppercase tracking-widest mb-3">Behandeling</span>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-4 leading-tight">
-                  Moderne herniabehandeling — zonder operatie
-                </h2>
-                <p className="text-[#403F3F] leading-relaxed text-sm">
-                  Ontdek hoe chiropractie een effectief alternatief biedt voor hernia-operaties. De meeste herniaklachten kunnen met zachte, niet-chirurgische methoden succesvol behandeld worden, waardoor patiënten sneller herstel ervaren zonder de risico&apos;s van een ingreep.
-                </p>
-              </div>
-            </div>
-
-            {/* Video 2 */}
-            <div className="bg-[#F6F6F6] rounded-3xl overflow-hidden flex flex-col md:flex-row-reverse gap-0">
-              <div className="md:w-1/2 aspect-video md:aspect-auto relative bg-[#45321A]/10 flex items-center justify-center min-h-[220px]">
-                <div className="w-20 h-20 rounded-full bg-[#45321A] flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-white ml-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <span className="text-[#45321A] text-xs font-semibold uppercase tracking-widest mb-3">Schouder</span>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-4 leading-tight">
-                  Bevroren schouder — zonder injecties behandeld
-                </h2>
-                <p className="text-[#403F3F] leading-relaxed text-sm">
-                  Een bevroren schouder (frozen shoulder) kan maanden tot jaren aanhouden. Zie hoe chiropractische behandeling en zachte mobilisatietechnieken de schoudermobiliteit herstellen zonder pijnlijke cortisoninjecties of chirurgische ingrepen.
-                </p>
-              </div>
-            </div>
-
-            {/* Video 3 */}
-            <div className="bg-[#F6F6F6] rounded-3xl overflow-hidden flex flex-col md:flex-row gap-0">
-              <div className="md:w-1/2 aspect-video md:aspect-auto relative bg-[#45321A]/10 flex items-center justify-center min-h-[220px]">
-                <div className="w-20 h-20 rounded-full bg-[#45321A] flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 fill-white ml-1">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <span className="text-[#45321A] text-xs font-semibold uppercase tracking-widest mb-3">Topsport</span>
-                <h2 className="text-2xl font-extrabold text-[#191919] mb-4 leading-tight">
-                  Chiropractie voor topsporters — optimale prestaties
-                </h2>
-                <p className="text-[#403F3F] leading-relaxed text-sm">
-                  Topatleten zoals de spelers van AC Milan vertrouwen op regelmatige chiropractische behandeling om blessures te voorkomen en topprestaties te leveren. Sporters stellen heel andere eisen aan hun lichaam — hun behandeling vraagt om een gespecialiseerde aanpak.
-                </p>
-                <blockquote className="mt-4 border-l-4 border-[#45321A] pl-4 italic text-[#403F3F] text-sm">
-                  &ldquo;The doctor of the future will give no medicine, but will instruct his patient in the care of the human frame.&rdquo;
-                  <cite className="block mt-1 not-italic font-semibold text-[#45321A]">— Thomas Edison</cite>
-                </blockquote>
-              </div>
+          {/* Featured video */}
+          <div className="mb-16">
+            <div className="bg-[#F6F6F6] rounded-3xl overflow-hidden">
+              <video
+                className="w-full"
+                controls
+                preload="metadata"
+              >
+                <source src="/videos/client_lead_video.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
 
