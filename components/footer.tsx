@@ -2,14 +2,15 @@
 
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/language-context';
+import footerContent from '@/content/footer.json';
 
 export default function Footer() {
   const { language } = useLanguage();
 
   const t = {
     en: {
-      tagline: 'Chiropractic specialist in Amsterdam Zuid. Maasstraat 103, 1078 HH Amsterdam.',
-      treatmentLabel: 'Treatment',
+      tagline: footerContent.en_tagline,
+      treatmentLabel: footerContent.en_treatmentLabel,
       treatment: [
         { label: 'Conditions', href: '/klachten' },
         { label: 'Treatment', href: '/behandeling' },
@@ -17,7 +18,7 @@ export default function Footer() {
         { label: 'Physio-Chiro Therapy', href: '/fysio-chiro-gecombineerde-therapie' },
         { label: 'Rates & Insurance', href: '/behandeling/tarieven-vergoedingen' },
       ],
-      infoLabel: 'Information',
+      infoLabel: footerContent.en_infoLabel,
       info: [
         { label: 'About Us', href: '/about' },
         { label: 'Meet Dr. Jahani', href: '/about/meet-your-doctor' },
@@ -26,14 +27,14 @@ export default function Footer() {
         { label: 'Office Hours', href: '/office-hours' },
         { label: 'Vacancies', href: '/vacatures' },
       ],
-      contactLabel: 'Contact',
-      hours: ['Mon – Fri: 10:00 – 17:00', 'Sat: 10:00 – 14:00'],
-      rights: '© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.',
-      legal: 'Privacy Policy · Terms of Service',
+      contactLabel: footerContent.en_contactLabel,
+      hours: [footerContent.en_hours1, footerContent.en_hours2],
+      rights: footerContent.en_rights,
+      legal: footerContent.en_legal,
     },
     nl: {
-      tagline: 'Chiropractie specialist in Amsterdam Zuid. Maasstraat 103, 1078 HH Amsterdam.',
-      treatmentLabel: 'Behandeling',
+      tagline: footerContent.nl_tagline,
+      treatmentLabel: footerContent.nl_treatmentLabel,
       treatment: [
         { label: 'Klachten', href: '/klachten' },
         { label: 'Behandeling', href: '/behandeling' },
@@ -41,7 +42,7 @@ export default function Footer() {
         { label: 'Fysio-Chiro Therapie', href: '/fysio-chiro-gecombineerde-therapie' },
         { label: 'Tarieven & Vergoedingen', href: '/behandeling/tarieven-vergoedingen' },
       ],
-      infoLabel: 'Informatie',
+      infoLabel: footerContent.nl_infoLabel,
       info: [
         { label: 'Over Ons', href: '/about' },
         { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
@@ -50,10 +51,10 @@ export default function Footer() {
         { label: 'Openingstijden', href: '/office-hours' },
         { label: 'Vacatures', href: '/vacatures' },
       ],
-      contactLabel: 'Contact',
-      hours: ['Ma – Vr: 10:00 – 17:00', 'Za: 10:00 – 14:00'],
-      rights: '© 2026 Health4Life Chiropractic Amsterdam. Alle rechten voorbehouden.',
-      legal: 'Privacybeleid · Algemene Voorwaarden',
+      contactLabel: footerContent.nl_contactLabel,
+      hours: [footerContent.nl_hours1, footerContent.nl_hours2],
+      rights: footerContent.nl_rights,
+      legal: footerContent.nl_legal,
     },
   };
 

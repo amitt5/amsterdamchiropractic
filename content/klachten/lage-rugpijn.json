@@ -1,0 +1,72 @@
+{
+  "slug": "Lage Rugpijn",
+  "title": "Lage Rugpijn",
+  "highlightBox": "",
+  "intro": "",
+  "sections": [
+    {
+      "heading": "Algemeen",
+      "paragraphs": [
+        "Pijn in de lage rug komt veel voor. Maar liefst 80% van de bevolking zal tenminste één keer in het leven lage rugpijn krijgen. Problemen in de lage rug kunnen zich op verschillende manieren uiten. Veel mensen klagen over een zeurende pijn of een stijve rug, maar de pijn kan ook gevoeld worden als een zenuwpijn (bijv. uitstralend naar de benen). Om te begrijpen hoe rugpijn ontstaat moet men eerst meer weten over de anatomie van de lage rug."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Anatomie",
+      "paragraphs": [
+        "De lage rug bestaat uit 5 lendenwervels. Tussen elk van deze wervels zit een tussenwervelschijf. De tussenwervelschijf fungeert als schokdemper. Aan de achterzijde worden de wervels verbonden met elkaar door middel van twee gewrichten, één links en één rechts. Langs de wervelkolom lopen verschillende spieren, welke er onder andere voor zorgen dat we rechtop kunnen blijven zitten en staan, en kunnen bewegen.",
+        "Het bekken vormt de basis waar de wervelkolom op rust en draagt het lichaamsgewicht. Het bekken bestaat uit een centraal driehoekig gedeelte (het heiligbeen) dat een gewricht vormt aan weerszijden met de twee heupbeenderen. Deze gewrichten worden door sterke banden bij elkaar gehouden. Dit worden de Sacro-Iliacale gewrichten (SI gewrichten) genoemd."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Klachten",
+      "paragraphs": [
+        "De klachten die ontstaan in de onderrug zijn afhankelijk van de structuur waar het probleem optreedt. De spieren, de gewrichten en de tussenwervelschijven op de hoogte van de lendenwervels kunnen ieder klachten veroorzaken. Ondanks dat klachten vrijwel identiek kunnen lijken, zijn de oorzaken vaak verschillend. Een goede diagnose is dus erg belangrijk. Aangezien verschillende oorzaken ook vaak verschillende behandelingen vereisen, moet er voldoende tijd worden uitgetrokken tijdens het onderzoek. Een chiropractor is volledig opgeleid om de juiste oorzaak op te sporen en vervolgens accuraat te behandelen."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    }
+  ],
+  "causesSection": {
+    "heading": "Oorzaken",
+    "intro": "Oorzaken van lage rugpijn of bekkenpijn zijn te verdelen in geleidelijk en plotseling.",
+    "geleidelijkHeading": "Geleidelijke oorzaken",
+    "geleidelijkItems": [
+      "Weinig afwisseling in de houding en weinig beweging (zoals bij bureauwerk).",
+      "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
+      "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
+      "Spanning, stress, vermoeidheid, ziekte, kou, vocht enzovoort.",
+      "De veranderingen in de hormoonspiegel in een zwangerschap."
+    ],
+    "plotselingHeading": "Plotselinge oorzaken",
+    "plotselingItems": [
+      "Een verkeersongeluk.",
+      "Een verkeerde beweging of verdraaiing, zoals bijvoorbeeld met vegen of spitten, een buk-draaibeweging (bijvoorbeeld door iets uit de kofferbak te tillen)."
+    ]
+  },
+  "sidebarCtaSubtext": "Rugpijn hoeft u niet te accepteren. Wij helpen u.",
+  "sidebarCtaButtonLabel": "Afspraak maken",
+  "relatedConditions": [
+    {
+      "label": "Hernia",
+      "href": "/klachten/hernia"
+    },
+    {
+      "label": "Zwangerschap",
+      "href": "/klachten/zwangerschap"
+    },
+    {
+      "label": "Bovenrug & Schouder",
+      "href": "/klachten/bovenrug-schouder"
+    }
+  ]
+}

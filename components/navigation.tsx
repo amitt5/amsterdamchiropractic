@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/language-context';
+import navContent from '@/content/navigation.json';
 
 export default function Navigation() {
   const { language, setLanguage } = useLanguage();
@@ -10,10 +11,10 @@ export default function Navigation() {
 
   const t = {
     en: {
-      book: 'Book Appointment',
-      thisPage: 'This Page',
-      conditionsLabel: 'Conditions',
-      moreLabel: 'More',
+      book: navContent.en_book,
+      thisPage: navContent.en_thisPage,
+      conditionsLabel: navContent.en_conditionsLabel,
+      moreLabel: navContent.en_moreLabel,
       mainNav: [
         { label: 'Services', href: '/#services' },
         { label: 'Approach', href: '/#approach' },
@@ -48,10 +49,10 @@ export default function Navigation() {
       ],
     },
     nl: {
-      book: 'Maak Afspraak',
-      thisPage: 'Deze Pagina',
-      conditionsLabel: 'Klachten',
-      moreLabel: 'Meer',
+      book: navContent.nl_book,
+      thisPage: navContent.nl_thisPage,
+      conditionsLabel: navContent.nl_conditionsLabel,
+      moreLabel: navContent.nl_moreLabel,
       mainNav: [
         { label: 'Diensten', href: '/#services' },
         { label: 'Aanpak', href: '/#approach' },

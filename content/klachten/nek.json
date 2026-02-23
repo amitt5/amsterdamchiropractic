@@ -1,0 +1,59 @@
+{
+  "slug": "Nekpijn",
+  "title": "Nekpijn",
+  "highlightBox": "",
+  "intro": "Veel voorkomende aandoeningen zijn: stijve nek- en schouderspieren, whiplash, spierknopen, artrose en nekhernia. Chiropractische behandeling kan bij veel nekklachten uitkomst bieden.",
+  "sections": [
+    {
+      "heading": "Symptomen",
+      "paragraphs": [
+        "De meest voorkomende nekklachten zijn zeurende pijn en stijfheid. Andere veel voorkomende klachten zijn:"
+      ],
+      "listItems": [
+        "Duizeligheid",
+        "Oorsuizen",
+        "Concentratiestoornissen",
+        "Uitstralende pijn naar armen",
+        "Krachteloos of moe gevoel in schouders of armen",
+        "Tintelingen in handen of vingers"
+      ],
+      "listStyle": "checks",
+      "twoColumns": false,
+      "noteBelow": ""
+    }
+  ],
+  "causesSection": {
+    "heading": "Oorzaken",
+    "intro": "Nekpijn kan verschillende oorzaken hebben. De meest voorkomende zijn:",
+    "geleidelijkHeading": "Geleidelijke oorzaken",
+    "geleidelijkItems": [
+      "Weinig afwisseling in de houding (zoals bij bureauwerk).",
+      "Weinig afwisseling in beweging (bij monotoon werk).",
+      "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
+      "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
+      "Spanning en stress.",
+      "Kou en tocht."
+    ],
+    "plotselingHeading": "Plotselinge oorzaken",
+    "plotselingItems": [
+      "Een val of ongeluk, wat kan resulteren in whiplash.",
+      "Verkramping van de spieren door een verkeerde beweging of verdraaiing, verkeerde slaaphouding, of infectie aan gehoorgang of luchtweg."
+    ]
+  },
+  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+  "sidebarCtaButtonLabel": "Afspraak maken",
+  "relatedConditions": [
+    {
+      "label": "Whiplash",
+      "href": "/klachten/whiplash"
+    },
+    {
+      "label": "Bovenrug & Schouder",
+      "href": "/klachten/bovenrug-schouder"
+    },
+    {
+      "label": "Hoofdpijn & Migraine",
+      "href": "/klachten/hoofdpijn-en-migraine"
+    }
+  ]
+}

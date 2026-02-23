@@ -1,0 +1,94 @@
+{
+  "slug": "Sportblessures",
+  "title": "Sportblessures",
+  "highlightBox": "",
+  "intro": "",
+  "sections": [
+    {
+      "heading": "Sport en blessures",
+      "paragraphs": [
+        "Of u nu voor uw plezier sport of beroepsmatig, iedere sporter loopt het risico om geblesseerd te raken. Jaarlijks raken vele Nederlanders geblesseerd tijdens het sporten; dit is pijnlijk en vervelend voor de sporter en duur voor de maatschappij vanwege het forse ziekteverzuim als gevolg van de blessure.",
+        "Het lichaam wordt tijdens het sporten zwaar belast en kleine \"oneffenheden\", die in het dagelijks leven niet als hinderlijk worden ervaren of soms zelfs in het geheel niet worden opgemerkt, kunnen blessures veroorzaken en het prestatieniveau negatief beïnvloeden."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Preventie",
+      "paragraphs": [
+        "Veel sporters, recreant en professional, kiezen er dan ook voor om regelmatig een chiropractor te bezoeken en hun lichaam te laten controleren. Deze preventieve aanpak heeft bij een topclub als AC Milan een enorme afname van het aantal blessures tot gevolg gehad. Ook waren de voetballers in staat om tot op hogere leeftijd op een topniveau te kunnen presteren."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Chiropractie",
+      "paragraphs": [
+        "Chiropractoren zijn bij uitstek geschikt om problemen op het gebied van spieren en gewrichten te behandelen en voorkomen. Een optimaal functionerend bewegingsapparaat zorgt voor betere prestaties en minder blessures! Onderzoek en praktijkervaringen laten zien dat de preventieve aanpak van de chiropractor het aantal blessures drastisch kan doen afnemen. Ook blijkt dat een actieve aanpak na een blessure de revalidatie fors kan bespoedigen."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Acuut en chronisch",
+      "paragraphs": [
+        "Blessures kunnen acuut en chronisch ontstaan. Acuut door een plotselinge verkeerde beweging en chronisch door een foutief bewegingspatroon dat er misschien al lange tijd geleden ingeslopen was. Het zal duidelijk zijn dat het wenselijk is om deze functiestoornissen zo spoedig mogelijk op te merken en te behandelen."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Symptomen",
+      "paragraphs": [
+        "Verminderde prestaties, kleine pijntjes of stijfheid, of een traag herstel na kleine blessures. Het kan allemaal wijzen op slecht functionerende spieren en gewrichten. Het kan zelfs zo zijn dat terugkerende knie- of enkelproblemen veroorzaakt worden door een foutief bewegingspatroon in de onderrug of heup."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Behandeling van sporters",
+      "paragraphs": [
+        "Sporters vragen een andere aanpak dan niet sporters omdat de krachten die op het lichaam van een sporter inspelen vele malen groter zijn dan die we in het normale dagelijkse leven ervaren. Een sporter zal dan ook langer moeten doorgaan met revalideren na een blessure; bijna klachtenvrij is niet goed genoeg. Een sporter zal terug willen komen tot een hoger niveau dan dat van voor de blessure. Bij een goed functionerend lichaam is er sprake van een juiste balans op het gebied van kracht, uithoudingsvermogen, flexibiliteit en coördinatie. De sporter heeft dan een goede controle over zijn lichaam en leert niet alleen zijn mogelijkheden maar ook zijn eventuele \"zwakke plekken\" goed kennen.",
+        "Voordat er een behandeling plaatsvindt zal er eerst een vraaggesprek zijn en een uitgebreid lichamelijk onderzoek. Tijdens de behandeling ligt de nadruk op het verwijderen van blokkades en het herstellen van de beweeglijkheid van spieren en gewrichten. Uw chiropractor beschikt daarvoor over een veelheid aan technieken. Ook kan hij adviseren onder anderen met betrekking tot oefeningen en voeding."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    }
+  ],
+  "causesSection": {
+    "heading": "",
+    "intro": "",
+    "geleidelijkHeading": "",
+    "geleidelijkItems": [],
+    "plotselingHeading": "",
+    "plotselingItems": []
+  },
+  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+  "sidebarCtaButtonLabel": "Afspraak maken",
+  "relatedConditions": [
+    {
+      "label": "Lage Rugpijn",
+      "href": "/klachten/lage-rugpijn"
+    },
+    {
+      "label": "Bovenrug & Schouder",
+      "href": "/klachten/bovenrug-schouder"
+    },
+    {
+      "label": "Whiplash",
+      "href": "/klachten/whiplash"
+    }
+  ]
+}

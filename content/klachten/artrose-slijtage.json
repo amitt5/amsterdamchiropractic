@@ -1,0 +1,70 @@
+{
+  "slug": "Artrose / Slijtage",
+  "title": "Artrose / Slijtage",
+  "highlightBox": "Artrose treft miljoenen mensen. Chiropractie kan de verslechtering remmen, pijn verminderen en de beweeglijkheid verbeteren.",
+  "intro": "",
+  "sections": [
+    {
+      "heading": "Wat is artrose?",
+      "paragraphs": [
+        "Artrose is een degeneratieve gewrichtsaandoening waarbij het kraakbeen in de gewrichten geleidelijk slijt. Het treedt het meest op in de wervelkolom, knieën, heupen, handen en voeten. Naarmate het kraakbeen dunner wordt, kunnen botten tegen elkaar wrijven, wat leidt tot pijn, stijfheid en verminderde bewegelijkheid."
+      ],
+      "listItems": [],
+      "listStyle": "none",
+      "twoColumns": false,
+      "noteBelow": ""
+    },
+    {
+      "heading": "Chiropractische behandeling",
+      "paragraphs": [
+        "Hoewel artrose niet te genezen is, kan chiropractie de progressie significant vertragen en de kwaliteit van leven verbeteren. Dr. Jahani richt zich op het verbeteren van de gewrichtsfunctie, verminderen van ontsteking en verlichten van pijn."
+      ],
+      "listItems": [
+        "Zachte mobilisatietechnieken om gewrichten beweeglijk te houden",
+        "Spierversterking rondom aangedane gewrichten",
+        "Houdingscorrectie om ongelijkmatige belasting te verminderen",
+        "Voedings- en leefstijladvies om ontsteking te verminderen",
+        "Therapeutische oefeningen voor thuis"
+      ],
+      "listStyle": "numbered",
+      "twoColumns": false,
+      "noteBelow": ""
+    }
+  ],
+  "causesSection": {
+    "heading": "Oorzaken en risicofactoren",
+    "intro": "",
+    "geleidelijkHeading": "Primaire oorzaken",
+    "geleidelijkItems": [
+      "Veroudering (slijtage over de tijd)",
+      "Langdurige overbelasting van gewrichten",
+      "Eerdere gewrichtsblessures",
+      "Genetische aanleg",
+      "Overgewicht (extra druk op gewrichten)"
+    ],
+    "plotselingHeading": "Symptomen",
+    "plotselingItems": [
+      "Pijn bij beweging of na rust",
+      "Stijfheid, vooral 's ochtends",
+      "Verminderde bewegingsrange",
+      "Knisperende of krakende geluiden",
+      "Zwelling rondom het gewricht"
+    ]
+  },
+  "sidebarCtaSubtext": "Slijtage hoeft u niet te accepteren. Wij helpen u beter te bewegen.",
+  "sidebarCtaButtonLabel": "Afspraak maken",
+  "relatedConditions": [
+    {
+      "label": "Lage Rugpijn",
+      "href": "/klachten/lage-rugpijn"
+    },
+    {
+      "label": "Nek",
+      "href": "/klachten/nek"
+    },
+    {
+      "label": "Bovenrug & Schouder",
+      "href": "/klachten/bovenrug-schouder"
+    }
+  ]
+}
