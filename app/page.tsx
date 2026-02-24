@@ -1,7 +1,7 @@
 'use client';
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { ChiroVoiceBot } from '@/components/voice-bot';
 import Navigation from '@/components/navigation';
@@ -462,23 +462,62 @@ function BookingWidget() {
   );
 }
 
+// ─── Hardcoded Google reviews (real patient quotes — not CMS-editable) ────────
+const REVIEWS = [
+  {
+    name: 'Maarten Oosterhoff',
+    text: 'After two years of walking around with a stiff and painful shoulder — tried dry needling, physio, etc. — I returned to Dr. Jahani. After a thorough first analysis, the first treatment was immediately effective. Painless, with restored range of motion. After 10 treatments I have full freedom of movement again.',
+    rating: 5,
+  },
+  {
+    name: 'Niels van Opzeeland',
+    text: "Dr. Jahani and his team helped me fantastically with preparations for the Amsterdam half marathon. Due to poor posture, my calves were cramping while running. After treatment the problem was completely resolved and I finished the race without issues.",
+    rating: 5,
+  },
+  {
+    name: 'Michel K.',
+    text: 'Within 2 weeks, my severe neck, shoulder and back complaints were completely resolved by Dr. Jahani. My profession is very demanding on my back and I work 5–6 days a week, but I can handle it without problems now. I keep coming back regularly for maintenance.',
+    rating: 5,
+  },
+  {
+    name: 'Ruben Hulsebosch',
+    text: 'When I came in I was completely locked up — I could barely move my neck and the pain was unbearable. Due to my height (2.02m) and sedentary job it was time for action. Dr. Jahani got to work immediately. After an intensive treatment plan with daily home exercises, I was completely pain-free within 3–4 weeks.',
+    rating: 5,
+  },
+  {
+    name: 'Eline de Ligt',
+    text: 'After years of neck pain I finally took the step to visit a chiropractor. I wish I had done it sooner. Dr. Jahani is a very skilled man who, beyond his chiropractic specialty, is also highly competent in other medical areas. He also puts you at ease quickly, which is great when you\'re coming in 3x a week for intensive treatment.',
+    rating: 5,
+  },
+  {
+    name: 'John Leijdekker',
+    text: 'I had been suffering from lower back pain for many years — had trouble getting dressed and walking, and my back constantly gave out. Through Dr. Jahani\'s intensive treatment and disciplined home exercises twice a day, I\'ve now recovered to 85–90%. I can even run again.',
+    rating: 5,
+  },
+  {
+    name: 'Dominic',
+    text: 'After trying several top chiropractors in Amsterdam, Dr. Jahani is my favourite and in my opinion the best in Amsterdam. His excellent rapport, attention to detail, and passion for improving patient health deliver a fantastic level of service. I\'ve seen Dr. Jahani during several periods of my life over the past 6 years and always gotten an excellent result.',
+    rating: 5,
+  },
+  {
+    name: 'Michael Pilarczyk',
+    text: 'It is not only solving the problem, but also the improvement of my body and increasing the strength of everything related to the cause of the problem. Within a few months I moved again fairly smoothly and my body feels much stronger. Dr. Jahani has a clear vision of health — to me he is "the miracle doctor."',
+    rating: 5,
+  },
+  {
+    name: 'Anonymous patient',
+    text: 'After a surgical complication left my arm fully paralyzed from the shoulder down, I was left without help until a colleague recommended Dr. Jahani. After two months of treatment I could move my hand again — I could cook and peel vegetables. After five months I passed my driving re-examination and I can drive my car again.',
+    rating: 5,
+  },
+];
+
 // ─── Main page ────────────────────────────────────────────────────────────────
 export default function ChiroPage() {
   const { language } = useLanguage();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [showVoiceBot, setShowVoiceBot] = useState(false);
   const [selectedCondition, setSelectedCondition] = useState<string | null>(null);
-  const [testimonialPage, setTestimonialPage] = useState(0);
-
   const c = homepageContent[language];
-
-  const REVIEWS_PER_PAGE = 3;
-  const totalTestimonialPages = Math.ceil(c.testimonials.length / REVIEWS_PER_PAGE);
-
-  useEffect(() => {
-    const t = setInterval(() => setTestimonialPage(p => (p + 1) % totalTestimonialPages), 5000);
-    return () => clearInterval(t);
-  }, [totalTestimonialPages]);
 
   const svgIcons = [
     <svg key="neuro" viewBox="0 0 48 48" fill="none" className="w-10 h-10"><circle cx="24" cy="24" r="22" stroke="#45321A" strokeWidth="2" /><path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="#45321A" strokeWidth="2" strokeLinecap="round" /><circle cx="24" cy="24" r="3" fill="#45321A" /></svg>,
@@ -769,49 +808,45 @@ export default function ChiroPage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="testimonials" className="py-20 bg-[#F6F6F6]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.testimonialsLabel}</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold mt-2 text-[#191919]">{c.testimonialsH2}</h2>
-            {/* Rating badge */}
-            <div className="mt-5 inline-flex flex-col items-center gap-1">
-              <div className="flex items-center gap-1.5">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} viewBox="0 0 20 20" className="w-5 h-5 fill-[#c9a96e]"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-                <span className="text-[#191919] font-bold text-lg ml-1">{c.heroRating}</span>
-                <svg viewBox="0 0 24 24" className="w-5 h-5 ml-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-              </div>
-              <span className="text-[#403F3F] text-sm">{c.reviewCount} Google Reviews</span>
+      <section id="testimonials" className="py-20 bg-[#F6F6F6] overflow-hidden">
+        {/* Header */}
+        <div className="max-w-6xl mx-auto px-6 text-center mb-12">
+          <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.testimonialsLabel}</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mt-2 text-[#191919]">{c.testimonialsH2}</h2>
+          <div className="mt-5 inline-flex flex-col items-center gap-1">
+            <div className="flex items-center gap-1.5">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} viewBox="0 0 20 20" className="w-5 h-5 fill-[#c9a96e]"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+              ))}
+              <span className="text-[#191919] font-bold text-lg ml-1">{c.heroRating}</span>
+              <svg viewBox="0 0 24 24" className="w-5 h-5 ml-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
             </div>
+            <span className="text-[#403F3F] text-sm">{c.reviewCount} Google Reviews</span>
           </div>
-          {/* Rotating grid — 3 at a time */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {c.testimonials.slice(testimonialPage * REVIEWS_PER_PAGE, (testimonialPage + 1) * REVIEWS_PER_PAGE).map((testimonial) => (
-              <div key={testimonial.name} className="bg-white rounded-2xl p-7 shadow-sm">
+        </div>
+        {/* Infinite marquee strip */}
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#F6F6F6] to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#F6F6F6] to-transparent z-10 pointer-events-none" />
+          <div className="flex gap-6 animate-marquee" style={{ width: 'max-content' }}>
+            {[...REVIEWS, ...REVIEWS].map((review, i) => (
+              <div key={i} className="bg-white rounded-2xl p-7 shadow-sm flex-shrink-0 flex flex-col" style={{ width: '340px' }}>
                 <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-[#45321A]" viewBox="0 0 20 20">
+                  {[...Array(review.rating)].map((_, j) => (
+                    <svg key={j} className="w-4 h-4 fill-[#45321A]" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
-                <p className="text-[#403F3F] text-sm leading-relaxed mb-5 italic">&ldquo;{testimonial.text}&rdquo;</p>
-                <div className="font-semibold text-[#191919] text-sm">{testimonial.name}</div>
+                <p className="text-[#403F3F] text-sm leading-relaxed italic flex-1">&ldquo;{review.text}&rdquo;</p>
+                <div className="font-semibold text-[#191919] text-sm mt-5">{review.name}</div>
               </div>
-            ))}
-          </div>
-          {/* Page dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: totalTestimonialPages }).map((_, i) => (
-              <button key={i} onClick={() => setTestimonialPage(i)}
-                className={`w-2 h-2 rounded-full transition-colors ${i === testimonialPage ? 'bg-[#45321A]' : 'bg-[#45321A]/25'}`} />
             ))}
           </div>
         </div>

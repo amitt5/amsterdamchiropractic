@@ -90,7 +90,7 @@
     ],
     "testimonialsLabel": "Patient Reviews",
     "testimonialsH2": "What Our Patients Say",
-    "reviewCount": "120+",
+    "reviewCount": "330+",
     "testimonials": [
       { "name": "Marieke van den Berg", "text": "I had lower back pain for almost two years. After just four sessions with Dr. Jahani I felt like a different person. He really takes the time to explain what is happening and why.", "rating": 5 },
       { "name": "David Okonkwo", "text": "The combination of chiropractic adjustment and acupuncture made an enormous difference for my neck pain. I had been to two other clinics with no results. Highly recommended.", "rating": 5 },
@@ -153,8 +153,8 @@
     "footerHours": ["Mon – Fri: 10:00 – 17:00", "Sat: 10:00 – 14:00"],
     "footerCopy": "© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.",
     "footerLegal": "Privacy Policy · Terms of Service",
-    "heroRating": "4.9",
-    "heroReviewLabel": "120+ Google Reviews",
+    "heroRating": "4.8",
+    "heroReviewLabel": "330+ Google Reviews",
     "heroReviews": [
       { "name": "Marieke van den Berg", "condition": "Chronic lower back pain", "text": "After just four sessions with Dr. Jahani I felt like a different person. Two years of pain — gone.", "rating": 5 },
       { "name": "David Okonkwo", "condition": "Neck pain + herniated disc", "text": "I had been to two other clinics with no results. The combination of chiropractic and acupuncture made an enormous difference.", "rating": 5 },
