@@ -25,15 +25,17 @@
     "conditionsH2": "We Specialise in Treating",
     "conditionsDesc": "From sudden injuries to long-standing chronic pain, Dr. Jahani has the expertise and experience to help you recover fully.",
     "conditionsClick": "↓ Click a condition for more information",
+    "conditionsNote": "Since most acute and chronic conditions are painful, it's not always possible or advisable to adjust patients straight away. The approach Dr. Jahani has developed is to first start with medical acupuncture to reduce inflammation and pain for the first few sessions, and then begin gentle mobilisation or manipulation to restore movement. This is what separates us from every other chiropractor or clinic — they simply don't have this option.",
     "approachLabel": "Our Method",
     "approachH2": "The Three-Phase Care Model",
     "approachDesc": "We don't just treat the symptom. Our structured approach ensures you get better — and stay better.",
     "phases": [
-      { "step": "01", "title": "Relief Care", "desc": "We focus on reducing your pain as quickly as possible so you can function and sleep normally again." },
+      { "step": "01", "title": "Relief Care", "desc": "We focus on reducing your pain as quickly as possible so you can function and sleep normally again. Based on the patient expectation, we can adjust the intensity of the treatment accordingly." },
       { "step": "02", "title": "Corrective Care", "desc": "Once pain is under control, we correct underlying structural issues to prevent recurring problems." },
       { "step": "03", "title": "Wellness Care", "desc": "Ongoing maintenance to keep your spine healthy, your body resilient, and your quality of life high." }
     ],
     "phaseLabel": "Phase",
+    "phasesNote": "At the end of each phase, the doctor will evaluate and explain the best options and advice available to the patient to continue care and to prevent relapse.",
     "firstVisitLabel": "New Patient Info",
     "firstVisitH2": "Your First Visit",
     "firstVisitDesc": "We understand visiting a chiropractor for the first time can raise questions. Here's exactly what happens during your first appointment.",
@@ -43,8 +45,8 @@
       { "step": "3", "title": "Examination", "desc": "Full chiropractic exam including reflex and flexibility testing, plus neurological, orthopedic, postural, and physical assessments. Nothing is done without your consent." },
       { "step": "4", "title": "X-Ray Studies", "desc": "If needed based on your condition, X-rays are taken to develop the most effective treatment plan and check for serious spinal conditions." },
       { "step": "5", "title": "Report of Findings", "desc": "Dr. Jahani provides a full report covering: How can he help you? How often will you need to come in? What will the cost be?" },
-      { "step": "6", "title": "Treatment", "desc": "At the end of the first visit, you can choose to start your first treatment: spinal adjustment, physical therapy, and/or soft tissue massage." },
-      { "step": "7", "title": "Wellness Program", "desc": "Before leaving, Dr. Jahani will suggest a home wellness program which may include: ice/heat instructions, activities to avoid, and home exercises or stretches." }
+      { "step": "6", "title": "Treatment", "desc": "At the end of the examination, Dr. Jahani will explain the most effective and suitable treatment options. You may agree to proceed with the treatment or not — the choice is entirely yours. Since there are no extra fees for the first treatment, it is highly advisable to try it and see the difference for yourself. A personalised treatment plan can only be made after the first treatment; without it, we are unable to make future care recommendations." },
+      { "step": "7", "title": "Wellness Program", "desc": "If necessary, Dr. Jahani or associates will suggest a home wellness program which may include stretching and strengthening exercises, as well as ice/heat instructions to support your recovery between visits." }
     ],
     "pricingLabel": "Rates / Reimbursements",
     "pricingH2": "Transparent Pricing",
@@ -64,6 +66,7 @@
       { "treatment": "High-tech Foot Scan incl. advice", "price": "€ 120" },
       { "treatment": "Treatment Plan Cancellation Costs", "price": "€ 150" }
     ],
+    "pricingPackageNote": "Since most insurance will only reimburse your costs partially, based on your condition, you might qualify to benefit from available treatment packages.",
     "paymentNote": "Payment: The amount due will be settled after each visit. Payment can be made by cash or debit card. You can submit the receipt to your insurance company.",
     "insuranceH3": "Reimbursements / Insurance Coverage",
     "insuranceP1": "Nearly all health insurers include chiropractic care in their supplementary packages. The requirement is that the chiropractor is a member of a professional association (NCA) and registered with the Dutch Chiropractic Foundation (SCN). Most insurers classify chiropractic care as \"alternative medicine\" or \"movement therapy.\"",
@@ -171,15 +174,17 @@
     "conditionsH2": "Wij zijn gespecialiseerd in de behandeling van",
     "conditionsDesc": "Van acute blessures tot langdurige chronische pijn, dr. Jahani beschikt over de expertise en ervaring om u te helpen volledig te herstellen.",
     "conditionsClick": "↓ Klik op een aandoening voor meer informatie",
+    "conditionsNote": "Omdat de meeste acute en chronische aandoeningen pijnlijk zijn, is het niet altijd mogelijk of verstandig om patiënten direct te behandelen. De aanpak die Dr. Jahani heeft ontwikkeld, is om eerst te beginnen met medische acupunctuur om de ontsteking en pijn in de eerste sessies te verminderen, en daarna te starten met zachte mobilisatie of manipulatie om de beweging te herstellen. Dit is wat ons onderscheidt van elke andere chiropractor of kliniek — zij beschikken eenvoudigweg niet over deze optie.",
     "approachLabel": "Onze methode",
     "approachH2": "Het driefasen zorgmodel",
     "approachDesc": "Wij behandelen niet alleen de symptomen. Onze gestructureerde aanpak zorgt ervoor dat u beter wordt – en beter blijft.",
     "phases": [
-      { "step": "01", "title": "Hulpverlening", "desc": "Wij richten ons erop uw pijn zo snel mogelijk te verlichten, zodat u weer normaal kunt functioneren en slapen." },
+      { "step": "01", "title": "Hulpverlening", "desc": "Wij richten ons erop uw pijn zo snel mogelijk te verlichten, zodat u weer normaal kunt functioneren en slapen. Op basis van de verwachtingen van de patiënt kunnen we de intensiteit van de behandeling daarop aanpassen." },
       { "step": "02", "title": "Corrigerende zorg", "desc": "Zodra de pijn onder controle is, corrigeren we onderliggende structurele problemen om terugkerende klachten te voorkomen." },
       { "step": "03", "title": "Welzijnszorg", "desc": "Doorlopend onderhoud om uw wervelkolom gezond te houden, uw lichaam veerkrachtig te maken en uw levenskwaliteit hoog te houden." }
     ],
     "phaseLabel": "Fase",
+    "phasesNote": "Aan het einde van elke fase evalueert de dokter de voortgang en legt de beste opties en adviezen uit die beschikbaar zijn voor de patiënt om de zorg voort te zetten en terugval te voorkomen.",
     "firstVisitLabel": "Informatie voor nieuwe patiënten",
     "firstVisitH2": "Uw eerste bezoek",
     "firstVisitDesc": "We begrijpen dat een eerste bezoek aan een chiropractor vragen kan oproepen. Hieronder leggen we precies uit wat er tijdens uw eerste afspraak gebeurt.",
@@ -189,8 +194,8 @@
       { "step": "3", "title": "Inspectie", "desc": "Een volledig chiropractisch onderzoek, inclusief reflex- en flexibiliteitstesten, plus neurologische, orthopedische, houdings- en fysieke beoordelingen. Niets wordt gedaan zonder uw toestemming." },
       { "step": "4", "title": "Röntgenonderzoek", "desc": "Indien nodig worden röntgenfoto's gemaakt om het meest effectieve behandelplan op te stellen en te controleren op ernstige aandoeningen van de wervelkolom." },
       { "step": "5", "title": "Bevindingen", "desc": "Dr. Jahani geeft een volledig overzicht: Hoe kan hij u helpen? Hoe vaak moet u komen? Wat zijn de kosten?" },
-      { "step": "6", "title": "Behandeling", "desc": "Aan het einde van het eerste bezoek kunt u kiezen om uw eerste behandeling direct te starten: wervelkolomcorrectie, fysiotherapie en/of weke weefselmassage." },
-      { "step": "7", "title": "Wellnessprogramma", "desc": "Voor u vertrekt suggereert Dr. Jahani een thuiswellnessprogramma dat kan bestaan uit: ijs-/warmte-instructies, activiteiten om te vermijden, en thuisoefeningen of rekoefeningen." }
+      { "step": "6", "title": "Behandeling", "desc": "Aan het einde van het onderzoek legt Dr. Jahani de meest effectieve en geschikte behandelopties uit. U kunt instemmen met de behandeling of niet — de keuze is geheel aan u. Omdat er geen extra kosten zijn voor de eerste behandeling, is het sterk aan te raden om het te proberen en zelf het verschil te ervaren. Een gepersonaliseerd behandelplan kan alleen worden opgesteld na de eerste behandeling; zonder deze behandeling kunnen wij geen aanbevelingen doen voor toekomstige zorg." },
+      { "step": "7", "title": "Wellnessprogramma", "desc": "Indien nodig zal Dr. Jahani of collega's een thuiswellnessprogramma voorstellen dat rek- en versterkingsoefeningen kan omvatten, evenals ijs-/warmte-instructies om uw herstel tussen de bezoeken te ondersteunen." }
     ],
     "pricingLabel": "Tarieven / Vergoedingen",
     "pricingH2": "Transparante tarieven",
@@ -210,6 +215,7 @@
       { "treatment": "High-tech Voet Scan incl. advies", "price": "€ 120" },
       { "treatment": "Behandelplan Opzeggingskosten", "price": "€ 150" }
     ],
+    "pricingPackageNote": "Omdat de meeste verzekeringen uw kosten slechts gedeeltelijk vergoeden, kunt u op basis van uw aandoening in aanmerking komen voor beschikbare behandelpakketten.",
     "paymentNote": "Betaling: Het verschuldigde bedrag wordt na afloop van elk bezoek vereffend. Betaling mogelijk met contant of pinpas. De kwitantie kunt u indienen bij uw verzekeringsmaatschappij.",
     "insuranceH3": "Vergoedingen / Verzekeringsdekking",
     "insuranceP1": "Vrijwel alle ziektekostenverzekeraars hebben chiropractie in hun aanvullende pakket opgenomen. Voorwaarde is dat de chiropractor aangesloten is bij een beroepsvereniging (NCA) en ingeschreven staat bij de Stichting Chiropractie Nederland (SCN). Bij de meeste verzekeraars valt chiropractie onder \"alternatieve geneeswijzen\" of \"beweegzorg\".",

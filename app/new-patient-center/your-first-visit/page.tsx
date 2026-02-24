@@ -40,12 +40,12 @@ const steps = [
   {
     num: '06',
     title: 'Treatment',
-    desc: 'Your first treatment begins. Depending on your condition, this may include a spinal adjustment, medical acupuncture, soft-tissue therapy, or a combination. Treatment is always gentle and tailored to your comfort level.',
+    desc: 'At the end of the examination, Dr. Jahani will explain the most effective and suitable treatment options. You may agree to proceed with the treatment or not — the choice is entirely yours. Since there are no extra fees for the first treatment, it is highly advisable to try it and see the difference for yourself. A personalised treatment plan can only be made after the first treatment; without it, we are unable to make future care recommendations.',
   },
   {
     num: '07',
     title: 'Wellness Program',
-    desc: 'You will receive a personalised wellness program outlining your recommended care schedule, home exercises, postural advice, and nutritional guidance to support your recovery.',
+    desc: 'If necessary, Dr. Jahani or associates will suggest a home wellness program which may include stretching and strengthening exercises, as well as ice/heat instructions to support your recovery between visits.',
   },
 ];
 

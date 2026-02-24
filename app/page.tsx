@@ -579,6 +579,9 @@ export default function ChiroPage() {
               </button>
             ))}
           </div>
+          <div className="mt-10 bg-white border-l-4 border-[#45321A] rounded-xl px-6 py-5 max-w-3xl mx-auto">
+            <p className="text-[#403F3F] text-sm leading-relaxed">{c.conditionsNote}</p>
+          </div>
         </div>
       </section>
 
@@ -600,6 +603,7 @@ export default function ChiroPage() {
               </div>
             ))}
           </div>
+          <p className="text-center text-[#403F3F] text-sm leading-relaxed mt-10 max-w-2xl mx-auto italic">{c.phasesNote}</p>
         </div>
       </section>
 
@@ -652,6 +656,9 @@ export default function ChiroPage() {
                 </tbody>
               </table>
             </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-6 py-5 mb-4">
+            <p className="text-[#403F3F] text-sm leading-relaxed">{c.pricingPackageNote}</p>
           </div>
           <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-xl px-6 py-5 mb-8">
             <p className="text-[#403F3F] text-sm leading-relaxed">{c.paymentNote}</p>
