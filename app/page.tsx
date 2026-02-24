@@ -563,22 +563,19 @@ export default function ChiroPage() {
                 {c.aiBtn}
               </button>
             </div>
+            
+            <div className="mt-10 flex gap-10">
+              {c.stats.map(({value: num, label}) => (
+                <div key={label}>
+                  <div className="text-2xl font-extrabold text-[#c9a96e]">{num}</div>
+                  <div className="text-xs text-white/70 font-medium mt-0.5">{label}</div>
+                </div>
+              ))}
+            </div>
+
             {/* Social proof cluster */}
             <div className="mt-8 flex items-center gap-4">
-              <div className="flex -space-x-3">
-                {[
-                  { bg: '#8B6355', skin: '#f5c5a3' },
-                  { bg: '#5C7A5C', skin: '#e8b89a' },
-                  { bg: '#7B5EA7', skin: '#fad4b8' },
-                  { bg: '#C4824A', skin: '#f0c4a0' },
-                ].map(({ bg, skin }, i) => (
-                  <svg key={i} viewBox="0 0 44 44" className="w-11 h-11 rounded-full border-2 border-white/80 flex-shrink-0" style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.3))' }}>
-                    <circle cx="22" cy="22" r="22" fill={bg} />
-                    <circle cx="22" cy="17" r="7" fill={skin} />
-                    <path d="M7 42c0-8.3 6.7-15 15-15s15 6.7 15 15" fill={skin} />
-                  </svg>
-                ))}
-              </div>
+             
               <div>
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -597,14 +594,6 @@ export default function ChiroPage() {
               </div>
             </div>
 
-            <div className="mt-10 flex gap-10">
-              {c.stats.map(({value: num, label}) => (
-                <div key={label}>
-                  <div className="text-2xl font-extrabold text-[#c9a96e]">{num}</div>
-                  <div className="text-xs text-white/70 font-medium mt-0.5">{label}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
