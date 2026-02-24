@@ -63,19 +63,19 @@ const conditionDetails: Record<string, { en: { title: string; what: string; how:
     nl: {
       title: 'Lage Rugpijn',
       what: 'Lage rugpijn is één van de meest voorkomende klachten in Nederland. Het kan variëren van een doffe pijn tot scherpe, uitstralende pijn naar de benen. Oorzaken zijn onder meer verkeerde houding, spierspanning, discusproblemen, of wervelgewricht-dysfunctie.',
-      how: 'Chiropractie behandelt lage rugpijn door wervelkolom-correcties toe te passen die de mobiliteit herstellen, zenuwdruk verminderen, en het natuurlijke genezingsproces van het lichaam activeren. Veel patiënten ervaren al na enkele behandelingen significante verlichting.',
+      how: 'Neurologische chiropractie behandelt lage rugpijn door wervelkolom-correcties toe te passen die de mobiliteit herstellen, zenuwdruk verminderen, en het natuurlijke genezingsproces van het lichaam activeren. Veel patiënten ervaren al na enkele behandelingen significante verlichting.',
     },
     en: {
       title: 'Lower Back Pain',
       what: 'Lower back pain is extremely common — as many as 80% of people will experience it at some point. It can range from a dull ache or stiffness to nerve pain radiating into the legs. Causes include poor posture, muscle strain, disc problems, and joint dysfunction.',
-      how: "Chiropractic treats lower back pain through precise spinal adjustments that restore mobility, reduce nerve pressure, and activate the body's natural healing. Many patients notice significant improvement within just a few sessions.",
+      how: "Neuro-based chiropractic treats lower back pain through precise spinal adjustments that restore mobility, reduce nerve pressure, and activate the body's natural healing. Many patients notice significant improvement within just a few sessions.",
     },
   },
   'nek': {
     nl: {
       title: 'Nekpijn',
       what: 'Nekpijn kan ontstaan door langdurig beeldschermwerk, slechte slaaphouding, stress, of een whiplash-trauma. Symptomen variëren van stijfheid en spanning tot hoofdpijn en uitstralende pijn naar schouders of armen.',
-      how: 'Door gerichte chiropractische correcties van de nekwervels wordt de mobiliteit hersteld en zenuwfunctie genormaliseerd. Combinatie met medische acupunctuur en massage versnelt het herstel en vermindert spierspanning effectief.',
+      how: 'Door gerichte neurologisch-chiropractische correcties van de nekwervels wordt de mobiliteit hersteld en zenuwfunctie genormaliseerd. Combinatie met medische acupunctuur en massage versnelt het herstel en vermindert spierspanning effectief.',
     },
     en: {
       title: 'Neck Pain',
@@ -87,120 +87,120 @@ const conditionDetails: Record<string, { en: { title: string; what: string; how:
     nl: {
       title: 'Hernia / Discushernia',
       what: 'Een hernia ontstaat wanneer de kern van een tussenwervelschijf door de buitenste ring heen drukt. Dit kan druk geven op zenuwen en leiden tot pijn, tintelingen, of krachtsverlies in benen of armen.',
-      how: 'Chiropractie kan bij veel hernia-gevallen de druk op de aangedane zenuw verminderen door de wervelkolom te ontlasten en correcte uitlijning te bevorderen. Behandeling richt zich op symptoomverlichting en het voorkomen van verdere schade. In ernstige gevallen verwijzen we door.',
+      how: 'Neurologische chiropractie kan bij veel hernia-gevallen de druk op de aangedane zenuw verminderen door de wervelkolom te ontlasten en correcte uitlijning te bevorderen. Behandeling richt zich op symptoomverlichting en het voorkomen van verdere schade. In ernstige gevallen verwijzen we door.',
     },
     en: {
       title: 'Herniated Disc',
       what: 'A herniated disc occurs when the soft inner material of an intervertebral disc bulges through the outer layer, pressing on nearby nerves. This can cause back pain, radiating pain, tingling, or weakness in the legs or arms.',
-      how: 'Chiropractic can reduce nerve pressure by decompressing the spine and restoring alignment. Treatment focuses on relieving symptoms and preventing further damage. In severe cases, we refer you to a specialist.',
+      how: 'Neuro-based chiropractic can reduce nerve pressure by decompressing the spine and restoring alignment. Treatment focuses on relieving symptoms and preventing further damage. In severe cases, we refer you to a specialist.',
     },
   },
   'whiplash': {
     nl: {
       title: 'Whiplash',
       what: 'Whiplash is een nek-letsel veroorzaakt door plotselinge versnelling of vertraging (bijvoorbeeld bij een auto-ongeluk). Symptomen kunnen direct of vertraagd optreden: nekpijn, hoofdpijn, duizeligheid, concentratieproblemen.',
-      how: 'Chiropractische behandeling helpt whiplash-klachten door de beschadigde wervels en gewrichten voorzichtig te mobiliseren, littekweefsel te verminderen, en het herstel van normale beweging te bevorderen. Vroege behandeling voorkomt chronische klachten.',
+      how: 'Neurologisch-chiropractische behandeling helpt whiplash-klachten door de beschadigde wervels en gewrichten voorzichtig te mobiliseren, littekweefsel te verminderen, en het herstel van normale beweging te bevorderen. Vroege behandeling voorkomt chronische klachten.',
     },
     en: {
       title: 'Whiplash',
       what: 'Whiplash is a neck injury from sudden acceleration or deceleration — most commonly in car accidents. Symptoms include neck pain, headache, dizziness, and difficulty concentrating, and can appear days after the incident.',
-      how: 'Gentle chiropractic mobilisation of affected vertebrae and joints reduces scar tissue, relieves pain, and restores normal movement. Early treatment is key to preventing chronic symptoms.',
+      how: 'Gentle neuro-based chiropractic mobilisation of affected vertebrae and joints reduces scar tissue, relieves pain, and restores normal movement. Early treatment is key to preventing chronic symptoms.',
     },
   },
   'bovenrug-schouder': {
     nl: {
       title: 'Bovenrug & Schouder',
       what: 'Pijn in de bovenrug en schouders komt vaak voor bij kantoorwerk, stress, of slechte houding. Klachten kunnen uitstralen naar nek of armen en leiden tot hoofdpijn en vermoeidheid.',
-      how: 'Chiropractie behandelt bovenrug- en schouderpijn door wervelkolom-correcties, mobilisatie van de schoudergewrichten, en het verminderen van spierspanning. Vaak gecombineerd met therapeutische massage voor optimaal resultaat.',
+      how: 'Neurologische chiropractie behandelt bovenrug- en schouderpijn door wervelkolom-correcties, mobilisatie van de schoudergewrichten, en het verminderen van spierspanning. Vaak gecombineerd met therapeutische massage voor optimaal resultaat.',
     },
     en: {
       title: 'Upper Back & Shoulder Pain',
       what: 'Pain between the shoulder blades and in the shoulders is common with desk work, stress, or poor posture. Complaints can radiate to the neck or arms and lead to headaches and fatigue.',
-      how: 'Chiropractic corrects spinal alignment, mobilises shoulder joints, and reduces muscle tension. Often combined with therapeutic massage for the best results.',
+      how: 'Neuro-based chiropractic corrects spinal alignment, mobilises shoulder joints, and reduces muscle tension. Often combined with therapeutic massage for the best results.',
     },
   },
   'hoofdpijn-migraine': {
     nl: {
       title: 'Hoofdpijn en Migraine',
       what: 'Veel hoofdpijn en migraine heeft een cervicogene oorsprong: veroorzaakt door problemen in de nek en bovenrug. Symptomen variëren van doffe druk tot intense, bonzende pijn met misselijkheid en lichtgevoeligheid.',
-      how: 'Chiropractie vermindert hoofdpijn door nekwervels te corrigeren, spierspanning te verlagen, en zenuwprikkeling te normaliseren. Studies tonen aan dat chiropractie effectief is bij chronische hoofdpijn en migraine.',
+      how: 'Neurologische chiropractie vermindert hoofdpijn door nekwervels te corrigeren, spierspanning te verlagen, en zenuwprikkeling te normaliseren. Studies tonen aan dat neurologische chiropractie effectief is bij chronische hoofdpijn en migraine.',
     },
     en: {
       title: 'Headache & Migraine',
       what: 'Many headaches have a cervicogenic origin — caused by problems in the neck and upper back. Migraines affect approximately 1 in 10 adults. Symptoms range from dull pressure to intense throbbing pain, nausea, and light sensitivity.',
-      how: 'Chiropractic corrects cervical vertebrae, lowers muscle tension, and normalises nerve function. Research shows chiropractic is effective for chronic headaches and migraines.',
+      how: 'Neuro-based chiropractic corrects cervical vertebrae, lowers muscle tension, and normalises nerve function. Research shows neuro-based chiropractic is effective for chronic headaches and migraines.',
     },
   },
   'spanningshoofdpijn': {
     nl: {
       title: 'Spanningshoofdpijn',
       what: 'Spanningshoofdpijn voelt aan als een strakke band rond het hoofd en wordt vaak veroorzaakt door langdurige spierspanning in nek en schouders, stress, of verkeerde houding.',
-      how: 'Door chiropractische correcties van de nekwervels en bovenrug, gecombineerd met massage en ontspanningstechnieken, wordt de onderliggende spierspanning effectief verminderd en de frequentie van hoofdpijn drastisch verlaagd.',
+      how: 'Door neurologisch-chiropractische correcties van de nekwervels en bovenrug, gecombineerd met massage en ontspanningstechnieken, wordt de onderliggende spierspanning effectief verminderd en de frequentie van hoofdpijn drastisch verlaagd.',
     },
     en: {
       title: 'Tension Headaches',
       what: 'Tension headaches feel like a tight band around the head and are often caused by prolonged muscle tension in the neck and shoulders, stress, or poor posture.',
-      how: 'Chiropractic corrections of the cervical vertebrae and upper back, combined with massage, effectively reduce the underlying muscle tension and lower headache frequency.',
+      how: 'Neuro-based chiropractic corrections of the cervical vertebrae and upper back, combined with massage, effectively reduce the underlying muscle tension and lower headache frequency.',
     },
   },
   'zwangerschap': {
     nl: {
       title: 'Zwangerschap',
       what: 'Tijdens de zwangerschap ondergaat het lichaam grote veranderingen. Lage rugpijn, bekkenpijn, en ischias komen vaak voor door toegenomen gewicht, hormonale veranderingen, en verschuivingen in houding.',
-      how: 'Chiropractie tijdens zwangerschap is veilig en effectief. Zachte correcties helpen het bekken in balans te houden, pijn te verminderen, en de bevalling te vergemakkelijken. Speciale behandeltafels en technieken worden gebruikt voor comfort en veiligheid.',
+      how: 'Neurologische chiropractie tijdens zwangerschap is veilig en effectief. Zachte correcties helpen het bekken in balans te houden, pijn te verminderen, en de bevalling te vergemakkelijken. Speciale behandeltafels en technieken worden gebruikt voor comfort en veiligheid.',
     },
     en: {
       title: 'Pregnancy-Related Pain',
       what: 'Hormonal changes, increased body weight, and postural shifts during pregnancy commonly cause lower back pain, pelvic instability, and sciatica. These symptoms can worsen as pregnancy progresses.',
-      how: 'Chiropractic during pregnancy is safe and effective. Gentle corrections balance the pelvis, reduce pain, and prepare the body for delivery. Special tables and techniques ensure comfort and safety.',
+      how: 'Neuro-based chiropractic during pregnancy is safe and effective. Gentle corrections balance the pelvis, reduce pain, and prepare the body for delivery. Special tables and techniques ensure comfort and safety.',
     },
   },
   'sportblessures': {
     nl: {
       title: 'Sportblessures',
       what: 'Sportblessures variëren van acute verwondingen (verstuikingen, scheuren) tot overbelasting-klachten (tennisarm, lopers-knie). Ze kunnen leiden tot pijn, bewegingsbeperking, en verminderde prestaties.',
-      how: 'Chiropractie behandelt sportblessures door gewrichten te mobiliseren, ontstekingen te verminderen, en het herstel van weefsels te versnellen. Combinatie met revalidatie-oefeningen en adviezen voorkomt herhaling en verbetert prestaties.',
+      how: 'Neurologische chiropractie behandelt sportblessures door gewrichten te mobiliseren, ontstekingen te verminderen, en het herstel van weefsels te versnellen. Combinatie met revalidatie-oefeningen en adviezen voorkomt herhaling en verbetert prestaties.',
     },
     en: {
       title: 'Sports Injuries',
       what: "Sports injuries range from acute sprains and strains to chronic overuse complaints like tennis elbow or runner's knee. Small functional imbalances that aren't noticeable in daily life can cause repeated injuries.",
-      how: 'Chiropractic mobilises joints, reduces inflammation, and accelerates tissue recovery. A preventative approach can dramatically reduce injury rates and improve athletic performance.',
+      how: 'Neuro-based chiropractic mobilises joints, reduces inflammation, and accelerates tissue recovery. A preventative approach can dramatically reduce injury rates and improve athletic performance.',
     },
   },
   'kinderen': {
     nl: {
       title: "Kinderen & Baby's",
       what: "Kinderen en baby's kunnen baat hebben bij chiropractie voor klachten zoals koliek, slaapproblemen, asymmetrische hoofdvorm, groei-pijnen, houdingsproblemen, en sportblessures.",
-      how: 'Pediatrische chiropractie gebruikt zeer zachte, lage-kracht technieken die speciaal zijn aangepast voor jonge patiënten. Behandeling is veilig, effectief, en kan de ontwikkeling en gezondheid van kinderen aanzienlijk verbeteren.',
+      how: 'Pediatrische neurologische chiropractie gebruikt zeer zachte, lage-kracht technieken die speciaal zijn aangepast voor jonge patiënten. Behandeling is veilig, effectief, en kan de ontwikkeling en gezondheid van kinderen aanzienlijk verbeteren.',
     },
     en: {
       title: 'Children & Infants',
       what: 'Children can develop musculoskeletal problems from falls, sports, or long hours sitting. Infants may experience complaints including colic, sleep problems, and asymmetrical posture. Recovery is typically faster than in adults.',
-      how: 'Paediatric chiropractic uses very gentle, low-force techniques adapted for young patients. Treatment is safe and effective for all ages. Chiropractors have been treating children for over 100 years.',
+      how: 'Paediatric neuro-based chiropractic uses very gentle, low-force techniques adapted for young patients. Treatment is safe and effective for all ages. Neuro-based chiropractors have been treating children for over 100 years.',
     },
   },
   'artrose-slijtage': {
     nl: {
       title: 'Artrose / Slijtage',
       what: "Artrose is slijtage van gewrichtskraakbeen, vaak voorkomend in nek, rug, heupen en knieën. Symptomen zijn stijfheid, pijn, en verminderde mobiliteit, vooral 's ochtends of na inactiviteit.",
-      how: 'Hoewel kraakbeen niet kan worden hersteld, helpt chiropractie de mobiliteit te behouden, pijn te verminderen, en verdere slijtage te vertragen door correcte gewrichtsuitlijning en beweging te bevorderen.',
+      how: 'Hoewel kraakbeen niet kan worden hersteld, helpt neurologische chiropractie de mobiliteit te behouden, pijn te verminderen, en verdere slijtage te vertragen door correcte gewrichtsuitlijning en beweging te bevorderen.',
     },
     en: {
       title: 'Arthrosis / Wear and Tear',
       what: 'Arthrosis is gradual wear of joint cartilage, most common in the neck, back, hips, and knees. Symptoms include stiffness, pain, and reduced mobility — especially in the morning or after periods of rest.',
-      how: 'While cartilage cannot be restored, chiropractic maintains mobility, reduces pain, and slows further deterioration through correct joint alignment and movement.',
+      how: 'While cartilage cannot be restored, neuro-based chiropractic maintains mobility, reduces pain, and slows further deterioration through correct joint alignment and movement.',
     },
   },
   'ischias': {
     nl: {
       title: 'Ischias',
       what: 'Ischias is pijn die uitstraalt van de onderrug via de bil naar het been, veroorzaakt door irritatie of druk op de ischiaszenuw. Oorzaken kunnen zijn: hernia, bekken-dysfunctie, of spierverkorting.',
-      how: 'Chiropractie behandelt ischias door de oorzaak aan te pakken: wervelkolom-correcties om zenuwdruk te verminderen, bekken-stabilisatie, en mobilisatie van gewrichten. Veel patiënten ervaren snelle verlichting.',
+      how: 'Neurologische chiropractie behandelt ischias door de oorzaak aan te pakken: wervelkolom-correcties om zenuwdruk te verminderen, bekken-stabilisatie, en mobilisatie van gewrichten. Veel patiënten ervaren snelle verlichting.',
     },
     en: {
       title: 'Sciatica',
       what: 'Sciatica is pain radiating from the lower back through the buttock and down into the leg, caused by irritation or compression of the sciatic nerve — often from a herniated disc or pelvic dysfunction.',
-      how: 'Chiropractic addresses the root cause: spinal adjustments reduce nerve pressure, the pelvis is stabilised, and joints are mobilised. Many patients experience rapid relief.',
+      how: 'Neuro-based chiropractic addresses the root cause: spinal adjustments reduce nerve pressure, the pelvis is stabilised, and joints are mobilised. Many patients experience rapid relief.',
     },
   },
 };

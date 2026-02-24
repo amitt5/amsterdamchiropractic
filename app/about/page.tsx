@@ -22,7 +22,7 @@ export default function AboutPage() {
             <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">Who We Are</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">About Us</h1>
             <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">
-              Health4Life Chiropractic is dedicated to helping you achieve optimal health through natural, evidence-based chiropractic care in the heart of Amsterdam.
+              Health4Life Chiropractic is dedicated to helping you achieve optimal health through neuro-based chiropractic care — combining functional neurology, BMAS-certified medical acupuncture, and evidence-based spinal correction in the heart of Amsterdam.
             </p>
             <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
           </div>
@@ -45,7 +45,7 @@ export default function AboutPage() {
               {[
                 { title: 'Preventive Wellness', desc: 'Treat the root cause, not just the symptom. Build lasting health.' },
                 { title: 'Personalised Care', desc: 'Every treatment plan is custom-designed for your body and goals.' },
-                { title: 'Evidence-Based Methods', desc: 'Multiple proven techniques selected to match your condition.' },
+                { title: 'Neuro-Based Methods', desc: 'Functional neurology, BMAS acupuncture, and spinal correction — integrated for your condition.' },
                 { title: 'Whole-Body Approach', desc: 'We combine chiropractic, acupuncture, and soft-tissue therapy.' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">

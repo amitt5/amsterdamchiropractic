@@ -15,7 +15,7 @@ const credentials = [
   { year: '1999', detail: 'Bachelor of Science in Biochemistry — York University, Toronto, Canada' },
   { year: '2003', detail: 'Doctor of Chiropractic — New York Chiropractic College, New York, USA' },
   { year: 'Post-grad', detail: 'Medical Acupuncture — The British Medical Acupuncture Society (BMAS)' },
-  { year: 'Post-grad', detail: 'Functional Neurology — Advanced neurological assessment & treatment' },
+  { year: 'Post-grad', detail: 'Functional Neurology — 3-year post-graduate specialisation in advanced neurological assessment & treatment' },
   { year: '2006', detail: 'Established practice in Amsterdam (full-time since 2012)' },
 ];
 
@@ -27,10 +27,10 @@ export default function MeetYourDoctorPage() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">About Your Chiropractor</span>
+            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">About Your Neuro-Based Chiropractor</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-4 text-[#191919]">Meet Your Doctor</h1>
             <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">
-              Dr. M. Jahani brings over 20 years of clinical experience and a deep commitment to evidence-based chiropractic care.
+              Dr. M. Jahani brings 20+ years of clinical experience across the US, Canada, and Europe — specialising in neuro-based chiropractic, BMAS-certified medical acupuncture, and functional neurology.
             </p>
             <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
           </div>
@@ -48,7 +48,7 @@ export default function MeetYourDoctorPage() {
             {/* Bio */}
             <div>
               <h2 className="text-3xl font-extrabold text-[#191919] mb-2">Dr. M. Jahani, DC</h2>
-              <p className="text-[#45321A] font-semibold mb-6">Doctor of Chiropractic · Medical Acupuncturist</p>
+              <p className="text-[#45321A] font-semibold mb-6">Doctor of Chiropractic · Medical Acupuncturist · BMAS · Functional Neurology</p>
 
               <p className="text-[#403F3F] leading-relaxed mb-4">
                 Dr. Jahani was born and raised in Toronto, Canada, and completed his undergraduate studies in Biochemistry at York University in 1999. He then pursued his Doctor of Chiropractic degree at the prestigious New York Chiropractic College, graduating in 2003.
@@ -57,7 +57,7 @@ export default function MeetYourDoctorPage() {
                 After completing post-graduate training in Medical Acupuncture through the British Medical Acupuncture Society and advanced studies in Functional Neurology, he relocated to Amsterdam and established his practice in 2006 — becoming a full-time Amsterdam chiropractor in 2012.
               </p>
               <p className="text-[#403F3F] leading-relaxed mb-6">
-                Dr. Jahani specialises in neuro-based spinal correction, combining chiropractic adjustments with medical acupuncture and soft-tissue therapy for a truly comprehensive approach to musculoskeletal health.
+                Dr. Jahani specialises in neuro-based chiropractic, combining BMAS-certified medical acupuncture, functional neurology, and soft-tissue therapy for a truly comprehensive approach to musculoskeletal and neurological health.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -82,6 +82,40 @@ export default function MeetYourDoctorPage() {
                   </div>
                   <div className="w-px bg-[#45321A]/30 self-stretch mx-2" />
                   <p className="text-[#403F3F] text-sm leading-relaxed flex-1 pt-0.5">{c.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* What Sets Us Apart */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-extrabold text-[#191919] mb-8 text-center">What Sets Us Apart</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  num: '01',
+                  title: 'Functional Neurology',
+                  sub: '3-Year Post-Graduate Specialisation',
+                  desc: 'Advanced training in neurological assessment and treatment allows Dr. Jahani to identify and correct the root neurological cause of pain — not just the symptoms.',
+                },
+                {
+                  num: '02',
+                  title: 'Medical Acupuncture',
+                  sub: 'Certified by The British Medical Acupuncture Society (BMAS)',
+                  desc: 'BMAS certification is the gold standard in Western medical acupuncture. Dr. Jahani integrates acupuncture directly with chiropractic care for enhanced, lasting results.',
+                },
+                {
+                  num: '03',
+                  title: '20+ Years of Experience',
+                  sub: 'American, Canadian & European Clinical Practice',
+                  desc: 'Decades of practice across three continents means Dr. Jahani has encountered — and successfully treated — the full spectrum of complex and chronic musculoskeletal conditions.',
+                },
+              ].map((item, i) => (
+                <div key={i} className="bg-[#45321A] text-white rounded-2xl p-7 flex flex-col">
+                  <span className="text-white/40 font-bold text-3xl mb-4 leading-none">{item.num}</span>
+                  <h4 className="font-extrabold text-lg mb-1">{item.title}</h4>
+                  <p className="text-white/70 text-xs font-semibold uppercase tracking-wide mb-3">{item.sub}</p>
+                  <p className="text-white/85 text-sm leading-relaxed flex-1">{item.desc}</p>
                 </div>
               ))}
             </div>
