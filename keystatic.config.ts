@@ -189,6 +189,7 @@ export default config({
           ),
           testimonialsLabel: fields.text({ label: 'Testimonials label' }),
           testimonialsH2: fields.text({ label: 'Testimonials heading' }),
+          reviewCount: fields.text({ label: 'Google review count (e.g. 120+)' }),
           testimonials: fields.array(
             fields.object({ name: fields.text({ label: 'Name' }), text: fields.text({ label: 'Review text', multiline: true }), rating: fields.integer({ label: 'Rating (1-5)' }) }),
             { label: 'Testimonials', itemLabel: (p) => p.fields.name.value }
@@ -296,6 +297,7 @@ export default config({
           ),
           testimonialsLabel: fields.text({ label: 'Reviews label' }),
           testimonialsH2: fields.text({ label: 'Reviews koptekst' }),
+          reviewCount: fields.text({ label: 'Google review aantal (bijv. 120+)' }),
           testimonials: fields.array(
             fields.object({ name: fields.text({ label: 'Naam' }), text: fields.text({ label: 'Review tekst', multiline: true }), rating: fields.integer({ label: 'Beoordeling (1-5)' }) }),
             { label: 'Reviews', itemLabel: (p) => p.fields.name.value }

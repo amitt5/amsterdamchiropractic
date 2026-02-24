@@ -90,10 +90,17 @@
     ],
     "testimonialsLabel": "Patient Reviews",
     "testimonialsH2": "What Our Patients Say",
+    "reviewCount": "120+",
     "testimonials": [
       { "name": "Marieke van den Berg", "text": "I had lower back pain for almost two years. After just four sessions with Dr. Jahani I felt like a different person. He really takes the time to explain what is happening and why.", "rating": 5 },
       { "name": "David Okonkwo", "text": "The combination of chiropractic adjustment and acupuncture made an enormous difference for my neck pain. I had been to two other clinics with no results. Highly recommended.", "rating": 5 },
-      { "name": "Lisa Fontaine", "text": "I came in for pregnancy-related back pain and was treated with great care throughout. The team is professional, warm, and genuinely invested in your recovery.", "rating": 5 }
+      { "name": "Lisa Fontaine", "text": "I came in for pregnancy-related back pain and was treated with great care throughout. The team is professional, warm, and genuinely invested in your recovery.", "rating": 5 },
+      { "name": "Thomas Hendriks", "text": "Severe sciatica had me unable to sit or drive. Dr. Jahani's combination of acupuncture and spinal adjustment got me back to work within three weeks. Truly outstanding.", "rating": 5 },
+      { "name": "Anna de Vries", "text": "After an MRI confirmed a herniated disc, my GP said surgery might be the only option. Dr. Jahani disagreed — and he was right. Six sessions later, I'm pain-free.", "rating": 5 },
+      { "name": "Pieter Bakker", "text": "As a cyclist I push my body hard. Dr. Jahani fixed my shoulder injury faster than any physio I had tried before. The foot orthotics he prescribed have also transformed my posture.", "rating": 5 },
+      { "name": "Sophie Laurent", "text": "I had chronic migraines for years and lived on painkillers. After treating the root cause in my cervical spine, the migraines are almost completely gone. Life-changing.", "rating": 5 },
+      { "name": "Ravi Patel", "text": "Rotator cuff pain made it impossible to sleep. Dr. Jahani identified the nerve impingement and treated it directly. I was sleeping through the night again within two weeks.", "rating": 5 },
+      { "name": "Emma Visser", "text": "I came in after a rear-end car accident with whiplash. The gentle, phased approach — starting with acupuncture before any manipulation — was exactly what I needed. Very professional.", "rating": 5 }
     ],
     "faqLabel": "FAQ",
     "faqH2": "Frequently Asked Questions",
@@ -145,7 +152,14 @@
     "footerContact": "Contact",
     "footerHours": ["Mon – Fri: 10:00 – 17:00", "Sat: 10:00 – 14:00"],
     "footerCopy": "© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.",
-    "footerLegal": "Privacy Policy · Terms of Service"
+    "footerLegal": "Privacy Policy · Terms of Service",
+    "heroRating": "4.9",
+    "heroReviewLabel": "120+ Google Reviews",
+    "heroReviews": [
+      { "name": "Marieke van den Berg", "condition": "Chronic lower back pain", "text": "After just four sessions with Dr. Jahani I felt like a different person. Two years of pain — gone.", "rating": 5 },
+      { "name": "David Okonkwo", "condition": "Neck pain + herniated disc", "text": "I had been to two other clinics with no results. The combination of chiropractic and acupuncture made an enormous difference.", "rating": 5 },
+      { "name": "Lisa Fontaine", "condition": "Pregnancy-related back pain", "text": "Treated with great care throughout my pregnancy. Professional, warm, and genuinely invested in your recovery.", "rating": 5 }
+    ]
   },
 
   "nl": {
@@ -239,10 +253,17 @@
     ],
     "testimonialsLabel": "Patiëntbeoordelingen",
     "testimonialsH2": "Wat onze patiënten zeggen",
+    "reviewCount": "120+",
     "testimonials": [
       { "name": "Marieke van den Berg", "text": "Ik had bijna twee jaar lang last van lage rugpijn. Na slechts vier sessies bij Dr. Jahani voelde ik me als herboren. Hij neemt echt de tijd om uit te leggen wat er aan de hand is en waarom.", "rating": 5 },
       { "name": "David Okonkwo", "text": "De combinatie van chiropractische behandeling en acupunctuur heeft een enorm verschil gemaakt voor mijn nekpijn. Ik was al bij twee andere klinieken geweest zonder resultaat. Een echte aanrader.", "rating": 5 },
-      { "name": "Lisa Fontaine", "text": "Ik kwam hier vanwege rugpijn gerelateerd aan mijn zwangerschap en werd gedurende mijn hele behandeling met grote zorg behandeld. Het team is professioneel, vriendelijk en oprecht betrokken bij je herstel.", "rating": 5 }
+      { "name": "Lisa Fontaine", "text": "Ik kwam hier vanwege rugpijn gerelateerd aan mijn zwangerschap en werd gedurende mijn hele behandeling met grote zorg behandeld. Het team is professioneel, vriendelijk en oprecht betrokken bij je herstel.", "rating": 5 },
+      { "name": "Thomas Hendriks", "text": "Ernstige ischias zorgde ervoor dat ik niet kon zitten of rijden. Dankzij de combinatie van acupunctuur en wervelcorrectie van Dr. Jahani was ik binnen drie weken weer aan het werk. Werkelijk uitstekend.", "rating": 5 },
+      { "name": "Anna de Vries", "text": "Na een MRI die een hernia bevestigde, zei mijn huisarts dat een operatie misschien de enige optie was. Dr. Jahani dacht er anders over — en hij had gelijk. Na zes sessies ben ik pijnvrij.", "rating": 5 },
+      { "name": "Pieter Bakker", "text": "Als wielrenner vraag ik veel van mijn lichaam. Dr. Jahani behandelde mijn schouder sneller dan welke fysiotherapeut ook. De orthesen die hij voorschreef hebben ook mijn houding enorm verbeterd.", "rating": 5 },
+      { "name": "Sophie Laurent", "text": "Ik had jarenlang chronische migraine en leefde op pijnstillers. Na behandeling van de oorzaak in mijn cervicale wervelkolom zijn de migraines bijna volledig verdwenen. Levensveranderend.", "rating": 5 },
+      { "name": "Ravi Patel", "text": "Pijn aan mijn rotator cuff maakte slapen onmogelijk. Dr. Jahani stelde de zenuwbeknelling vast en behandelde die direct. Binnen twee weken sliep ik weer de hele nacht door.", "rating": 5 },
+      { "name": "Emma Visser", "text": "Ik kwam binnen na een kop-staartbotsing met whiplash. De voorzichtige, gefaseerde aanpak — eerst acupunctuur, dan pas manipulatie — was precies wat ik nodig had. Zeer professioneel.", "rating": 5 }
     ],
     "faqLabel": "Veelgestelde vragen",
     "faqH2": "Veelgestelde vragen",
@@ -294,6 +315,13 @@
     "footerContact": "Contact",
     "footerHours": ["Maandag t/m vrijdag: 10:00 – 17:00", "Zaterdag: 10:00 – 14:00"],
     "footerCopy": "© 2026 Health4Life Chiropractie Amsterdam. Alle rechten voorbehouden.",
-    "footerLegal": "Privacybeleid · Gebruiksvoorwaarden"
+    "footerLegal": "Privacybeleid · Gebruiksvoorwaarden",
+    "heroRating": "4.9",
+    "heroReviewLabel": "120+ Google Beoordelingen",
+    "heroReviews": [
+      { "name": "Marieke van den Berg", "condition": "Chronische lage rugpijn", "text": "Na slechts vier sessies bij dr. Jahani voelde ik me een ander mens. Twee jaar pijn — verdwenen.", "rating": 5 },
+      { "name": "David Okonkwo", "condition": "Nekpijn + hernia", "text": "Ik was bij twee andere klinieken geweest zonder resultaat. De combinatie van chiropractie en acupunctuur maakte een enorm verschil.", "rating": 5 },
+      { "name": "Lisa Fontaine", "condition": "Zwangerschapsgerelateerde rugpijn", "text": "Met grote zorg behandeld gedurende mijn zwangerschap. Professioneel, warm en oprecht betrokken bij mijn herstel.", "rating": 5 }
+    ]
   }
 }
