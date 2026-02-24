@@ -1,7 +1,12 @@
 import { config, collection, singleton, fields } from '@keystatic/core';
 
 export default config({
-  storage: { kind: 'local' },
+  storage: {
+    kind: 'cloud',
+  },
+  cloud: {
+    project: 'health4-life/amsterdamchiro',
+  },
 
   ui: {
     brand: { name: 'Health4Life CMS' },
