@@ -145,6 +145,7 @@ export default config({
           conditionsH2: fields.text({ label: 'Conditions heading' }),
           conditionsDesc: fields.text({ label: 'Conditions description', multiline: true }),
           conditionsClick: fields.text({ label: 'Conditions click prompt' }),
+          conditionsNote: fields.text({ label: 'Conditions note (below grid)', multiline: true }),
           approachLabel: fields.text({ label: 'Approach label' }),
           approachH2: fields.text({ label: 'Approach heading' }),
           approachDesc: fields.text({ label: 'Approach description', multiline: true }),
@@ -152,6 +153,7 @@ export default config({
             fields.object({ step: fields.text({ label: 'Step' }), title: fields.text({ label: 'Title' }), desc: fields.text({ label: 'Description', multiline: true }) }),
             { label: 'Phases (3)', itemLabel: (p) => p.fields.title.value }
           ),
+          phasesNote: fields.text({ label: 'Phases note (below phases)', multiline: true }),
           phaseLabel: fields.text({ label: 'Phase label' }),
           firstVisitLabel: fields.text({ label: 'First visit label' }),
           firstVisitH2: fields.text({ label: 'First visit heading' }),
@@ -168,6 +170,7 @@ export default config({
             fields.object({ treatment: fields.text({ label: 'Treatment' }), price: fields.text({ label: 'Price' }) }),
             { label: 'Pricing rows', itemLabel: (p) => p.fields.treatment.value }
           ),
+          pricingPackageNote: fields.text({ label: 'Pricing package note', multiline: true }),
           paymentNote: fields.text({ label: 'Payment note', multiline: true }),
           insuranceH3: fields.text({ label: 'Insurance heading' }),
           insuranceP1: fields.text({ label: 'Insurance paragraph 1', multiline: true }),
@@ -228,6 +231,12 @@ export default config({
           footerHours: fields.array(fields.text({ label: 'Hours line' }), { label: 'Opening hours (2 lines)', itemLabel: (p) => String(p.value) }),
           footerCopy: fields.text({ label: 'Copyright text' }),
           footerLegal: fields.text({ label: 'Privacy / Legal text' }),
+          heroRating: fields.text({ label: 'Hero rating (e.g. 4.8)' }),
+          heroReviewLabel: fields.text({ label: 'Hero review label (e.g. 330+ Google Reviews)' }),
+          heroReviews: fields.array(
+            fields.object({ name: fields.text({ label: 'Name' }), condition: fields.text({ label: 'Condition' }), text: fields.text({ label: 'Review text', multiline: true }), rating: fields.integer({ label: 'Rating (1-5)' }) }),
+            { label: 'Hero reviews (3)', itemLabel: (p) => p.fields.name.value }
+          ),
         }, { label: 'English (EN)' }),
 
         nl: fields.object({
@@ -253,6 +262,7 @@ export default config({
           conditionsH2: fields.text({ label: 'Klachten koptekst' }),
           conditionsDesc: fields.text({ label: 'Klachten beschrijving', multiline: true }),
           conditionsClick: fields.text({ label: 'Klachten klik prompt' }),
+          conditionsNote: fields.text({ label: 'Klachten noot (onder grid)', multiline: true }),
           approachLabel: fields.text({ label: 'Aanpak label' }),
           approachH2: fields.text({ label: 'Aanpak koptekst' }),
           approachDesc: fields.text({ label: 'Aanpak beschrijving', multiline: true }),
@@ -260,6 +270,7 @@ export default config({
             fields.object({ step: fields.text({ label: 'Stap' }), title: fields.text({ label: 'Titel' }), desc: fields.text({ label: 'Beschrijving', multiline: true }) }),
             { label: 'Fasen (3)', itemLabel: (p) => p.fields.title.value }
           ),
+          phasesNote: fields.text({ label: 'Fasen noot (onder fasen)', multiline: true }),
           phaseLabel: fields.text({ label: 'Fase label' }),
           firstVisitLabel: fields.text({ label: 'Eerste bezoek label' }),
           firstVisitH2: fields.text({ label: 'Eerste bezoek koptekst' }),
@@ -276,6 +287,7 @@ export default config({
             fields.object({ treatment: fields.text({ label: 'Behandeling' }), price: fields.text({ label: 'Prijs' }) }),
             { label: 'Tariefregels', itemLabel: (p) => p.fields.treatment.value }
           ),
+          pricingPackageNote: fields.text({ label: 'Tarieven pakket noot', multiline: true }),
           paymentNote: fields.text({ label: 'Betalingsnoot', multiline: true }),
           insuranceH3: fields.text({ label: 'Verzekering koptekst' }),
           insuranceP1: fields.text({ label: 'Verzekering paragraaf 1', multiline: true }),
@@ -336,6 +348,12 @@ export default config({
           footerHours: fields.array(fields.text({ label: 'Openingstijden regel' }), { label: 'Openingstijden (2 regels)', itemLabel: (p) => String(p.value) }),
           footerCopy: fields.text({ label: 'Copyright tekst' }),
           footerLegal: fields.text({ label: 'Privacy / Juridische tekst' }),
+          heroRating: fields.text({ label: 'Hero beoordeling (bijv. 4.9)' }),
+          heroReviewLabel: fields.text({ label: 'Hero review label (bijv. 120+ Google Beoordelingen)' }),
+          heroReviews: fields.array(
+            fields.object({ name: fields.text({ label: 'Naam' }), condition: fields.text({ label: 'Aandoening' }), text: fields.text({ label: 'Review tekst', multiline: true }), rating: fields.integer({ label: 'Beoordeling (1-5)' }) }),
+            { label: 'Hero reviews (3)', itemLabel: (p) => p.fields.name.value }
+          ),
         }, { label: 'Nederlands (NL)' }),
       },
     }),
