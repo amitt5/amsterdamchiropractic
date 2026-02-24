@@ -11,10 +11,10 @@ export default function Navigation() {
 
   const t = {
     en: {
-      book: navContent.en_book,
-      thisPage: navContent.en_thisPage,
-      conditionsLabel: navContent.en_conditionsLabel,
-      moreLabel: navContent.en_moreLabel,
+      book: navContent.en.book,
+      thisPage: navContent.en.thisPage,
+      conditionsLabel: navContent.en.conditionsLabel,
+      moreLabel: navContent.en.moreLabel,
       mainNav: [
         { label: 'Services', href: '/#services' },
         { label: 'Approach', href: '/#approach' },
@@ -49,10 +49,10 @@ export default function Navigation() {
       ],
     },
     nl: {
-      book: navContent.nl_book,
-      thisPage: navContent.nl_thisPage,
-      conditionsLabel: navContent.nl_conditionsLabel,
-      moreLabel: navContent.nl_moreLabel,
+      book: navContent.nl.book,
+      thisPage: navContent.nl.thisPage,
+      conditionsLabel: navContent.nl.conditionsLabel,
+      moreLabel: navContent.nl.moreLabel,
       mainNav: [
         { label: 'Diensten', href: '/#services' },
         { label: 'Aanpak', href: '/#approach' },

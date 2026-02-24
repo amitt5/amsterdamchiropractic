@@ -9,8 +9,8 @@ export default function Footer() {
 
   const t = {
     en: {
-      tagline: footerContent.en_tagline,
-      treatmentLabel: footerContent.en_treatmentLabel,
+      tagline: footerContent.en.tagline,
+      treatmentLabel: footerContent.en.treatmentLabel,
       treatment: [
         { label: 'Conditions', href: '/klachten' },
         { label: 'Treatment', href: '/behandeling' },
@@ -18,7 +18,7 @@ export default function Footer() {
         { label: 'Physio-Chiro Therapy', href: '/fysio-chiro-gecombineerde-therapie' },
         { label: 'Rates & Insurance', href: '/behandeling/tarieven-vergoedingen' },
       ],
-      infoLabel: footerContent.en_infoLabel,
+      infoLabel: footerContent.en.infoLabel,
       info: [
         { label: 'About Us', href: '/about' },
         { label: 'Meet Dr. Jahani', href: '/about/meet-your-doctor' },
@@ -27,14 +27,14 @@ export default function Footer() {
         { label: 'Office Hours', href: '/office-hours' },
         { label: 'Vacancies', href: '/vacatures' },
       ],
-      contactLabel: footerContent.en_contactLabel,
-      hours: [footerContent.en_hours1, footerContent.en_hours2],
-      rights: footerContent.en_rights,
-      legal: footerContent.en_legal,
+      contactLabel: footerContent.en.contactLabel,
+      hours: [footerContent.en.hours1, footerContent.en.hours2],
+      rights: footerContent.en.rights,
+      legal: footerContent.en.legal,
     },
     nl: {
-      tagline: footerContent.nl_tagline,
-      treatmentLabel: footerContent.nl_treatmentLabel,
+      tagline: footerContent.nl.tagline,
+      treatmentLabel: footerContent.nl.treatmentLabel,
       treatment: [
         { label: 'Klachten', href: '/klachten' },
         { label: 'Behandeling', href: '/behandeling' },
@@ -42,7 +42,7 @@ export default function Footer() {
         { label: 'Fysio-Chiro Therapie', href: '/fysio-chiro-gecombineerde-therapie' },
         { label: 'Tarieven & Vergoedingen', href: '/behandeling/tarieven-vergoedingen' },
       ],
-      infoLabel: footerContent.nl_infoLabel,
+      infoLabel: footerContent.nl.infoLabel,
       info: [
         { label: 'Over Ons', href: '/about' },
         { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
@@ -51,10 +51,10 @@ export default function Footer() {
         { label: 'Openingstijden', href: '/office-hours' },
         { label: 'Vacatures', href: '/vacatures' },
       ],
-      contactLabel: footerContent.nl_contactLabel,
-      hours: [footerContent.nl_hours1, footerContent.nl_hours2],
-      rights: footerContent.nl_rights,
-      legal: footerContent.nl_legal,
+      contactLabel: footerContent.nl.contactLabel,
+      hours: [footerContent.nl.hours1, footerContent.nl.hours2],
+      rights: footerContent.nl.rights,
+      legal: footerContent.nl.legal,
     },
   };
 

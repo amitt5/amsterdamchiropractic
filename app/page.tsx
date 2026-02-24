@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ChiroVoiceBot } from '@/components/voice-bot';
 import Navigation from '@/components/navigation';
 import { useLanguage } from '@/contexts/language-context';
+import homepageContent from '@/content/homepage.json';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -468,294 +469,8 @@ export default function ChiroPage() {
   const [showVoiceBot, setShowVoiceBot] = useState(false);
   const [selectedCondition, setSelectedCondition] = useState<string | null>(null);
 
-  const t = {
-    en: {
-      // Hero
-      badge: 'Amsterdam South · Since 2010',
-      h1: ['Stop Pain.', 'Restore ', 'Mobility.', 'Reclaim Life.'],
-      heroSub: "Amsterdam's chiropractic specialist and pain management clinic. If you have back pain, neck pain or headaches — call or text us today and stop pain immediately.",
-      bookBtn: 'Book an Appointment',
-      callBtn: 'Call 020-673 1800',
-      aiBtn: 'Talk to Our AI',
-      stats: [['15+', 'Years in Amsterdam'], ['5', 'Treatments Offered'], ['100%', 'Personalized Care']],
-      // Services
-      servicesLabel: 'What We Offer',
-      servicesH2: 'Comprehensive Pain Management & Care',
-      services: [
-        { title: 'Neuro-Based Spinal Adjustment', desc: 'Precision chiropractic corrections that decrease pain, restore mobility, and kick-start your recovery from the very first session.' },
-        { title: 'Medical Acupuncture', desc: 'Targeted needle therapy to reduce inflammation, relieve deep muscle pain, and prepare your body for optimal chiropractic results.' },
-        { title: 'Therapeutic Massage', desc: 'Deep-tissue or relaxation massage to release tension, improve circulation, and help your body unwind after a long working day.' },
-        { title: 'Custom Foot Orthotics', desc: 'Foot Levelers orthotics crafted specifically for your feet — delivering superior comfort, support, and full-body alignment correction.' },
-      ],
-      comboTitle: 'Physio-Chiro Combined Therapy',
-      comboDesc: 'An integrated approach combining physiotherapy and chiropractic techniques for complex or persistent conditions.',
-      // Conditions
-      conditionsLabel: 'Conditions Treated',
-      conditionsH2: 'We Specialise in Treating',
-      conditionsDesc: 'From sudden injuries to long-standing chronic pain, Dr. Jahani has the expertise and experience to help you recover fully.',
-      conditionsClick: '↓ Click a condition for more information',
-      // Approach
-      approachLabel: 'Our Method',
-      approachH2: 'The Three-Phase Care Model',
-      approachDesc: "We don't just treat the symptom. Our structured approach ensures you get better — and stay better.",
-      phases: [
-        { step: '01', title: 'Relief Care', desc: 'We focus on reducing your pain as quickly as possible so you can function and sleep normally again.' },
-        { step: '02', title: 'Corrective Care', desc: 'Once pain is under control, we correct underlying structural issues to prevent recurring problems.' },
-        { step: '03', title: 'Wellness Care', desc: 'Ongoing maintenance to keep your spine healthy, your body resilient, and your quality of life high.' },
-      ],
-      phaseLabel: 'Phase',
-      // First Visit
-      firstVisitLabel: 'New Patient Info',
-      firstVisitH2: 'Your First Visit',
-      firstVisitDesc: "We understand visiting a chiropractor for the first time can raise questions. Here's exactly what happens during your first appointment.",
-      firstVisitSteps: [
-        { step: '1', title: 'Patient Forms', desc: 'Complete health history and condition intake forms upon arrival.' },
-        { step: '2', title: 'Consultation', desc: 'Discuss health problems, concerns, and treatment goals with Dr. Jahani. The first visit is about understanding your condition and what you want to achieve.' },
-        { step: '3', title: 'Examination', desc: 'Full chiropractic exam including reflex and flexibility testing, plus neurological, orthopedic, postural, and physical assessments. Nothing is done without your consent.' },
-        { step: '4', title: 'X-Ray Studies', desc: 'If needed based on your condition, X-rays are taken to develop the most effective treatment plan and check for serious spinal conditions.' },
-        { step: '5', title: 'Report of Findings', desc: 'Dr. Jahani provides a full report covering: How can he help you? How often will you need to come in? What will the cost be?' },
-        { step: '6', title: 'Treatment', desc: 'At the end of the first visit, you can choose to start your first treatment: spinal adjustment, physical therapy, and/or soft tissue massage.' },
-        { step: '7', title: 'Wellness Program', desc: 'Before leaving, Dr. Jahani will suggest a home wellness program which may include: ice/heat instructions, activities to avoid, and home exercises or stretches.' },
-      ],
-      // Pricing
-      pricingLabel: 'Rates / Reimbursements',
-      pricingH2: 'Transparent Pricing',
-      pricingDesc: 'Clear, upfront pricing for all services. Payment is due after each visit (cash or card). We provide receipts for insurance reimbursement.',
-      pricingHeaders: ['Treatment', 'Price'],
-      pricingRows: [
-        ['First Consultation Adult (incl. medical acupuncture + first spinal correction)', '€ 160'],
-        ['First Consultation Children up to 12 years old', '€ 110'],
-        ['Follow-up Chiropractic Consultation', '€ 80'],
-        ['Extensive Consultation Chiropractic + Medical Acupuncture', '€ 130'],
-        ['Deep Tissue Therapy / Massage 30 min', '€ 70'],
-        ['Deep Tissue Therapy / Massage 60 min', '€ 120'],
-        ['Orthopedic Insoles (Custom Orthotics)', '€ 480'],
-        ['Orthopedic Back Vitalizer', '€ 120'],
-        ['Orthopedic Water Core Pillow', '€ 150'],
-        ['Orthopedic Air Cushion (Neck/Back)', '€ 150'],
-        ['High-tech Foot Scan incl. advice', '€ 120'],
-        ['Treatment Plan Cancellation Costs', '€ 150'],
-      ],
-      paymentNote: 'Payment: The amount due will be settled after each visit. Payment can be made by cash or debit card. You can submit the receipt to your insurance company.',
-      insuranceH3: 'Reimbursements / Insurance Coverage',
-      insuranceP1: 'Nearly all health insurers include chiropractic care in their supplementary packages. The requirement is that the chiropractor is a member of a professional association (NCA) and registered with the Dutch Chiropractic Foundation (SCN). Most insurers classify chiropractic care as "alternative medicine" or "movement therapy."',
-      insuranceP2: 'Health4Life is fully registered with NCA and SCN, meeting all insurer requirements.',
-      insuranceLinkPre: 'For a complete list of insurers:',
-      insuranceLink: 'www.chiropractievergoeding.nl',
-      // CTA
-      ctaH2: 'Ready to Stop Living with Pain?',
-      ctaP: 'Call or text us today. We will assess your condition, explain your treatment options clearly, and get you started on the path to recovery — without the jargon.',
-      ctaBook: 'Book Online',
-      ctaCall: 'Call 020-673 1800',
-      // About
-      aboutLabel: 'Meet Your Chiropractor',
-      aboutH2: 'Dr. M. Jahani',
-      aboutSubtitle: 'DC, B.Sc. Biochemistry · Canadian Chiropractor',
-      aboutP1: 'Dr. Jahani earned his Bachelor of Science in Biochemistry from York University, Toronto (1999), followed by his Doctor of Chiropractic degree from the New York Chiropractic College (2003). He founded Health4Life Chiropractic in Amsterdam South in 2010.',
-      aboutP2: 'With over two decades of clinical experience, Dr. Jahani specializes in neuro-based spinal correction combined with medical acupuncture and soft-tissue therapy — an integrated approach that consistently delivers results where other treatments have failed.',
-      aboutStats: [['2003', 'Doctor of Chiropractic'], ['2010', 'Founded in Amsterdam'], ['15+', 'Years of Local Experience'], ['5', 'Treatment Modalities']],
-      // Testimonials
-      testimonialsLabel: 'Patient Reviews',
-      testimonialsH2: 'What Our Patients Say',
-      testimonials: [
-        { name: 'Marieke van den Berg', text: 'I had lower back pain for almost two years. After just four sessions with Dr. Jahani I felt like a different person. He really takes the time to explain what is happening and why.', rating: 5 },
-        { name: 'David Okonkwo', text: 'The combination of chiropractic adjustment and acupuncture made an enormous difference for my neck pain. I had been to two other clinics with no results. Highly recommended.', rating: 5 },
-        { name: 'Lisa Fontaine', text: 'I came in for pregnancy-related back pain and was treated with great care throughout. The team is professional, warm, and genuinely invested in your recovery.', rating: 5 },
-      ],
-      // FAQ
-      faqLabel: 'FAQ',
-      faqH2: 'Frequently Asked Questions',
-      faqs: [
-        { q: 'Does chiropractic treatment hurt?', a: 'Most patients experience little to no discomfort during an adjustment. You may hear a popping sound — this is simply gas releasing from the joint, similar to cracking your knuckles. Some mild soreness after the first few sessions is normal and typically passes within 24 hours.' },
-        { q: 'How many sessions will I need?', a: 'This depends on your condition. After the first visit, Dr. Jahani will give you a clear treatment plan with an estimated number of sessions. Most acute conditions improve significantly within 4–8 sessions.' },
-        { q: 'Do I need a referral from my GP?', a: 'No. You can book directly without a GP referral.' },
-        { q: 'What is the difference between neuro-based chiropractic and regular chiropractic?', a: 'Neuro-based chiropractic focuses on the relationship between spinal alignment and the nervous system. Rather than just treating symptoms, it targets the root neurological cause of pain and dysfunction for more lasting results.' },
-        { q: 'Do you treat children and infants?', a: 'Yes. Dr. Jahani has experience treating infants and children. The first consultation for children under 12 is €110. Techniques used for younger patients are gentle and specifically adapted.' },
-        { q: 'Is chiropractic covered by Dutch health insurance?', a: 'Almost all Dutch supplemental health insurance plans (aanvullende verzekering) cover chiropractic. Health4Life is registered with the NCA and SCN, which are required by most insurers. Check your policy or visit chiropractievergoeding.nl.' },
-      ],
-      // Booking
-      bookingLabel: 'Book Online',
-      bookingH2: 'Schedule Your Appointment',
-      bookingDesc: 'Pick a date and time that works for you. We will confirm your booking within a few hours by phone or email.',
-      bookingInfo: [
-        { label: 'Address', value: 'Maasstraat 103, 1078 HH Amsterdam' },
-        { label: 'Phone', value: '020-673 1800' },
-        { label: 'WhatsApp', value: '06-1882-0000' },
-        { label: 'Email', value: 'health4life@amsterdamchiropractic.com' },
-        { label: 'Hours', value: 'Mon – Fri 10:00 – 17:00 · Sat 10:00 – 14:00' },
-      ],
-      // Voice bot
-      aiFloat: 'Talk to Our AI',
-      // Modal
-      modalWhat: 'What is it?',
-      modalHow: 'How does chiropractic help?',
-      modalCta: (title: string) => `Do you suffer from ${title.toLowerCase()}?`,
-      modalBook: 'Book an appointment',
-      modalCall: 'Call 020-673 1800',
-      // Footer
-      footerTagline: 'Chiropractic Specialist and Pain Management Clinic in Amsterdam South. Serving patients since 2010.',
-      footerQuickLinks: 'Quick Links',
-      footerQuickLinksItems: [['services', 'Services'], ['approach', 'Our Approach'], ['pricing', 'Pricing'], ['about', 'About Dr. Jahani'], ['testimonials', 'Reviews'], ['faq', 'FAQ'], ['booking', 'Book Appointment']],
-      footerNewPatient: 'New Patient Center',
-      footerNewPatientItems: [
-        ['/patient-forms', 'Patient Forms'],
-        ['/office-tour', 'Virtual Office Tour'],
-        ['/techniques', 'Techniques'],
-        ['/health-resources', 'Health Resources'],
-        ['/wellness-partners', 'Wellness Partners'],
-        ['/videos', 'Videos'],
-        ['/vacatures', 'Vacancies'],
-      ],
-      footerContact: 'Contact',
-      footerHours: ['Mon – Fri: 10:00 – 17:00', 'Sat: 10:00 – 14:00'],
-      footerCopy: '© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.',
-      footerLegal: 'Privacy Policy · Terms of Service',
-    },
-    nl: {
-      // Hero
-      badge: 'Amsterdam Zuid · Sinds 2010',
-      h1: ['Stop de pijn.', 'Herstel ', 'Mobiliteit.', 'Pak je leven terug.'],
-      heroSub: 'Dé chiropractie- en pijnkliniek van Amsterdam. Heeft u last van rugpijn, nekpijn of hoofdpijn? Bel of app ons vandaag nog en verlicht uw pijn direct.',
-      bookBtn: 'Maak een afspraak',
-      callBtn: 'Bel 020-673 1800',
-      aiBtn: 'Praat met onze AI',
-      stats: [['15+', 'Jaren in Amsterdam'], ['5', 'Aangeboden behandelingen'], ['100%', 'Persoonlijke zorg']],
-      // Services
-      servicesLabel: 'Wat wij bieden',
-      servicesH2: 'Uitgebreide pijnbestrijding en -zorg',
-      services: [
-        { title: 'Neuro-gebaseerde wervelcorrectie', desc: 'Nauwkeurige chiropractische correcties die pijn verminderen, de mobiliteit herstellen en uw herstel al vanaf de eerste sessie een boost geven.' },
-        { title: 'Medische acupunctuur', desc: 'Gerichte naaldtherapie om ontstekingen te verminderen, diepe spierpijn te verlichten en uw lichaam voor te bereiden op optimale chiropractische resultaten.' },
-        { title: 'Therapeutische massage', desc: 'Diepweefselmassage of ontspanningsmassage om spanning te verlichten, de bloedsomloop te verbeteren en uw lichaam te helpen ontspannen na een lange werkdag.' },
-        { title: 'Voetorthesen op maat', desc: 'Foot Levelers orthopedische inlegzolen zijn speciaal ontworpen voor uw voeten en bieden superieur comfort, ondersteuning en correctie van de lichaamshouding.' },
-      ],
-      comboTitle: 'Fysio-Chiropractie gecombineerde therapie',
-      comboDesc: 'Een geïntegreerde aanpak die fysiotherapie en chiropractie combineert voor complexe of chronische aandoeningen.',
-      // Conditions
-      conditionsLabel: 'Behandelde aandoeningen',
-      conditionsH2: 'Wij zijn gespecialiseerd in de behandeling van',
-      conditionsDesc: 'Van acute blessures tot langdurige chronische pijn, dr. Jahani beschikt over de expertise en ervaring om u te helpen volledig te herstellen.',
-      conditionsClick: '↓ Klik op een aandoening voor meer informatie',
-      // Approach
-      approachLabel: 'Onze methode',
-      approachH2: 'Het driefasen zorgmodel',
-      approachDesc: 'Wij behandelen niet alleen de symptomen. Onze gestructureerde aanpak zorgt ervoor dat u beter wordt – en beter blijft.',
-      phases: [
-        { step: '01', title: 'Hulpverlening', desc: 'Wij richten ons erop uw pijn zo snel mogelijk te verlichten, zodat u weer normaal kunt functioneren en slapen.' },
-        { step: '02', title: 'Corrigerende zorg', desc: 'Zodra de pijn onder controle is, corrigeren we onderliggende structurele problemen om terugkerende klachten te voorkomen.' },
-        { step: '03', title: 'Welzijnszorg', desc: 'Doorlopend onderhoud om uw wervelkolom gezond te houden, uw lichaam veerkrachtig te maken en uw levenskwaliteit hoog te houden.' },
-      ],
-      phaseLabel: 'Fase',
-      // First Visit
-      firstVisitLabel: 'Informatie voor nieuwe patiënten',
-      firstVisitH2: 'Uw eerste bezoek',
-      firstVisitDesc: 'We begrijpen dat een eerste bezoek aan een chiropractor vragen kan oproepen. Hieronder leggen we precies uit wat er tijdens uw eerste afspraak gebeurt.',
-      firstVisitSteps: [
-        { step: '1', title: 'Patiëntenformulieren', desc: 'Vul bij aankomst de formulieren voor uw gezondheidsgeschiedenis en aandoeningen in.' },
-        { step: '2', title: 'Overleg', desc: 'Bespreek uw gezondheidsproblemen, zorgen en behandeldoelen met Dr. Jahani. Tijdens het eerste consult bespreken we uw aandoening en wat u wilt bereiken.' },
-        { step: '3', title: 'Inspectie', desc: 'Een volledig chiropractisch onderzoek, inclusief reflex- en flexibiliteitstesten, plus neurologische, orthopedische, houdings- en fysieke beoordelingen. Niets wordt gedaan zonder uw toestemming.' },
-        { step: '4', title: 'Röntgenonderzoek', desc: 'Indien nodig worden röntgenfoto\'s gemaakt om het meest effectieve behandelplan op te stellen en te controleren op ernstige aandoeningen van de wervelkolom.' },
-        { step: '5', title: 'Bevindingen', desc: 'Dr. Jahani geeft een volledig overzicht: Hoe kan hij u helpen? Hoe vaak moet u komen? Wat zijn de kosten?' },
-        { step: '6', title: 'Behandeling', desc: 'Aan het einde van het eerste bezoek kunt u kiezen om uw eerste behandeling direct te starten: wervelkolomcorrectie, fysiotherapie en/of weke weefselmassage.' },
-        { step: '7', title: 'Wellnessprogramma', desc: 'Voor u vertrekt suggereert Dr. Jahani een thuiswellnessprogramma dat kan bestaan uit: ijs-/warmte-instructies, activiteiten om te vermijden, en thuisoefeningen of rekoefeningen.' },
-      ],
-      // Pricing
-      pricingLabel: 'Tarieven / Vergoedingen',
-      pricingH2: 'Transparante tarieven',
-      pricingDesc: 'Duidelijke, vooraf bekende tarieven voor alle diensten. Betaling na elk bezoek (contant of pin). Wij verstrekken kwitanties voor zorgverzekeraars.',
-      pricingHeaders: ['Behandeling', 'Prijs'],
-      pricingRows: [
-        ['Eerste Consult Volwassen (incl. medische acupunctuur + eerste wervelkolom correctie)', '€ 160'],
-        ['Eerste Consult Kinderen tot 12 jaar', '€ 110'],
-        ['Vervolg Consult Chiropractie', '€ 80'],
-        ['Uitgebreid Consult Chiropractie + Medische Acupunctuur', '€ 130'],
-        ['Diep Tissue Therapie / Massage 30 min', '€ 70'],
-        ['Diep Tissue Therapie / Massage 60 min', '€ 120'],
-        ['Orthopedische Inlegzolen (Custom Orthotics)', '€ 480'],
-        ['Orthopedische Back Vitalizer', '€ 120'],
-        ['Orthopedische Waterkern Kussen', '€ 150'],
-        ['Orthopedische Luchtkussen (Neck/Rug)', '€ 150'],
-        ['High-tech Voet Scan incl. advies', '€ 120'],
-        ['Behandelplan Opzeggingskosten', '€ 150'],
-      ],
-      paymentNote: 'Betaling: Het verschuldigde bedrag wordt na afloop van elk bezoek vereffend. Betaling mogelijk met contant of pinpas. De kwitantie kunt u indienen bij uw verzekeringsmaatschappij.',
-      insuranceH3: 'Vergoedingen / Verzekeringsdekking',
-      insuranceP1: 'Vrijwel alle ziektekostenverzekeraars hebben chiropractie in hun aanvullende pakket opgenomen. Voorwaarde is dat de chiropractor aangesloten is bij een beroepsvereniging (NCA) en ingeschreven staat bij de Stichting Chiropractie Nederland (SCN). Bij de meeste verzekeraars valt chiropractie onder "alternatieve geneeswijzen" of "beweegzorg".',
-      insuranceP2: 'Health4Life is volledig geregistreerd bij NCA en SCN en voldoet aan alle vereisten van zorgverzekeraars.',
-      insuranceLinkPre: 'Voor een volledige lijst van verzekeraars:',
-      insuranceLink: 'www.chiropractievergoeding.nl',
-      // CTA
-      ctaH2: 'Klaar om te stoppen met pijn?',
-      ctaP: 'Bel of stuur ons vandaag nog. Wij beoordelen uw klacht, leggen uw behandelopties duidelijk uit en zetten u op de weg naar herstel — zonder vakjargon.',
-      ctaBook: 'Online boeken',
-      ctaCall: 'Bel 020-673 1800',
-      // About
-      aboutLabel: 'Uw chiropractor',
-      aboutH2: 'Dr. M. Jahani',
-      aboutSubtitle: 'D.C., B.Sc. Biochemie · Canadese chiropractor',
-      aboutP1: 'Dr. Jahani behaalde zijn Bachelor of Science in Biochemie aan de York University in Toronto (1999), gevolgd door zijn Doctor of Chiropractic diploma aan het New York Chiropractic College (2003). Hij richtte Health4Life Chiropractic op in Amsterdam Zuid in 2010.',
-      aboutP2: 'Met meer dan twee decennia klinische ervaring is Dr. Jahani gespecialiseerd in neuro-gebaseerde wervelkolomcorrectie, gecombineerd met medische acupunctuur en weke weefselpie — een geïntegreerde aanpak die consequent resultaat boekt waar andere behandelingen hebben gefaald.',
-      aboutStats: [['2003', 'Doctor of Chiropractic'], ['2010', 'Opgericht in Amsterdam'], ['15+', 'Jaar lokale ervaring'], ['5', 'Behandelmodaliteiten']],
-      // Testimonials
-      testimonialsLabel: 'Patiëntbeoordelingen',
-      testimonialsH2: 'Wat onze patiënten zeggen',
-      testimonials: [
-        { name: 'Marieke van den Berg', text: 'Ik had bijna twee jaar lang last van lage rugpijn. Na slechts vier sessies bij Dr. Jahani voelde ik me als herboren. Hij neemt echt de tijd om uit te leggen wat er aan de hand is en waarom.', rating: 5 },
-        { name: 'David Okonkwo', text: 'De combinatie van chiropractische behandeling en acupunctuur heeft een enorm verschil gemaakt voor mijn nekpijn. Ik was al bij twee andere klinieken geweest zonder resultaat. Een echte aanrader.', rating: 5 },
-        { name: 'Lisa Fontaine', text: 'Ik kwam hier vanwege rugpijn gerelateerd aan mijn zwangerschap en werd gedurende mijn hele behandeling met grote zorg behandeld. Het team is professioneel, vriendelijk en oprecht betrokken bij je herstel.', rating: 5 },
-      ],
-      // FAQ
-      faqLabel: 'Veelgestelde vragen',
-      faqH2: 'Veelgestelde vragen',
-      faqs: [
-        { q: 'Doet een chiropractische behandeling pijn?', a: 'De meeste patiënten ervaren weinig tot geen ongemak tijdens een correctie. U hoort mogelijk een knappend geluid — dit is gewoon gas dat uit het gewricht vrijkomt, vergelijkbaar met het kraken van uw knokkels. Enige milde spierpijn na de eerste sessies is normaal en verdwijnt doorgaans binnen 24 uur.' },
-        { q: 'Hoeveel sessies heb ik nodig?', a: 'Dit is afhankelijk van uw klacht. Na het eerste bezoek geeft Dr. Jahani u een duidelijk behandelplan met een geschat aantal sessies. De meeste acute klachten verbeteren aanzienlijk binnen 4–8 sessies.' },
-        { q: 'Heb ik een verwijzing van mijn huisarts nodig?', a: 'Nee. U kunt direct boeken zonder verwijzing van een huisarts.' },
-        { q: 'Wat is het verschil tussen neurologische chiropractie en reguliere chiropractie?', a: 'Neurologische chiropractie richt zich op de relatie tussen wervelkolomuitlijning en het zenuwstelsel. In plaats van alleen symptomen te behandelen, pakt het de onderliggende neurologische oorzaak van pijn en disfunctie aan voor meer blijvende resultaten.' },
-        { q: "Behandelt u kinderen en baby's?", a: "Ja. Dr. Jahani heeft ervaring met het behandelen van baby's en kinderen. Het eerste consult voor kinderen onder de 12 jaar bedraagt €110. De technieken die voor jongere patiënten worden gebruikt zijn zacht en specifiek aangepast." },
-        { q: 'Wordt chiropractie vergoed door de Nederlandse zorgverzekering?', a: 'Vrijwel alle Nederlandse aanvullende zorgverzekeringen dekken chiropractie. Health4Life is geregistreerd bij de NCA en SCN, wat vereist is door de meeste verzekeraars. Raadpleeg uw polis of bezoek chiropractievergoeding.nl.' },
-      ],
-      // Booking
-      bookingLabel: 'Boek online',
-      bookingH2: 'Plan uw afspraak',
-      bookingDesc: 'Kies een datum en tijd die u schikt. We bevestigen uw reservering binnen enkele uren telefonisch of per e-mail.',
-      bookingInfo: [
-        { label: 'Adres', value: 'Maasstraat 103, 1078 HH Amsterdam' },
-        { label: 'Telefoon', value: '020-673 1800' },
-        { label: 'WhatsApp', value: '06-1882-0000' },
-        { label: 'E-mail', value: 'health4life@amsterdamchiropractic.com' },
-        { label: 'Uren', value: 'Ma – Vr 10:00 – 17:00 · Za 10:00 – 14:00' },
-      ],
-      // Voice bot
-      aiFloat: 'Praat met onze AI',
-      // Modal
-      modalWhat: 'Wat is het?',
-      modalHow: 'Hoe helpt chiropractie?',
-      modalCta: (title: string) => `Heeft u last van ${title.toLowerCase()}?`,
-      modalBook: 'Maak een afspraak',
-      modalCall: 'Bel 020-673 1800',
-      // Footer
-      footerTagline: 'Chiropractiespecialist en pijnkliniek in Amsterdam Zuid. Wij behandelen patiënten sinds 2010.',
-      footerQuickLinks: 'Snelle links',
-      footerQuickLinksItems: [['services', 'Diensten'], ['approach', 'Onze aanpak'], ['pricing', 'Prijzen'], ['about', 'Over Dr. Jahani'], ['testimonials', 'Recensies'], ['faq', 'Veelgestelde vragen'], ['booking', 'Maak een afspraak']],
-      footerNewPatient: 'Nieuw patiëntencentrum',
-      footerNewPatientItems: [
-        ['/patient-forms', 'Patiëntenformulieren'],
-        ['/office-tour', 'Virtuele rondleiding'],
-        ['/techniques', 'Technieken'],
-        ['/health-resources', 'Gezondheidsbronnen'],
-        ['/wellness-partners', 'Wellness Partners'],
-        ['/videos', "Video's"],
-        ['/vacatures', 'Vacatures'],
-      ],
-      footerContact: 'Contact',
-      footerHours: ['Maandag t/m vrijdag: 10:00 – 17:00', 'Zaterdag: 10:00 – 14:00'],
-      footerCopy: '© 2026 Health4Life Chiropractie Amsterdam. Alle rechten voorbehouden.',
-      footerLegal: 'Privacybeleid · Gebruiksvoorwaarden',
-    },
-  };
+  const c = homepageContent[language];
 
-  const c = t[language];
   const svgIcons = [
     <svg key="neuro" viewBox="0 0 48 48" fill="none" className="w-10 h-10"><circle cx="24" cy="24" r="22" stroke="#45321A" strokeWidth="2" /><path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="#45321A" strokeWidth="2" strokeLinecap="round" /><circle cx="24" cy="24" r="3" fill="#45321A" /></svg>,
     <svg key="acu" viewBox="0 0 48 48" fill="none" className="w-10 h-10"><path d="M14 10c2 6 4 10 4 18M20 10c1 8 2 12 2 18M26 28c0-6 1-10 2-18M32 28c0-8 2-12 4-18" stroke="#45321A" strokeWidth="2" strokeLinecap="round" /><rect x="10" y="26" width="28" height="4" rx="2" fill="#45321A" fillOpacity=".15" stroke="#45321A" strokeWidth="1.5" /></svg>,
@@ -801,7 +516,7 @@ export default function ChiroPage() {
               </button>
             </div>
             <div className="mt-12 flex gap-10">
-              {c.stats.map(([num, label]) => (
+              {c.stats.map(({value: num, label}) => (
                 <div key={label}>
                   <div className="text-2xl font-extrabold text-[#c9a96e]">{num}</div>
                   <div className="text-xs text-white/70 font-medium mt-0.5">{label}</div>
@@ -928,7 +643,7 @@ export default function ChiroPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#45321A]/10">
-                  {c.pricingRows.map(([treatment, price]) => (
+                  {c.pricingRows.map(({treatment, price}) => (
                     <tr key={treatment} className="hover:bg-[#45321A]/5 transition-colors">
                       <td className="px-6 py-4 text-[#403F3F] text-sm">{treatment}</td>
                       <td className="px-6 py-4 text-right text-[#191919] font-bold text-sm">{price}</td>
@@ -991,7 +706,7 @@ export default function ChiroPage() {
             <p className="text-[#403F3F] leading-relaxed mb-4">{c.aboutP1}</p>
             <p className="text-[#403F3F] leading-relaxed mb-6">{c.aboutP2}</p>
             <div className="grid grid-cols-2 gap-5">
-              {c.aboutStats.map(([n, l]) => (
+              {c.aboutStats.map(({value: n, label: l}) => (
                 <div key={l} className="bg-[#F6F6F6] rounded-xl p-5">
                   <div className="text-2xl font-extrabold text-[#45321A]">{n}</div>
                   <div className="text-xs text-[#403F3F] font-medium mt-1">{l}</div>
@@ -1131,7 +846,7 @@ export default function ChiroPage() {
                 <p className="text-[#403F3F] leading-relaxed text-sm">{condContent.how}</p>
               </div>
               <div className="bg-[#F6F6F6] rounded-xl px-6 py-6 mt-6">
-                <p className="text-[#403F3F] text-sm mb-4 text-center">{c.modalCta(condContent.title)}</p>
+                <p className="text-[#403F3F] text-sm mb-4 text-center">{c.modalCta.replace('{title}', condContent.title.toLowerCase())}</p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a href="#booking" onClick={() => setSelectedCondition(null)} className="bg-[#45321A] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#5a4228] transition-colors text-center text-sm">{c.modalBook}</a>
                   <a href="tel:0206731800" className="border-2 border-[#45321A] text-[#45321A] font-semibold px-6 py-3 rounded-full hover:bg-[#45321A]/5 transition-colors text-center text-sm">{c.modalCall}</a>
@@ -1160,7 +875,7 @@ export default function ChiroPage() {
           <div>
             <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.footerQuickLinks}</div>
             <ul className="space-y-2.5 text-sm text-white/60">
-              {c.footerQuickLinksItems.map(([href, label]) => (
+              {c.footerQuickLinksItems.map(({anchor: href, label}) => (
                 <li key={href}><a href={`#${href}`} className="hover:text-white transition-colors">{label}</a></li>
               ))}
             </ul>
@@ -1168,7 +883,7 @@ export default function ChiroPage() {
           <div>
             <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.footerNewPatient}</div>
             <ul className="space-y-2.5 text-sm text-white/60">
-              {c.footerNewPatientItems.map(([href, label]) => (
+              {c.footerNewPatientItems.map(({href, label}) => (
                 <li key={href}><Link href={href} className="hover:text-white transition-colors">{label}</Link></li>
               ))}
             </ul>
