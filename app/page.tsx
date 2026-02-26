@@ -719,7 +719,8 @@ export default function ChiroPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#45321A]/10">
-                  {c.pricingRows.map(({treatment, price}) => (
+                  {/* Rows 5–12 commented out — only first 4 shown */}
+                  {c.pricingRows.slice(0, 4).map(({treatment, price}) => (
                     <tr key={treatment} className="hover:bg-[#45321A]/5 transition-colors">
                       <td className="px-6 py-4 text-[#403F3F] text-sm">{treatment}</td>
                       <td className="px-6 py-4 text-right text-[#191919] font-bold text-sm">{price}</td>
