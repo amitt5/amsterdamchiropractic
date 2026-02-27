@@ -3,6 +3,7 @@
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChiroVoiceBot } from '@/components/voice-bot';
 import Navigation from '@/components/navigation';
 import { useLanguage } from '@/contexts/language-context';
@@ -216,7 +217,9 @@ function BookingWidget() {
   const [viewMonth, setViewMonth] = useState(today.getMonth());
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
-  const [form, setForm] = useState({ name: '', email: '', phone: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const MONTH_NAMES = language === 'nl' ? MONTH_NAMES_NL : MONTH_NAMES_EN;
   const DAY_NAMES = language === 'nl' ? DAY_NAMES_NL : DAY_NAMES_EN;
@@ -240,6 +243,9 @@ function BookingWidget() {
       namePlaceholder: 'Your name',
       emailPlaceholder: 'you@example.com',
       phonePlaceholder: '06 ...',
+      messageLabel: 'Message (optional)',
+      messagePlaceholder: 'Any notes for the doctor...',
+      submitError: 'Something went wrong. Please try again.',
       confirm: 'Confirm Appointment',
       confirmedTitle: 'Appointment Requested!',
       confirmedMsg: (name: string, phone: string) => `We will contact ${name} at ${phone} within a few hours to confirm.`,
@@ -260,6 +266,9 @@ function BookingWidget() {
       namePlaceholder: 'Uw naam',
       emailPlaceholder: 'u@voorbeeld.com',
       phonePlaceholder: '06 ...',
+      messageLabel: 'Bericht (optioneel)',
+      messagePlaceholder: 'Eventuele opmerkingen voor de dokter...',
+      submitError: 'Er is iets misgegaan. Probeer het opnieuw.',
       confirm: 'Bevestig afspraak',
       confirmedTitle: 'Afspraak aangevraagd!',
       confirmedMsg: (name: string, phone: string) => `Wij nemen contact op met ${name} op ${phone} binnen enkele uren ter bevestiging.`,
@@ -296,9 +305,21 @@ function BookingWidget() {
     ? TIME_SLOTS_SATURDAY
     : TIME_SLOTS_WEEKDAY;
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setStep('confirmed');
+    setIsSubmitting(true);
+    setSubmitError(null);
+    const res = await fetch('/api/appointments', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ date: selectedDate, time: selectedTime, ...form }),
+    });
+    setIsSubmitting(false);
+    if (res.ok) {
+      setStep('confirmed');
+    } else {
+      setSubmitError(w.submitError);
+    }
   }
 
   if (step === 'confirmed') {
@@ -313,7 +334,7 @@ function BookingWidget() {
           <p className="text-[#403F3F] text-sm mt-3">{w.confirmedMsg(form.name, form.phone)}</p>
         </div>
         <button
-          onClick={() => { setStep('calendar'); setSelectedDay(null); setSelectedTime(null); setForm({ name: '', email: '', phone: '' }); }}
+          onClick={() => { setStep('calendar'); setSelectedDay(null); setSelectedTime(null); setForm({ name: '', email: '', phone: '', message: '' }); }}
           className="text-[#45321A] text-sm font-semibold underline underline-offset-2"
         >
           {w.bookAnother}
@@ -451,10 +472,16 @@ function BookingWidget() {
                 <input required type="tel" placeholder={w.phonePlaceholder} value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })}
                   className="w-full bg-[#F6F6F6] border border-[#45321A]/15 rounded-lg px-4 py-3 text-sm text-[#191919] placeholder-[#403F3F]/50 focus:outline-none focus:border-[#45321A] transition-colors" />
               </div>
+              <div>
+                <label className="text-xs font-semibold text-[#403F3F] uppercase tracking-wide block mb-1.5">{w.messageLabel}</label>
+                <textarea rows={3} placeholder={w.messagePlaceholder} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })}
+                  className="w-full bg-[#F6F6F6] border border-[#45321A]/15 rounded-lg px-4 py-3 text-sm text-[#191919] placeholder-[#403F3F]/50 focus:outline-none focus:border-[#45321A] transition-colors resize-none" />
+              </div>
             </div>
-            <button type="submit" className="mt-6 w-full bg-[#45321A] text-white font-bold py-3 rounded-full hover:bg-[#5a4228] transition-colors">
-              {w.confirm}
+            <button type="submit" disabled={isSubmitting} className="mt-6 w-full bg-[#45321A] text-white font-bold py-3 rounded-full hover:bg-[#5a4228] transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              {isSubmitting ? '...' : w.confirm}
             </button>
+            {submitError && <p className="mt-3 text-sm text-red-600 text-center">{submitError}</p>}
           </form>
         )}
       </div>
@@ -776,8 +803,8 @@ export default function ChiroPage() {
       {/* ABOUT */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-          <div className="aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
-            <img src="/dr-jahani.webp" alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam" className="w-full h-full object-cover object-[center_55%]" />
+          <div className="relative aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
+            <Image src="/dr-jahani.webp" alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam" fill className="object-cover object-[center_55%]" />
           </div>
           <div>
             <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.aboutLabel}</span>

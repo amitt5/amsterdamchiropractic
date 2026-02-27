@@ -2,6 +2,7 @@
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 
@@ -37,11 +38,13 @@ export default function MeetYourDoctorPage() {
 
           <div className="grid md:grid-cols-2 gap-14 items-start mb-16">
             {/* Photo */}
-            <div className="aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
-              <img
+            <div className="relative aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
+              <Image
                 src="/dr-jahani.webp"
                 alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam"
-                className="w-full h-full object-cover object-[center_55%]"
+                fill
+                priority
+                className="object-cover object-[center_55%]"
               />
             </div>
 

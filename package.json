@@ -11,10 +11,12 @@
   "dependencies": {
     "@keystatic/core": "^0.5.48",
     "@keystatic/next": "^5.0.4",
+    "@supabase/supabase-js": "^2.98.0",
     "@vapi-ai/web": "^2.5.2",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "resend": "^6.9.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
