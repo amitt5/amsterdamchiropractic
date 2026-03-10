@@ -89,5 +89,35 @@ export async function POST(req: NextRequest) {
     // Don't fail the request — data is already saved, email is secondary
   }
 
+  // Send confirmation email to the patient
+  const { error: confirmError } = await resend.emails.send({
+    from: process.env.RESEND_FROM_EMAIL!,
+    to: email,
+    subject: `Appointment Confirmation — ${date} at ${time}`,
+    html: `
+      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #191919;">
+        <div style="background: #45321A; padding: 24px 32px; border-radius: 12px 12px 0 0;">
+          <h1 style="color: white; margin: 0; font-size: 20px; font-weight: 700;">Appointment Request Received</h1>
+          <p style="color: rgba(255,255,255,0.75); margin: 4px 0 0; font-size: 14px;">Health4Life Chiropractic</p>
+        </div>
+        <div style="background: #F6F6F6; padding: 32px; border-radius: 0 0 12px 12px;">
+          <p style="margin: 0 0 24px; font-size: 15px; color: #191919;">Dear ${name},</p>
+          <p style="margin: 0 0 24px; font-size: 15px; color: #403F3F;">Thank you for your appointment request. We have received your details and will contact you shortly to confirm.</p>
+          <div style="background: white; border-left: 4px solid #45321A; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 24px;">
+            <p style="margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #403F3F; font-weight: 600;">Requested Date &amp; Time</p>
+            <p style="margin: 0; font-size: 22px; font-weight: 700; color: #45321A;">${date} at ${time}</p>
+          </div>
+          <p style="margin: 0; font-size: 13px; color: #403F3F; border-top: 1px solid #e5e5e5; padding-top: 16px;">
+            Questions? Call us at <a href="tel:0206731800" style="color: #45321A;">020-673 1800</a> or WhatsApp <a href="https://wa.me/31618820000" style="color: #45321A;">06-1882-0000</a>.
+          </p>
+        </div>
+      </div>
+    `,
+  });
+
+  if (confirmError) {
+    console.error('Resend confirmation email error:', confirmError);
+  }
+
   return NextResponse.json({ ok: true });
 }

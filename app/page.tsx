@@ -583,12 +583,14 @@ export default function ChiroPage() {
             <div className="flex flex-wrap gap-4">
               <a href="#booking" className="bg-[#45321A] text-white font-semibold px-7 py-3.5 rounded-full hover:bg-[#5a4228] transition-colors">{c.bookBtn}</a>
               <a href="tel:0206731800" className="border-2 border-white text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white/10 transition-colors">{c.callBtn}</a>
+              {/* TEMP HIDDEN — Talk to Our AI button (EN/NL via c.aiBtn)
               <button onClick={() => setShowVoiceBot(true)} className="flex items-center gap-2 bg-[#c9a96e] text-[#191919] font-semibold px-6 py-3.5 rounded-full hover:bg-[#d9bc88] transition-colors">
                 <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 {c.aiBtn}
               </button>
+              */}
             </div>
             
             <div className="mt-10 flex gap-10">
