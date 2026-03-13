@@ -1,67 +1,118 @@
 {
-  "slug": "Hoofdpijn & Migraine",
-  "title": "Hoofdpijn & Migraine",
-  "highlightBox": "",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "",
-      "paragraphs": [
-        "Iedereen heeft er weleens last van: hoofdpijn. Er zijn vele vormen van hoofdpijn, zoals spanningshoofdpijn, migraine, aangezichtspijn en hoofdpijn als gevolg van whiplash.",
-        "Migraine is een bekende soort hoofdpijn en wordt vaak met andere hoofdpijnen verward. Migraine komt voor bij ongeveer 1 op de 10 volwassenen. Naar schatting 5% van de kinderen krijgt migraine tot het 11e levensjaar. Migraine wordt veroorzaakt door veranderingen in de diameter van de bloedvaten in het hoofd, waar de beweeglijkheid van de nekwervels en prikkeling van de zenuwen mogelijk een rol bij spelen. Een neurologisch-chiropractische behandeling kan daarom bij bepaalde vormen van migraine verlichting geven."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Symptomen",
-      "paragraphs": [
-        "Migraine kan voorkomen als migraine met aura of migraine zonder aura. Migraine zonder aura komt het meest voor. Iemand met migraine met aura krijgt tijdens de aanval neurologische verschijnselen. Deze vorm van migraine begint met flikkeringen en vlekken voor de ogen. Dit gaat over in een stekende pijn aan één kant van het hoofd. Migraine zonder aura heeft geen invloed op het zien, maar geeft meestal hoofdpijn rond één oog of aan één gezichtshelft.",
-        "Bepaalde voedingsstoffen, medicijnen of alcohol kunnen ook een migraine aanval veroorzaken. Voorbeelden hiervan zijn onder andere wijn, chocola of kaas. Migraine wordt bij vrouwen ook vaak geassocieerd met de menstruatiecyclus. Migraine is dan ook tot drie keer meer voorkomend bij vrouwen, waarschijnlijk door een andere hormoonspiegel en het effect daarvan op de bloedvaten.",
-        "De chiropractor onderzoekt of er een verband is tussen uw migraine en problemen met wervels, gewrichten of zenuwen. Blijkt dat het geval te zijn, dan is neurologisch-chiropractische behandeling zinvol."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Behandeling",
-      "paragraphs": [
-        "Allereerst stelt de chiropractor u vragen over uw hoofdpijn en over uw algehele gezondheidstoestand. De hoofdpijn kan namelijk samenhangen met andere gezondheidsklachten. Dan volgt een grondig lichamelijk onderzoek. De chiropractor maakt gebruik van verschillende medische methoden om te kijken waar de pijn vandaan komt en hoe het gesteld is met de beweeglijkheid van de gewrichten die met de pijn te maken kunnen hebben.",
-        "Na het vraaggesprek en het onderzoek kan geconcludeerd worden dat uw klacht niet behandeld kan worden door een chiropractor en dat dit verder onderzocht dient te worden. De chiropractor kan het advies geven contact op te nemen met de huisarts voor advies of om verder diagnostisch onderzoek te ondergaan.",
-        "Afhankelijk van uw klacht kan de chiropractor met de behandeling beginnen. Met behulp van druktechnieken op de wervels kunnen spieren en zenuwen weer beter gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich en krijgen omliggende zenuwen de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat. Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
+  "nl": {
+    "slug": "Hoofdpijn & Migraine",
+    "title": "Hoofdpijn & Migraine",
+    "highlightBox": "",
     "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sections": [
+      {
+        "heading": "",
+        "paragraphs": [
+          "Iedereen heeft er weleens last van: hoofdpijn. Er zijn vele vormen van hoofdpijn, zoals spanningshoofdpijn, migraine, aangezichtspijn en hoofdpijn als gevolg van whiplash.",
+          "Migraine is een bekende soort hoofdpijn en wordt vaak met andere hoofdpijnen verward. Migraine komt voor bij ongeveer 1 op de 10 volwassenen. Naar schatting 5% van de kinderen krijgt migraine tot het 11e levensjaar. Migraine wordt veroorzaakt door veranderingen in de diameter van de bloedvaten in het hoofd, waar de beweeglijkheid van de nekwervels en prikkeling van de zenuwen mogelijk een rol bij spelen. Een neurologisch-chiropractische behandeling kan daarom bij bepaalde vormen van migraine verlichting geven."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptomen",
+        "paragraphs": [
+          "Migraine kan voorkomen als migraine met aura of migraine zonder aura. Migraine zonder aura komt het meest voor. Iemand met migraine met aura krijgt tijdens de aanval neurologische verschijnselen. Deze vorm van migraine begint met flikkeringen en vlekken voor de ogen. Dit gaat over in een stekende pijn aan één kant van het hoofd. Migraine zonder aura heeft geen invloed op het zien, maar geeft meestal hoofdpijn rond één oog of aan één gezichtshelft.",
+          "Bepaalde voedingsstoffen, medicijnen of alcohol kunnen ook een migraine aanval veroorzaken. Voorbeelden hiervan zijn onder andere wijn, chocola of kaas. Migraine wordt bij vrouwen ook vaak geassocieerd met de menstruatiecyclus. Migraine is dan ook tot drie keer meer voorkomend bij vrouwen, waarschijnlijk door een andere hormoonspiegel en het effect daarvan op de bloedvaten.",
+          "De chiropractor onderzoekt of er een verband is tussen uw migraine en problemen met wervels, gewrichten of zenuwen. Blijkt dat het geval te zijn, dan is neurologisch-chiropractische behandeling zinvol."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Behandeling",
+        "paragraphs": [
+          "Allereerst stelt de chiropractor u vragen over uw hoofdpijn en over uw algehele gezondheidstoestand. De hoofdpijn kan namelijk samenhangen met andere gezondheidsklachten. Dan volgt een grondig lichamelijk onderzoek. De chiropractor maakt gebruik van verschillende medische methoden om te kijken waar de pijn vandaan komt en hoe het gesteld is met de beweeglijkheid van de gewrichten die met de pijn te maken kunnen hebben.",
+          "Na het vraaggesprek en het onderzoek kan geconcludeerd worden dat uw klacht niet behandeld kan worden door een chiropractor en dat dit verder onderzocht dient te worden. De chiropractor kan het advies geven contact op te nemen met de huisarts voor advies of om verder diagnostisch onderzoek te ondergaan.",
+          "Afhankelijk van uw klacht kan de chiropractor met de behandeling beginnen. Met behulp van druktechnieken op de wervels kunnen spieren en zenuwen weer beter gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich en krijgen omliggende zenuwen de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat. Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
+    },
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Spanningshoofdpijn", "href": "/klachten/hoofdpijn-spanningshoofdpijn" },
+      { "label": "Nekpijn", "href": "/klachten/nek" },
+      { "label": "Whiplash", "href": "/klachten/whiplash" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Spanningshoofdpijn",
-      "href": "/klachten/hoofdpijn-spanningshoofdpijn"
+  "en": {
+    "slug": "Headache & Migraine",
+    "title": "Headache & Migraine",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "",
+        "paragraphs": [
+          "Everyone experiences it at some point: headaches. There are many forms, including tension headache, migraine, facial pain and headache as a result of whiplash.",
+          "Migraine is a well-known type of headache and is often confused with other headaches. Migraine affects approximately 1 in 10 adults. An estimated 5% of children develop migraine before the age of 11. Migraine is caused by changes in the diameter of blood vessels in the head, in which the mobility of the neck vertebrae and nerve irritation may play a role. Neurological chiropractic treatment can therefore provide relief for certain forms of migraine."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptoms",
+        "paragraphs": [
+          "Migraine can occur with or without aura. Migraine without aura is the most common. Someone with migraine with aura experiences neurological phenomena during the attack, beginning with flickering and spots before the eyes, followed by a stabbing pain on one side of the head. Migraine without aura does not affect vision, but typically causes headache around one eye or on one side of the face.",
+          "Certain foods, medications or alcohol can also trigger a migraine attack — examples include wine, chocolate or cheese. In women, migraine is often associated with the menstrual cycle. Migraine is up to three times more common in women, likely due to different hormone levels and their effect on blood vessels.",
+          "The chiropractor examines whether there is a connection between your migraine and problems with vertebrae, joints or nerves. If that turns out to be the case, neurological chiropractic treatment is worthwhile."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Treatment",
+        "paragraphs": [
+          "The chiropractor will first ask you about your headaches and your general health, as headaches can be related to other health complaints. A thorough physical examination then follows. The chiropractor uses various medical methods to determine the source of the pain and assess the mobility of the joints that may be involved.",
+          "After the consultation and examination, it may be concluded that your complaint cannot be treated by a chiropractor and requires further investigation. The chiropractor may advise you to contact your GP or undergo further diagnostic testing.",
+          "Depending on your complaint, the chiropractor can begin treatment. With the help of pressure techniques on the vertebrae, muscles and nerves can function better. The pressure techniques improve mobility, relax the muscles and allow surrounding nerves to resume their functions, so that pain and other complaints can decrease or disappear. Your chiropractor will let you know how things stand. In addition to treatment, advice on posture, ergonomics, exercise and nutrition may also be given."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Nekpijn",
-      "href": "/klachten/nek"
-    },
-    {
-      "label": "Whiplash",
-      "href": "/klachten/whiplash"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Tension Headache", "href": "/klachten/hoofdpijn-spanningshoofdpijn" },
+      { "label": "Neck Pain", "href": "/klachten/nek" },
+      { "label": "Whiplash", "href": "/klachten/whiplash" }
+    ]
+  }
 }

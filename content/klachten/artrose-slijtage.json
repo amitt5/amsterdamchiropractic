@@ -1,70 +1,124 @@
 {
-  "slug": "Artrose / Slijtage",
-  "title": "Artrose / Slijtage",
-  "highlightBox": "Artrose treft miljoenen mensen. Neurologische chiropractie kan de verslechtering remmen, pijn verminderen en de beweeglijkheid verbeteren.",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "Wat is artrose?",
-      "paragraphs": [
-        "Artrose is een degeneratieve gewrichtsaandoening waarbij het kraakbeen in de gewrichten geleidelijk slijt. Het treedt het meest op in de wervelkolom, knieën, heupen, handen en voeten. Naarmate het kraakbeen dunner wordt, kunnen botten tegen elkaar wrijven, wat leidt tot pijn, stijfheid en verminderde bewegelijkheid."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Neurologisch-chiropractische behandeling",
-      "paragraphs": [
-        "Hoewel artrose niet te genezen is, kan chiropractie de progressie significant vertragen en de kwaliteit van leven verbeteren. Dr. Jahani richt zich op het verbeteren van de gewrichtsfunctie, verminderen van ontsteking en verlichten van pijn."
-      ],
-      "listItems": [
-        "Zachte mobilisatietechnieken om gewrichten beweeglijk te houden",
-        "Spierversterking rondom aangedane gewrichten",
-        "Houdingscorrectie om ongelijkmatige belasting te verminderen",
-        "Voedings- en leefstijladvies om ontsteking te verminderen",
-        "Therapeutische oefeningen voor thuis"
-      ],
-      "listStyle": "numbered",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "Oorzaken en risicofactoren",
+  "nl": {
+    "slug": "Artrose / Slijtage",
+    "title": "Artrose / Slijtage",
+    "highlightBox": "Artrose treft miljoenen mensen. Neurologische chiropractie kan de verslechtering remmen, pijn verminderen en de beweeglijkheid verbeteren.",
     "intro": "",
-    "geleidelijkHeading": "Primaire oorzaken",
-    "geleidelijkItems": [
-      "Veroudering (slijtage over de tijd)",
-      "Langdurige overbelasting van gewrichten",
-      "Eerdere gewrichtsblessures",
-      "Genetische aanleg",
-      "Overgewicht (extra druk op gewrichten)"
+    "sections": [
+      {
+        "heading": "Wat is artrose?",
+        "paragraphs": [
+          "Artrose is een degeneratieve gewrichtsaandoening waarbij het kraakbeen in de gewrichten geleidelijk slijt. Het treedt het meest op in de wervelkolom, knieën, heupen, handen en voeten. Naarmate het kraakbeen dunner wordt, kunnen botten tegen elkaar wrijven, wat leidt tot pijn, stijfheid en verminderde bewegelijkheid."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Neurologisch-chiropractische behandeling",
+        "paragraphs": [
+          "Hoewel artrose niet te genezen is, kan chiropractie de progressie significant vertragen en de kwaliteit van leven verbeteren. Dr. Jahani richt zich op het verbeteren van de gewrichtsfunctie, verminderen van ontsteking en verlichten van pijn."
+        ],
+        "listItems": [
+          "Zachte mobilisatietechnieken om gewrichten beweeglijk te houden",
+          "Spierversterking rondom aangedane gewrichten",
+          "Houdingscorrectie om ongelijkmatige belasting te verminderen",
+          "Voedings- en leefstijladvies om ontsteking te verminderen",
+          "Therapeutische oefeningen voor thuis"
+        ],
+        "listStyle": "numbered",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
     ],
-    "plotselingHeading": "Symptomen",
-    "plotselingItems": [
-      "Pijn bij beweging of na rust",
-      "Stijfheid, vooral 's ochtends",
-      "Verminderde bewegingsrange",
-      "Knisperende of krakende geluiden",
-      "Zwelling rondom het gewricht"
+    "causesSection": {
+      "heading": "Oorzaken en risicofactoren",
+      "intro": "",
+      "geleidelijkHeading": "Primaire oorzaken",
+      "geleidelijkItems": [
+        "Veroudering (slijtage over de tijd)",
+        "Langdurige overbelasting van gewrichten",
+        "Eerdere gewrichtsblessures",
+        "Genetische aanleg",
+        "Overgewicht (extra druk op gewrichten)"
+      ],
+      "plotselingHeading": "Symptomen",
+      "plotselingItems": [
+        "Pijn bij beweging of na rust",
+        "Stijfheid, vooral 's ochtends",
+        "Verminderde bewegingsrange",
+        "Knisperende of krakende geluiden",
+        "Zwelling rondom het gewricht"
+      ]
+    },
+    "sidebarCtaSubtext": "Slijtage hoeft u niet te accepteren. Wij helpen u beter te bewegen.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Lage Rugpijn", "href": "/klachten/lage-rugpijn" },
+      { "label": "Nek", "href": "/klachten/nek" },
+      { "label": "Bovenrug & Schouder", "href": "/klachten/bovenrug-schouder" }
     ]
   },
-  "sidebarCtaSubtext": "Slijtage hoeft u niet te accepteren. Wij helpen u beter te bewegen.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Lage Rugpijn",
-      "href": "/klachten/lage-rugpijn"
+  "en": {
+    "slug": "Arthritis / Wear",
+    "title": "Arthritis / Wear",
+    "highlightBox": "Arthritis affects millions of people. Neurological chiropractic can slow its progression, reduce pain and improve mobility.",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "What is arthritis?",
+        "paragraphs": [
+          "Arthritis (osteoarthritis) is a degenerative joint condition in which the cartilage in the joints gradually wears away. It most commonly affects the spine, knees, hips, hands and feet. As the cartilage becomes thinner, bones can rub against each other, leading to pain, stiffness and reduced mobility."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Neurological chiropractic treatment",
+        "paragraphs": [
+          "Although arthritis cannot be cured, chiropractic care can significantly slow its progression and improve quality of life. Dr. Jahani focuses on improving joint function, reducing inflammation and relieving pain."
+        ],
+        "listItems": [
+          "Gentle mobilisation techniques to keep joints moving",
+          "Muscle strengthening around affected joints",
+          "Posture correction to reduce uneven loading",
+          "Nutritional and lifestyle advice to reduce inflammation",
+          "Therapeutic home exercises"
+        ],
+        "listStyle": "numbered",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "Causes and risk factors",
+      "intro": "",
+      "geleidelijkHeading": "Primary causes",
+      "geleidelijkItems": [
+        "Ageing (wear over time)",
+        "Prolonged overloading of joints",
+        "Previous joint injuries",
+        "Genetic predisposition",
+        "Excess weight (extra pressure on joints)"
+      ],
+      "plotselingHeading": "Symptoms",
+      "plotselingItems": [
+        "Pain during movement or after rest",
+        "Stiffness, especially in the morning",
+        "Reduced range of motion",
+        "Creaking or cracking sounds",
+        "Swelling around the joint"
+      ]
     },
-    {
-      "label": "Nek",
-      "href": "/klachten/nek"
-    },
-    {
-      "label": "Bovenrug & Schouder",
-      "href": "/klachten/bovenrug-schouder"
-    }
-  ]
+    "sidebarCtaSubtext": "You don't have to accept wear and tear. We help you move better.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Low Back Pain", "href": "/klachten/lage-rugpijn" },
+      { "label": "Neck", "href": "/klachten/nek" },
+      { "label": "Upper Back & Shoulder", "href": "/klachten/bovenrug-schouder" }
+    ]
+  }
 }

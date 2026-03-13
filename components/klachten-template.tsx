@@ -4,6 +4,7 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import Link from 'next/link';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
+import { useLanguage } from '@/contexts/language-context';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -39,6 +40,32 @@ export interface KlachtenContent {
   sidebarCtaButtonLabel: string;
   relatedConditions: { label: string; href: string }[];
 }
+
+export interface BilingualKlachtenContent {
+  nl: KlachtenContent;
+  en: KlachtenContent;
+}
+
+const ui = {
+  nl: {
+    backLink: 'Alle klachten',
+    sidebarTitle: 'Maak een afspraak',
+    phone: '020-673 1800',
+    hoursTitle: 'Openingstijden',
+    hours: ['Ma – Vr: 10:00 – 17:00', 'Za: 10:00 – 14:00', 'Zo: Gesloten'],
+    address: 'Maasstraat 103\n1078 HH Amsterdam',
+    relatedTitle: 'Gerelateerde klachten',
+  },
+  en: {
+    backLink: 'All conditions',
+    sidebarTitle: 'Make an appointment',
+    phone: '020-673 1800',
+    hoursTitle: 'Opening hours',
+    hours: ['Mon – Fri: 10:00 – 17:00', 'Sat: 10:00 – 14:00', 'Sun: Closed'],
+    address: 'Maasstraat 103\n1078 HH Amsterdam',
+    relatedTitle: 'Related conditions',
+  },
+};
 
 function CheckIcon() {
   return (
@@ -101,8 +128,12 @@ function renderSection(section: Section, idx: number) {
   );
 }
 
-export default function KlachtenTemplate({ content }: { content: KlachtenContent }) {
-  const causes = content.causesSection;
+export default function KlachtenTemplate({ content }: { content: BilingualKlachtenContent }) {
+  const { language } = useLanguage();
+  const c = content[language];
+  const t = ui[language];
+
+  const causes = c.causesSection;
   const hasCauses = causes && causes.heading;
 
   return (
@@ -116,35 +147,35 @@ export default function KlachtenTemplate({ content }: { content: KlachtenContent
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current rotate-180">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
               </svg>
-              Alle klachten
+              {t.backLink}
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#191919]">{content.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#191919]">{c.title}</h1>
           <div className="w-20 h-1 bg-[#45321A] rounded-full mb-10" />
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Main content */}
             <div className="md:col-span-2 space-y-8">
 
-              {/* Highlight box (artrose-style featured quote) */}
-              {content.highlightBox && (
+              {/* Highlight box */}
+              {c.highlightBox && (
                 <div className="bg-[#45321A] text-white rounded-2xl p-6">
                   <p className="text-white/90 leading-relaxed text-lg font-medium">
-                    {content.highlightBox}
+                    {c.highlightBox}
                   </p>
                 </div>
               )}
 
-              {/* Intro paragraph (no heading) */}
-              {content.intro && (
+              {/* Intro paragraph */}
+              {c.intro && (
                 <div>
-                  <p className="text-[#403F3F] leading-relaxed">{content.intro}</p>
+                  <p className="text-[#403F3F] leading-relaxed">{c.intro}</p>
                 </div>
               )}
 
               {/* Named sections */}
-              {content.sections.map((section, idx) => renderSection(section, idx))}
+              {c.sections.map((section, idx) => renderSection(section, idx))}
 
               {/* Two-column causes section */}
               {hasCauses && (
@@ -186,36 +217,36 @@ export default function KlachtenTemplate({ content }: { content: KlachtenContent
             {/* Sidebar */}
             <div className="space-y-5">
               <div className="bg-[#45321A] text-white rounded-2xl p-6">
-                <h3 className="font-bold text-lg mb-3">Maak een afspraak</h3>
-                <p className="text-white/80 text-sm mb-4">{content.sidebarCtaSubtext}</p>
+                <h3 className="font-bold text-lg mb-3">{t.sidebarTitle}</h3>
+                <p className="text-white/80 text-sm mb-4">{c.sidebarCtaSubtext}</p>
                 <Link
                   href="/#booking"
                   className="block bg-white text-[#45321A] font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors"
                 >
-                  {content.sidebarCtaButtonLabel}
+                  {c.sidebarCtaButtonLabel}
                 </Link>
                 <a href="tel:0206731800" className="block text-center text-white/80 text-sm mt-3 hover:text-white">
-                  020-673 1800
+                  {t.phone}
                 </a>
               </div>
 
               <div className="bg-[#F6F6F6] rounded-2xl p-6">
-                <h3 className="font-semibold text-[#191919] mb-3">Openingstijden</h3>
+                <h3 className="font-semibold text-[#191919] mb-3">{t.hoursTitle}</h3>
                 <ul className="text-sm text-[#403F3F] space-y-1">
-                  <li>Ma – Vr: 10:00 – 17:00</li>
-                  <li>Za: 10:00 – 14:00</li>
-                  <li>Zo: Gesloten</li>
+                  {t.hours.map((line, i) => <li key={i}>{line}</li>)}
                 </ul>
                 <p className="text-sm text-[#403F3F] mt-3">
-                  Maasstraat 103<br />1078 HH Amsterdam
+                  {t.address.split('\n').map((line, i) => (
+                    <span key={i}>{line}{i === 0 && <br />}</span>
+                  ))}
                 </p>
               </div>
 
-              {content.relatedConditions.length > 0 && (
+              {c.relatedConditions.length > 0 && (
                 <div className="bg-[#F6F6F6] rounded-2xl p-6">
-                  <h3 className="font-semibold text-[#191919] mb-3">Gerelateerde klachten</h3>
+                  <h3 className="font-semibold text-[#191919] mb-3">{t.relatedTitle}</h3>
                   <ul className="space-y-2">
-                    {content.relatedConditions.map(({ label, href }) => (
+                    {c.relatedConditions.map(({ label, href }) => (
                       <li key={href}>
                         <Link href={href} className="text-sm text-[#45321A] hover:underline">
                           {label}

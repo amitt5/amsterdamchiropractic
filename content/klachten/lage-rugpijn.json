@@ -1,72 +1,128 @@
 {
-  "slug": "Lage Rugpijn",
-  "title": "Lage Rugpijn",
-  "highlightBox": "",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "Algemeen",
-      "paragraphs": [
-        "Pijn in de lage rug komt veel voor. Maar liefst 80% van de bevolking zal tenminste één keer in het leven lage rugpijn krijgen. Problemen in de lage rug kunnen zich op verschillende manieren uiten. Veel mensen klagen over een zeurende pijn of een stijve rug, maar de pijn kan ook gevoeld worden als een zenuwpijn (bijv. uitstralend naar de benen). Om te begrijpen hoe rugpijn ontstaat moet men eerst meer weten over de anatomie van de lage rug."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Anatomie",
-      "paragraphs": [
-        "De lage rug bestaat uit 5 lendenwervels. Tussen elk van deze wervels zit een tussenwervelschijf. De tussenwervelschijf fungeert als schokdemper. Aan de achterzijde worden de wervels verbonden met elkaar door middel van twee gewrichten, één links en één rechts. Langs de wervelkolom lopen verschillende spieren, welke er onder andere voor zorgen dat we rechtop kunnen blijven zitten en staan, en kunnen bewegen.",
-        "Het bekken vormt de basis waar de wervelkolom op rust en draagt het lichaamsgewicht. Het bekken bestaat uit een centraal driehoekig gedeelte (het heiligbeen) dat een gewricht vormt aan weerszijden met de twee heupbeenderen. Deze gewrichten worden door sterke banden bij elkaar gehouden. Dit worden de Sacro-Iliacale gewrichten (SI gewrichten) genoemd."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Klachten",
-      "paragraphs": [
-        "De klachten die ontstaan in de onderrug zijn afhankelijk van de structuur waar het probleem optreedt. De spieren, de gewrichten en de tussenwervelschijven op de hoogte van de lendenwervels kunnen ieder klachten veroorzaken. Ondanks dat klachten vrijwel identiek kunnen lijken, zijn de oorzaken vaak verschillend. Een goede diagnose is dus erg belangrijk. Aangezien verschillende oorzaken ook vaak verschillende behandelingen vereisen, moet er voldoende tijd worden uitgetrokken tijdens het onderzoek. Een neurologische chiropractor is volledig opgeleid om de juiste oorzaak op te sporen en vervolgens accuraat te behandelen."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "Oorzaken",
-    "intro": "Oorzaken van lage rugpijn of bekkenpijn zijn te verdelen in geleidelijk en plotseling.",
-    "geleidelijkHeading": "Geleidelijke oorzaken",
-    "geleidelijkItems": [
-      "Weinig afwisseling in de houding en weinig beweging (zoals bij bureauwerk).",
-      "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
-      "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
-      "Spanning, stress, vermoeidheid, ziekte, kou, vocht enzovoort.",
-      "De veranderingen in de hormoonspiegel in een zwangerschap."
+  "nl": {
+    "slug": "Lage Rugpijn",
+    "title": "Lage Rugpijn",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "Algemeen",
+        "paragraphs": [
+          "Pijn in de lage rug komt veel voor. Maar liefst 80% van de bevolking zal tenminste één keer in het leven lage rugpijn krijgen. Problemen in de lage rug kunnen zich op verschillende manieren uiten. Veel mensen klagen over een zeurende pijn of een stijve rug, maar de pijn kan ook gevoeld worden als een zenuwpijn (bijv. uitstralend naar de benen). Om te begrijpen hoe rugpijn ontstaat moet men eerst meer weten over de anatomie van de lage rug."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Anatomie",
+        "paragraphs": [
+          "De lage rug bestaat uit 5 lendenwervels. Tussen elk van deze wervels zit een tussenwervelschijf. De tussenwervelschijf fungeert als schokdemper. Aan de achterzijde worden de wervels verbonden met elkaar door middel van twee gewrichten, één links en één rechts. Langs de wervelkolom lopen verschillende spieren, welke er onder andere voor zorgen dat we rechtop kunnen blijven zitten en staan, en kunnen bewegen.",
+          "Het bekken vormt de basis waar de wervelkolom op rust en draagt het lichaamsgewicht. Het bekken bestaat uit een centraal driehoekig gedeelte (het heiligbeen) dat een gewricht vormt aan weerszijden met de twee heupbeenderen. Deze gewrichten worden door sterke banden bij elkaar gehouden. Dit worden de Sacro-Iliacale gewrichten (SI gewrichten) genoemd."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Klachten",
+        "paragraphs": [
+          "De klachten die ontstaan in de onderrug zijn afhankelijk van de structuur waar het probleem optreedt. De spieren, de gewrichten en de tussenwervelschijven op de hoogte van de lendenwervels kunnen ieder klachten veroorzaken. Ondanks dat klachten vrijwel identiek kunnen lijken, zijn de oorzaken vaak verschillend. Een goede diagnose is dus erg belangrijk. Aangezien verschillende oorzaken ook vaak verschillende behandelingen vereisen, moet er voldoende tijd worden uitgetrokken tijdens het onderzoek. Een neurologische chiropractor is volledig opgeleid om de juiste oorzaak op te sporen en vervolgens accuraat te behandelen."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
     ],
-    "plotselingHeading": "Plotselinge oorzaken",
-    "plotselingItems": [
-      "Een verkeersongeluk.",
-      "Een verkeerde beweging of verdraaiing, zoals bijvoorbeeld met vegen of spitten, een buk-draaibeweging (bijvoorbeeld door iets uit de kofferbak te tillen)."
+    "causesSection": {
+      "heading": "Oorzaken",
+      "intro": "Oorzaken van lage rugpijn of bekkenpijn zijn te verdelen in geleidelijk en plotseling.",
+      "geleidelijkHeading": "Geleidelijke oorzaken",
+      "geleidelijkItems": [
+        "Weinig afwisseling in de houding en weinig beweging (zoals bij bureauwerk).",
+        "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
+        "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
+        "Spanning, stress, vermoeidheid, ziekte, kou, vocht enzovoort.",
+        "De veranderingen in de hormoonspiegel in een zwangerschap."
+      ],
+      "plotselingHeading": "Plotselinge oorzaken",
+      "plotselingItems": [
+        "Een verkeersongeluk.",
+        "Een verkeerde beweging of verdraaiing, zoals bijvoorbeeld met vegen of spitten, een buk-draaibeweging (bijvoorbeeld door iets uit de kofferbak te tillen)."
+      ]
+    },
+    "sidebarCtaSubtext": "Rugpijn hoeft u niet te accepteren. Wij helpen u.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Hernia", "href": "/klachten/hernia" },
+      { "label": "Zwangerschap", "href": "/klachten/zwangerschap" },
+      { "label": "Bovenrug & Schouder", "href": "/klachten/bovenrug-schouder" }
     ]
   },
-  "sidebarCtaSubtext": "Rugpijn hoeft u niet te accepteren. Wij helpen u.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Hernia",
-      "href": "/klachten/hernia"
+  "en": {
+    "slug": "Low Back Pain",
+    "title": "Low Back Pain",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "General",
+        "paragraphs": [
+          "Low back pain is very common. As many as 80% of the population will experience low back pain at least once in their lifetime. Problems in the lower back can manifest in different ways. Many people complain of a nagging pain or a stiff back, but the pain can also be felt as a nerve pain (e.g. radiating into the legs). To understand how back pain develops, one must first learn more about the anatomy of the lower back."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Anatomy",
+        "paragraphs": [
+          "The lower back consists of 5 lumbar vertebrae. Between each of these vertebrae sits an intervertebral disc, which acts as a shock absorber. At the back, the vertebrae are connected to each other by two joints, one on the left and one on the right. Various muscles run along the spine, which among other things ensure that we can remain sitting and standing upright and can move.",
+          "The pelvis forms the base on which the spine rests and bears the body weight. The pelvis consists of a central triangular part (the sacrum) that forms a joint on each side with the two hip bones. These joints are held together by strong ligaments and are called the Sacro-Iliac joints (SI joints)."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Complaints",
+        "paragraphs": [
+          "The complaints that arise in the lower back depend on the structure where the problem occurs. The muscles, joints and intervertebral discs at the level of the lumbar vertebrae can each cause complaints. Although complaints may seem almost identical, the causes are often different. A proper diagnosis is therefore very important. Since different causes often require different treatments, sufficient time must be taken during the examination. A neurological chiropractor is fully trained to identify the correct cause and then treat it accurately."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "Causes",
+      "intro": "Causes of low back pain or pelvic pain can be divided into gradual and sudden.",
+      "geleidelijkHeading": "Gradual causes",
+      "geleidelijkItems": [
+        "Limited variation in posture and movement (such as desk work).",
+        "Incorrect or one-sided load (such as a heavy bag over one shoulder).",
+        "The natural aging of the cartilage in the spine (also known as arthritis, wear or degeneration).",
+        "Tension, stress, fatigue, illness, cold, moisture, etc.",
+        "The hormonal changes during pregnancy."
+      ],
+      "plotselingHeading": "Sudden causes",
+      "plotselingItems": [
+        "A traffic accident.",
+        "A wrong movement or twist, such as sweeping or digging, a bend-and-twist movement (for example lifting something from the car boot)."
+      ]
     },
-    {
-      "label": "Zwangerschap",
-      "href": "/klachten/zwangerschap"
-    },
-    {
-      "label": "Bovenrug & Schouder",
-      "href": "/klachten/bovenrug-schouder"
-    }
-  ]
+    "sidebarCtaSubtext": "You don't have to accept back pain. We are here to help.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Herniated Disc", "href": "/klachten/hernia" },
+      { "label": "Pregnancy", "href": "/klachten/zwangerschap" },
+      { "label": "Upper Back & Shoulder", "href": "/klachten/bovenrug-schouder" }
+    ]
+  }
 }

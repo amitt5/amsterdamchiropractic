@@ -1,94 +1,172 @@
 {
-  "slug": "Sportblessures",
-  "title": "Sportblessures",
-  "highlightBox": "",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "Sport en blessures",
-      "paragraphs": [
-        "Of u nu voor uw plezier sport of beroepsmatig, iedere sporter loopt het risico om geblesseerd te raken. Jaarlijks raken vele Nederlanders geblesseerd tijdens het sporten; dit is pijnlijk en vervelend voor de sporter en duur voor de maatschappij vanwege het forse ziekteverzuim als gevolg van de blessure.",
-        "Het lichaam wordt tijdens het sporten zwaar belast en kleine \"oneffenheden\", die in het dagelijks leven niet als hinderlijk worden ervaren of soms zelfs in het geheel niet worden opgemerkt, kunnen blessures veroorzaken en het prestatieniveau negatief beïnvloeden."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Preventie",
-      "paragraphs": [
-        "Veel sporters, recreant en professional, kiezen er dan ook voor om regelmatig een chiropractor te bezoeken en hun lichaam te laten controleren. Deze preventieve aanpak heeft bij een topclub als AC Milan een enorme afname van het aantal blessures tot gevolg gehad. Ook waren de voetballers in staat om tot op hogere leeftijd op een topniveau te kunnen presteren."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Chiropractie",
-      "paragraphs": [
-        "Neurologische chiropractoren zijn bij uitstek geschikt om problemen op het gebied van spieren en gewrichten te behandelen en voorkomen. Een optimaal functionerend bewegingsapparaat zorgt voor betere prestaties en minder blessures! Onderzoek en praktijkervaringen laten zien dat de preventieve aanpak van de chiropractor het aantal blessures drastisch kan doen afnemen. Ook blijkt dat een actieve aanpak na een blessure de revalidatie fors kan bespoedigen."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Acuut en chronisch",
-      "paragraphs": [
-        "Blessures kunnen acuut en chronisch ontstaan. Acuut door een plotselinge verkeerde beweging en chronisch door een foutief bewegingspatroon dat er misschien al lange tijd geleden ingeslopen was. Het zal duidelijk zijn dat het wenselijk is om deze functiestoornissen zo spoedig mogelijk op te merken en te behandelen."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Symptomen",
-      "paragraphs": [
-        "Verminderde prestaties, kleine pijntjes of stijfheid, of een traag herstel na kleine blessures. Het kan allemaal wijzen op slecht functionerende spieren en gewrichten. Het kan zelfs zo zijn dat terugkerende knie- of enkelproblemen veroorzaakt worden door een foutief bewegingspatroon in de onderrug of heup."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Behandeling van sporters",
-      "paragraphs": [
-        "Sporters vragen een andere aanpak dan niet sporters omdat de krachten die op het lichaam van een sporter inspelen vele malen groter zijn dan die we in het normale dagelijkse leven ervaren. Een sporter zal dan ook langer moeten doorgaan met revalideren na een blessure; bijna klachtenvrij is niet goed genoeg. Een sporter zal terug willen komen tot een hoger niveau dan dat van voor de blessure. Bij een goed functionerend lichaam is er sprake van een juiste balans op het gebied van kracht, uithoudingsvermogen, flexibiliteit en coördinatie. De sporter heeft dan een goede controle over zijn lichaam en leert niet alleen zijn mogelijkheden maar ook zijn eventuele \"zwakke plekken\" goed kennen.",
-        "Voordat er een behandeling plaatsvindt zal er eerst een vraaggesprek zijn en een uitgebreid lichamelijk onderzoek. Tijdens de behandeling ligt de nadruk op het verwijderen van blokkades en het herstellen van de beweeglijkheid van spieren en gewrichten. Uw chiropractor beschikt daarvoor over een veelheid aan technieken. Ook kan hij adviseren onder anderen met betrekking tot oefeningen en voeding."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
+  "nl": {
+    "slug": "Sportblessures",
+    "title": "Sportblessures",
+    "highlightBox": "",
     "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sections": [
+      {
+        "heading": "Sport en blessures",
+        "paragraphs": [
+          "Of u nu voor uw plezier sport of beroepsmatig, iedere sporter loopt het risico om geblesseerd te raken. Jaarlijks raken vele Nederlanders geblesseerd tijdens het sporten; dit is pijnlijk en vervelend voor de sporter en duur voor de maatschappij vanwege het forse ziekteverzuim als gevolg van de blessure.",
+          "Het lichaam wordt tijdens het sporten zwaar belast en kleine \"oneffenheden\", die in het dagelijks leven niet als hinderlijk worden ervaren of soms zelfs in het geheel niet worden opgemerkt, kunnen blessures veroorzaken en het prestatieniveau negatief beïnvloeden."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Preventie",
+        "paragraphs": [
+          "Veel sporters, recreant en professional, kiezen er dan ook voor om regelmatig een chiropractor te bezoeken en hun lichaam te laten controleren. Deze preventieve aanpak heeft bij een topclub als AC Milan een enorme afname van het aantal blessures tot gevolg gehad. Ook waren de voetballers in staat om tot op hogere leeftijd op een topniveau te kunnen presteren."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Chiropractie",
+        "paragraphs": [
+          "Neurologische chiropractoren zijn bij uitstek geschikt om problemen op het gebied van spieren en gewrichten te behandelen en voorkomen. Een optimaal functionerend bewegingsapparaat zorgt voor betere prestaties en minder blessures! Onderzoek en praktijkervaringen laten zien dat de preventieve aanpak van de chiropractor het aantal blessures drastisch kan doen afnemen. Ook blijkt dat een actieve aanpak na een blessure de revalidatie fors kan bespoedigen."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Acuut en chronisch",
+        "paragraphs": [
+          "Blessures kunnen acuut en chronisch ontstaan. Acuut door een plotselinge verkeerde beweging en chronisch door een foutief bewegingspatroon dat er misschien al lange tijd geleden ingeslopen was. Het zal duidelijk zijn dat het wenselijk is om deze functiestoornissen zo spoedig mogelijk op te merken en te behandelen."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptomen",
+        "paragraphs": [
+          "Verminderde prestaties, kleine pijntjes of stijfheid, of een traag herstel na kleine blessures. Het kan allemaal wijzen op slecht functionerende spieren en gewrichten. Het kan zelfs zo zijn dat terugkerende knie- of enkelproblemen veroorzaakt worden door een foutief bewegingspatroon in de onderrug of heup."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Behandeling van sporters",
+        "paragraphs": [
+          "Sporters vragen een andere aanpak dan niet sporters omdat de krachten die op het lichaam van een sporter inspelen vele malen groter zijn dan die we in het normale dagelijkse leven ervaren. Een sporter zal dan ook langer moeten doorgaan met revalideren na een blessure; bijna klachtenvrij is niet goed genoeg. Een sporter zal terug willen komen tot een hoger niveau dan dat van voor de blessure. Bij een goed functionerend lichaam is er sprake van een juiste balans op het gebied van kracht, uithoudingsvermogen, flexibiliteit en coördinatie. De sporter heeft dan een goede controle over zijn lichaam en leert niet alleen zijn mogelijkheden maar ook zijn eventuele \"zwakke plekken\" goed kennen.",
+          "Voordat er een behandeling plaatsvindt zal er eerst een vraaggesprek zijn en een uitgebreid lichamelijk onderzoek. Tijdens de behandeling ligt de nadruk op het verwijderen van blokkades en het herstellen van de beweeglijkheid van spieren en gewrichten. Uw chiropractor beschikt daarvoor over een veelheid aan technieken. Ook kan hij adviseren onder anderen met betrekking tot oefeningen en voeding."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
+    },
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Lage Rugpijn", "href": "/klachten/lage-rugpijn" },
+      { "label": "Bovenrug & Schouder", "href": "/klachten/bovenrug-schouder" },
+      { "label": "Whiplash", "href": "/klachten/whiplash" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Lage Rugpijn",
-      "href": "/klachten/lage-rugpijn"
+  "en": {
+    "slug": "Sports Injuries",
+    "title": "Sports Injuries",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "Sport and injuries",
+        "paragraphs": [
+          "Whether you play sport for pleasure or professionally, every athlete runs the risk of getting injured. Each year many people are injured while playing sport — this is painful and inconvenient for the athlete and costly for society due to the significant sick leave that results.",
+          "The body is placed under great strain during sport, and small 'irregularities' that are not noticed in daily life can cause injuries and negatively affect performance."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Prevention",
+        "paragraphs": [
+          "Many athletes, both recreational and professional, choose to visit a chiropractor regularly to have their body checked. This preventive approach led to a dramatic reduction in injuries at top clubs such as AC Milan. Players were also able to perform at the highest level until a greater age."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Chiropractic care",
+        "paragraphs": [
+          "Neurological chiropractors are uniquely suited to treat and prevent problems relating to muscles and joints. An optimally functioning musculoskeletal system leads to better performance and fewer injuries. Research and clinical experience show that the chiropractor's preventive approach can dramatically reduce the number of injuries. An active approach after an injury has also been shown to significantly speed up rehabilitation."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Acute and chronic",
+        "paragraphs": [
+          "Injuries can be acute or chronic. Acute injuries arise from a sudden wrong movement; chronic injuries develop from a faulty movement pattern that may have crept in long ago. It is clearly desirable to identify and treat these functional disorders as soon as possible."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptoms",
+        "paragraphs": [
+          "Reduced performance, minor aches and pains, stiffness or slow recovery from minor injuries can all point to poorly functioning muscles and joints. Recurring knee or ankle problems may even be caused by a faulty movement pattern in the lower back or hip."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Treatment for athletes",
+        "paragraphs": [
+          "Athletes require a different approach than non-athletes because the forces acting on an athlete's body are many times greater than those experienced in everyday life. An athlete will need to rehabilitate for longer after an injury — being almost pain-free is not good enough. The goal is to return to a higher level than before the injury. A well-functioning body has the right balance of strength, endurance, flexibility and coordination, giving the athlete good control over their body and a clear understanding of both their capabilities and potential 'weak spots'.",
+          "Before treatment begins, there will be a consultation and a thorough physical examination. During treatment, the focus is on removing blockages and restoring the mobility of muscles and joints. Your chiropractor has a wide range of techniques available and can also provide advice on exercises and nutrition."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Bovenrug & Schouder",
-      "href": "/klachten/bovenrug-schouder"
-    },
-    {
-      "label": "Whiplash",
-      "href": "/klachten/whiplash"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Low Back Pain", "href": "/klachten/lage-rugpijn" },
+      { "label": "Upper Back & Shoulder", "href": "/klachten/bovenrug-schouder" },
+      { "label": "Whiplash", "href": "/klachten/whiplash" }
+    ]
+  }
 }

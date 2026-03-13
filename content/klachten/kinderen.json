@@ -1,67 +1,118 @@
 {
-  "slug": "Kinderen",
-  "title": "Kinderen",
-  "highlightBox": "",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "Oorzaken",
-      "paragraphs": [
-        "Bij kinderen kunnen, net zoals volwassenen, klachten aan het bewegingsapparaat ontstaan. Dit kan al gebeuren tijdens de bevalling, maar vooral ook in de jaren daaropvolgend, waarbij ze opgroeien met vallen en opstaan.",
-        "Valpartijen, ongelukjes, lange uren zitten op school en sport kunnen mogelijke oorzaken tot klachten leiden. Veelal herstellen kinderen al snel weer, maar wanneer klachten aanhouden, moet dit zeker serieus genomen worden."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Symptomen",
-      "paragraphs": [
-        "Kinderen kunnen vaak niet aangeven waar ze pijn hebben, en dus is het belangrijk te weten dat dit vaak aangeduid wordt met hoofd- of buikpijn klachten. Ook kan het gedrag verraden dat een kind zich niet goed voelt, doordat ze erg moe zijn of juist erg druk worden of dat hun slaapgewoontes veranderen.",
-        "Verminderde weerstand kan gepaard gaan met lichamelijke klachten, vooral ook wanneer kinderen onderliggende aandoeningen hebben, zoals astma, veelvuldige keel-, neus- en oorklachten, alsook scoliose.",
-        "Deze laatstgenoemden kunnen door chiropractie niet genezen worden, maar de effecten hiervan op het lichaam kunnen beperkt worden waardoor een kind zoveel mogelijk als een kind kan opgroeien. Bijvoorbeeld: bij kinderen met astma zien we dat deze kinderen vooral borstademhaling toepassen. Dit kan zorgen voor verhoogde spierspanning in de schouderregio, gepaard gaande met gewrichtsblokkades in de bovenrug, van de ribben en de nek."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Behandeling",
-      "paragraphs": [
-        "De behandeling van kinderen is niet hetzelfde zoals bij volwassenen. Spelenderwijs wordt het lichamelijke onderzoek verricht na een uitgebreid vraaggesprek met het kind en de ouder(s), waarna de behandeling kan plaatsvinden.",
-        "De chiropractische gewrichtscorrecties die toegepast worden zijn afgestemd op kinderen. Deze zijn vrijwel pijnloos. Kinderen herstellen over het algemeen sneller dan volwassenen, en dus zijn de behandelfrequenties vaak lager dan bij volwassenen, maar dit is afhankelijk van de klachten en de patiënt, en de chiropractor zal u een passend persoonlijk behandelplan voorstellen.",
-        "Neurologische chiropractoren behandelen al meer dan 100 jaar kinderen van alle leeftijden. Neurologische chiropractie is zeer effectief en bovenal heel veilig voor kinderen. De behandeling bestaat uit lichte druktechnieken om blokkades te corrigeren, en valt niet te vergelijken met een behandeling voor volwassenen."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
+  "nl": {
+    "slug": "Kinderen",
+    "title": "Kinderen",
+    "highlightBox": "",
     "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sections": [
+      {
+        "heading": "Oorzaken",
+        "paragraphs": [
+          "Bij kinderen kunnen, net zoals volwassenen, klachten aan het bewegingsapparaat ontstaan. Dit kan al gebeuren tijdens de bevalling, maar vooral ook in de jaren daaropvolgend, waarbij ze opgroeien met vallen en opstaan.",
+          "Valpartijen, ongelukjes, lange uren zitten op school en sport kunnen mogelijke oorzaken tot klachten leiden. Veelal herstellen kinderen al snel weer, maar wanneer klachten aanhouden, moet dit zeker serieus genomen worden."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptomen",
+        "paragraphs": [
+          "Kinderen kunnen vaak niet aangeven waar ze pijn hebben, en dus is het belangrijk te weten dat dit vaak aangeduid wordt met hoofd- of buikpijn klachten. Ook kan het gedrag verraden dat een kind zich niet goed voelt, doordat ze erg moe zijn of juist erg druk worden of dat hun slaapgewoontes veranderen.",
+          "Verminderde weerstand kan gepaard gaan met lichamelijke klachten, vooral ook wanneer kinderen onderliggende aandoeningen hebben, zoals astma, veelvuldige keel-, neus- en oorklachten, alsook scoliose.",
+          "Deze laatstgenoemden kunnen door chiropractie niet genezen worden, maar de effecten hiervan op het lichaam kunnen beperkt worden waardoor een kind zoveel mogelijk als een kind kan opgroeien. Bijvoorbeeld: bij kinderen met astma zien we dat deze kinderen vooral borstademhaling toepassen. Dit kan zorgen voor verhoogde spierspanning in de schouderregio, gepaard gaande met gewrichtsblokkades in de bovenrug, van de ribben en de nek."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Behandeling",
+        "paragraphs": [
+          "De behandeling van kinderen is niet hetzelfde zoals bij volwassenen. Spelenderwijs wordt het lichamelijke onderzoek verricht na een uitgebreid vraaggesprek met het kind en de ouder(s), waarna de behandeling kan plaatsvinden.",
+          "De chiropractische gewrichtscorrecties die toegepast worden zijn afgestemd op kinderen. Deze zijn vrijwel pijnloos. Kinderen herstellen over het algemeen sneller dan volwassenen, en dus zijn de behandelfrequenties vaak lager dan bij volwassenen, maar dit is afhankelijk van de klachten en de patiënt, en de chiropractor zal u een passend persoonlijk behandelplan voorstellen.",
+          "Neurologische chiropractoren behandelen al meer dan 100 jaar kinderen van alle leeftijden. Neurologische chiropractie is zeer effectief en bovenal heel veilig voor kinderen. De behandeling bestaat uit lichte druktechnieken om blokkades te corrigeren, en valt niet te vergelijken met een behandeling voor volwassenen."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
+    },
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Baby's", "href": "/klachten/baby-s" },
+      { "label": "Zwangerschap", "href": "/klachten/zwangerschap" },
+      { "label": "Bovenrug & Schouder", "href": "/klachten/bovenrug-schouder" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Baby's",
-      "href": "/klachten/baby-s"
+  "en": {
+    "slug": "Children",
+    "title": "Children",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "Causes",
+        "paragraphs": [
+          "Children, just like adults, can develop musculoskeletal complaints. This can happen as early as during delivery, and particularly in the years that follow as they grow up through the inevitable falls and tumbles of childhood.",
+          "Falls, minor accidents, long hours of sitting at school and sports activities can all be potential causes of complaints. Children often recover quickly, but when complaints persist, they should certainly be taken seriously."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptoms",
+        "paragraphs": [
+          "Children are often unable to indicate exactly where they are in pain, so it is important to know that this is frequently expressed as headaches or stomach aches. Behaviour can also reveal that a child is not feeling well — they may become very tired, unusually restless, or their sleeping habits may change.",
+          "Reduced resistance can be accompanied by physical complaints, especially in children with underlying conditions such as asthma, frequent throat, nose and ear complaints, or scoliosis.",
+          "These conditions cannot be cured by chiropractic, but their effects on the body can be limited so that the child can grow up as normally as possible. For example, children with asthma tend to use chest breathing primarily, which can cause increased muscle tension in the shoulder region along with joint blockages in the upper back, ribs and neck."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Treatment",
+        "paragraphs": [
+          "Treatment of children is not the same as for adults. The physical examination is carried out in a playful way, following a thorough consultation with the child and parent(s), after which treatment can take place.",
+          "The chiropractic joint corrections used are tailored to children and are virtually painless. Children generally recover faster than adults, so treatment frequencies are often lower — though this depends on the complaints and the patient. The chiropractor will propose a suitable personal treatment plan.",
+          "Neurological chiropractors have been treating children of all ages for over 100 years. Neurological chiropractic is highly effective and, above all, very safe for children. Treatment consists of gentle pressure techniques to correct blockages and is not comparable to treatment for adults."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Zwangerschap",
-      "href": "/klachten/zwangerschap"
-    },
-    {
-      "label": "Bovenrug & Schouder",
-      "href": "/klachten/bovenrug-schouder"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Babies", "href": "/klachten/baby-s" },
+      { "label": "Pregnancy", "href": "/klachten/zwangerschap" },
+      { "label": "Upper Back & Shoulder", "href": "/klachten/bovenrug-schouder" }
+    ]
+  }
 }

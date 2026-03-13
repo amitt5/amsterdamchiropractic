@@ -2,6 +2,7 @@
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Link from 'next/link';
+import Navigation from '@/components/navigation';
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -12,29 +13,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export default function VacaturesPage() {
   return (
     <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
-      {/* ── NAV ──────────────────────────────────────────────────────────── */}
-      <nav className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-            <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center">
-              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
-                <path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" />
-              </svg>
-            </div>
-            <div>
-              <div className="font-extrabold text-base text-[#191919] leading-tight">Health4Life</div>
-              <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
-            </div>
-          </Link>
-
-          <Link
-            href="/"
-            className="bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* ── CONTENT ──────────────────────────────────────────────────────── */}
       <section className="py-20">

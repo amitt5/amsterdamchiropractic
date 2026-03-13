@@ -1,67 +1,118 @@
 {
-  "slug": "Whiplash",
-  "title": "Whiplash",
-  "highlightBox": "",
-  "intro": "Whiplash is een snelle, plotselinge beweging bij een verkeersongeluk of een val. De beweging kan letsel veroorzaken aan wervels en weefsels (spieren, zenuwen) in de nek. Dat kan een whiplash-trauma tot gevolg hebben: pijn, stijfheid en andere klachten die soms pas maanden na het ongeval tot uiting komen. Dr. Jahani beschikt over neurologisch-chiropractische methoden waarmee whiplash-klachten kunnen worden verholpen of verlicht.",
-  "sections": [
-    {
-      "heading": "Symptomen",
-      "paragraphs": [
-        "De meest voorkomende whiplashklacht is een pijnlijke, vaak stijve nek. Veel whiplash-patiënten hebben daarnaast last van hoofdpijn, lage rugpijn en uitstralende pijn naar armen en gezicht. Er zijn echter nog veel meer klachten die deel uit kunnen maken van het whiplash-trauma, zoals krachtsverlies in de armen, duizeligheid, evenwichtsstoornissen, misselijkheid, oorsuizen, slecht zien of vlekken voor de ogen en slaap- en concentratieproblemen. Niet alleen de aard, maar ook de ernst van de klachten verschilt sterk. De helft van de patiënten is binnen een maand hersteld, maar soms zijn de gevolgen zo ernstig dat het tot arbeidsongeschiktheid leidt."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
+  "nl": {
+    "slug": "Whiplash",
+    "title": "Whiplash",
+    "highlightBox": "",
+    "intro": "Whiplash is een snelle, plotselinge beweging bij een verkeersongeluk of een val. De beweging kan letsel veroorzaken aan wervels en weefsels (spieren, zenuwen) in de nek. Dat kan een whiplash-trauma tot gevolg hebben: pijn, stijfheid en andere klachten die soms pas maanden na het ongeval tot uiting komen. Dr. Jahani beschikt over neurologisch-chiropractische methoden waarmee whiplash-klachten kunnen worden verholpen of verlicht.",
+    "sections": [
+      {
+        "heading": "Symptomen",
+        "paragraphs": [
+          "De meest voorkomende whiplashklacht is een pijnlijke, vaak stijve nek. Veel whiplash-patiënten hebben daarnaast last van hoofdpijn, lage rugpijn en uitstralende pijn naar armen en gezicht. Er zijn echter nog veel meer klachten die deel uit kunnen maken van het whiplash-trauma, zoals krachtsverlies in de armen, duizeligheid, evenwichtsstoornissen, misselijkheid, oorsuizen, slecht zien of vlekken voor de ogen en slaap- en concentratieproblemen. Niet alleen de aard, maar ook de ernst van de klachten verschilt sterk. De helft van de patiënten is binnen een maand hersteld, maar soms zijn de gevolgen zo ernstig dat het tot arbeidsongeschiktheid leidt."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Oorzaken",
+        "paragraphs": [
+          "Whiplash is een bekende veel voorkomende term vaak gerelateerd naar auto-ongelukken. Vroeger met treinongelukken, bij zelfs kleine impacts, konden mensen een zelfde soort klachtenpatroon krijgen als bij een whiplash, dit werd \"railway spine\" genoemd. Lange tijd werd dit niet erkend en kregen deze \"railwayspine\" slachtoffers ook geen compensatie na het ongeval.",
+          "Whiplash is Engels voor zweepslag, de term slaat op de snelle, geforceerde hoofdbeweging die tot bovengenoemde klachten kan leiden. Whiplash heeft dus niet alleen met verkeersongelukken te maken, maar kan ook komen door een val van de trap of een ski-ongeluk.",
+          "Gezien er veel krachten werken op het lichaam tijdens een kopstaart ongeluk, versnellen bepaalde gedeeltes van het lichaam verschillend. En dat is de reden waarom een whiplash ongeluk zo traumatisch kan zijn. Allereerst bewegen de torso of het onderste gedeelte met de schouders naar voren en een aantal milliseconde later accelereert het hoofd. Door deze krachtige beweging kunnen de gewrichtskapsels, spieren, pezen, en zenuwen worden opgerekt, met als gevolg pijn en andere klachten."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Behandeling",
+        "paragraphs": [
+          "De chiropractor stelt u allereerst vragen over uw klachten om een beeld te krijgen van uw gezondheidstoestand. Daarnaast zal duidelijk gemaakt moeten worden in hoeverre het ongeluk een whiplash reactie heeft veroorzaakt. Daarop volgt een grondig lichamelijk onderzoek, waarbij vooral wordt gekeken naar de beweeglijkheid van de gewrichten. Indien er sprake is van een whiplash, zal de chiropractor nagaan welke graad whiplash u heeft, staande voor de heftigheid van uw klachten.",
+          "Indien er een röntgenfoto, CT of MRI scan beschikbaar is of kan worden aangevraagd dan kan dit nuttig zijn voor de chiropractor om de prognose te bepalen en de behandeling daarop af te stemmen. De chiropractor kan u ook het advies geven diagnostisch onderzoek te ondergaan. Dit gaat in samenspraak met de huisarts of medisch specialist.",
+          "Afhankelijk van hoe acuut en ernstig de klacht is kan de chiropractor met de behandeling beginnen. Door de wervels voorzichtig in beweging te brengen met behulp van druktechnieken, kunnen spieren en zenuwen weer normaal gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich weer en krijgen omliggende zenuwen weer de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat.",
+          "Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding. Zowel ter voorkoming als ter genezing is beweging goed. Verkeerd bewegen kan de klachten juist verergeren. Het is daarom van groot belang dat u zich laat adviseren. Sterke nekspieren ontwikkelen is van groot belang. Hierdoor wordt uw wervelkolom meer ontzien en wordt de kans op het terug krijgen van de klacht steeds kleiner."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "heading": "Oorzaken",
-      "paragraphs": [
-        "Whiplash is een bekende veel voorkomende term vaak gerelateerd naar auto-ongelukken. Vroeger met treinongelukken, bij zelfs kleine impacts, konden mensen een zelfde soort klachtenpatroon krijgen als bij een whiplash, dit werd \"railway spine\" genoemd. Lange tijd werd dit niet erkend en kregen deze \"railwayspine\" slachtoffers ook geen compensatie na het ongeval.",
-        "Whiplash is Engels voor zweepslag, de term slaat op de snelle, geforceerde hoofdbeweging die tot bovengenoemde klachten kan leiden. Whiplash heeft dus niet alleen met verkeersongelukken te maken, maar kan ook komen door een val van de trap of een ski-ongeluk.",
-        "Gezien er veel krachten werken op het lichaam tijdens een kopstaart ongeluk, versnellen bepaalde gedeeltes van het lichaam verschillend. En dat is de reden waarom een whiplash ongeluk zo traumatisch kan zijn. Allereerst bewegen de torso of het onderste gedeelte met de schouders naar voren en een aantal milliseconde later accelereert het hoofd. Door deze krachtige beweging kunnen de gewrichtskapsels, spieren, pezen, en zenuwen worden opgerekt, met als gevolg pijn en andere klachten."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Behandeling",
-      "paragraphs": [
-        "De chiropractor stelt u allereerst vragen over uw klachten om een beeld te krijgen van uw gezondheidstoestand. Daarnaast zal duidelijk gemaakt moeten worden in hoeverre het ongeluk een whiplash reactie heeft veroorzaakt. Daarop volgt een grondig lichamelijk onderzoek, waarbij vooral wordt gekeken naar de beweeglijkheid van de gewrichten. Indien er sprake is van een whiplash, zal de chiropractor nagaan welke graad whiplash u heeft, staande voor de heftigheid van uw klachten.",
-        "Indien er een röntgenfoto, CT of MRI scan beschikbaar is of kan worden aangevraagd dan kan dit nuttig zijn voor de chiropractor om de prognose te bepalen en de behandeling daarop af te stemmen. De chiropractor kan u ook het advies geven diagnostisch onderzoek te ondergaan. Dit gaat in samenspraak met de huisarts of medisch specialist.",
-        "Afhankelijk van hoe acuut en ernstig de klacht is kan de chiropractor met de behandeling beginnen. Door de wervels voorzichtig in beweging te brengen met behulp van druktechnieken, kunnen spieren en zenuwen weer normaal gaan functioneren. Dankzij de druktechnieken verbetert de beweeglijkheid, ontspannen de spieren zich weer en krijgen omliggende zenuwen weer de ruimte om hun taken uit te voeren. Daardoor kunnen pijn en andere klachten afnemen of verdwijnen. Het resultaat van de behandeling hangt af van de ernst van de klachten; uw chiropractor laat u weten hoe het er met u voorstaat.",
-        "Naast de behandeling kan de chiropractor u advies geven over een goede houding, ergonomie, sport, oefeningen en voeding. Zowel ter voorkoming als ter genezing is beweging goed. Verkeerd bewegen kan de klachten juist verergeren. Het is daarom van groot belang dat u zich laat adviseren. Sterke nekspieren ontwikkelen is van groot belang. Hierdoor wordt uw wervelkolom meer ontzien en wordt de kans op het terug krijgen van de klacht steeds kleiner."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
-    "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Nekpijn", "href": "/klachten/nek" },
+      { "label": "Hoofdpijn & Migraine", "href": "/klachten/hoofdpijn-en-migraine" },
+      { "label": "Lage Rugpijn", "href": "/klachten/lage-rugpijn" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Nekpijn",
-      "href": "/klachten/nek"
+  "en": {
+    "slug": "Whiplash",
+    "title": "Whiplash",
+    "highlightBox": "",
+    "intro": "Whiplash is a rapid, sudden movement during a traffic accident or a fall. The movement can cause injury to vertebrae and soft tissues (muscles, nerves) in the neck, resulting in a whiplash trauma: pain, stiffness and other complaints that sometimes only appear months after the accident. Dr. Jahani uses neurological chiropractic methods to resolve or relieve whiplash complaints.",
+    "sections": [
+      {
+        "heading": "Symptoms",
+        "paragraphs": [
+          "The most common whiplash complaint is a painful, often stiff neck. Many whiplash patients also suffer from headaches, low back pain and radiating pain to the arms and face. There are many more complaints that can be part of whiplash trauma, including loss of strength in the arms, dizziness, balance disorders, nausea, tinnitus, blurred vision or spots before the eyes, and sleep and concentration problems. Not only the nature but also the severity of symptoms varies greatly. Half of patients recover within a month, but sometimes the consequences are so serious that they lead to disability."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Causes",
+        "paragraphs": [
+          "Whiplash is a well-known term most often associated with car accidents. In the past, even train accidents with minor impacts could produce a similar pattern of complaints, which was called \"railway spine\". For a long time this was not recognised and victims received no compensation after the accident.",
+          "Whiplash literally means \"whip crack\" and refers to the rapid, forced head movement that can lead to the above-mentioned complaints. Whiplash is therefore not limited to traffic accidents; it can also result from a fall down the stairs or a skiing accident.",
+          "During a rear-end collision, various parts of the body accelerate at different rates. The torso and lower body with the shoulders move forward first, and milliseconds later the head accelerates. This powerful movement can stretch joint capsules, muscles, tendons and nerves, resulting in pain and other complaints."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Treatment",
+        "paragraphs": [
+          "The chiropractor will first ask you about your complaints to get a picture of your health. It will also need to be established to what extent the accident has caused a whiplash reaction. A thorough physical examination follows, focusing particularly on the mobility of the joints. If whiplash is suspected, the chiropractor will determine the grade of whiplash, which indicates the severity of your complaints.",
+          "If an X-ray, CT or MRI scan is available or can be requested, this can be useful for the chiropractor to determine the prognosis and tailor treatment accordingly. The chiropractor may also advise you to undergo diagnostic investigation in consultation with your GP or medical specialist.",
+          "Depending on how acute and severe the complaint is, the chiropractor can begin treatment. By gently mobilising the vertebrae using pressure techniques, muscles and nerves can start functioning normally again. The pressure techniques improve mobility, relax the muscles and allow surrounding nerves to resume their functions. As a result, pain and other complaints can decrease or disappear. The outcome of treatment depends on the severity of the complaints.",
+          "In addition to treatment, the chiropractor can advise you on posture, ergonomics, exercise and nutrition. Movement is beneficial both for prevention and recovery. Incorrect movement can worsen complaints, so it is important to seek guidance. Developing strong neck muscles is crucial — it spares your spine and reduces the chance of recurrence."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Hoofdpijn & Migraine",
-      "href": "/klachten/hoofdpijn-en-migraine"
-    },
-    {
-      "label": "Lage Rugpijn",
-      "href": "/klachten/lage-rugpijn"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Neck Pain", "href": "/klachten/nek" },
+      { "label": "Headache & Migraine", "href": "/klachten/hoofdpijn-en-migraine" },
+      { "label": "Low Back Pain", "href": "/klachten/lage-rugpijn" }
+    ]
+  }
 }

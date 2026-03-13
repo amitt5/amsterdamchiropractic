@@ -142,7 +142,6 @@
     "footerNewPatient": "New Patient Center",
     "footerNewPatientItems": [
       { "href": "/patient-forms", "label": "Patient Forms" },
-      { "href": "/office-tour", "label": "Virtual Office Tour" },
       { "href": "/techniques", "label": "Techniques" },
       { "href": "/health-resources", "label": "Health Resources" },
       { "href": "/wellness-partners", "label": "Wellness Partners" },
@@ -305,7 +304,6 @@
     "footerNewPatient": "Nieuw patiëntencentrum",
     "footerNewPatientItems": [
       { "href": "/patient-forms", "label": "Patiëntenformulieren" },
-      { "href": "/office-tour", "label": "Virtuele rondleiding" },
       { "href": "/techniques", "label": "Technieken" },
       { "href": "/health-resources", "label": "Gezondheidsbronnen" },
       { "href": "/wellness-partners", "label": "Wellness Partners" },

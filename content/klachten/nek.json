@@ -1,59 +1,102 @@
 {
-  "slug": "Nekpijn",
-  "title": "Nekpijn",
-  "highlightBox": "",
-  "intro": "Veel voorkomende aandoeningen zijn: stijve nek- en schouderspieren, whiplash, spierknopen, artrose en nekhernia. Neurologisch-chiropractische behandeling kan bij veel nekklachten uitkomst bieden.",
-  "sections": [
-    {
-      "heading": "Symptomen",
-      "paragraphs": [
-        "De meest voorkomende nekklachten zijn zeurende pijn en stijfheid. Andere veel voorkomende klachten zijn:"
-      ],
-      "listItems": [
-        "Duizeligheid",
-        "Oorsuizen",
-        "Concentratiestoornissen",
-        "Uitstralende pijn naar armen",
-        "Krachteloos of moe gevoel in schouders of armen",
-        "Tintelingen in handen of vingers"
-      ],
-      "listStyle": "checks",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "Oorzaken",
-    "intro": "Nekpijn kan verschillende oorzaken hebben. De meest voorkomende zijn:",
-    "geleidelijkHeading": "Geleidelijke oorzaken",
-    "geleidelijkItems": [
-      "Weinig afwisseling in de houding (zoals bij bureauwerk).",
-      "Weinig afwisseling in beweging (bij monotoon werk).",
-      "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
-      "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
-      "Spanning en stress.",
-      "Kou en tocht."
+  "nl": {
+    "slug": "Nekpijn",
+    "title": "Nekpijn",
+    "highlightBox": "",
+    "intro": "Veel voorkomende aandoeningen zijn: stijve nek- en schouderspieren, whiplash, spierknopen, artrose en nekhernia. Neurologisch-chiropractische behandeling kan bij veel nekklachten uitkomst bieden.",
+    "sections": [
+      {
+        "heading": "Symptomen",
+        "paragraphs": [
+          "De meest voorkomende nekklachten zijn zeurende pijn en stijfheid. Andere veel voorkomende klachten zijn:"
+        ],
+        "listItems": [
+          "Duizeligheid",
+          "Oorsuizen",
+          "Concentratiestoornissen",
+          "Uitstralende pijn naar armen",
+          "Krachteloos of moe gevoel in schouders of armen",
+          "Tintelingen in handen of vingers"
+        ],
+        "listStyle": "checks",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
     ],
-    "plotselingHeading": "Plotselinge oorzaken",
-    "plotselingItems": [
-      "Een val of ongeluk, wat kan resulteren in whiplash.",
-      "Verkramping van de spieren door een verkeerde beweging of verdraaiing, verkeerde slaaphouding, of infectie aan gehoorgang of luchtweg."
+    "causesSection": {
+      "heading": "Oorzaken",
+      "intro": "Nekpijn kan verschillende oorzaken hebben. De meest voorkomende zijn:",
+      "geleidelijkHeading": "Geleidelijke oorzaken",
+      "geleidelijkItems": [
+        "Weinig afwisseling in de houding (zoals bij bureauwerk).",
+        "Weinig afwisseling in beweging (bij monotoon werk).",
+        "Verkeerde of eenzijdige belasting (zoals een zware tas over één schouder).",
+        "De natuurlijke veroudering van het kraakbeen in de nek (ook wel artrose, slijtage of degeneratie genoemd).",
+        "Spanning en stress.",
+        "Kou en tocht."
+      ],
+      "plotselingHeading": "Plotselinge oorzaken",
+      "plotselingItems": [
+        "Een val of ongeluk, wat kan resulteren in whiplash.",
+        "Verkramping van de spieren door een verkeerde beweging of verdraaiing, verkeerde slaaphouding, of infectie aan gehoorgang of luchtweg."
+      ]
+    },
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Whiplash", "href": "/klachten/whiplash" },
+      { "label": "Bovenrug & Schouder", "href": "/klachten/bovenrug-schouder" },
+      { "label": "Hoofdpijn & Migraine", "href": "/klachten/hoofdpijn-en-migraine" }
     ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Whiplash",
-      "href": "/klachten/whiplash"
+  "en": {
+    "slug": "Neck Pain",
+    "title": "Neck Pain",
+    "highlightBox": "",
+    "intro": "Common conditions include: stiff neck and shoulder muscles, whiplash, muscle knots, arthritis and cervical disc herniation. Neurological chiropractic treatment can provide relief for many neck complaints.",
+    "sections": [
+      {
+        "heading": "Symptoms",
+        "paragraphs": [
+          "The most common neck complaints are a nagging pain and stiffness. Other frequent complaints include:"
+        ],
+        "listItems": [
+          "Dizziness",
+          "Tinnitus (ringing in ears)",
+          "Concentration difficulties",
+          "Radiating pain to the arms",
+          "Weakness or fatigue in shoulders or arms",
+          "Tingling in hands or fingers"
+        ],
+        "listStyle": "checks",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "Causes",
+      "intro": "Neck pain can have various causes. The most common are:",
+      "geleidelijkHeading": "Gradual causes",
+      "geleidelijkItems": [
+        "Limited variation in posture (such as desk work).",
+        "Limited variation in movement (with monotonous work).",
+        "Incorrect or one-sided load (such as a heavy bag over one shoulder).",
+        "The natural aging of the cartilage in the neck (also known as arthritis, wear or degeneration).",
+        "Tension and stress.",
+        "Cold and drafts."
+      ],
+      "plotselingHeading": "Sudden causes",
+      "plotselingItems": [
+        "A fall or accident, which can result in whiplash.",
+        "Muscle spasm due to a wrong movement or twist, incorrect sleeping position, or infection of the ear canal or airway."
+      ]
     },
-    {
-      "label": "Bovenrug & Schouder",
-      "href": "/klachten/bovenrug-schouder"
-    },
-    {
-      "label": "Hoofdpijn & Migraine",
-      "href": "/klachten/hoofdpijn-en-migraine"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Whiplash", "href": "/klachten/whiplash" },
+      { "label": "Upper Back & Shoulder", "href": "/klachten/bovenrug-schouder" },
+      { "label": "Headache & Migraine", "href": "/klachten/hoofdpijn-en-migraine" }
+    ]
+  }
 }

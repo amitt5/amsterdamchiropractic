@@ -1,57 +1,98 @@
 {
-  "slug": "Chiropractie en Zwangerschap",
-  "title": "Chiropractie en Zwangerschap",
-  "highlightBox": "",
-  "intro": "Chiropractie kan een uitkomst zijn voor de zwangere vrouw. Ook met een dikke buik is het mogelijk om behandeld te worden, zelfs tot en met de uitgerekende datum. Bovendien is het veilig voor het kindje wat groeit in de buik.",
-  "sections": [
-    {
-      "heading": "Lage rugklachten",
-      "paragraphs": [
-        "Het is niet ongebruikelijk dat zwangere vrouwen tijdens de zwangerschap klachten in de lage rug en het bekkengebied krijgen. Dit heeft te maken met de verandering in de hormoonspiegel, toename van het lichaamsgewicht en de verandering van de lichaamshouding. Als de klachten vroeg in de zwangerschap ontstaan of toenemend erger worden kan dit te wijten zijn aan een probleem in het functioneren van het bekken of de wervelkolom.",
-        "Lage rug klachten tijdens de zwangerschap zijn vaak te wijten aan de veranderde stand van het bekken en de lage rug. Doordat het kindje steeds groter en zwaarder wordt, wordt de neerwaartse trekkracht aan de voorkant van de wervelkolom steeds groter, met als gevolg dat het bekken naar voren kantelt, en de onderrug wat holler wordt. Dit leidt tot irritatie van de gewrichten tussen de wervels, en verkramping van bepaalde spiergroepen, en dus pijn.",
-        "Neurologische chiropractie kan het functioneren van de lage rug en het bekken verbeteren, en tegelijk ook een maximale ruimte in de buikholte bevorderen. Bovendien verbetert neurologische chiropractie de functie van het bekken, en daarmee de voorbereiding op de bevalling."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
+  "nl": {
+    "slug": "Chiropractie en Zwangerschap",
+    "title": "Chiropractie en Zwangerschap",
+    "highlightBox": "",
+    "intro": "Chiropractie kan een uitkomst zijn voor de zwangere vrouw. Ook met een dikke buik is het mogelijk om behandeld te worden, zelfs tot en met de uitgerekende datum. Bovendien is het veilig voor het kindje wat groeit in de buik.",
+    "sections": [
+      {
+        "heading": "Lage rugklachten",
+        "paragraphs": [
+          "Het is niet ongebruikelijk dat zwangere vrouwen tijdens de zwangerschap klachten in de lage rug en het bekkengebied krijgen. Dit heeft te maken met de verandering in de hormoonspiegel, toename van het lichaamsgewicht en de verandering van de lichaamshouding. Als de klachten vroeg in de zwangerschap ontstaan of toenemend erger worden kan dit te wijten zijn aan een probleem in het functioneren van het bekken of de wervelkolom.",
+          "Lage rug klachten tijdens de zwangerschap zijn vaak te wijten aan de veranderde stand van het bekken en de lage rug. Doordat het kindje steeds groter en zwaarder wordt, wordt de neerwaartse trekkracht aan de voorkant van de wervelkolom steeds groter, met als gevolg dat het bekken naar voren kantelt, en de onderrug wat holler wordt. Dit leidt tot irritatie van de gewrichten tussen de wervels, en verkramping van bepaalde spiergroepen, en dus pijn.",
+          "Neurologische chiropractie kan het functioneren van de lage rug en het bekken verbeteren, en tegelijk ook een maximale ruimte in de buikholte bevorderen. Bovendien verbetert neurologische chiropractie de functie van het bekken, en daarmee de voorbereiding op de bevalling."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Bekkeninstabiliteit",
+        "paragraphs": [
+          "Instabiliteit van het bekken komt vaak voor tijdens of na de zwangerschap. Bekkeninstabiliteit veroorzaakt pijn rond de bekkengewrichten en het schaambeen, als gevolg van de aanmaak van een hormoon welke tijdens het laatste trimester van de zwangerschap de gewrichtsbanden in het lichaam helpt te ontspannen.",
+          "Vrouwen ervaren dan pijn rond het staartbotje, schaambeen of uitstralende pijn naar de benen met zitten, staan, lopen en uiteindelijk ook met liggen.",
+          "De chiropractische behandeling voor bekkeninstabiliteit is niet te vergelijken met de behandeling voor een geblokkeerd bekken. Bij bekkeninstabiliteit beweegt het bekken te veel en is het juist het doel om dit weer stabiel te krijgen door middel van correcties en oefeningen, en het optimaal laten functioneren van het zenuwstelsel, de aansturing van de spieren.",
+          "Omdat neurologische chiropractie een dusdanig effect heeft op het functioneren van het zenuwstelsel, kan neurologische chiropractie op andere vlakken ook uitkomst bieden, bijvoorbeeld bij extreme misselijkheid."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "heading": "Bekkeninstabiliteit",
-      "paragraphs": [
-        "Instabiliteit van het bekken komt vaak voor tijdens of na de zwangerschap. Bekkeninstabiliteit veroorzaakt pijn rond de bekkengewrichten en het schaambeen, als gevolg van de aanmaak van een hormoon welke tijdens het laatste trimester van de zwangerschap de gewrichtsbanden in het lichaam helpt te ontspannen.",
-        "Vrouwen ervaren dan pijn rond het staartbotje, schaambeen of uitstralende pijn naar de benen met zitten, staan, lopen en uiteindelijk ook met liggen.",
-        "De chiropractische behandeling voor bekkeninstabiliteit is niet te vergelijken met de behandeling voor een geblokkeerd bekken. Bij bekkeninstabiliteit beweegt het bekken te veel en is het juist het doel om dit weer stabiel te krijgen door middel van correcties en oefeningen, en het optimaal laten functioneren van het zenuwstelsel, de aansturing van de spieren.",
-        "Omdat neurologische chiropractie een dusdanig effect heeft op het functioneren van het zenuwstelsel, kan neurologische chiropractie op andere vlakken ook uitkomst bieden, bijvoorbeeld bij extreme misselijkheid."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
-    "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Lage Rugpijn", "href": "/klachten/lage-rugpijn" },
+      { "label": "Baby's", "href": "/klachten/baby-s" },
+      { "label": "Kinderen", "href": "/klachten/kinderen" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Lage Rugpijn",
-      "href": "/klachten/lage-rugpijn"
+  "en": {
+    "slug": "Chiropractic and Pregnancy",
+    "title": "Chiropractic and Pregnancy",
+    "highlightBox": "",
+    "intro": "Chiropractic care can be a great help for pregnant women. Treatment is possible even with a large belly, right up to the due date. It is also safe for the baby growing inside.",
+    "sections": [
+      {
+        "heading": "Low back complaints",
+        "paragraphs": [
+          "It is not uncommon for pregnant women to experience complaints in the lower back and pelvic area during pregnancy. This is related to changes in hormone levels, increased body weight and changes in posture. If complaints arise early in pregnancy or become progressively worse, this may be due to a problem in the functioning of the pelvis or spine.",
+          "Low back complaints during pregnancy are often caused by the altered position of the pelvis and lower back. As the baby grows larger and heavier, the downward pull at the front of the spine increases, causing the pelvis to tilt forward and the lower back to hollow. This leads to irritation of the joints between the vertebrae, cramping of certain muscle groups, and pain.",
+          "Neurological chiropractic can improve the functioning of the lower back and pelvis while also promoting maximum space in the abdominal cavity. It also improves pelvic function and thereby helps prepare for delivery."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Pelvic instability",
+        "paragraphs": [
+          "Pelvic instability is common during or after pregnancy. It causes pain around the pelvic joints and pubic bone, as a result of a hormone produced during the last trimester of pregnancy that helps relax the ligaments in the body.",
+          "Women then experience pain around the tailbone, pubic bone or radiating pain into the legs when sitting, standing, walking and ultimately also when lying down.",
+          "Chiropractic treatment for pelvic instability is not the same as for a blocked pelvis. With pelvic instability, the pelvis moves too much, and the goal is to stabilise it again through corrections, exercises and optimising nervous system function — the control of the muscles.",
+          "Because neurological chiropractic has such a significant effect on nervous system function, it can also provide relief in other areas, for example with severe nausea."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Baby's",
-      "href": "/klachten/baby-s"
-    },
-    {
-      "label": "Kinderen",
-      "href": "/klachten/kinderen"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Low Back Pain", "href": "/klachten/lage-rugpijn" },
+      { "label": "Babies", "href": "/klachten/baby-s" },
+      { "label": "Children", "href": "/klachten/kinderen" }
+    ]
+  }
 }

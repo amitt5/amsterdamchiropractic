@@ -1,117 +1,218 @@
 {
-  "slug": "Baby's",
-  "title": "Baby's",
-  "highlightBox": "",
-  "intro": "",
-  "sections": [
-    {
-      "heading": "Oorzaken en mogelijke problemen bij baby's",
-      "paragraphs": [
-        "Een kind heeft met veel fysieke stress te maken gedurende de groei. Het eerste wat een wervelkolom in de groei meemaakt is de houding die het gedwongen wordt aan te nemen in de baarmoeder.",
-        "Veel vrouwen zullen gehoord hebben dat foetale houdingen, zoals stuit- of dwarsligging, problemen kunnen veroorzaken tijdens de bevalling. Wat vaak minder bekend is, is dat zulke houdingen ook invloed hebben op de wervelkolom van de foetus.",
-        "Zelfs bij een normale bevalling wordt er veel druk uitgeoefend op het lichaam van de baby. Een keizersnede lijkt dan minder traumatisch, maar het tegendeel blijkt waar.",
-        "Klachten van een pasgeboren baby kunnen gerelateerd zijn aan irritatie van het zenuwstelsel door blokkades in de rug."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Symptomen bij baby's",
-      "paragraphs": [],
-      "listItems": [
-        "Onrustig, nerveus, veel huilen",
-        "Slaapproblemen / ritmeproblemen",
-        "Voorkeurshouding van het hoofd of bekken",
-        "Overstrekken",
-        "Voorkeursborst met voeden",
-        "Problemen met zuigen",
-        "Naar de oren grijpen",
-        "Asymmetrische vorm van het hoofd",
-        "Asymmetrisch bewegen van de armen en/of benen",
-        "Extreem huilen bij aan- en uitkleden",
-        "Instabiele hoofdcontrole voor leeftijd",
-        "Vertraagde ontwikkeling",
-        "Oorontstekingen",
-        "Constipatie"
-      ],
-      "listStyle": "checks",
-      "twoColumns": true,
-      "noteBelow": "Natuurlijk kunnen bovenstaande klachten ook een andere oorzaak hebben. De chiropractor beoordeelt altijd of een behandeling zinvol is."
-    },
-    {
-      "heading": "Overmatig huilen",
-      "paragraphs": [
-        "Maar liefst 10-15% van alle pasgeboren baby's huilen overmatig en zijn ontroostbaar. Vaak gaat dit gepaard met het optrekken van de beentjes, gespannen vuistjes en overstrekken.",
-        "Huilbaby's zijn 0 tot 3 maanden oud; huilen minstens 3 uren per dag, meer dan 3 dagen per week, en langer dan 3 weken achter elkaar, meestal aan het eind van de middag of 's avonds.",
-        "Dit vele huilen kan stress geven en kan de verhouding tussen moeder en kind zo verstoren dat dit nog jaren invloed heeft. Het huilen is vaak een uiting van pijn, bijvoorbeeld door darmkrampjes, allergieën of blokkades in de wervelkolom.",
-        "Vaak wordt gezegd dat overmatig huilen vaak vanzelf over gaat, zo rond de leeftijd van 3 maanden. Blokkades die de ontwikkeling beïnvloeden kunnen dan nog steeds aanwezig zijn, ook al lijkt dat niet zo. Daarom is het raadzaam om kinderen ouder dan 3 maanden te laten onderzoeken door een chiropractor, zeker als ze als jonge baby veel hebben gehuild."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "KISS syndroom",
-      "paragraphs": [
-        "Een veelgenoemd probleem bij kinderen is het KISS syndroom (Kopgewrichten Invloed op Storingen in de Symmetrie). Dit syndroom omvat een uitgebreid scala van klachten die bij baby's en kinderen kunnen voorkomen, waaronder het vele huilen, voorkeurshouding en overstrekken.",
-        "Soms gaat het ook om vagere klachten. Al deze klachten komen voort uit een blokkade in het gebied van de bovenste nekwervels en de ongewenste aanpassingen die het lichaam hierop maakt.",
-        "Het is altijd noodzakelijk dat de chiropractor het hele lichaam onderzoekt, problemen in de nek kunnen namelijk ook voortkomen door bewegingsbeperkingen in het bekken."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Oorontsteking",
-      "paragraphs": [
-        "Het veelvuldig met de handjes naar het hoofd en de oren grijpen is ook iets wat gezien wordt in baby's. Hierbij wordt vaak gedacht aan oorontstekingen, zonder dat deze per definitie gevonden worden.",
-        "De bewegingsfuncties hoog in de nek spelen een onderliggende rol in het ontstaan van oorontstekingen. Door spanning op de buis van Eustachius in het oor, als gevolg van een blokkade in de nek, kan de afvoer van vocht uit het oor geremd worden, waardoor een ontsteking kan ontstaan.",
-        "Door de blokkade in de nek op te heffen, kan de buis van Eustachius het oorvocht weer ongestoord afvoeren."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    },
-    {
-      "heading": "Behandeling",
-      "paragraphs": [
-        "De behandeling van kinderen is niet hetzelfde zoals bij volwassenen. Spelenderwijs wordt het lichamelijke onderzoek verricht na een uitgebreid vraaggesprek met het kind en de ouder(s), waarna de behandeling kan plaatsvinden.",
-        "De chiropractische gewrichtscorrecties die toegepast worden zijn afgestemd op kinderen. Deze zijn vrijwel pijnloos. Kinderen herstellen over het algemeen sneller dan volwassenen, en dus zijn de behandelfrequenties vaak lager dan bij volwassenen, maar dit is afhankelijk van de klachten en de patiënt, en de chiropractor zal u een passend persoonlijk behandelplan voorstellen.",
-        "Neurologische chiropractoren behandelen al meer dan 100 jaar kinderen van alle leeftijden. Neurologische chiropractie is zeer effectief en bovenal heel veilig voor kinderen. De behandeling bestaat uit lichte druktechnieken om blokkades te corrigeren, en valt niet te vergelijken met een behandeling voor volwassenen."
-      ],
-      "listItems": [],
-      "listStyle": "none",
-      "twoColumns": false,
-      "noteBelow": ""
-    }
-  ],
-  "causesSection": {
-    "heading": "",
+  "nl": {
+    "slug": "Baby's",
+    "title": "Baby's",
+    "highlightBox": "",
     "intro": "",
-    "geleidelijkHeading": "",
-    "geleidelijkItems": [],
-    "plotselingHeading": "",
-    "plotselingItems": []
+    "sections": [
+      {
+        "heading": "Oorzaken en mogelijke problemen bij baby's",
+        "paragraphs": [
+          "Een kind heeft met veel fysieke stress te maken gedurende de groei. Het eerste wat een wervelkolom in de groei meemaakt is de houding die het gedwongen wordt aan te nemen in de baarmoeder.",
+          "Veel vrouwen zullen gehoord hebben dat foetale houdingen, zoals stuit- of dwarsligging, problemen kunnen veroorzaken tijdens de bevalling. Wat vaak minder bekend is, is dat zulke houdingen ook invloed hebben op de wervelkolom van de foetus.",
+          "Zelfs bij een normale bevalling wordt er veel druk uitgeoefend op het lichaam van de baby. Een keizersnede lijkt dan minder traumatisch, maar het tegendeel blijkt waar.",
+          "Klachten van een pasgeboren baby kunnen gerelateerd zijn aan irritatie van het zenuwstelsel door blokkades in de rug."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptomen bij baby's",
+        "paragraphs": [],
+        "listItems": [
+          "Onrustig, nerveus, veel huilen",
+          "Slaapproblemen / ritmeproblemen",
+          "Voorkeurshouding van het hoofd of bekken",
+          "Overstrekken",
+          "Voorkeursborst met voeden",
+          "Problemen met zuigen",
+          "Naar de oren grijpen",
+          "Asymmetrische vorm van het hoofd",
+          "Asymmetrisch bewegen van de armen en/of benen",
+          "Extreem huilen bij aan- en uitkleden",
+          "Instabiele hoofdcontrole voor leeftijd",
+          "Vertraagde ontwikkeling",
+          "Oorontstekingen",
+          "Constipatie"
+        ],
+        "listStyle": "checks",
+        "twoColumns": true,
+        "noteBelow": "Natuurlijk kunnen bovenstaande klachten ook een andere oorzaak hebben. De chiropractor beoordeelt altijd of een behandeling zinvol is."
+      },
+      {
+        "heading": "Overmatig huilen",
+        "paragraphs": [
+          "Maar liefst 10-15% van alle pasgeboren baby's huilen overmatig en zijn ontroostbaar. Vaak gaat dit gepaard met het optrekken van de beentjes, gespannen vuistjes en overstrekken.",
+          "Huilbaby's zijn 0 tot 3 maanden oud; huilen minstens 3 uren per dag, meer dan 3 dagen per week, en langer dan 3 weken achter elkaar, meestal aan het eind van de middag of 's avonds.",
+          "Dit vele huilen kan stress geven en kan de verhouding tussen moeder en kind zo verstoren dat dit nog jaren invloed heeft. Het huilen is vaak een uiting van pijn, bijvoorbeeld door darmkrampjes, allergieën of blokkades in de wervelkolom.",
+          "Vaak wordt gezegd dat overmatig huilen vaak vanzelf over gaat, zo rond de leeftijd van 3 maanden. Blokkades die de ontwikkeling beïnvloeden kunnen dan nog steeds aanwezig zijn, ook al lijkt dat niet zo. Daarom is het raadzaam om kinderen ouder dan 3 maanden te laten onderzoeken door een chiropractor, zeker als ze als jonge baby veel hebben gehuild."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "KISS syndroom",
+        "paragraphs": [
+          "Een veelgenoemd probleem bij kinderen is het KISS syndroom (Kopgewrichten Invloed op Storingen in de Symmetrie). Dit syndroom omvat een uitgebreid scala van klachten die bij baby's en kinderen kunnen voorkomen, waaronder het vele huilen, voorkeurshouding en overstrekken.",
+          "Soms gaat het ook om vagere klachten. Al deze klachten komen voort uit een blokkade in het gebied van de bovenste nekwervels en de ongewenste aanpassingen die het lichaam hierop maakt.",
+          "Het is altijd noodzakelijk dat de chiropractor het hele lichaam onderzoekt, problemen in de nek kunnen namelijk ook voortkomen door bewegingsbeperkingen in het bekken."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Oorontsteking",
+        "paragraphs": [
+          "Het veelvuldig met de handjes naar het hoofd en de oren grijpen is ook iets wat gezien wordt in baby's. Hierbij wordt vaak gedacht aan oorontstekingen, zonder dat deze per definitie gevonden worden.",
+          "De bewegingsfuncties hoog in de nek spelen een onderliggende rol in het ontstaan van oorontstekingen. Door spanning op de buis van Eustachius in het oor, als gevolg van een blokkade in de nek, kan de afvoer van vocht uit het oor geremd worden, waardoor een ontsteking kan ontstaan.",
+          "Door de blokkade in de nek op te heffen, kan de buis van Eustachius het oorvocht weer ongestoord afvoeren."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Behandeling",
+        "paragraphs": [
+          "De behandeling van kinderen is niet hetzelfde zoals bij volwassenen. Spelenderwijs wordt het lichamelijke onderzoek verricht na een uitgebreid vraaggesprek met het kind en de ouder(s), waarna de behandeling kan plaatsvinden.",
+          "De chiropractische gewrichtscorrecties die toegepast worden zijn afgestemd op kinderen. Deze zijn vrijwel pijnloos. Kinderen herstellen over het algemeen sneller dan volwassenen, en dus zijn de behandelfrequenties vaak lager dan bij volwassenen, maar dit is afhankelijk van de klachten en de patiënt, en de chiropractor zal u een passend persoonlijk behandelplan voorstellen.",
+          "Neurologische chiropractoren behandelen al meer dan 100 jaar kinderen van alle leeftijden. Neurologische chiropractie is zeer effectief en bovenal heel veilig voor kinderen. De behandeling bestaat uit lichte druktechnieken om blokkades te corrigeren, en valt niet te vergelijken met een behandeling voor volwassenen."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
+    },
+    "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
+    "sidebarCtaButtonLabel": "Afspraak maken",
+    "relatedConditions": [
+      { "label": "Kinderen", "href": "/klachten/kinderen" },
+      { "label": "Zwangerschap", "href": "/klachten/zwangerschap" },
+      { "label": "Nekpijn", "href": "/klachten/nek" }
+    ]
   },
-  "sidebarCtaSubtext": "Neem contact op voor een vrijblijvend gesprek over uw klachten.",
-  "sidebarCtaButtonLabel": "Afspraak maken",
-  "relatedConditions": [
-    {
-      "label": "Kinderen",
-      "href": "/klachten/kinderen"
+  "en": {
+    "slug": "Babies",
+    "title": "Babies",
+    "highlightBox": "",
+    "intro": "",
+    "sections": [
+      {
+        "heading": "Causes and possible problems in babies",
+        "paragraphs": [
+          "A child experiences significant physical stress during growth. The first thing a developing spine goes through is the position it is forced to adopt in the womb.",
+          "Many women will have heard that foetal positions such as breech or transverse presentation can cause problems during delivery. What is less well known is that such positions also affect the spine of the foetus.",
+          "Even during a normal delivery, a great deal of pressure is exerted on the baby's body. A caesarean section may seem less traumatic, but the opposite turns out to be true.",
+          "Complaints in a newborn baby can be related to irritation of the nervous system caused by blockages in the spine."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Symptoms in babies",
+        "paragraphs": [],
+        "listItems": [
+          "Restlessness, nervousness, excessive crying",
+          "Sleep problems / rhythm problems",
+          "Preferred position of the head or pelvis",
+          "Arching of the back",
+          "Preference for one breast when feeding",
+          "Difficulty with sucking",
+          "Reaching towards ears",
+          "Asymmetric head shape",
+          "Asymmetric movement of arms and/or legs",
+          "Extreme crying when dressing or undressing",
+          "Poor head control for age",
+          "Delayed development",
+          "Ear infections",
+          "Constipation"
+        ],
+        "listStyle": "checks",
+        "twoColumns": true,
+        "noteBelow": "Of course, the above complaints can also have other causes. The chiropractor always assesses whether treatment is appropriate."
+      },
+      {
+        "heading": "Excessive crying",
+        "paragraphs": [
+          "As many as 10–15% of all newborn babies cry excessively and are inconsolable. This is often accompanied by drawing up of the legs, clenched fists and arching of the back.",
+          "Crying babies are 0 to 3 months old, cry for at least 3 hours per day, more than 3 days per week, and for longer than 3 consecutive weeks — usually in the late afternoon or evening.",
+          "This excessive crying can cause stress and can disrupt the bond between mother and child in ways that have lasting effects for years. The crying is often an expression of pain, for example from intestinal cramps, allergies or blockages in the spine.",
+          "It is often said that excessive crying tends to resolve on its own around the age of 3 months. However, blockages that affect development may still be present even if they are not outwardly apparent. It is therefore advisable to have children older than 3 months examined by a chiropractor, especially if they cried a lot as a young baby."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "KISS syndrome",
+        "paragraphs": [
+          "A frequently mentioned problem in children is KISS syndrome (Kinematic Imbalances due to Suboccipital Strain). This syndrome encompasses a wide range of complaints that can occur in babies and children, including excessive crying, preferred positioning and arching.",
+          "Sometimes the complaints are more vague. All of these complaints arise from a blockage in the area of the upper cervical vertebrae and the compensatory adaptations the body makes as a result.",
+          "It is always necessary for the chiropractor to examine the entire body, as problems in the neck can also originate from movement restrictions in the pelvis."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Ear infections",
+        "paragraphs": [
+          "Babies frequently reaching for their head and ears is also something commonly observed. This is often attributed to ear infections, even when none are found.",
+          "Movement function high in the neck plays an underlying role in the development of ear infections. Tension on the Eustachian tube in the ear, caused by a blockage in the neck, can impede drainage of fluid from the ear, leading to infection.",
+          "By resolving the blockage in the neck, the Eustachian tube can drain ear fluid freely again."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      },
+      {
+        "heading": "Treatment",
+        "paragraphs": [
+          "Treatment of children is not the same as for adults. The physical examination is carried out in a playful way, following a thorough consultation with the child and parent(s), after which treatment can take place.",
+          "The chiropractic joint corrections used are tailored to children and are virtually painless. Children generally recover faster than adults, so treatment frequencies are often lower — though this depends on the complaints and the patient. The chiropractor will propose a suitable personal treatment plan.",
+          "Neurological chiropractors have been treating children of all ages for over 100 years. Neurological chiropractic is highly effective and, above all, very safe for children. Treatment consists of gentle pressure techniques to correct blockages and is not comparable to treatment for adults."
+        ],
+        "listItems": [],
+        "listStyle": "none",
+        "twoColumns": false,
+        "noteBelow": ""
+      }
+    ],
+    "causesSection": {
+      "heading": "",
+      "intro": "",
+      "geleidelijkHeading": "",
+      "geleidelijkItems": [],
+      "plotselingHeading": "",
+      "plotselingItems": []
     },
-    {
-      "label": "Zwangerschap",
-      "href": "/klachten/zwangerschap"
-    },
-    {
-      "label": "Nekpijn",
-      "href": "/klachten/nek"
-    }
-  ]
+    "sidebarCtaSubtext": "Contact us for a no-obligation conversation about your complaints.",
+    "sidebarCtaButtonLabel": "Book appointment",
+    "relatedConditions": [
+      { "label": "Children", "href": "/klachten/kinderen" },
+      { "label": "Pregnancy", "href": "/klachten/zwangerschap" },
+      { "label": "Neck Pain", "href": "/klachten/nek" }
+    ]
+  }
 }

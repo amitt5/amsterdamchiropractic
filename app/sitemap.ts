@@ -42,7 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Other pages
     { url: `${base}/health-resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/office-tour`, lastModified: today, changeFrequency: 'yearly', priority: 0.6 },
     { url: `${base}/patient-forms`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/vacatures`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/videos`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
