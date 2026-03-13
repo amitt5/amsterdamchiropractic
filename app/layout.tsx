@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/language-context";
-import { Analytics } from "@vercel/analytics/next";
+import CookieBanner from "@/components/cookie-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +36,11 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MedicalBusiness"],
+  "@type": "Chiropractor",
   "name": "Health4Life Chiropractic",
+  "description": "Chiropractie in Amsterdam Zuid. Behandeling van rugpijn, nekpijn, hoofdpijn, whiplash en sportblessures door Dr. M. Jahani DC. Bel voor een afspraak.",
   "url": "https://www.amsterdamchiropractic.com",
-  "telephone": "020-673 1800",
+  "telephone": "+31-20-673-1800",
   "image": "https://www.amsterdamchiropractic.com/dr-jahani.webp",
   "address": {
     "@type": "PostalAddress",
@@ -49,10 +50,53 @@ const jsonLd = {
     "postalCode": "1073 PR",
     "addressCountry": "NL"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 52.3541, "longitude": 4.9003 },
-  "openingHoursSpecification": [],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3541,
+    "longitude": 4.9003
+  },
+  "hasMap": "https://maps.google.com/?q=Maasstraat+103,+1073+PR+Amsterdam",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
   "priceRange": "€€",
-  "sameAs": []
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Cash, Credit Card, PIN",
+  "areaServed": {
+    "@type": "City",
+    "name": "Amsterdam"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+31-20-673-1800",
+      "contactType": "customer service",
+      "areaServed": "NL",
+      "availableLanguage": ["Dutch", "English"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+31-6-1882-0000",
+      "contactType": "customer service",
+      "areaServed": "NL",
+      "availableLanguage": ["Dutch", "English"]
+    }
+  ],
+  "employee": {
+    "@type": "Physician",
+    "name": "Dr. M. Jahani DC",
+    "jobTitle": "Chiropractor",
+    "image": "https://www.amsterdamchiropractic.com/dr-jahani.webp"
+  },
+  "medicalSpecialty": "Musculoskeletal",
+  "sameAs": [
+    "https://maps.google.com/?q=Health4Life+Chiropractic+Amsterdam"
+  ]
 };
 
 export default function RootLayout({
@@ -69,8 +113,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <LanguageProvider>{children}</LanguageProvider>
-        <Analytics />
+        <LanguageProvider>
+          {children}
+          <CookieBanner />
+        </LanguageProvider>
       </body>
     </html>
   );

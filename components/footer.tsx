@@ -103,10 +103,13 @@ export default function Footer() {
         <div>
           <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.contactLabel}</div>
           <ul className="space-y-2.5 text-sm text-white/60">
-            <li>Maasstraat 103</li>
-            <li>1078 HH Amsterdam</li>
+            <li>
+              <a href="https://maps.google.com/?q=Maasstraat+103,+1078+HH+Amsterdam" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Maasstraat 103<br />1078 HH Amsterdam
+              </a>
+            </li>
             <li><a href="tel:0206731800" className="hover:text-white transition-colors">020-673 1800</a></li>
-            <li><a href="https://wa.me/31618820000" className="hover:text-white transition-colors">06-1882-0000 (WhatsApp)</a></li>
+            <li><a href="https://wa.me/31618820000" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">06-1882-0000 (WhatsApp)</a></li>
             <li className="pt-1">{c.hours[0]}</li>
             <li>{c.hours[1]}</li>
           </ul>
@@ -114,7 +117,9 @@ export default function Footer() {
       </div>
       <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
         <span>{c.rights}</span>
-        <span>{c.legal}</span>
+        <Link href="/privacy" className="hover:text-white/70 transition-colors">
+          {c.legal.split('·')[0].trim()}
+        </Link>
       </div>
     </footer>
   );

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChiroVoiceBot } from '@/components/voice-bot';
 import Navigation from '@/components/navigation';
+import Footer from '@/components/footer';
 import { useLanguage } from '@/contexts/language-context';
 import homepageContent from '@/content/homepage.json';
 
@@ -394,7 +395,7 @@ function BookingWidget() {
                     disabled={disabled}
                     onClick={() => setSelectedDay(day)}
                     className={`aspect-square rounded-lg text-sm font-medium transition-colors
-                      ${disabled ? 'text-[#403F3F]/25 cursor-not-allowed' : ''}
+                      ${disabled ? 'opacity-30 cursor-not-allowed pointer-events-none' : ''}
                       ${selected ? 'bg-[#45321A] text-white font-bold' : ''}
                       ${!disabled && !selected ? 'hover:bg-[#45321A]/10 text-[#191919]' : ''}
                     `}
@@ -986,54 +987,7 @@ export default function ChiroPage() {
         </div>
       )}
 
-      {/* FOOTER */}
-      <footer className="bg-[#191919] text-white py-14">
-        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5"><path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" /></svg>
-              </div>
-              <div>
-                <div className="font-extrabold text-base leading-tight">Health4Life</div>
-                <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
-              </div>
-            </div>
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs">{c.footerTagline}</p>
-          </div>
-          <div>
-            <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.footerQuickLinks}</div>
-            <ul className="space-y-2.5 text-sm text-white/60">
-              {c.footerQuickLinksItems.map(({anchor: href, label}) => (
-                <li key={href}><a href={`#${href}`} className="hover:text-white transition-colors">{label}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.footerNewPatient}</div>
-            <ul className="space-y-2.5 text-sm text-white/60">
-              {c.footerNewPatientItems.map(({href, label}) => (
-                <li key={href}><Link href={href} className="hover:text-white transition-colors">{label}</Link></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <div className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wide">{c.footerContact}</div>
-            <ul className="space-y-2.5 text-sm text-white/60">
-              <li>Maasstraat 103</li>
-              <li>1078 HH Amsterdam</li>
-              <li>020-673 1800</li>
-              <li>06-1882-0000 (WhatsApp)</li>
-              <li className="pt-1">{c.footerHours[0]}</li>
-              <li>{c.footerHours[1]}</li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
-          <span>{c.footerCopy}</span>
-          <span>{c.footerLegal}</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

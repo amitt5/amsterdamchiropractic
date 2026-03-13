@@ -265,7 +265,7 @@ export default function OfficeTourPage() {
         </div>
         <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
           <span>© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.</span>
-          <span>Privacy Policy · Terms of Service</span>
+          <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
         </div>
       </footer>
     </div>

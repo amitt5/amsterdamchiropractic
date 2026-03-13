@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Brown rounded square background -->
+  <rect width="32" height="32" rx="5" fill="#45321A"/>
+
+  <!-- Spine: 5 vertebrae, widest in lumbar region, tapering top and bottom -->
+  <!-- Cervical (top) -->
+  <rect x="13" y="3"  width="6"  height="3.5" rx="1.5" fill="white"/>
+
+  <!-- Thoracic -->
+  <rect x="11.5" y="8"  width="9"  height="3.5" rx="1.5" fill="white"/>
+
+  <!-- Lumbar (widest) -->
+  <rect x="10.5" y="13" width="11" height="3.5" rx="1.5" fill="white"/>
+
+  <!-- Lower lumbar -->
+  <rect x="11.5" y="18" width="9"  height="3.5" rx="1.5" fill="white"/>
+
+  <!-- Sacrum (slightly wider, taller) -->
+  <rect x="12.5" y="23" width="7"  height="5.5" rx="2" fill="white"/>
+
+  <!-- Thin center canal line (spinal cord) -->
+  <rect x="15.25" y="3" width="1.5" height="25.5" rx="0.75" fill="#45321A" opacity="0.4"/>
+</svg>

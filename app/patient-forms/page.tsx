@@ -43,7 +43,7 @@ export default function PatientFormsPage() {
             <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">New Patients</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">Patient Forms</h1>
             <p className="text-[#403F3F] text-lg max-w-2xl mx-auto">
-              Download and complete before your first visit
+              Complete before your first visit to save time at the clinic
             </p>
             <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
           </div>
@@ -59,11 +59,10 @@ export default function PatientFormsPage() {
               <div className="flex-1">
                 <h3 className="font-bold text-[#191919] mb-2 text-lg">Instructions</h3>
                 <p className="text-[#403F3F] text-sm leading-relaxed">
-                  Please complete these forms and bring them to your first appointment, or email them to{' '}
+                  Please fill in the New Patient Intake Form online before your first appointment. It takes only a few minutes and helps us prepare for your visit. If you have any questions, contact us at{' '}
                   <a href="mailto:health4life@amsterdamchiropractic.com" className="text-[#45321A] font-semibold hover:underline">
                     health4life@amsterdamchiropractic.com
-                  </a>{' '}
-                  24 hours before your visit.
+                  </a>.
                 </p>
               </div>
             </div>
@@ -80,14 +79,17 @@ export default function PatientFormsPage() {
               </div>
               <h3 className="font-bold text-[#191919] mb-2 text-lg">New Patient Intake Form</h3>
               <p className="text-[#403F3F] text-sm mb-5 leading-relaxed">
-                Basic contact information, insurance details, and reason for visit.
+                Personal details, medical history, insurance, and consent — fill it in online before your visit.
               </p>
-              <button className="w-full bg-[#45321A] text-white text-sm font-semibold py-3 rounded-full hover:bg-[#5a4228] transition-colors flex items-center justify-center gap-2">
+              <Link
+                href="/patient-forms/new-patient-intake"
+                className="w-full bg-[#45321A] text-white text-sm font-semibold py-3 rounded-full hover:bg-[#5a4228] transition-colors flex items-center justify-center gap-2"
+              >
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                Download PDF
-              </button>
+                Fill Out Form Online
+              </Link>
             </div>
 
             {/* Form 2 */}
@@ -190,7 +192,7 @@ export default function PatientFormsPage() {
         </div>
         <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
           <span>© 2026 Health4Life Chiropractic Amsterdam. All rights reserved.</span>
-          <span>Privacy Policy · Terms of Service</span>
+          <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
         </div>
       </footer>
     </div>
