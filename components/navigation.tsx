@@ -8,6 +8,7 @@ import navContent from '@/content/navigation.json';
 export default function Navigation() {
   const { language, setLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
+  const l = language;
 
   const t = {
     en: {
@@ -16,35 +17,35 @@ export default function Navigation() {
       conditionsLabel: navContent.en.conditionsLabel,
       moreLabel: navContent.en.moreLabel,
       mainNav: [
-        { label: 'Services', href: '/#services' },
-        { label: 'Approach', href: '/#approach' },
-        { label: 'Pricing', href: '/#pricing' },
-        { label: 'About', href: '/#about' },
-        { label: 'Reviews', href: '/#testimonials' },
-        { label: 'FAQ', href: '/#faq' },
-        { label: 'Book', href: '/#booking' },
+        { label: 'Services', href: `/${l}#services` },
+        { label: 'Approach', href: `/${l}#approach` },
+        { label: 'Pricing', href: `/${l}#pricing` },
+        { label: 'About', href: `/${l}#about` },
+        { label: 'Reviews', href: `/${l}#testimonials` },
+        { label: 'FAQ', href: `/${l}#faq` },
+        { label: 'Book', href: `/${l}#booking` },
       ],
       klachten: [
-        { label: 'All Conditions', href: '/klachten' },
-        { label: 'Lower Back Pain', href: '/klachten/lage-rugpijn' },
-        { label: 'Neck Pain', href: '/klachten/nek' },
-        { label: 'Herniated Disc', href: '/klachten/hernia' },
-        { label: 'Whiplash', href: '/klachten/whiplash' },
-        { label: 'Headache & Migraine', href: '/klachten/hoofdpijn-en-migraine' },
-        { label: 'Pregnancy', href: '/klachten/zwangerschap' },
-        { label: 'Sports Injuries', href: '/klachten/sportblessures' },
-        { label: "Baby's", href: '/klachten/baby-s' },
-        { label: 'Children', href: '/klachten/kinderen' },
-        { label: 'Arthrosis / Wear', href: '/klachten/artrose-slijtage' },
+        { label: 'All Conditions', href: `/${l}/klachten` },
+        { label: 'Lower Back Pain', href: `/${l}/klachten/lage-rugpijn` },
+        { label: 'Neck Pain', href: `/${l}/klachten/nek` },
+        { label: 'Herniated Disc', href: `/${l}/klachten/hernia` },
+        { label: 'Whiplash', href: `/${l}/klachten/whiplash` },
+        { label: 'Headache & Migraine', href: `/${l}/klachten/hoofdpijn-en-migraine` },
+        { label: 'Pregnancy', href: `/${l}/klachten/zwangerschap` },
+        { label: 'Sports Injuries', href: `/${l}/klachten/sportblessures` },
+        { label: "Baby's", href: `/${l}/klachten/baby-s` },
+        { label: 'Children', href: `/${l}/klachten/kinderen` },
+        { label: 'Arthrosis / Wear', href: `/${l}/klachten/artrose-slijtage` },
       ],
       moreLinks: [
-        { label: 'New Patient Center', href: '/new-patient-center' },
-        { label: 'Your First Visit', href: '/new-patient-center/your-first-visit' },
-        { label: 'What to Expect', href: '/new-patient-center/what-to-expect' },
-        { label: 'Payment Options', href: '/new-patient-center/payment-options' },
-        { label: 'Meet Your Doctor', href: '/about/meet-your-doctor' },
-        { label: 'Health Resources', href: '/health-resources' },
-        { label: 'Patient Forms', href: '/patient-forms' },
+        { label: 'New Patient Center', href: `/${l}/new-patient-center` },
+        { label: 'Your First Visit', href: `/${l}/new-patient-center/your-first-visit` },
+        { label: 'What to Expect', href: `/${l}/new-patient-center/what-to-expect` },
+        { label: 'Payment Options', href: `/${l}/new-patient-center/payment-options` },
+        { label: 'Meet Your Doctor', href: `/${l}/about/meet-your-doctor` },
+        { label: 'Health Resources', href: `/${l}/health-resources` },
+        { label: 'Patient Forms', href: `/${l}/patient-forms` },
       ],
     },
     nl: {
@@ -53,35 +54,35 @@ export default function Navigation() {
       conditionsLabel: navContent.nl.conditionsLabel,
       moreLabel: navContent.nl.moreLabel,
       mainNav: [
-        { label: 'Diensten', href: '/#services' },
-        { label: 'Aanpak', href: '/#approach' },
-        { label: 'Tarieven', href: '/#pricing' },
-        { label: 'Over Ons', href: '/#about' },
-        { label: 'Reviews', href: '/#testimonials' },
-        { label: 'FAQ', href: '/#faq' },
-        { label: 'Boek', href: '/#booking' },
+        { label: 'Diensten', href: `/${l}#services` },
+        { label: 'Aanpak', href: `/${l}#approach` },
+        { label: 'Tarieven', href: `/${l}#pricing` },
+        { label: 'Over Ons', href: `/${l}#about` },
+        { label: 'Reviews', href: `/${l}#testimonials` },
+        { label: 'FAQ', href: `/${l}#faq` },
+        { label: 'Boek', href: `/${l}#booking` },
       ],
       klachten: [
-        { label: 'Alle klachten', href: '/klachten' },
-        { label: 'Lage Rugpijn', href: '/klachten/lage-rugpijn' },
-        { label: 'Nek', href: '/klachten/nek' },
-        { label: 'Hernia', href: '/klachten/hernia' },
-        { label: 'Whiplash', href: '/klachten/whiplash' },
-        { label: 'Hoofdpijn & Migraine', href: '/klachten/hoofdpijn-en-migraine' },
-        { label: 'Zwangerschap', href: '/klachten/zwangerschap' },
-        { label: 'Sportblessures', href: '/klachten/sportblessures' },
-        { label: "Baby's", href: '/klachten/baby-s' },
-        { label: 'Kinderen', href: '/klachten/kinderen' },
-        { label: 'Artrose / Slijtage', href: '/klachten/artrose-slijtage' },
+        { label: 'Alle klachten', href: `/${l}/klachten` },
+        { label: 'Lage Rugpijn', href: `/${l}/klachten/lage-rugpijn` },
+        { label: 'Nek', href: `/${l}/klachten/nek` },
+        { label: 'Hernia', href: `/${l}/klachten/hernia` },
+        { label: 'Whiplash', href: `/${l}/klachten/whiplash` },
+        { label: 'Hoofdpijn & Migraine', href: `/${l}/klachten/hoofdpijn-en-migraine` },
+        { label: 'Zwangerschap', href: `/${l}/klachten/zwangerschap` },
+        { label: 'Sportblessures', href: `/${l}/klachten/sportblessures` },
+        { label: "Baby's", href: `/${l}/klachten/baby-s` },
+        { label: 'Kinderen', href: `/${l}/klachten/kinderen` },
+        { label: 'Artrose / Slijtage', href: `/${l}/klachten/artrose-slijtage` },
       ],
       moreLinks: [
-        { label: 'Nieuwe Patiënten', href: '/new-patient-center' },
-        { label: 'Uw Eerste Bezoek', href: '/new-patient-center/your-first-visit' },
-        { label: 'Wat te Verwachten', href: '/new-patient-center/what-to-expect' },
-        { label: 'Betalingsopties', href: '/new-patient-center/payment-options' },
-        { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
-        { label: 'Gezondheidsinfo', href: '/health-resources' },
-        { label: 'Patiëntformulieren', href: '/patient-forms' },
+        { label: 'Nieuwe Patiënten', href: `/${l}/new-patient-center` },
+        { label: 'Uw Eerste Bezoek', href: `/${l}/new-patient-center/your-first-visit` },
+        { label: 'Wat te Verwachten', href: `/${l}/new-patient-center/what-to-expect` },
+        { label: 'Betalingsopties', href: `/${l}/new-patient-center/payment-options` },
+        { label: 'Ontmoet Dr. Jahani', href: `/${l}/about/meet-your-doctor` },
+        { label: 'Gezondheidsinfo', href: `/${l}/health-resources` },
+        { label: 'Patiëntformulieren', href: `/${l}/patient-forms` },
       ],
     },
   };
@@ -92,7 +93,7 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity flex-shrink-0">
+        <Link href={`/${l}`} className="flex items-center gap-2.5 hover:opacity-80 transition-opacity flex-shrink-0">
           <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center">
             <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
               <path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" />
@@ -132,7 +133,7 @@ export default function Navigation() {
           </div>
 
           <Link
-            href="/#booking"
+            href={`/${l}#booking`}
             className="hidden md:block bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
           >
             {c.book}

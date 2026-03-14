@@ -6,26 +6,27 @@ import footerContent from '@/content/footer.json';
 
 export default function Footer() {
   const { language } = useLanguage();
+  const l = language;
 
   const t = {
     en: {
       tagline: footerContent.en.tagline,
       treatmentLabel: footerContent.en.treatmentLabel,
       treatment: [
-        { label: 'Conditions', href: '/klachten' },
-        { label: 'Treatment', href: '/behandeling' },
-        { label: 'Techniques', href: '/techniques' },
-        { label: 'Physio-Chiro Therapy', href: '/fysio-chiro-gecombineerde-therapie' },
-        { label: 'Rates & Insurance', href: '/behandeling/tarieven-vergoedingen' },
+        { label: 'Conditions', href: `/${l}/klachten` },
+        { label: 'Techniques', href: `/${l}/techniques` },
+        { label: 'About Us', href: `/${l}/about` },
+        { label: 'Services & Techniques', href: `/${l}/about/services-techniques` },
+        { label: 'Payment Options', href: `/${l}/new-patient-center/payment-options` },
       ],
       infoLabel: footerContent.en.infoLabel,
       info: [
-        { label: 'About Us', href: '/about' },
-        { label: 'Meet Dr. Jahani', href: '/about/meet-your-doctor' },
-        { label: 'Testimonials', href: '/testimonials' },
-        { label: 'Videos', href: '/videos' },
-        { label: 'Office Hours', href: '/office-hours' },
-        { label: 'Vacancies', href: '/vacatures' },
+        { label: 'New Patient Center', href: `/${l}/new-patient-center` },
+        { label: 'Your First Visit', href: `/${l}/new-patient-center/your-first-visit` },
+        { label: 'Meet Dr. Jahani', href: `/${l}/about/meet-your-doctor` },
+        { label: 'Patient Forms', href: `/${l}/patient-forms` },
+        { label: 'Health Resources', href: `/${l}/health-resources` },
+        { label: 'Privacy Policy', href: `/${l}/privacy` },
       ],
       contactLabel: footerContent.en.contactLabel,
       hours: [footerContent.en.hours1, footerContent.en.hours2],
@@ -36,20 +37,20 @@ export default function Footer() {
       tagline: footerContent.nl.tagline,
       treatmentLabel: footerContent.nl.treatmentLabel,
       treatment: [
-        { label: 'Klachten', href: '/klachten' },
-        { label: 'Behandeling', href: '/behandeling' },
-        { label: 'Technieken', href: '/techniques' },
-        { label: 'Fysio-Chiro Therapie', href: '/fysio-chiro-gecombineerde-therapie' },
-        { label: 'Tarieven & Vergoedingen', href: '/behandeling/tarieven-vergoedingen' },
+        { label: 'Klachten', href: `/${l}/klachten` },
+        { label: 'Technieken', href: `/${l}/techniques` },
+        { label: 'Over Ons', href: `/${l}/about` },
+        { label: 'Diensten & Technieken', href: `/${l}/about/services-techniques` },
+        { label: 'Betalingsopties', href: `/${l}/new-patient-center/payment-options` },
       ],
       infoLabel: footerContent.nl.infoLabel,
       info: [
-        { label: 'Over Ons', href: '/about' },
-        { label: 'Ontmoet Dr. Jahani', href: '/about/meet-your-doctor' },
-        { label: 'Testimonials', href: '/testimonials' },
-        { label: "Video's", href: '/videos' },
-        { label: 'Openingstijden', href: '/office-hours' },
-        { label: 'Vacatures', href: '/vacatures' },
+        { label: 'Nieuwe Patiënten', href: `/${l}/new-patient-center` },
+        { label: 'Uw Eerste Bezoek', href: `/${l}/new-patient-center/your-first-visit` },
+        { label: 'Ontmoet Dr. Jahani', href: `/${l}/about/meet-your-doctor` },
+        { label: 'Patiëntformulieren', href: `/${l}/patient-forms` },
+        { label: 'Gezondheidsinfo', href: `/${l}/health-resources` },
+        { label: 'Privacybeleid', href: `/${l}/privacy` },
       ],
       contactLabel: footerContent.nl.contactLabel,
       hours: [footerContent.nl.hours1, footerContent.nl.hours2],
@@ -117,7 +118,7 @@ export default function Footer() {
       </div>
       <div className="max-w-6xl mx-auto px-6 mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
         <span>{c.rights}</span>
-        <Link href="/privacy" className="hover:text-white/70 transition-colors">
+        <Link href={`/${l}/privacy`} className="hover:text-white/70 transition-colors">
           {c.legal.split('·')[0].trim()}
         </Link>
       </div>

@@ -2,49 +2,63 @@ import type { MetadataRoute } from 'next';
 
 const base = 'https://www.amsterdamchiropractic.com';
 const today = new Date().toISOString().split('T')[0];
+const locales = ['nl', 'en'] as const;
+
+function entry(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] = 'monthly') {
+  return locales.map(locale => ({
+    url: `${base}/${locale}${path}`,
+    lastModified: today,
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: {
+        nl: `${base}/nl${path}`,
+        en: `${base}/en${path}`,
+      },
+    },
+  }));
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // Homepage
-    { url: base, lastModified: today, changeFrequency: 'weekly', priority: 1.0 },
+    ...entry('', 1.0, 'weekly'),
 
     // Klachten hub
-    { url: `${base}/klachten`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+    ...entry('/klachten', 0.9),
 
     // Individual klachten pages (most search traffic)
-    { url: `${base}/klachten/lage-rugpijn`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/hernia`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/nek`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/whiplash`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/hoofdpijn-en-migraine`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/hoofdpijn-spanningshoofdpijn`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/bovenrug-schouder`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/artrose-slijtage`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/sportblessures`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/baby-s`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/kinderen`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/klachten/zwangerschap`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    ...entry('/klachten/lage-rugpijn', 0.8),
+    ...entry('/klachten/hernia', 0.8),
+    ...entry('/klachten/nek', 0.8),
+    ...entry('/klachten/whiplash', 0.8),
+    ...entry('/klachten/hoofdpijn-en-migraine', 0.8),
+    ...entry('/klachten/hoofdpijn-spanningshoofdpijn', 0.8),
+    ...entry('/klachten/bovenrug-schouder', 0.8),
+    ...entry('/klachten/artrose-slijtage', 0.8),
+    ...entry('/klachten/sportblessures', 0.8),
+    ...entry('/klachten/baby-s', 0.8),
+    ...entry('/klachten/kinderen', 0.8),
+    ...entry('/klachten/zwangerschap', 0.8),
 
     // About & techniques
-    { url: `${base}/about`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/about/meet-your-doctor`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/about/services-techniques`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/techniques`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    ...entry('/about', 0.7),
+    ...entry('/about/meet-your-doctor', 0.7),
+    ...entry('/about/services-techniques', 0.7),
+    ...entry('/techniques', 0.7),
 
     // New patient center
-    { url: `${base}/new-patient-center`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/your-first-visit`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/what-to-expect`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/what-to-expect/phase-1-relief-care`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/what-to-expect/phase-2-corrective-care`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/what-to-expect/phase-3-wellness-care`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/new-patient-center/payment-options`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
+    ...entry('/new-patient-center', 0.6),
+    ...entry('/new-patient-center/your-first-visit', 0.6),
+    ...entry('/new-patient-center/what-to-expect', 0.6),
+    ...entry('/new-patient-center/what-to-expect/phase-1-relief-care', 0.6),
+    ...entry('/new-patient-center/what-to-expect/phase-2-corrective-care', 0.6),
+    ...entry('/new-patient-center/what-to-expect/phase-3-wellness-care', 0.6),
+    ...entry('/new-patient-center/payment-options', 0.6),
 
     // Other pages
-    { url: `${base}/health-resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/patient-forms`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/vacatures`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/videos`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/wellness-partners`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
+    ...entry('/health-resources', 0.6),
+    ...entry('/patient-forms', 0.6),
+    ...entry('/privacy', 0.4),
   ];
 }

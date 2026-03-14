@@ -1,6 +1,7 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
 type Language = 'en' | 'nl';
 
@@ -14,19 +15,20 @@ const LanguageContext = createContext<LanguageContextType>({
   setLanguage: () => {},
 });
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('nl');
-
-  useEffect(() => {
-    const saved = localStorage.getItem('language') as Language | null;
-    if (saved === 'en' || saved === 'nl') {
-      setLanguageState(saved);
-    }
-  }, []);
+export function LanguageProvider({
+  children,
+  initialLanguage = 'nl',
+}: {
+  children: ReactNode;
+  initialLanguage?: Language;
+}) {
+  const [language] = useState<Language>(initialLanguage);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem('language', lang);
+    const newPath = pathname.replace(/^\/(nl|en)/, `/${lang}`);
+    router.push(newPath);
   };
 
   return (

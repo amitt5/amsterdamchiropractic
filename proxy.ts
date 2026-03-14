@@ -1,12 +1,34 @@
-import { auth } from '@/auth'
-import { NextResponse } from 'next/server'
+import { auth } from '@/auth';
+import { NextResponse } from 'next/server';
 
 export default auth((req) => {
-  const isLoggedIn = !!req.auth
-  const isLoginPage = req.nextUrl.pathname === '/admin/login'
-  if (!isLoggedIn && !isLoginPage) {
-    return NextResponse.redirect(new URL('/admin/login', req.url))
-  }
-})
+  const { pathname } = req.nextUrl;
 
-export const config = { matcher: ['/admin/:path*'] }
+  // Admin routes: require authentication
+  if (pathname.startsWith('/admin')) {
+    const isLoggedIn = !!req.auth;
+    const isLoginPage = pathname === '/admin/login';
+    if (!isLoggedIn && !isLoginPage) {
+      return NextResponse.redirect(new URL('/admin/login', req.url));
+    }
+    return NextResponse.next();
+  }
+
+  // Already locale-prefixed, special/system routes, or root (root redirects via app/page.tsx)
+  if (
+    pathname.startsWith('/nl') ||
+    pathname.startsWith('/en') ||
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/keystatic') ||
+    pathname === '/'
+  ) {
+    return NextResponse.next();
+  }
+
+  // Backward compat: redirect bare paths like /about → /nl/about
+  return NextResponse.redirect(new URL(`/nl${pathname}`, req.url));
+});
+
+export const config = {
+  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)).*)'],
+};

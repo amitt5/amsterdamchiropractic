@@ -143,7 +143,7 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-4">
-            <Link href="/klachten" className="text-[#45321A] text-sm hover:underline flex items-center gap-1">
+            <Link href={`/${language}/klachten`} className="text-[#45321A] text-sm hover:underline flex items-center gap-1">
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current rotate-180">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
               </svg>
@@ -220,7 +220,7 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
                 <h3 className="font-bold text-lg mb-3">{t.sidebarTitle}</h3>
                 <p className="text-white/80 text-sm mb-4">{c.sidebarCtaSubtext}</p>
                 <Link
-                  href="/#booking"
+                  href={`/${language}#booking`}
                   className="block bg-white text-[#45321A] font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors"
                 >
                   {c.sidebarCtaButtonLabel}
@@ -248,7 +248,7 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
                   <ul className="space-y-2">
                     {c.relatedConditions.map(({ label, href }) => (
                       <li key={href}>
-                        <Link href={href} className="text-sm text-[#45321A] hover:underline">
+                        <Link href={`/${language}${href}`} className="text-sm text-[#45321A] hover:underline">
                           {label}
                         </Link>
                       </li>
