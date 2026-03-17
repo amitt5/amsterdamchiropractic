@@ -566,8 +566,7 @@ export default function ChiroPage() {
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/chiro-hero.mov" type="video/quicktime" />
-          <source src="/chiro-hero.mov" type="video/mp4" />
+          <source src="/chiropractor-person-hands-patient-back-checkup.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/30" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-28 w-full">
