@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/language-context';
 import navContent from '@/content/navigation.json';
 
@@ -93,16 +94,15 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href={`/${l}`} className="flex items-center gap-2.5 hover:opacity-80 transition-opacity flex-shrink-0">
-          <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center">
-            <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
-              <path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" />
-            </svg>
-          </div>
-          <div>
-            <div className="font-extrabold text-base text-[#191919] leading-tight">Health4Life</div>
-            <div className="text-[10px] text-[#45321A] font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
-          </div>
+        <Link href={`/${l}`} className="hover:opacity-80 transition-opacity flex-shrink-0">
+          <Image
+            src="/logo.webp"
+            alt="Health4Life Chiropractic Rugkliniek"
+            width={160}
+            height={60}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav links */}
