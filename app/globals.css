@@ -14,10 +14,10 @@ html {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-brand-primary:       #45321A;
-  --color-brand-primary-hover: #5a4228;
+  --color-brand-primary:       #F07920;
+  --color-brand-primary-hover: #D96B1A;
   --color-brand-dark:          #191919;
-  --color-brand-muted:         #403F3F;
+  --color-brand-muted:         #1D2B52;
   --color-brand-light:         #F6F6F6;
 }
 

@@ -560,11 +560,6 @@ function ChiroPageContent() {
   return (
     <div
       className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white`}
-      style={{
-        '--color-brand-primary': '#F07920',
-        '--color-brand-primary-hover': '#D96B1A',
-        '--color-brand-muted': '#1D2B52',
-      } as React.CSSProperties}
     >
 
       {/* NAV */}
