@@ -47,29 +47,29 @@ export default function Phase1Page() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-3 text-[#191919]">{c.title}</h1>
-            <p className="text-2xl font-bold text-[#45321A]">{c.subtitle}</p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-3 text-brand-dark">{c.title}</h1>
+            <p className="text-2xl font-bold text-brand-primary">{c.subtitle}</p>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
-          <div className="prose prose-lg max-w-none text-[#403F3F] space-y-6">
-            <div className="bg-[#45321A] text-white rounded-2xl p-8 mb-8">
+          <div className="prose prose-lg max-w-none text-brand-muted space-y-6">
+            <div className="bg-brand-primary text-white rounded-2xl p-8 mb-8">
               <p className="text-white/90 leading-relaxed text-lg">{c.intro}</p>
             </div>
 
             <p className="leading-relaxed">{c.p1}</p>
 
-            <div className="bg-[#F6F6F6] rounded-2xl p-6">
-              <h3 className="text-[#191919] font-bold text-lg mb-3">{c.boxTitle}</h3>
+            <div className="bg-brand-light rounded-2xl p-6">
+              <h3 className="text-brand-dark font-bold text-lg mb-3">{c.boxTitle}</h3>
               <p className="leading-relaxed">
-                <strong className="text-[#191919]">{language === 'nl' ? 'Pijn is een zeer slechte indicator van gezondheid.' : 'Pain is a very poor indicator of health.'}</strong>{' '}
+                <strong className="text-brand-dark">{language === 'nl' ? 'Pijn is een zeer slechte indicator van gezondheid.' : 'Pain is a very poor indicator of health.'}</strong>{' '}
                 {language === 'nl'
                   ? 'Pijn en andere symptomen verschijnen vaak pas nadat een ziekte of aandoening al vergevorderd is. Hetzelfde geldt omgekeerd — pijn kan verdwijnen ruim voordat het onderliggende probleem daadwerkelijk is gecorrigeerd.'
                   : 'In fact, pain and other symptoms frequently only appear after a disease or other condition has become advanced. The same is true in reverse — pain may disappear well before the underlying problem has actually been corrected.'}
@@ -80,10 +80,10 @@ export default function Phase1Page() {
             <p className="leading-relaxed">{c.p3}</p>
 
             <div className="flex gap-4 mt-8">
-              <Link href={`/${language}/new-patient-center/what-to-expect/phase-2-corrective-care`} className="bg-[#45321A] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#5a4228] transition-colors text-sm">
+              <Link href={`/${language}/new-patient-center/what-to-expect/phase-2-corrective-care`} className="bg-brand-primary text-white font-semibold px-6 py-3 rounded-full hover:bg-brand-primary-hover transition-colors text-sm">
                 {c.nextBtn}
               </Link>
-              <Link href={`/${language}/new-patient-center/what-to-expect`} className="border border-[#45321A] text-[#45321A] font-semibold px-6 py-3 rounded-full hover:bg-[#45321A]/5 transition-colors text-sm">
+              <Link href={`/${language}/new-patient-center/what-to-expect`} className="border border-brand-primary text-brand-primary font-semibold px-6 py-3 rounded-full hover:bg-brand-primary/5 transition-colors text-sm">
                 {c.backBtn}
               </Link>
             </div>

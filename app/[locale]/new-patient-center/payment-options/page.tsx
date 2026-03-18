@@ -85,33 +85,33 @@ export default function PaymentOptionsPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.title}</h1>
-            <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">{c.subtitle}</p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.title}</h1>
+            <p className="text-brand-muted max-w-2xl mx-auto leading-relaxed">{c.subtitle}</p>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           {/* Insurance */}
-          <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 mb-10">
-            <h2 className="text-2xl font-extrabold text-[#191919] mb-4">{c.insuranceTitle}</h2>
-            <p className="text-[#403F3F] leading-relaxed mb-4">{c.insurance1}</p>
-            <p className="text-[#403F3F] leading-relaxed mb-4">
+          <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-8 mb-10">
+            <h2 className="text-2xl font-extrabold text-brand-dark mb-4">{c.insuranceTitle}</h2>
+            <p className="text-brand-muted leading-relaxed mb-4">{c.insurance1}</p>
+            <p className="text-brand-muted leading-relaxed mb-4">
               <strong>{language === 'nl' ? 'Vereisten:' : 'Requirements:'}</strong> {language === 'nl'
                 ? 'Om in aanmerking te komen voor vergoeding moet de chiropractor zijn aangesloten bij de Nederlandse Chiropractors Associatie (NCA) en geregistreerd zijn bij de Stichting Chiropractie Nederland (SCN). Dr. Jahani voldoet aan beide vereisten.'
                 : 'To qualify for reimbursement, the chiropractor must be affiliated with the Netherlands Chiropractic Association (NCA) and registered with the Dutch Chiropractic Foundation (SCN). Dr. Jahani meets both requirements.'}
             </p>
-            <p className="text-[#403F3F] leading-relaxed mb-6">{c.insurance3}</p>
+            <p className="text-brand-muted leading-relaxed mb-6">{c.insurance3}</p>
             <a
               href="https://www.chiropractievergoeding.nl"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#45321A] font-semibold hover:underline text-sm"
+              className="inline-flex items-center gap-2 text-brand-primary font-semibold hover:underline text-sm"
             >
               {c.checkCoverage}
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">
@@ -123,37 +123,37 @@ export default function PaymentOptionsPage() {
 
           {/* Pricing table */}
           <div className="mb-10">
-            <h2 className="text-2xl font-extrabold text-[#191919] mb-6">{c.ratesTitle}</h2>
-            <div className="overflow-x-auto rounded-2xl border border-[#45321A]/15">
+            <h2 className="text-2xl font-extrabold text-brand-dark mb-6">{c.ratesTitle}</h2>
+            <div className="overflow-x-auto rounded-2xl border border-brand-primary/15">
               <table className="w-full text-sm">
-                <thead className="bg-[#45321A] text-white">
+                <thead className="bg-brand-primary text-white">
                   <tr>
                     <th className="text-left px-6 py-4 font-semibold">{c.ratesTreatment}</th>
                     <th className="text-right px-6 py-4 font-semibold">{c.ratesPrice}</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#45321A]/10">
+                <tbody className="divide-y divide-brand-primary/10">
                   {c.rows.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F6F6F6]'}>
-                      <td className="px-6 py-3.5 text-[#403F3F]">{row.label}</td>
-                      <td className="px-6 py-3.5 text-right font-bold text-[#191919]">{row.price}</td>
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-brand-light'}>
+                      <td className="px-6 py-3.5 text-brand-muted">{row.label}</td>
+                      <td className="px-6 py-3.5 text-right font-bold text-brand-dark">{row.price}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-[#403F3F] text-xs mt-3 leading-relaxed">{c.paymentNote}</p>
+            <p className="text-brand-muted text-xs mt-3 leading-relaxed">{c.paymentNote}</p>
           </div>
 
           {/* Flexible plans */}
-          <div className="bg-[#F6F6F6] rounded-2xl p-8 mb-10">
-            <h2 className="text-xl font-extrabold text-[#191919] mb-3">{c.flexTitle}</h2>
-            <p className="text-[#403F3F] leading-relaxed">{c.flexText}</p>
-            <p className="text-[#403F3F] leading-relaxed mt-3">{c.flexNote}</p>
+          <div className="bg-brand-light rounded-2xl p-8 mb-10">
+            <h2 className="text-xl font-extrabold text-brand-dark mb-3">{c.flexTitle}</h2>
+            <p className="text-brand-muted leading-relaxed">{c.flexText}</p>
+            <p className="text-brand-muted leading-relaxed mt-3">{c.flexNote}</p>
           </div>
 
           <div className="text-center">
-            <Link href={`/${language}#booking`} className="inline-flex items-center gap-2 bg-[#45321A] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#5a4228] transition-colors">
+            <Link href={`/${language}#booking`} className="inline-flex items-center gap-2 bg-brand-primary text-white font-semibold px-8 py-4 rounded-full hover:bg-brand-primary-hover transition-colors">
               {c.bookBtn}
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>

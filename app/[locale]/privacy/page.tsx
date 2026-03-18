@@ -161,7 +161,7 @@ export default function PrivacyPage() {
   const c = content[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
@@ -169,24 +169,24 @@ export default function PrivacyPage() {
 
           {/* Header */}
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-4 text-[#191919]">{c.title}</h1>
-            <p className="text-[#403F3F]/60 text-sm">{c.updated}</p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-4 text-brand-dark">{c.title}</h1>
+            <p className="text-brand-muted/60 text-sm">{c.updated}</p>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           {/* Intro */}
-          <p className="text-[#403F3F] leading-relaxed mb-12 text-base">{c.intro}</p>
+          <p className="text-brand-muted leading-relaxed mb-12 text-base">{c.intro}</p>
 
           {/* Sections */}
           <div className="space-y-10">
             {c.sections.map((section, i) => (
-              <div key={i} className="border-l-2 border-[#45321A]/20 pl-6">
-                <h2 className="text-xl font-bold text-[#191919] mb-4">{section.title}</h2>
+              <div key={i} className="border-l-2 border-brand-primary/20 pl-6">
+                <h2 className="text-xl font-bold text-brand-dark mb-4">{section.title}</h2>
                 {section.body.map((paragraph, j) => (
                   <p
                     key={j}
-                    className="text-[#403F3F] leading-relaxed text-sm mb-3 whitespace-pre-line last:mb-0"
+                    className="text-brand-muted leading-relaxed text-sm mb-3 whitespace-pre-line last:mb-0"
                   >
                     {paragraph}
                   </p>
@@ -196,11 +196,11 @@ export default function PrivacyPage() {
           </div>
 
           {/* Contact CTA */}
-          <div className="mt-16 bg-[#F6F6F6] rounded-2xl p-8 text-center">
-            <p className="text-[#191919] font-semibold mb-4">{c.contact}</p>
+          <div className="mt-16 bg-brand-light rounded-2xl p-8 text-center">
+            <p className="text-brand-dark font-semibold mb-4">{c.contact}</p>
             <a
               href="mailto:health4life@amsterdamchiropractic.com"
-              className="inline-flex items-center gap-2 bg-[#45321A] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#5a4228] transition-colors text-sm"
+              className="inline-flex items-center gap-2 bg-brand-primary text-white font-semibold px-6 py-3 rounded-full hover:bg-brand-primary-hover transition-colors text-sm"
             >
               <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
                 <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" />
@@ -213,7 +213,7 @@ export default function PrivacyPage() {
           <div className="mt-10 text-center">
             <Link
               href={`/${language}`}
-              className="text-[#45321A] font-semibold text-sm hover:underline inline-flex items-center gap-1.5"
+              className="text-brand-primary font-semibold text-sm hover:underline inline-flex items-center gap-1.5"
             >
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current rotate-180">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />

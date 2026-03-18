@@ -104,23 +104,23 @@ export default function MeetYourDoctorPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-4 text-[#191919]">{c.h1}</h1>
-            <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-4 text-brand-dark">{c.h1}</h1>
+            <p className="text-brand-muted max-w-2xl mx-auto leading-relaxed">
               {c.intro}
             </p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-14 items-start mb-16">
             {/* Photo */}
-            <div className="relative aspect-square rounded-3xl overflow-hidden bg-[#F6F6F6] shadow-lg">
+            <div className="relative aspect-square rounded-3xl overflow-hidden bg-brand-light shadow-lg">
               <Image
                 src="/dr-jahani.webp"
                 alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam"
@@ -132,24 +132,24 @@ export default function MeetYourDoctorPage() {
 
             {/* Bio */}
             <div>
-              <h2 className="text-3xl font-extrabold text-[#191919] mb-2">Dr. M. Jahani, DC</h2>
-              <p className="text-[#45321A] font-semibold mb-6">{c.qualifications}</p>
+              <h2 className="text-3xl font-extrabold text-brand-dark mb-2">Dr. M. Jahani, DC</h2>
+              <p className="text-brand-primary font-semibold mb-6">{c.qualifications}</p>
 
-              <p className="text-[#403F3F] leading-relaxed mb-4">
+              <p className="text-brand-muted leading-relaxed mb-4">
                 {c.bio1}
               </p>
-              <p className="text-[#403F3F] leading-relaxed mb-4">
+              <p className="text-brand-muted leading-relaxed mb-4">
                 {c.bio2}
               </p>
-              <p className="text-[#403F3F] leading-relaxed mb-6">
+              <p className="text-brand-muted leading-relaxed mb-6">
                 {c.bio3}
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Link href={`/${language}#booking`} className="bg-[#45321A] text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-[#5a4228] transition-colors">
+                <Link href={`/${language}#booking`} className="bg-brand-primary text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-brand-primary-hover transition-colors">
                   {c.bookBtn}
                 </Link>
-                <a href="tel:0206731800" className="border border-[#45321A] text-[#45321A] text-sm font-semibold px-6 py-3 rounded-full hover:bg-[#45321A]/5 transition-colors">
+                <a href="tel:0206731800" className="border border-brand-primary text-brand-primary text-sm font-semibold px-6 py-3 rounded-full hover:bg-brand-primary/5 transition-colors">
                   020-673 1800
                 </a>
               </div>
@@ -157,16 +157,16 @@ export default function MeetYourDoctorPage() {
           </div>
 
           {/* Credentials timeline */}
-          <div className="bg-[#F6F6F6] rounded-3xl p-8 mb-12">
-            <h3 className="text-2xl font-extrabold text-[#191919] mb-8 text-center">{c.credentialsTitle}</h3>
+          <div className="bg-brand-light rounded-3xl p-8 mb-12">
+            <h3 className="text-2xl font-extrabold text-brand-dark mb-8 text-center">{c.credentialsTitle}</h3>
             <div className="space-y-5">
               {credentials.map((cred, i) => (
                 <div key={i} className="flex items-start gap-5">
                   <div className="w-20 flex-shrink-0 text-right">
-                    <span className="text-[#45321A] font-bold text-sm">{cred.year}</span>
+                    <span className="text-brand-primary font-bold text-sm">{cred.year}</span>
                   </div>
-                  <div className="w-px bg-[#45321A]/30 self-stretch mx-2" />
-                  <p className="text-[#403F3F] text-sm leading-relaxed flex-1 pt-0.5">{cred.detail}</p>
+                  <div className="w-px bg-brand-primary/30 self-stretch mx-2" />
+                  <p className="text-brand-muted text-sm leading-relaxed flex-1 pt-0.5">{cred.detail}</p>
                 </div>
               ))}
             </div>
@@ -174,10 +174,10 @@ export default function MeetYourDoctorPage() {
 
           {/* What Sets Us Apart */}
           <div className="mb-12">
-            <h3 className="text-2xl font-extrabold text-[#191919] mb-8 text-center">{c.apartTitle}</h3>
+            <h3 className="text-2xl font-extrabold text-brand-dark mb-8 text-center">{c.apartTitle}</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {c.cards.map((item, i) => (
-                <div key={i} className="bg-[#45321A] text-white rounded-2xl p-7 flex flex-col">
+                <div key={i} className="bg-brand-primary text-white rounded-2xl p-7 flex flex-col">
                   <span className="text-white/40 font-bold text-3xl mb-4 leading-none">{item.num}</span>
                   <h4 className="font-extrabold text-lg mb-1">{item.title}</h4>
                   <p className="text-white/70 text-xs font-semibold uppercase tracking-wide mb-3">{item.sub}</p>
@@ -190,9 +190,9 @@ export default function MeetYourDoctorPage() {
           {/* Specialties */}
           <div className="grid md:grid-cols-3 gap-6">
             {c.specialties.map((s, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-[#45321A]/10 hover:shadow-md transition-shadow">
-                <h4 className="font-bold text-[#191919] mb-2">{s.title}</h4>
-                <p className="text-[#403F3F] text-sm leading-relaxed">{s.desc}</p>
+              <div key={i} className="bg-white rounded-2xl p-6 border border-brand-primary/10 hover:shadow-md transition-shadow">
+                <h4 className="font-bold text-brand-dark mb-2">{s.title}</h4>
+                <p className="text-brand-muted text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>

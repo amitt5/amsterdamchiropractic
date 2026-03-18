@@ -64,7 +64,7 @@ export default function CookieBanner() {
           role="dialog"
           aria-label="Cookie consent"
           aria-modal="false"
-          className="fixed bottom-0 left-0 right-0 z-[9999] bg-[#191919] text-white shadow-2xl"
+          className="fixed bottom-0 left-0 right-0 z-[9999] bg-brand-dark text-white shadow-2xl"
         >
           <div className="mx-auto max-w-6xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             {/* Text */}
@@ -88,7 +88,7 @@ export default function CookieBanner() {
               </button>
               <button
                 onClick={handleAccept}
-                className="px-5 py-2 text-sm rounded bg-[#45321A] hover:bg-[#5c4225] text-white font-medium transition-colors"
+                className="px-5 py-2 text-sm rounded bg-brand-primary hover:bg-[#5c4225] text-white font-medium transition-colors"
               >
                 {copy.accept}
               </button>

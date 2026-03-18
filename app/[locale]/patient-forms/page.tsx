@@ -57,32 +57,32 @@ export default function PatientFormsPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       {/* ── CONTENT ──────────────────────────────────────────────────────── */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.title}</h1>
-            <p className="text-[#403F3F] text-lg max-w-2xl mx-auto">{c.subtitle}</p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.title}</h1>
+            <p className="text-brand-muted text-lg max-w-2xl mx-auto">{c.subtitle}</p>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           {/* Instructions */}
-          <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-6 md:p-8 mb-10">
+          <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-6 md:p-8 mb-10">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#45321A] flex-shrink-0 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-brand-primary flex-shrink-0 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="white" strokeWidth="2">
                   <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-[#191919] mb-2 text-lg">{c.instructionsTitle}</h3>
-                <p className="text-[#403F3F] text-sm leading-relaxed">
+                <h3 className="font-bold text-brand-dark mb-2 text-lg">{c.instructionsTitle}</h3>
+                <p className="text-brand-muted text-sm leading-relaxed">
                   {c.instructionsText}{' '}
-                  <a href="mailto:health4life@amsterdamchiropractic.com" className="text-[#45321A] font-semibold hover:underline">
+                  <a href="mailto:health4life@amsterdamchiropractic.com" className="text-brand-primary font-semibold hover:underline">
                     health4life@amsterdamchiropractic.com
                   </a>.
                 </p>
@@ -93,17 +93,17 @@ export default function PatientFormsPage() {
           {/* Form Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             {/* Form 1 */}
-            <div className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 rounded-xl bg-[#45321A] flex items-center justify-center mb-5">
+            <div className="bg-brand-light rounded-2xl p-6 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center mb-5">
                 <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7" stroke="white" strokeWidth="2">
                   <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="font-bold text-[#191919] mb-2 text-lg">{c.form1Title}</h3>
-              <p className="text-[#403F3F] text-sm mb-5 leading-relaxed">{c.form1Desc}</p>
+              <h3 className="font-bold text-brand-dark mb-2 text-lg">{c.form1Title}</h3>
+              <p className="text-brand-muted text-sm mb-5 leading-relaxed">{c.form1Desc}</p>
               <Link
                 href={`/${language}/patient-forms/new-patient-intake`}
-                className="w-full bg-[#45321A] text-white text-sm font-semibold py-3 rounded-full hover:bg-[#5a4228] transition-colors flex items-center justify-center gap-2"
+                className="w-full bg-brand-primary text-white text-sm font-semibold py-3 rounded-full hover:bg-brand-primary-hover transition-colors flex items-center justify-center gap-2"
               >
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
                   <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,15 +113,15 @@ export default function PatientFormsPage() {
             </div>
 
             {/* Form 2 */}
-            <div className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 rounded-xl bg-[#45321A] flex items-center justify-center mb-5">
+            <div className="bg-brand-light rounded-2xl p-6 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center mb-5">
                 <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7" stroke="white" strokeWidth="2">
                   <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="font-bold text-[#191919] mb-2 text-lg">{c.form2Title}</h3>
-              <p className="text-[#403F3F] text-sm mb-5 leading-relaxed">{c.form2Desc}</p>
-              <button className="w-full bg-[#45321A] text-white text-sm font-semibold py-3 rounded-full hover:bg-[#5a4228] transition-colors flex items-center justify-center gap-2">
+              <h3 className="font-bold text-brand-dark mb-2 text-lg">{c.form2Title}</h3>
+              <p className="text-brand-muted text-sm mb-5 leading-relaxed">{c.form2Desc}</p>
+              <button className="w-full bg-brand-primary text-white text-sm font-semibold py-3 rounded-full hover:bg-brand-primary-hover transition-colors flex items-center justify-center gap-2">
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
                   <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -130,15 +130,15 @@ export default function PatientFormsPage() {
             </div>
 
             {/* Form 3 */}
-            <div className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 rounded-xl bg-[#45321A] flex items-center justify-center mb-5">
+            <div className="bg-brand-light rounded-2xl p-6 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center mb-5">
                 <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7" stroke="white" strokeWidth="2">
                   <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="font-bold text-[#191919] mb-2 text-lg">{c.form3Title}</h3>
-              <p className="text-[#403F3F] text-sm mb-5 leading-relaxed">{c.form3Desc}</p>
-              <button className="w-full bg-[#45321A] text-white text-sm font-semibold py-3 rounded-full hover:bg-[#5a4228] transition-colors flex items-center justify-center gap-2">
+              <h3 className="font-bold text-brand-dark mb-2 text-lg">{c.form3Title}</h3>
+              <p className="text-brand-muted text-sm mb-5 leading-relaxed">{c.form3Desc}</p>
+              <button className="w-full bg-brand-primary text-white text-sm font-semibold py-3 rounded-full hover:bg-brand-primary-hover transition-colors flex items-center justify-center gap-2">
                 <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">
                   <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -149,10 +149,10 @@ export default function PatientFormsPage() {
 
           {/* Additional Info */}
           <div className="mt-10 text-center">
-            <p className="text-[#403F3F] text-sm mb-4">{c.helpText}</p>
+            <p className="text-brand-muted text-sm mb-4">{c.helpText}</p>
             <Link
               href={`/${language}#booking`}
-              className="text-[#45321A] font-semibold text-sm hover:underline inline-flex items-center gap-1.5"
+              className="text-brand-primary font-semibold text-sm hover:underline inline-flex items-center gap-1.5"
             >
               {c.helpLink}
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">

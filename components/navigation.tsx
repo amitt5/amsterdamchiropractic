@@ -106,9 +106,9 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#403F3F]">
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
           {c.mainNav.map(({ label, href }) => (
-            <Link key={href} href={href} className="hover:text-[#45321A] transition-colors">
+            <Link key={href} href={href} className="hover:text-brand-primary transition-colors">
               {label}
             </Link>
           ))}
@@ -117,16 +117,16 @@ export default function Navigation() {
         {/* Right side */}
         <div className="flex items-center gap-3">
           {/* EN/NL toggle — always visible */}
-          <div className="flex items-center bg-[#F6F6F6] rounded-full p-1">
+          <div className="flex items-center bg-brand-light rounded-full p-1">
             <button
               onClick={() => setLanguage('en')}
-              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'en' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'en' ? 'bg-brand-primary text-white' : 'text-brand-muted hover:text-brand-primary'}`}
             >
               EN
             </button>
             <button
               onClick={() => setLanguage('nl')}
-              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'nl' ? 'bg-[#45321A] text-white' : 'text-[#403F3F] hover:text-[#45321A]'}`}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${language === 'nl' ? 'bg-brand-primary text-white' : 'text-brand-muted hover:text-brand-primary'}`}
             >
               NL
             </button>
@@ -134,7 +134,7 @@ export default function Navigation() {
 
           <Link
             href={`/${l}#booking`}
-            className="hidden md:block bg-[#45321A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#5a4228] transition-colors"
+            className="hidden md:block bg-brand-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-brand-primary-hover transition-colors"
           >
             {c.book}
           </Link>
@@ -142,7 +142,7 @@ export default function Navigation() {
           {/* Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="p-2 rounded-lg hover:bg-[#F6F6F6] transition-colors"
+            className="p-2 rounded-lg hover:bg-brand-light transition-colors"
             aria-label="Toggle menu"
           >
             {menuOpen ? (
@@ -164,11 +164,11 @@ export default function Navigation() {
           <div className="max-w-6xl mx-auto px-6 py-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* This Page */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.thisPage}</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-brand-primary mb-3">{c.thisPage}</div>
               <ul className="space-y-2">
                 {c.mainNav.map(({ label, href }) => (
                   <li key={href}>
-                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
+                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-brand-muted hover:text-brand-primary transition-colors">
                       {label}
                     </Link>
                   </li>
@@ -178,11 +178,11 @@ export default function Navigation() {
 
             {/* Klachten / Conditions */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.conditionsLabel}</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-brand-primary mb-3">{c.conditionsLabel}</div>
               <ul className="space-y-2">
                 {c.klachten.map(({ label, href }) => (
                   <li key={href}>
-                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
+                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-brand-muted hover:text-brand-primary transition-colors">
                       {label}
                     </Link>
                   </li>
@@ -192,11 +192,11 @@ export default function Navigation() {
 
             {/* More */}
             <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-[#45321A] mb-3">{c.moreLabel}</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-brand-primary mb-3">{c.moreLabel}</div>
               <ul className="space-y-2">
                 {c.moreLinks.map(({ label, href }) => (
                   <li key={href}>
-                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-[#403F3F] hover:text-[#45321A] transition-colors">
+                    <Link href={href} onClick={() => setMenuOpen(false)} className="text-sm text-brand-muted hover:text-brand-primary transition-colors">
                       {label}
                     </Link>
                   </li>

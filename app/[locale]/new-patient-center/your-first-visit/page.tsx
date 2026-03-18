@@ -113,42 +113,42 @@ export default function YourFirstVisitPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.title}</h1>
-            <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">{c.subtitle}</p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.title}</h1>
+            <p className="text-brand-muted max-w-2xl mx-auto leading-relaxed">{c.subtitle}</p>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           <div className="space-y-6 mb-14">
             {c.steps.map((step, i) => (
-              <div key={i} className="flex gap-6 bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-md transition-shadow">
+              <div key={i} className="flex gap-6 bg-brand-light rounded-2xl p-6 hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-2xl bg-[#45321A] flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-2xl bg-brand-primary flex items-center justify-center">
                     <span className="text-white font-extrabold text-lg">{step.num}</span>
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#191919] text-lg mb-2">{step.title}</h3>
-                  <p className="text-[#403F3F] leading-relaxed text-sm">{step.desc}</p>
+                  <h3 className="font-bold text-brand-dark text-lg mb-2">{step.title}</h3>
+                  <p className="text-brand-muted leading-relaxed text-sm">{step.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 text-center">
-            <h3 className="font-bold text-[#191919] text-xl mb-3">{c.ctaTitle}</h3>
-            <p className="text-[#403F3F] mb-6">{c.ctaDesc}</p>
+          <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-8 text-center">
+            <h3 className="font-bold text-brand-dark text-xl mb-3">{c.ctaTitle}</h3>
+            <p className="text-brand-muted mb-6">{c.ctaDesc}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href={`/${language}#booking`} className="bg-[#45321A] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#5a4228] transition-colors">
+              <Link href={`/${language}#booking`} className="bg-brand-primary text-white font-semibold px-8 py-4 rounded-full hover:bg-brand-primary-hover transition-colors">
                 {c.bookBtn}
               </Link>
-              <Link href={`/${language}/patient-forms`} className="border border-[#45321A] text-[#45321A] font-semibold px-8 py-4 rounded-full hover:bg-[#45321A]/5 transition-colors">
+              <Link href={`/${language}/patient-forms`} className="border border-brand-primary text-brand-primary font-semibold px-8 py-4 rounded-full hover:bg-brand-primary/5 transition-colors">
                 {c.formsBtn}
               </Link>
             </div>

@@ -386,18 +386,18 @@ export default function NewPatientIntakePage() {
 
   if (submitted) {
     return (
-      <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen flex items-center justify-center px-6`}>
+      <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen flex items-center justify-center px-6`}>
         <div className="max-w-lg w-full text-center py-20">
-          <div className="w-20 h-20 rounded-full bg-[#45321A]/10 flex items-center justify-center mx-auto mb-6">
-            <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10" stroke="#45321A" strokeWidth="2">
+          <div className="w-20 h-20 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-6">
+            <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10" stroke="var(--color-brand-primary)" strokeWidth="2">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <h1 className="text-3xl font-extrabold text-[#191919] mb-4">{u.submittedTitle}</h1>
-          <p className="text-[#403F3F] text-lg leading-relaxed mb-8">{u.submittedText(firstName)}</p>
+          <h1 className="text-3xl font-extrabold text-brand-dark mb-4">{u.submittedTitle}</h1>
+          <p className="text-brand-muted text-lg leading-relaxed mb-8">{u.submittedText(firstName)}</p>
           <Link
             href={`/${language}`}
-            className="inline-block bg-[#45321A] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#5a4228] transition-colors"
+            className="inline-block bg-brand-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-brand-primary-hover transition-colors"
           >
             {u.backHome}
           </Link>
@@ -407,8 +407,8 @@ export default function NewPatientIntakePage() {
   }
 
   // ── Reusable field components ──────────────────────────────────────────────
-  const inputCls = 'w-full border border-[#403F3F]/20 rounded-lg px-3 py-2.5 text-sm text-[#191919] bg-white focus:outline-none focus:ring-2 focus:ring-[#45321A]/30 focus:border-[#45321A] transition-colors';
-  const labelCls = 'block text-xs font-semibold text-[#403F3F] uppercase tracking-wide mb-1';
+  const inputCls = 'w-full border border-brand-muted/20 rounded-lg px-3 py-2.5 text-sm text-brand-dark bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary transition-colors';
+  const labelCls = 'block text-xs font-semibold text-brand-muted uppercase tracking-wide mb-1';
   const selectCls = `${inputCls} appearance-none`;
 
   const RadioGroup = ({ name, value, onChange }: { name: string; value: string; onChange: (v: string) => void }) => (
@@ -417,26 +417,26 @@ export default function NewPatientIntakePage() {
         <label key={opt} className="flex items-center gap-1.5 cursor-pointer">
           <input type="radio" name={name} value={opt} checked={value === opt}
             onChange={() => onChange(opt)}
-            className="accent-[#45321A] w-4 h-4 cursor-pointer" />
-          <span className="text-sm text-[#191919]">{opt}</span>
+            className="accent-brand-primary w-4 h-4 cursor-pointer" />
+          <span className="text-sm text-brand-dark">{opt}</span>
         </label>
       ))}
     </div>
   );
 
   const SectionHeader = ({ children }: { children: React.ReactNode }) => (
-    <div className="border-b-2 border-[#45321A] pb-2 mb-6">
-      <h2 className="text-base font-extrabold text-[#45321A] uppercase tracking-widest">{children}</h2>
+    <div className="border-b-2 border-brand-primary pb-2 mb-6">
+      <h2 className="text-base font-extrabold text-brand-primary uppercase tracking-widest">{children}</h2>
     </div>
   );
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-[#F6F6F6] min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-brand-light min-h-screen`}>
 
       <Navigation />
 
       {/* HEADER */}
-      <div className="bg-[#45321A] text-white py-12">
+      <div className="bg-brand-primary text-white py-12">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">{u.headerBadge}</span>
           <h1 className="text-3xl md:text-4xl font-extrabold mt-2 mb-3">{u.headerTitle}</h1>
@@ -540,8 +540,8 @@ export default function NewPatientIntakePage() {
             </div>
           </div>
 
-          <div className="mt-6 pt-5 border-t border-[#403F3F]/10">
-            <p className="text-xs font-semibold text-[#403F3F] uppercase tracking-wide mb-4">{u.spouseLabel}</p>
+          <div className="mt-6 pt-5 border-t border-brand-muted/10">
+            <p className="text-xs font-semibold text-brand-muted uppercase tracking-wide mb-4">{u.spouseLabel}</p>
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
                 <label className={labelCls}>{u.spouseName}</label>
@@ -573,8 +573,8 @@ export default function NewPatientIntakePage() {
                 {u.injuryTypes.map(t => (
                   <label key={t} className="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" checked={injuryType.includes(t)} onChange={() => toggleInjuryType(t)}
-                      className="accent-[#45321A] w-4 h-4 cursor-pointer" />
-                    <span className="text-sm text-[#191919]">{t}</span>
+                      className="accent-brand-primary w-4 h-4 cursor-pointer" />
+                    <span className="text-sm text-brand-dark">{t}</span>
                   </label>
                 ))}
               </div>
@@ -678,9 +678,9 @@ export default function NewPatientIntakePage() {
           <SectionHeader>{u.s5}</SectionHeader>
           <div className="space-y-4">
             {u.haveYouEverItems.map(([key, label]) => (
-              <div key={key} className="border border-[#403F3F]/10 rounded-xl p-4">
+              <div key={key} className="border border-brand-muted/10 rounded-xl p-4">
                 <div className="flex flex-wrap items-center gap-4 mb-2">
-                  <span className="text-sm font-medium text-[#191919] flex-1">{label}</span>
+                  <span className="text-sm font-medium text-brand-dark flex-1">{label}</span>
                   <RadioGroup name={key} value={haveYouEver[key]}
                     onChange={v => setHaveYouEver(prev => ({ ...prev, [key]: v }))} />
                 </div>
@@ -701,7 +701,7 @@ export default function NewPatientIntakePage() {
         <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
           <SectionHeader>{u.s6}</SectionHeader>
           <label className={labelCls}>{u.familyHistoryLabel}</label>
-          <p className="text-xs text-[#403F3F]/70 mb-3">{u.familyHistoryHint}</p>
+          <p className="text-xs text-brand-muted/70 mb-3">{u.familyHistoryHint}</p>
           <textarea rows={4} value={familyHistory} onChange={e => setFamilyHistory(e.target.value)}
             className={`${inputCls} resize-none`} placeholder={u.familyHistoryPh} />
         </div>
@@ -711,8 +711,8 @@ export default function NewPatientIntakePage() {
           <SectionHeader>{u.s7}</SectionHeader>
           <div className="space-y-4">
             {u.dailyItems.map(([key, label]) => (
-              <div key={key} className="flex flex-wrap items-center justify-between gap-3 py-3 border-b border-[#403F3F]/10 last:border-0">
-                <span className="text-sm text-[#191919] flex-1">{label}</span>
+              <div key={key} className="flex flex-wrap items-center justify-between gap-3 py-3 border-b border-brand-muted/10 last:border-0">
+                <span className="text-sm text-brand-dark flex-1">{label}</span>
                 <RadioGroup name={key} value={daily[key]}
                   onChange={v => setDaily(prev => ({ ...prev, [key]: v }))} />
               </div>
@@ -731,17 +731,17 @@ export default function NewPatientIntakePage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b-2 border-[#45321A]/20">
-                  <th className="text-left py-2 pr-4 text-xs font-bold text-[#403F3F] uppercase tracking-wide w-44">{u.habitCol}</th>
+                <tr className="border-b-2 border-brand-primary/20">
+                  <th className="text-left py-2 pr-4 text-xs font-bold text-brand-muted uppercase tracking-wide w-44">{u.habitCol}</th>
                   {HABIT_LEVELS.map(l => (
-                    <th key={l} className="py-2 px-3 text-xs font-bold text-[#403F3F] uppercase tracking-wide text-center">{l}</th>
+                    <th key={l} className="py-2 px-3 text-xs font-bold text-brand-muted uppercase tracking-wide text-center">{l}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {HABITS.map((habit, i) => (
-                  <tr key={habit} className={i % 2 === 0 ? 'bg-[#F6F6F6]/50' : ''}>
-                    <td className="py-2.5 pr-4 text-[#191919]">{HABIT_LABELS[i]}</td>
+                  <tr key={habit} className={i % 2 === 0 ? 'bg-brand-light/50' : ''}>
+                    <td className="py-2.5 pr-4 text-brand-dark">{HABIT_LABELS[i]}</td>
                     {HABIT_LEVELS.map(level => (
                       <td key={level} className="py-2.5 px-3 text-center">
                         <input
@@ -750,7 +750,7 @@ export default function NewPatientIntakePage() {
                           value={level}
                           checked={habits[habit] === level}
                           onChange={() => setHabits(prev => ({ ...prev, [habit]: level }))}
-                          className="accent-[#45321A] w-4 h-4 cursor-pointer"
+                          className="accent-brand-primary w-4 h-4 cursor-pointer"
                         />
                       </td>
                     ))}
@@ -764,7 +764,7 @@ export default function NewPatientIntakePage() {
         {/* ── 9. PAST HEALTH CONDITIONS ────────────────────────────────────── */}
         <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
           <SectionHeader>{u.s9}</SectionHeader>
-          <p className="text-xs text-[#403F3F]/70 mb-5">{u.checkAll}</p>
+          <p className="text-xs text-brand-muted/70 mb-5">{u.checkAll}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {PAST_CONDITIONS.map((condition, i) => (
               <label key={condition} className="flex items-start gap-2 cursor-pointer group">
@@ -772,9 +772,9 @@ export default function NewPatientIntakePage() {
                   type="checkbox"
                   checked={pastConditions.includes(PAST_CONDITIONS_EN[i])}
                   onChange={() => toggleCondition(PAST_CONDITIONS_EN[i])}
-                  className="accent-[#45321A] w-4 h-4 mt-0.5 flex-shrink-0 cursor-pointer"
+                  className="accent-brand-primary w-4 h-4 mt-0.5 flex-shrink-0 cursor-pointer"
                 />
-                <span className="text-sm text-[#403F3F] group-hover:text-[#191919] transition-colors leading-snug">
+                <span className="text-sm text-brand-muted group-hover:text-brand-dark transition-colors leading-snug">
                   {condition}
                 </span>
               </label>
@@ -832,7 +832,7 @@ export default function NewPatientIntakePage() {
         <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
           <SectionHeader>{u.s11}</SectionHeader>
 
-          <div className="bg-[#F6F6F6] rounded-xl p-5 mb-6 text-sm text-[#403F3F] leading-relaxed">
+          <div className="bg-brand-light rounded-xl p-5 mb-6 text-sm text-brand-muted leading-relaxed">
             {u.consentText}
           </div>
 
@@ -854,9 +854,9 @@ export default function NewPatientIntakePage() {
               required
               checked={consentChecked}
               onChange={e => setConsentChecked(e.target.checked)}
-              className="accent-[#45321A] w-5 h-5 mt-0.5 flex-shrink-0 cursor-pointer"
+              className="accent-brand-primary w-5 h-5 mt-0.5 flex-shrink-0 cursor-pointer"
             />
-            <span className="text-sm text-[#403F3F] leading-relaxed">{u.consentCheck}</span>
+            <span className="text-sm text-brand-muted leading-relaxed">{u.consentCheck}</span>
           </label>
         </div>
 
@@ -864,11 +864,11 @@ export default function NewPatientIntakePage() {
         <div className="text-center pb-4">
           <button
             type="submit"
-            className="bg-[#45321A] text-white font-bold text-base px-12 py-4 rounded-full hover:bg-[#5a4228] transition-colors shadow-lg shadow-[#45321A]/20"
+            className="bg-brand-primary text-white font-bold text-base px-12 py-4 rounded-full hover:bg-brand-primary-hover transition-colors shadow-lg shadow-brand-primary/20"
           >
             {u.submitBtn}
           </button>
-          <p className="text-xs text-[#403F3F]/60 mt-4">{u.submitNote}</p>
+          <p className="text-xs text-brand-muted/60 mt-4">{u.submitNote}</p>
         </div>
       </form>
     </div>

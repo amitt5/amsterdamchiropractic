@@ -146,24 +146,24 @@ export default function TechniquesPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       {/* ── CONTENT ──────────────────────────────────────────────────────── */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.h1}</h1>
-            <p className="text-[#403F3F] text-lg max-w-2xl mx-auto">
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.h1}</h1>
+            <p className="text-brand-muted text-lg max-w-2xl mx-auto">
               {c.subtitle}
             </p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           {/* Intro */}
           <div className="max-w-3xl mx-auto mb-16 text-center">
-            <p className="text-[#403F3F] leading-relaxed">
+            <p className="text-brand-muted leading-relaxed">
               {c.intro}
             </p>
           </div>
@@ -173,15 +173,15 @@ export default function TechniquesPage() {
             {techniques.map((technique, index) => (
               <div
                 key={index}
-                className="bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="bg-brand-light rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <div className="w-14 h-14 rounded-xl bg-[#45321A] flex items-center justify-center mb-5 text-white">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center mb-5 text-white">
                   {technique.icon}
                 </div>
-                <h3 className="font-bold text-[#191919] mb-3 text-lg leading-tight">
+                <h3 className="font-bold text-brand-dark mb-3 text-lg leading-tight">
                   {technique.title}
                 </h3>
-                <p className="text-[#403F3F] text-sm leading-relaxed">
+                <p className="text-brand-muted text-sm leading-relaxed">
                   {technique.description}
                 </p>
               </div>
@@ -189,22 +189,22 @@ export default function TechniquesPage() {
           </div>
 
           {/* Info Box */}
-          <div className="mt-16 bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 max-w-3xl mx-auto">
+          <div className="mt-16 bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-8 max-w-3xl mx-auto">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#45321A] flex-shrink-0 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-brand-primary flex-shrink-0 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="white" strokeWidth="2">
                   <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-[#191919] mb-3 text-lg">{c.infoTitle}</h3>
-                <p className="text-[#403F3F] text-sm leading-relaxed mb-4">
+                <h3 className="font-bold text-brand-dark mb-3 text-lg">{c.infoTitle}</h3>
+                <p className="text-brand-muted text-sm leading-relaxed mb-4">
                   {c.infoIntro}
                 </p>
-                <ul className="space-y-2 text-sm text-[#403F3F]">
+                <ul className="space-y-2 text-sm text-brand-muted">
                   {c.checklist.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <svg viewBox="0 0 20 20" className="w-5 h-5 text-[#45321A] flex-shrink-0 mt-0.5" fill="currentColor">
+                      <svg viewBox="0 0 20 20" className="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       {item}
@@ -217,12 +217,12 @@ export default function TechniquesPage() {
 
           {/* CTA */}
           <div className="mt-12 text-center">
-            <p className="text-[#403F3F] mb-6">
+            <p className="text-brand-muted mb-6">
               {c.ctaQuestion}
             </p>
             <Link
               href={`/${language}#booking`}
-              className="inline-flex items-center gap-2 bg-[#45321A] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#5a4228] transition-colors"
+              className="inline-flex items-center gap-2 bg-brand-primary text-white font-semibold px-8 py-4 rounded-full hover:bg-brand-primary-hover transition-colors"
             >
               {c.ctaBtn}
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">

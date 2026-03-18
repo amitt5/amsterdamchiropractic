@@ -69,7 +69,7 @@ const ui = {
 
 function CheckIcon() {
   return (
-    <svg viewBox="0 0 20 20" className="w-4 h-4 text-[#45321A] fill-current flex-shrink-0 mt-0.5">
+    <svg viewBox="0 0 20 20" className="w-4 h-4 text-brand-primary fill-current flex-shrink-0 mt-0.5">
       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
     </svg>
   );
@@ -79,13 +79,13 @@ function renderListItem(item: string, idx: number, style: string | undefined) {
   if (style === 'bullets') {
     return (
       <li key={idx} className="flex items-start gap-2">
-        <span className="text-[#45321A] font-bold mt-0.5">·</span> {item}
+        <span className="text-brand-primary font-bold mt-0.5">·</span> {item}
       </li>
     );
   }
   if (style === 'checks') {
     return (
-      <li key={idx} className="flex items-start gap-2 text-sm text-[#403F3F]">
+      <li key={idx} className="flex items-start gap-2 text-sm text-brand-muted">
         <CheckIcon />
         {item}
       </li>
@@ -94,8 +94,8 @@ function renderListItem(item: string, idx: number, style: string | undefined) {
   if (style === 'numbered') {
     return (
       <li key={idx} className="flex items-start gap-2">
-        <span className="w-5 h-5 rounded-full bg-[#45321A]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-          <span className="text-[#45321A] text-xs font-bold">{idx + 1}</span>
+        <span className="w-5 h-5 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+          <span className="text-brand-primary text-xs font-bold">{idx + 1}</span>
         </span>
         <span>{item}</span>
       </li>
@@ -111,10 +111,10 @@ function renderSection(section: Section, idx: number) {
   return (
     <div key={idx}>
       {section.heading && (
-        <h2 className="text-2xl font-extrabold text-[#191919] mb-3">{section.heading}</h2>
+        <h2 className="text-2xl font-extrabold text-brand-dark mb-3">{section.heading}</h2>
       )}
       {section.paragraphs?.map((para, i) => (
-        <p key={i} className="text-[#403F3F] leading-relaxed mb-3">{para}</p>
+        <p key={i} className="text-brand-muted leading-relaxed mb-3">{para}</p>
       ))}
       {hasList && (
         <ul className={listClass}>
@@ -122,7 +122,7 @@ function renderSection(section: Section, idx: number) {
         </ul>
       )}
       {section.noteBelow && (
-        <p className="text-[#403F3F] text-sm mt-4 leading-relaxed">{section.noteBelow}</p>
+        <p className="text-brand-muted text-sm mt-4 leading-relaxed">{section.noteBelow}</p>
       )}
     </div>
   );
@@ -137,13 +137,13 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
   const hasCauses = causes && causes.heading;
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-4">
-            <Link href={`/${language}/klachten`} className="text-[#45321A] text-sm hover:underline flex items-center gap-1">
+            <Link href={`/${language}/klachten`} className="text-brand-primary text-sm hover:underline flex items-center gap-1">
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current rotate-180">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
               </svg>
@@ -151,8 +151,8 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
             </Link>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#191919]">{c.title}</h1>
-          <div className="w-20 h-1 bg-[#45321A] rounded-full mb-10" />
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-brand-dark">{c.title}</h1>
+          <div className="w-20 h-1 bg-brand-primary rounded-full mb-10" />
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Main content */}
@@ -160,7 +160,7 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
 
               {/* Highlight box */}
               {c.highlightBox && (
-                <div className="bg-[#45321A] text-white rounded-2xl p-6">
+                <div className="bg-brand-primary text-white rounded-2xl p-6">
                   <p className="text-white/90 leading-relaxed text-lg font-medium">
                     {c.highlightBox}
                   </p>
@@ -170,7 +170,7 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
               {/* Intro paragraph */}
               {c.intro && (
                 <div>
-                  <p className="text-[#403F3F] leading-relaxed">{c.intro}</p>
+                  <p className="text-brand-muted leading-relaxed">{c.intro}</p>
                 </div>
               )}
 
@@ -180,30 +180,30 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
               {/* Two-column causes section */}
               {hasCauses && (
                 <div>
-                  <h2 className="text-2xl font-extrabold text-[#191919] mb-4">{causes!.heading}</h2>
+                  <h2 className="text-2xl font-extrabold text-brand-dark mb-4">{causes!.heading}</h2>
                   {causes!.intro && (
-                    <p className="text-[#403F3F] leading-relaxed mb-4">{causes!.intro}</p>
+                    <p className="text-brand-muted leading-relaxed mb-4">{causes!.intro}</p>
                   )}
                   <div className="grid sm:grid-cols-2 gap-4">
                     {causes!.geleidelijkItems.length > 0 && (
-                      <div className="bg-[#F6F6F6] rounded-xl p-5">
-                        <h3 className="font-bold text-[#191919] mb-3">{causes!.geleidelijkHeading}</h3>
-                        <ul className="space-y-2 text-sm text-[#403F3F]">
+                      <div className="bg-brand-light rounded-xl p-5">
+                        <h3 className="font-bold text-brand-dark mb-3">{causes!.geleidelijkHeading}</h3>
+                        <ul className="space-y-2 text-sm text-brand-muted">
                           {causes!.geleidelijkItems.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <span className="text-[#45321A] font-bold mt-0.5">·</span> {item}
+                              <span className="text-brand-primary font-bold mt-0.5">·</span> {item}
                             </li>
                           ))}
                         </ul>
                       </div>
                     )}
                     {causes!.plotselingItems.length > 0 && (
-                      <div className="bg-[#F6F6F6] rounded-xl p-5">
-                        <h3 className="font-bold text-[#191919] mb-3">{causes!.plotselingHeading}</h3>
-                        <ul className="space-y-2 text-sm text-[#403F3F]">
+                      <div className="bg-brand-light rounded-xl p-5">
+                        <h3 className="font-bold text-brand-dark mb-3">{causes!.plotselingHeading}</h3>
+                        <ul className="space-y-2 text-sm text-brand-muted">
                           {causes!.plotselingItems.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <span className="text-[#45321A] font-bold mt-0.5">·</span> {item}
+                              <span className="text-brand-primary font-bold mt-0.5">·</span> {item}
                             </li>
                           ))}
                         </ul>
@@ -216,12 +216,12 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
 
             {/* Sidebar */}
             <div className="space-y-5">
-              <div className="bg-[#45321A] text-white rounded-2xl p-6">
+              <div className="bg-brand-primary text-white rounded-2xl p-6">
                 <h3 className="font-bold text-lg mb-3">{t.sidebarTitle}</h3>
                 <p className="text-white/80 text-sm mb-4">{c.sidebarCtaSubtext}</p>
                 <Link
                   href={`/${language}#booking`}
-                  className="block bg-white text-[#45321A] font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors"
+                  className="block bg-white text-brand-primary font-semibold text-sm text-center px-4 py-3 rounded-full hover:bg-white/90 transition-colors"
                 >
                   {c.sidebarCtaButtonLabel}
                 </Link>
@@ -230,12 +230,12 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
                 </a>
               </div>
 
-              <div className="bg-[#F6F6F6] rounded-2xl p-6">
-                <h3 className="font-semibold text-[#191919] mb-3">{t.hoursTitle}</h3>
-                <ul className="text-sm text-[#403F3F] space-y-1">
+              <div className="bg-brand-light rounded-2xl p-6">
+                <h3 className="font-semibold text-brand-dark mb-3">{t.hoursTitle}</h3>
+                <ul className="text-sm text-brand-muted space-y-1">
                   {t.hours.map((line, i) => <li key={i}>{line}</li>)}
                 </ul>
-                <p className="text-sm text-[#403F3F] mt-3">
+                <p className="text-sm text-brand-muted mt-3">
                   {t.address.split('\n').map((line, i) => (
                     <span key={i}>{line}{i === 0 && <br />}</span>
                   ))}
@@ -243,12 +243,12 @@ export default function KlachtenTemplate({ content }: { content: BilingualKlacht
               </div>
 
               {c.relatedConditions.length > 0 && (
-                <div className="bg-[#F6F6F6] rounded-2xl p-6">
-                  <h3 className="font-semibold text-[#191919] mb-3">{t.relatedTitle}</h3>
+                <div className="bg-brand-light rounded-2xl p-6">
+                  <h3 className="font-semibold text-brand-dark mb-3">{t.relatedTitle}</h3>
                   <ul className="space-y-2">
                     {c.relatedConditions.map(({ label, href }) => (
                       <li key={href}>
-                        <Link href={`/${language}${href}`} className="text-sm text-[#45321A] hover:underline">
+                        <Link href={`/${language}${href}`} className="text-sm text-brand-primary hover:underline">
                           {label}
                         </Link>
                       </li>

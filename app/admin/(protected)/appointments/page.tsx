@@ -33,7 +33,7 @@ export default async function AppointmentsPage() {
   return (
     <div>
       <div className="flex items-baseline gap-3 mb-6">
-        <h1 className="text-2xl font-semibold" style={{ color: '#191919' }}>Appointments</h1>
+        <h1 className="text-2xl font-semibold" style={{ color: 'var(--color-brand-dark)' }}>Appointments</h1>
         <span className="text-sm" style={{ color: '#999' }}>
           {appointments.length} total
         </span>
@@ -68,7 +68,7 @@ export default async function AppointmentsPage() {
                     <a
                       href={`mailto:${a.email}`}
                       className="hover:underline"
-                      style={{ color: '#45321A' }}
+                      style={{ color: 'var(--color-brand-primary)' }}
                     >
                       {a.email}
                     </a>
@@ -104,7 +104,7 @@ function Td({
   style?: React.CSSProperties
 }) {
   return (
-    <td className={`px-4 py-3 ${className ?? ''}`} style={{ color: '#403F3F', ...style }}>
+    <td className={`px-4 py-3 ${className ?? ''}`} style={{ color: 'var(--color-brand-muted)', ...style }}>
       {children}
     </td>
   )

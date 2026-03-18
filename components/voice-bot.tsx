@@ -123,7 +123,7 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
       <div className="relative z-10 w-full sm:max-w-md bg-white sm:rounded-3xl rounded-t-3xl overflow-hidden shadow-2xl">
 
         {/* Header */}
-        <div className="bg-[#45321A] px-6 py-5 flex items-center justify-between">
+        <div className="bg-brand-primary px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
               <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
@@ -153,7 +153,7 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
         {/* ── STEP 1: Language selection ────────────────────────────────── */}
         {step === 'language' && (
           <div className="px-6 py-8">
-            <p className="text-center text-sm text-[#403F3F] mb-6">
+            <p className="text-center text-sm text-brand-muted mb-6">
               Select a language — the call will start immediately.
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -161,13 +161,13 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
                 <button
                   key={lang}
                   onClick={() => selectLanguage(lang)}
-                  className="flex flex-col items-center gap-3 bg-[#F6F6F6] hover:bg-[#45321A]/8 border-2 border-transparent hover:border-[#45321A]/20 rounded-2xl p-6 transition-all group"
+                  className="flex flex-col items-center gap-3 bg-brand-light hover:bg-brand-primary/8 border-2 border-transparent hover:border-brand-primary/20 rounded-2xl p-6 transition-all group"
                 >
                   <span className="text-4xl">{LANG_CONFIG[lang].flag}</span>
-                  <span className="font-bold text-[#191919] text-sm group-hover:text-[#45321A] transition-colors">
+                  <span className="font-bold text-brand-dark text-sm group-hover:text-brand-primary transition-colors">
                     {LANG_CONFIG[lang].label}
                   </span>
-                  <span className="flex items-center gap-1.5 text-xs text-[#403F3F]/70 font-medium">
+                  <span className="flex items-center gap-1.5 text-xs text-brand-muted/70 font-medium">
                     <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -183,19 +183,19 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
         {step === 'call' && (
           <>
             {/* Transcript */}
-            <div ref={transcriptRef} className="h-64 overflow-y-auto px-5 py-4 bg-[#F6F6F6]">
+            <div ref={transcriptRef} className="h-64 overflow-y-auto px-5 py-4 bg-brand-light">
               {messages.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center gap-3">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isLoading ? 'bg-[#45321A]/10' : 'bg-[#45321A]/10'}`}>
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isLoading ? 'bg-brand-primary/10' : 'bg-brand-primary/10'}`}>
                     {isLoading ? (
-                      <div className="w-5 h-5 border-2 border-[#45321A] border-t-transparent rounded-full animate-spin" />
+                      <div className="w-5 h-5 border-2 border-brand-primary border-t-transparent rounded-full animate-spin" />
                     ) : (
-                      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="#45321A" strokeWidth="2">
+                      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="var(--color-brand-primary)" strokeWidth="2">
                         <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     )}
                   </div>
-                  <p className="text-sm text-[#403F3F] max-w-[220px] leading-relaxed">
+                  <p className="text-sm text-brand-muted max-w-[220px] leading-relaxed">
                     {isLoading ? config?.statusConnecting : config?.statusListening}
                   </p>
                 </div>
@@ -205,8 +205,8 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
                     <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                       <div className={`max-w-[82%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                         msg.role === 'user'
-                          ? 'bg-[#45321A] text-white rounded-br-sm'
-                          : 'bg-white text-[#191919] shadow-sm rounded-bl-sm'
+                          ? 'bg-brand-primary text-white rounded-br-sm'
+                          : 'bg-white text-brand-dark shadow-sm rounded-bl-sm'
                       }`}>
                         {msg.content}
                       </div>
@@ -218,7 +218,7 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
                         {[0, 150, 300].map(delay => (
                           <span
                             key={delay}
-                            className="w-1.5 h-1.5 rounded-full bg-[#45321A] animate-bounce"
+                            className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-bounce"
                             style={{ animationDelay: `${delay}ms` }}
                           />
                         ))}
@@ -231,12 +231,12 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
 
             {/* Controls */}
             <div className="bg-white px-6 py-6 flex flex-col items-center gap-4">
-              <p className="text-xs text-[#403F3F] font-medium">{statusText}</p>
+              <p className="text-xs text-brand-muted font-medium">{statusText}</p>
               <div className="relative flex items-center justify-center">
                 {isCallActive && (
                   <>
-                    <span className="absolute w-24 h-24 rounded-full bg-[#45321A]/15 animate-ping" />
-                    <span className="absolute w-28 h-28 rounded-full bg-[#45321A]/8 animate-ping" style={{ animationDelay: '200ms' }} />
+                    <span className="absolute w-24 h-24 rounded-full bg-brand-primary/15 animate-ping" />
+                    <span className="absolute w-28 h-28 rounded-full bg-brand-primary/8 animate-ping" style={{ animationDelay: '200ms' }} />
                   </>
                 )}
                 <button
@@ -245,8 +245,8 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
                   className={`relative w-20 h-20 rounded-full flex items-center justify-center shadow-lg transition-all duration-300
                     ${isCallActive
                       ? 'bg-red-500 hover:bg-red-600 shadow-red-200 hover:scale-105 active:scale-95'
-                      : 'bg-[#45321A]/40 cursor-not-allowed'}
-                    ${isLoading ? 'bg-[#45321A]/40 cursor-not-allowed' : ''}
+                      : 'bg-brand-primary/40 cursor-not-allowed'}
+                    ${isLoading ? 'bg-brand-primary/40 cursor-not-allowed' : ''}
                   `}
                 >
                   {isLoading ? (
@@ -259,7 +259,7 @@ export function ChiroVoiceBot({ isOpen, onClose }: ChiroVoiceBotProps) {
                 </button>
               </div>
               {isCallActive && (
-                <p className="text-xs text-[#403F3F]/50">Tap the button to end the call</p>
+                <p className="text-xs text-brand-muted/50">Tap the button to end the call</p>
               )}
             </div>
           </>

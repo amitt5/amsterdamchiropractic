@@ -65,18 +65,18 @@ export default function KlachtenPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.h1}</h1>
-            <p className="text-[#403F3F] max-w-2xl mx-auto leading-relaxed">
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.h1}</h1>
+            <p className="text-brand-muted max-w-2xl mx-auto leading-relaxed">
               {c.intro}
             </p>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-6" />
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-6" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -84,31 +84,31 @@ export default function KlachtenPage() {
               <Link
                 key={i}
                 href={cond.href}
-                className="group bg-[#F6F6F6] rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1"
+                className="group bg-brand-light rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-[#45321A] flex items-center justify-center flex-shrink-0">
+                  <div className="w-9 h-9 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0">
                     <svg viewBox="0 0 20 20" className="w-4 h-4 fill-white">
                       <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
                     </svg>
                   </div>
-                  <h3 className="font-bold text-[#191919] group-hover:text-[#45321A] transition-colors">{cond.title}</h3>
+                  <h3 className="font-bold text-brand-dark group-hover:text-brand-primary transition-colors">{cond.title}</h3>
                 </div>
-                <p className="text-[#403F3F] text-sm leading-relaxed">{cond.desc}</p>
+                <p className="text-brand-muted text-sm leading-relaxed">{cond.desc}</p>
               </Link>
             ))}
           </div>
 
-          <div className="mt-14 bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 text-center">
-            <h3 className="font-bold text-[#191919] text-xl mb-3">{c.ctaTitle}</h3>
-            <p className="text-[#403F3F] mb-6">
+          <div className="mt-14 bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-8 text-center">
+            <h3 className="font-bold text-brand-dark text-xl mb-3">{c.ctaTitle}</h3>
+            <p className="text-brand-muted mb-6">
               {c.ctaDesc}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href={`/${language}#booking`} className="bg-[#45321A] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#5a4228] transition-colors">
+              <Link href={`/${language}#booking`} className="bg-brand-primary text-white font-semibold px-8 py-4 rounded-full hover:bg-brand-primary-hover transition-colors">
                 {c.ctaBtn}
               </Link>
-              <a href="tel:0206731800" className="border border-[#45321A] text-[#45321A] font-semibold px-8 py-4 rounded-full hover:bg-[#45321A]/5 transition-colors">
+              <a href="tel:0206731800" className="border border-brand-primary text-brand-primary font-semibold px-8 py-4 rounded-full hover:bg-brand-primary/5 transition-colors">
                 020-673 1800
               </a>
             </div>

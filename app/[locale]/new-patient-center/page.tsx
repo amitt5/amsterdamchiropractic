@@ -75,35 +75,35 @@ export default function NewPatientCenterPage() {
   const c = t[language];
 
   return (
-    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-[#191919] bg-white min-h-screen`}>
+    <div className={`${plusJakarta.variable} font-[family-name:var(--font-jakarta)] text-brand-dark bg-white min-h-screen`}>
       <Navigation />
 
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="text-[#45321A] text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-[#191919]">{c.title}</h1>
-            <div className="w-20 h-1 bg-[#45321A] mx-auto rounded-full mt-2 mb-8" />
-            <div className="bg-[#45321A]/5 border border-[#45321A]/20 rounded-2xl p-8 max-w-3xl mx-auto text-left">
-              <p className="text-[#403F3F] leading-relaxed mb-4">{c.intro1}</p>
-              <p className="text-[#403F3F] leading-relaxed">{c.intro2}</p>
+            <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mt-3 mb-6 text-brand-dark">{c.title}</h1>
+            <div className="w-20 h-1 bg-brand-primary mx-auto rounded-full mt-2 mb-8" />
+            <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-2xl p-8 max-w-3xl mx-auto text-left">
+              <p className="text-brand-muted leading-relaxed mb-4">{c.intro1}</p>
+              <p className="text-brand-muted leading-relaxed">{c.intro2}</p>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {c.sections.map((s, i) => (
-              <Link key={i} href={s.href} className="group bg-[#F6F6F6] rounded-2xl p-7 hover:shadow-lg transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-xl bg-[#45321A] flex items-center justify-center mb-5">
+              <Link key={i} href={s.href} className="group bg-brand-light rounded-2xl p-7 hover:shadow-lg transition-all hover:-translate-y-1">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary flex items-center justify-center mb-5">
                   {s.icon}
                 </div>
-                <h3 className="font-bold text-[#191919] text-lg mb-3 group-hover:text-[#45321A] transition-colors">{s.title}</h3>
-                <p className="text-[#403F3F] text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="font-bold text-brand-dark text-lg mb-3 group-hover:text-brand-primary transition-colors">{s.title}</h3>
+                <p className="text-brand-muted text-sm leading-relaxed">{s.desc}</p>
               </Link>
             ))}
           </div>
 
           <div className="mt-14 text-center">
-            <Link href={`/${language}#booking`} className="inline-flex items-center gap-2 bg-[#45321A] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#5a4228] transition-colors">
+            <Link href={`/${language}#booking`} className="inline-flex items-center gap-2 bg-brand-primary text-white font-semibold px-8 py-4 rounded-full hover:bg-brand-primary-hover transition-colors">
               {c.cta}
               <svg viewBox="0 0 20 20" className="w-4 h-4 fill-current">
                 <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
