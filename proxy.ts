@@ -20,7 +20,8 @@ export default auth((req) => {
     pathname.startsWith('/en') ||
     pathname.startsWith('/api') ||
     pathname.startsWith('/keystatic') ||
-    pathname === '/'
+    pathname === '/' ||
+    pathname === '/demo'
   ) {
     return NextResponse.next();
   }
