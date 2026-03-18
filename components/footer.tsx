@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/language-context';
 import footerContent from '@/content/footer.json';
 
@@ -66,16 +67,16 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <div className="flex items-center gap-2.5 mb-4">
-            <div className="w-9 h-9 rounded-full bg-brand-primary flex items-center justify-center">
-              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
-                <path d="M12 2C9 2 7 5 7 8c0 2 1 3.5 2.5 4.5L9 20h6l-.5-7.5C16 11.5 17 10 17 8c0-3-2-6-5-6z" fill="white" />
-              </svg>
-            </div>
-            <div>
-              <div className="font-extrabold text-base leading-tight">Health4Life</div>
-              <div className="text-[10px] text-brand-primary font-semibold uppercase tracking-widest leading-none">Chiropractic</div>
-            </div>
+          <div className="mb-4">
+            <Link href={`/${language}`} className="hover:opacity-80 transition-opacity inline-block">
+              <Image
+                src="/logo.webp"
+                alt="Health4Life Chiropractic Rugkliniek"
+                width={160}
+                height={60}
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs">{c.tagline}</p>
         </div>
