@@ -37,11 +37,7 @@ export async function POST(req: NextRequest) {
   }
 
   // Send notification email
-  const { error: emailError } = await resend.emails.send({
-    from: process.env.RESEND_FROM_EMAIL!,
-    to: process.env.NOTIFY_EMAIL!,
-    subject: `New Appointment Request — ${name} on ${date} at ${time}`,
-    html: `
+  const notificationHtml = `
       <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #191919;">
         <div style="background: #45321A; padding: 24px 32px; border-radius: 12px 12px 0 0;">
           <h1 style="color: white; margin: 0; font-size: 20px; font-weight: 700;">New Appointment Request</h1>
@@ -81,8 +77,22 @@ export async function POST(req: NextRequest) {
           </p>
         </div>
       </div>
-    `,
-  });
+    `;
+
+  const [{ error: emailError }] = await Promise.all([
+    resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL!,
+      to: process.env.NOTIFY_EMAIL!,
+      subject: `New Appointment Request — ${name} on ${date} at ${time}`,
+      html: notificationHtml,
+    }),
+    resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL!,
+      to: 'amit@chirotechevolution.com',
+      subject: `New Appointment Request — ${name} on ${date} at ${time}`,
+      html: notificationHtml,
+    }),
+  ]);
 
   if (emailError) {
     console.error('Resend email error:', emailError);
