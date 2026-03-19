@@ -67,15 +67,17 @@ export default async function AdminDashboardPage() {
                 <Th>Name</Th>
                 <Th>Phone</Th>
                 <Th>Email</Th>
+                <Th>Sent</Th>
               </tr>
             </thead>
             <tbody>
               {recent.map((a) => (
                 <tr key={a.id} style={{ borderBottom: '1px solid #f5f5f5' }}>
-                  <Td>{a.date ?? fmtDate(a.created_at)}</Td>
+                  <Td>{a.date ? fmtAppDate(a.date) : fmtDate(a.created_at)}</Td>
                   <Td>{a.name}</Td>
                   <Td>{a.phone}</Td>
                   <Td>{a.email}</Td>
+                  <Td>{fmtDate(a.created_at)}</Td>
                 </tr>
               ))}
             </tbody>
@@ -120,4 +122,26 @@ function fmtDate(iso: string) {
     month: '2-digit',
     year: 'numeric',
   })
+}
+
+const NL_MONTHS: Record<string, string> = {
+  januari: '01', februari: '02', maart: '03', april: '04',
+  mei: '05', juni: '06', juli: '07', augustus: '08',
+  september: '09', oktober: '10', november: '11', december: '12',
+}
+
+function fmtAppDate(dateStr: string) {
+  // Input: "woensdag 25 maart 2026" or "Wednesday, 25 March 2026"
+  const parts = dateStr.trim().split(/[\s,]+/).filter(Boolean)
+  // Find the numeric day
+  const dayIdx = parts.findIndex((p) => /^\d+$/.test(p))
+  if (dayIdx === -1) return dateStr
+  const day = parts[dayIdx].padStart(2, '0')
+  const monthRaw = (parts[dayIdx + 1] ?? '').toLowerCase()
+  const year = parts[dayIdx + 2] ?? ''
+  const month = NL_MONTHS[monthRaw] ?? String(
+    ['january','february','march','april','may','june','july','august','september','october','november','december']
+      .indexOf(monthRaw) + 1
+  ).padStart(2, '0')
+  return `${day}-${month}-${year}`
 }
