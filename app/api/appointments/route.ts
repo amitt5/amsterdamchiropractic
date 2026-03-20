@@ -79,20 +79,12 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-  const [{ error: emailError }] = await Promise.all([
-    resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL!,
-      to: process.env.NOTIFY_EMAIL!,
-      subject: `New Appointment Request — ${name} on ${date} at ${time}`,
-      html: notificationHtml,
-    }),
-    resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL!,
-      to: 'amit@chirotechevolution.com',
-      subject: `New Appointment Request — ${name} on ${date} at ${time}`,
-      html: notificationHtml,
-    }),
-  ]);
+  const { error: emailError } = await resend.emails.send({
+    from: process.env.RESEND_FROM_EMAIL!,
+    to: [process.env.NOTIFY_EMAIL!, 'health4life@amsterdamchiropractic.com'],
+    subject: `New Appointment Request — ${name} on ${date} at ${time}`,
+    html: notificationHtml,
+  });
 
   if (emailError) {
     console.error('Resend email error:', emailError);

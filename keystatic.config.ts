@@ -1,9 +1,9 @@
 import { config, collection, singleton, fields } from '@keystatic/core';
 
 export default config({
-  storage: {
-    kind: 'cloud',
-  },
+  storage: process.env.NODE_ENV === 'development'
+    ? { kind: 'local' }
+    : { kind: 'cloud' },
   cloud: {
     project: 'health4-life/amsterdamchiro',
   },
