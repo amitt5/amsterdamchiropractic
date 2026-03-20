@@ -95,28 +95,30 @@ export async function POST(req: NextRequest) {
   const { error: confirmError } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL!,
     to: email,
-    subject: `See you ${date} at ${time} — Health4Life Chiropractic`,
+    subject: `Appointment Request Received — Health4Life Chiropractic`,
     html: `
       <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #191919;">
         <div style="background: #45321A; padding: 24px 32px; border-radius: 12px 12px 0 0;">
-          <h1 style="color: white; margin: 0; font-size: 20px; font-weight: 700;">Your appointment is confirmed</h1>
+          <h1 style="color: white; margin: 0; font-size: 20px; font-weight: 700;">Appointment Request Received</h1>
           <p style="color: rgba(255,255,255,0.75); margin: 4px 0 0; font-size: 14px;">Health4Life Chiropractic — Dr. M. Jahani DC</p>
         </div>
         <div style="background: #F6F6F6; padding: 32px; border-radius: 0 0 12px 12px;">
 
           <p style="margin: 0 0 8px; font-size: 16px; color: #191919; font-weight: 600;">Hi ${name},</p>
-          <p style="margin: 0 0 28px; font-size: 15px; color: #403F3F; line-height: 1.6;">We're looking forward to seeing you. Your appointment is booked — no need to call to confirm.</p>
+          <p style="margin: 0 0 28px; font-size: 15px; color: #403F3F; line-height: 1.6;">Thank you for your appointment request. We have received your details and will contact you shortly to confirm.</p>
 
           <div style="background: white; border-left: 4px solid #45321A; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 28px;">
-            <p style="margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #403F3F; font-weight: 700;">Your appointment</p>
+            <p style="margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #403F3F; font-weight: 700;">Requested Date &amp; Time</p>
             <p style="margin: 0; font-size: 24px; font-weight: 700; color: #45321A;">${date} at ${time}</p>
           </div>
 
+          <!-- First visit block temporarily hidden
           <div style="background: white; border-left: 4px solid #45321A; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 28px;">
             <p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #45321A;">First visit?</p>
             <p style="margin: 0 0 12px; font-size: 14px; color: #403F3F; line-height: 1.6;">If this is your first visit, please fill in your <strong>New Patient Intake Form</strong> online before you arrive — it only takes a few minutes and helps us prepare for your appointment.</p>
             <a href="${process.env.NEXT_PUBLIC_SITE_URL}/patient-forms/new-patient-intake" style="display: inline-block; background: #45321A; color: white; text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 6px;">Fill Out Intake Form</a>
           </div>
+          -->
 
           <h2 style="margin: 0 0 12px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #191919;">What to expect</h2>
           <ul style="margin: 0 0 28px; padding-left: 20px; font-size: 14px; color: #403F3F; line-height: 1.8;">

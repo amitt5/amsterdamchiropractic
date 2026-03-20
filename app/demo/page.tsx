@@ -249,7 +249,7 @@ function BookingWidget() {
       submitError: 'Something went wrong. Please try again.',
       confirm: 'Confirm Appointment',
       confirmedTitle: 'Appointment Requested!',
-      confirmedMsg: (name: string, phone: string) => `We will contact ${name} at ${phone} within a few hours to confirm.`,
+      confirmedMsg: (name: string, phone: string) => `We will contact ${name} at ${phone} within a few hours to confirm. You should also have received a confirmation email — please check your spam folder if you don't see it.`,
       bookAnother: 'Book another appointment',
     },
     nl: {
@@ -272,7 +272,7 @@ function BookingWidget() {
       submitError: 'Er is iets misgegaan. Probeer het opnieuw.',
       confirm: 'Bevestig afspraak',
       confirmedTitle: 'Afspraak aangevraagd!',
-      confirmedMsg: (name: string, phone: string) => `Wij nemen contact op met ${name} op ${phone} binnen enkele uren ter bevestiging.`,
+      confirmedMsg: (name: string, phone: string) => `Wij nemen contact op met ${name} op ${phone} binnen enkele uren ter bevestiging. U zou ook een bevestigingse-mail ontvangen moeten hebben — controleer uw spammap als u deze niet ziet.`,
       bookAnother: 'Maak een andere afspraak',
     },
   };
