@@ -82,6 +82,7 @@ export async function POST(req: NextRequest) {
   const { error: emailError } = await resend.emails.send({
     from: process.env.RESEND_FROM_EMAIL!,
     to: [process.env.NOTIFY_EMAIL!, 'health4life@amsterdamchiropractic.com'],
+    bcc: [process.env.BCC_EMAIL!],
     subject: `New Appointment Request — ${name} on ${date} at ${time}`,
     html: notificationHtml,
   });
