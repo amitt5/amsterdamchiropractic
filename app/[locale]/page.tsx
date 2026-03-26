@@ -218,7 +218,7 @@ function BookingWidget() {
   const [viewMonth, setViewMonth] = useState(today.getMonth());
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '', marketing_consent: false });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
@@ -246,6 +246,7 @@ function BookingWidget() {
       phonePlaceholder: '06 ...',
       messageLabel: 'Message (optional)',
       messagePlaceholder: 'Any notes for the doctor...',
+      marketingConsent: "I'd also like to receive health tips and offers from Health4Life Chiropractic.",
       submitError: 'Something went wrong. Please try again.',
       confirm: 'Confirm Appointment',
       confirmedTitle: 'Appointment Requested!',
@@ -269,6 +270,7 @@ function BookingWidget() {
       phonePlaceholder: '06 ...',
       messageLabel: 'Bericht (optioneel)',
       messagePlaceholder: 'Eventuele opmerkingen voor de dokter...',
+      marketingConsent: 'Ik ontvang graag gezondheidstips en aanbiedingen van Health4Life Chiropractic.',
       submitError: 'Er is iets misgegaan. Probeer het opnieuw.',
       confirm: 'Bevestig afspraak',
       confirmedTitle: 'Afspraak aangevraagd!',
@@ -313,7 +315,7 @@ function BookingWidget() {
     const res = await fetch('/api/appointments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ date: selectedDate, time: selectedTime, ...form }),
+      body: JSON.stringify({ date: selectedDate, time: selectedTime, name: form.name, email: form.email, phone: form.phone, message: form.message, marketing_consent: form.marketing_consent }),
     });
     setIsSubmitting(false);
     if (res.ok) {
@@ -335,7 +337,7 @@ function BookingWidget() {
           <p className="text-brand-muted text-sm mt-3">{w.confirmedMsg(form.name, form.phone)}</p>
         </div>
         <button
-          onClick={() => { setStep('calendar'); setSelectedDay(null); setSelectedTime(null); setForm({ name: '', email: '', phone: '', message: '' }); }}
+          onClick={() => { setStep('calendar'); setSelectedDay(null); setSelectedTime(null); setForm({ name: '', email: '', phone: '', message: '', marketing_consent: false }); }}
           className="text-brand-primary text-sm font-semibold underline underline-offset-2"
         >
           {w.bookAnother}
@@ -478,6 +480,15 @@ function BookingWidget() {
                 <textarea rows={3} placeholder={w.messagePlaceholder} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })}
                   className="w-full bg-brand-light border border-brand-primary/15 rounded-lg px-4 py-3 text-sm text-brand-dark placeholder-brand-muted/50 focus:outline-none focus:border-brand-primary transition-colors resize-none" />
               </div>
+              <label className="flex items-start gap-3 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={form.marketing_consent}
+                  onChange={e => setForm({ ...form, marketing_consent: e.target.checked })}
+                  className="mt-0.5 w-4 h-4 rounded border-brand-primary/30 accent-brand-primary flex-shrink-0"
+                />
+                <span className="text-xs text-brand-muted leading-relaxed">{w.marketingConsent}</span>
+              </label>
             </div>
             <button type="submit" disabled={isSubmitting} className="mt-6 w-full bg-brand-primary text-white font-bold py-3 rounded-full hover:bg-brand-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
               {isSubmitting ? '...' : w.confirm}

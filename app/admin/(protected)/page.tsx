@@ -11,6 +11,7 @@ type Appointment = {
   date: string
   time: string
   message: string
+  marketing_consent: boolean
 }
 
 export default async function AdminDashboardPage() {

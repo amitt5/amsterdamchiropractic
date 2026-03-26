@@ -8,14 +8,14 @@ export async function POST(req: NextRequest) {
     process.env.SUPABASE_ANON_KEY!,
   );
   const resend = new Resend(process.env.RESEND_API_KEY);
-  let body: { date: string; time: string; name: string; email: string; phone: string; message?: string };
+  let body: { date: string; time: string; name: string; email: string; phone: string; message?: string; marketing_consent?: boolean };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
   }
 
-  const { date, time, name, email, phone, message } = body;
+  const { date, time, name, email, phone, message, marketing_consent } = body;
 
   if (!date || !time || !name || !email || !phone) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
     email,
     phone,
     message: message || null,
+    marketing_consent: marketing_consent ?? false,
   });
 
   if (dbError) {

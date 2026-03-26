@@ -11,6 +11,7 @@ type Appointment = {
   date: string
   time: string
   message: string
+  marketing_consent: boolean
 }
 
 export default async function AppointmentsPage() {
@@ -55,6 +56,7 @@ export default async function AppointmentsPage() {
                 <Th>Email</Th>
                 <Th>Phone</Th>
                 <Th>Message</Th>
+                <Th>Marketing</Th>
                 <Th>Created</Th>
               </tr>
             </thead>
@@ -75,6 +77,7 @@ export default async function AppointmentsPage() {
                   </Td>
                   <Td>{a.phone}</Td>
                   <Td className="max-w-xs truncate">{a.message ?? '—'}</Td>
+                  <Td>{a.marketing_consent ? '✓' : '—'}</Td>
                   <Td style={{ color: '#999' }}>{fmtDate(a.created_at)}</Td>
                 </tr>
               ))}
