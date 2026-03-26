@@ -47,6 +47,7 @@ export default function Navigation() {
         { label: 'Meet Your Doctor', href: `/${l}/about/meet-your-doctor` },
         { label: 'Health Resources', href: `/${l}/health-resources` },
         { label: 'Patient Forms', href: `/${l}/patient-forms` },
+        { label: 'Blog', href: `/${l}/blog` },
       ],
     },
     nl: {
@@ -84,6 +85,7 @@ export default function Navigation() {
         { label: 'Ontmoet Dr. Jahani', href: `/${l}/about/meet-your-doctor` },
         { label: 'Gezondheidsinfo', href: `/${l}/health-resources` },
         { label: 'Patiëntformulieren', href: `/${l}/patient-forms` },
+        { label: 'Blog', href: `/${l}/blog` },
       ],
     },
   };
