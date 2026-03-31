@@ -817,7 +817,7 @@ export default function ChiroPage() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <div className="relative aspect-square rounded-3xl overflow-hidden bg-brand-light shadow-lg">
-            <Image src="/dr-jahani.webp" alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam" fill className="object-cover object-[center_55%]" />
+            <Image src="/dr-jahani-new.png" alt="Dr. M. Jahani — Health4Life Chiropractic Amsterdam" fill className="object-cover object-[center_55%]" />
           </div>
           <div>
             <span className="text-brand-primary text-sm font-semibold uppercase tracking-widest">{c.aboutLabel}</span>
