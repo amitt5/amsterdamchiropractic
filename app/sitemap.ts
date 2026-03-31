@@ -56,6 +56,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry('/new-patient-center/what-to-expect/phase-3-wellness-care', 0.6),
     ...entry('/new-patient-center/payment-options', 0.6),
 
+    // Blog
+    ...entry('/blog', 0.7, 'weekly'),
+
     // Other pages
     ...entry('/health-resources', 0.6),
     ...entry('/patient-forms', 0.6),
