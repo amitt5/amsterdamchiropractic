@@ -21,7 +21,9 @@ export default auth((req) => {
     pathname.startsWith('/api') ||
     pathname.startsWith('/keystatic') ||
     pathname === '/' ||
-    pathname === '/demo'
+    pathname === '/demo' ||
+    pathname === '/sitemap.xml' ||
+    pathname === '/robots.txt'
   ) {
     return NextResponse.next();
   }

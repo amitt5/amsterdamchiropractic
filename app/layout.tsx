@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.amsterdamchiropractic.com'),
+  metadataBase: new URL('https://amsterdamchiropractic.nl'),
   title: {
     default: 'Health4Life Chiropractic Amsterdam',
     template: '%s | Health4Life Chiropractic',

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { blogPosts } from '@/lib/blog-posts';
 
-const base = 'https://www.amsterdamchiropractic.com';
+const base = 'https://amsterdamchiropractic.nl';
 const today = new Date().toISOString().split('T')[0];
 const locales = ['nl', 'en'] as const;
 

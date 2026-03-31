@@ -5,6 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: '*', allow: '/', disallow: ['/keystatic', '/api/'] },
     ],
-    sitemap: 'https://www.amsterdamchiropractic.com/sitemap.xml',
+    sitemap: 'https://amsterdamchiropractic.nl/sitemap.xml',
   };
 }
