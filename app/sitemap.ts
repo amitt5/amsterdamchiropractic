@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { blogPosts } from '@/lib/blog-posts';
 
 const base = 'https://www.amsterdamchiropractic.com';
 const today = new Date().toISOString().split('T')[0];
@@ -58,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog
     ...entry('/blog', 0.7, 'weekly'),
+    ...blogPosts.flatMap((post) => entry(`/blog/${post.slug}`, 0.6, 'monthly')),
 
     // Other pages
     ...entry('/health-resources', 0.6),
