@@ -120,6 +120,22 @@ export default function RootLayout({
             gtag('config', 'AW-960032610');
           `}
         </Script>
+        <Script id="gtag-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-960032610/Qa_bCImNu5YcEOLe48kD',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

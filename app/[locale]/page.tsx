@@ -319,6 +319,9 @@ function BookingWidget() {
     });
     setIsSubmitting(false);
     if (res.ok) {
+      if (typeof window !== 'undefined' && typeof (window as any).gtag_report_conversion === 'function') {
+        (window as any).gtag_report_conversion();
+      }
       setStep('confirmed');
     } else {
       setSubmitError(w.submitError);
