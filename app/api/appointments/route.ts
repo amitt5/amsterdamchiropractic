@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
+import { sendMetaEvent } from '@/lib/meta-capi';
 
 export async function POST(req: NextRequest) {
   const supabase = createClient(
@@ -8,14 +9,14 @@ export async function POST(req: NextRequest) {
     process.env.SUPABASE_ANON_KEY!,
   );
   const resend = new Resend(process.env.RESEND_API_KEY);
-  let body: { date: string; time: string; name: string; email: string; phone: string; message?: string; marketing_consent?: boolean };
+  let body: { date: string; time: string; name: string; email: string; phone: string; message?: string; marketing_consent?: boolean; event_id?: string; source_url?: string };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
   }
 
-  const { date, time, name, email, phone, message, marketing_consent } = body;
+  const { date, time, name, email, phone, message, marketing_consent, event_id, source_url } = body;
 
   if (!date || !time || !name || !email || !phone) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -36,6 +37,20 @@ export async function POST(req: NextRequest) {
     console.error('Supabase insert error:', dbError);
     return NextResponse.json({ error: 'Failed to save appointment' }, { status: 500 });
   }
+
+  // Fire Meta CAPI Lead event (fire-and-forget, don't block response)
+  sendMetaEvent({
+    eventName: 'Lead',
+    eventId: event_id || crypto.randomUUID(),
+    sourceUrl: source_url || 'https://amsterdamchiropractic.com/nl',
+    userData: {
+      email,
+      phone,
+      firstName: name,
+      clientIp: req.headers.get('x-forwarded-for')?.split(',')[0].trim() || req.headers.get('x-real-ip') || '',
+      userAgent: req.headers.get('user-agent') || '',
+    },
+  }).catch(console.error);
 
   // Send notification email
   const notificationHtml = `

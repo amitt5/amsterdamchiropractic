@@ -312,15 +312,19 @@ function BookingWidget() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError(null);
+    const eventId = crypto.randomUUID();
     const res = await fetch('/api/appointments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ date: selectedDate, time: selectedTime, name: form.name, email: form.email, phone: form.phone, message: form.message, marketing_consent: form.marketing_consent }),
+      body: JSON.stringify({ date: selectedDate, time: selectedTime, name: form.name, email: form.email, phone: form.phone, message: form.message, marketing_consent: form.marketing_consent, event_id: eventId, source_url: window.location.href }),
     });
     setIsSubmitting(false);
     if (res.ok) {
       if (typeof window !== 'undefined' && typeof (window as any).gtag_report_conversion === 'function') {
         (window as any).gtag_report_conversion();
+      }
+      if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+        (window as any).fbq('track', 'Lead', {}, { eventID: eventId });
       }
       setStep('confirmed');
     } else {

@@ -36,6 +36,7 @@ export default function CookieBanner() {
     const stored = localStorage.getItem(STORAGE_KEY) as Consent;
     if (stored === 'accepted' || stored === 'declined') {
       setConsent(stored);
+      if (stored === 'accepted') fireCapiPageView();
     } else {
       // Small delay so the page renders first
       const timer = setTimeout(() => setVisible(true), 600);
@@ -43,10 +44,23 @@ export default function CookieBanner() {
     }
   }, []);
 
+  function fireCapiPageView() {
+    fetch('/api/facebook-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        eventName: 'PageView',
+        eventId: crypto.randomUUID(),
+        sourceUrl: window.location.href,
+      }),
+    }).catch(() => {});
+  }
+
   function handleAccept() {
     localStorage.setItem(STORAGE_KEY, 'accepted');
     setConsent('accepted');
     setVisible(false);
+    fireCapiPageView();
   }
 
   function handleDecline() {
