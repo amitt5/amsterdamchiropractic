@@ -326,6 +326,20 @@ function BookingWidget() {
       if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
         (window as any).fbq('track', 'Lead', {}, { eventID: eventId });
       }
+      if (typeof window !== 'undefined' && localStorage.getItem('cookie-consent') === 'accepted') {
+        fetch('/api/facebook-event', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventName: 'Lead',
+            eventId,
+            sourceUrl: window.location.href,
+            email: form.email,
+            phone: form.phone,
+            firstName: form.name,
+          }),
+        }).catch(() => {});
+      }
       setStep('confirmed');
     } else {
       setSubmitError(w.submitError);
