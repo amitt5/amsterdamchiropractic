@@ -55,8 +55,8 @@
     "pricingRows": [
       { "treatment": "First Consultation Adult (incl. medical acupuncture + first spinal correction)", "price": "€ 160" },
       { "treatment": "First Consultation Children up to 12 years old", "price": "€ 110" },
-      { "treatment": "Follow-up Chiropractic Consultation", "price": "€ 80" },
-      { "treatment": "Extensive Consultation Chiropractic + Medical Acupuncture", "price": "€ 130" },
+      { "treatment": "Follow-up Chiropractic Consultation", "price": "€ 85" },
+      { "treatment": "Follow-up Consultation Chiropractic + Medical Acupuncture", "price": "€ 130" },
       { "treatment": "Deep Tissue Therapy / Massage 30 min", "price": "€ 70" },
       { "treatment": "Deep Tissue Therapy / Massage 60 min", "price": "€ 120" },
       { "treatment": "Orthopedic Insoles (Custom Orthotics)", "price": "€ 480" },
@@ -66,7 +66,7 @@
       { "treatment": "High-tech Foot Scan incl. advice", "price": "€ 120" },
       { "treatment": "Treatment Plan Cancellation Costs", "price": "€ 150" }
     ],
-    "pricingPackageNote": "Since most insurance will only reimburse your costs partially, based on your condition, you might qualify to benefit from available treatment packages.",
+    "pricingPackageNote": "Since most insurance will only reimburse your costs partially, based on your condition, you might qualify to benefit from available treatment packages. Please note: for some conditions, treatment costs are case-dependent — we can provide an estimate after your first consultation.",
     "paymentNote": "Payment: The amount due will be settled after each visit. Payment can be made by cash or debit card. You can submit the receipt to your insurance company.",
     "insuranceH3": "Reimbursements / Insurance Coverage",
     "insuranceP1": "Nearly all health insurers include chiropractic care in their supplementary packages. The requirement is that the chiropractor is a member of a professional association (NCA) and registered with the Dutch Chiropractic Foundation (SCN). Most insurers classify chiropractic care as \"alternative medicine\" or \"movement therapy.\"",
@@ -217,8 +217,8 @@
     "pricingRows": [
       { "treatment": "Eerste Consult Volwassen (incl. medische acupunctuur + eerste wervelkolom correctie)", "price": "€ 160" },
       { "treatment": "Eerste Consult Kinderen tot 12 jaar", "price": "€ 110" },
-      { "treatment": "Vervolg Consult Chiropractie", "price": "€ 80" },
-      { "treatment": "Uitgebreid Consult Chiropractie + Medische Acupunctuur", "price": "€ 130" },
+      { "treatment": "Vervolg Consult Chiropractie", "price": "€ 85" },
+      { "treatment": "Vervolg Consult Chiropractie + Medische Acupunctuur", "price": "€ 130" },
       { "treatment": "Diep Tissue Therapie / Massage 30 min", "price": "€ 70" },
       { "treatment": "Diep Tissue Therapie / Massage 60 min", "price": "€ 120" },
       { "treatment": "Orthopedische Inlegzolen (Custom Orthotics)", "price": "€ 480" },
@@ -228,7 +228,7 @@
       { "treatment": "High-tech Voet Scan incl. advies", "price": "€ 120" },
       { "treatment": "Behandelplan Opzeggingskosten", "price": "€ 150" }
     ],
-    "pricingPackageNote": "Omdat de meeste verzekeringen uw kosten slechts gedeeltelijk vergoeden, kunt u op basis van uw aandoening in aanmerking komen voor beschikbare behandelpakketten.",
+    "pricingPackageNote": "Omdat de meeste verzekeringen uw kosten slechts gedeeltelijk vergoeden, kunt u op basis van uw aandoening in aanmerking komen voor beschikbare behandelpakketten. Let op: bij sommige aandoeningen zijn de behandelkosten afhankelijk van uw situatie — na het eerste consult kunnen wij u een kosteninschatting geven.",
     "paymentNote": "Betaling: Het verschuldigde bedrag wordt na afloop van elk bezoek vereffend. Betaling mogelijk met contant of pinpas. De kwitantie kunt u indienen bij uw verzekeringsmaatschappij.",
     "insuranceH3": "Vergoedingen / Verzekeringsdekking",
     "insuranceP1": "Vrijwel alle ziektekostenverzekeraars hebben chiropractie in hun aanvullende pakket opgenomen. Voorwaarde is dat de chiropractor aangesloten is bij een beroepsvereniging (NCA) en ingeschreven staat bij de Stichting Chiropractie Nederland (SCN). Bij de meeste verzekeraars valt chiropractie onder \"alternatieve geneeswijzen\" of \"beweegzorg\".",
