@@ -248,10 +248,15 @@ function BookingWidget() {
       messagePlaceholder: 'Any notes for the doctor...',
       marketingConsent: "I'd also like to receive health tips and offers from Health4Life Chiropractic.",
       submitError: 'Something went wrong. Please try again.',
-      confirm: 'Confirm Appointment',
-      confirmedTitle: 'Appointment Requested!',
-      confirmedMsg: (name: string, phone: string) => `We will contact ${name} at ${phone} within a few hours to confirm.`,
-      bookAnother: 'Book another appointment',
+      confirm: 'Request Appointment',
+      confirmedTitle: 'Request received – not yet confirmed',
+      requested: 'Requested:',
+      confirmedMsg: (name: string, phone: string) => `Thank you, ${name}. We will send you a confirmation as soon as possible by email or by phone on ${phone}.`,
+      waitMsg: 'Please wait for our confirmation before coming to the clinic.',
+      fasterMsg: 'Want a faster confirmation? Send us a WhatsApp message at 06-1882-0000.',
+      whatsappBtn: 'Send WhatsApp message',
+      notHeard: "Haven't heard from us? Call",
+      bookAnother: 'Request another appointment',
     },
     nl: {
       steps: ['Selecteer datum', 'Selecteer tijd', 'Uw gegevens'],
@@ -272,10 +277,15 @@ function BookingWidget() {
       messagePlaceholder: 'Eventuele opmerkingen voor de dokter...',
       marketingConsent: 'Ik ontvang graag gezondheidstips en aanbiedingen van Health4Life Chiropractic.',
       submitError: 'Er is iets misgegaan. Probeer het opnieuw.',
-      confirm: 'Bevestig afspraak',
-      confirmedTitle: 'Afspraak aangevraagd!',
-      confirmedMsg: (name: string, phone: string) => `Wij nemen contact op met ${name} op ${phone} binnen enkele uren ter bevestiging.`,
-      bookAnother: 'Maak een andere afspraak',
+      confirm: 'Afspraak aanvragen',
+      confirmedTitle: 'Aanvraag ontvangen – nog niet bevestigd',
+      requested: 'Aangevraagd:',
+      confirmedMsg: (name: string, phone: string) => `Bedankt, ${name}. Wij sturen u zo snel mogelijk een bevestiging per e-mail of telefonisch op ${phone}.`,
+      waitMsg: 'Wacht alstublieft op onze bevestiging voordat u naar de kliniek komt.',
+      fasterMsg: 'Snellere bevestiging? Stuur ons een WhatsApp-bericht op 06-1882-0000.',
+      whatsappBtn: 'WhatsApp-bericht sturen',
+      notHeard: 'Niets van ons gehoord? Bel',
+      bookAnother: 'Nog een afspraak aanvragen',
     },
   };
   const w = wt[language];
@@ -316,7 +326,7 @@ function BookingWidget() {
     const res = await fetch('/api/appointments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ date: selectedDate, time: selectedTime, name: form.name, email: form.email, phone: form.phone, message: form.message, marketing_consent: form.marketing_consent, event_id: eventId, source_url: window.location.href }),
+      body: JSON.stringify({ date: selectedDate, time: selectedTime, name: form.name, email: form.email, phone: form.phone, message: form.message, marketing_consent: form.marketing_consent, event_id: eventId, source_url: window.location.href, locale: language }),
     });
     setIsSubmitting(false);
     if (res.ok) {
@@ -349,14 +359,35 @@ function BookingWidget() {
   if (step === 'confirmed') {
     return (
       <div className="bg-white rounded-2xl p-8 shadow-sm flex flex-col items-center text-center gap-5">
-        <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-3xl">✓</div>
-        <div>
-          <h3 className="text-xl font-extrabold text-brand-dark mb-1">{w.confirmedTitle}</h3>
-          <p className="text-brand-muted text-sm leading-relaxed">
-            <span className="font-semibold text-brand-primary">{selectedDate}</span> {language === 'nl' ? 'om' : 'at'} <span className="font-semibold text-brand-primary">{selectedTime}</span>
-          </p>
-          <p className="text-brand-muted text-sm mt-3">{w.confirmedMsg(form.name, form.phone)}</p>
+        <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center">
+          <svg className="w-8 h-8 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <circle cx="12" cy="12" r="9" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
+          </svg>
         </div>
+        <div>
+          <h3 className="text-xl font-extrabold text-brand-dark mb-2">{w.confirmedTitle}</h3>
+          <p className="text-brand-muted text-sm leading-relaxed">
+            {w.requested} <span className="font-semibold text-brand-primary">{selectedDate}</span> {language === 'nl' ? 'om' : 'at'} <span className="font-semibold text-brand-primary">{selectedTime}</span>
+          </p>
+          <p className="text-brand-muted text-sm mt-4 leading-relaxed">{w.confirmedMsg(form.name, form.phone)}</p>
+          <p className="text-brand-dark text-sm font-bold mt-2 leading-relaxed">{w.waitMsg}</p>
+        </div>
+        <div className="w-full bg-brand-light rounded-xl p-4 flex flex-col items-center gap-3">
+          <p className="text-brand-muted text-sm leading-relaxed">{w.fasterMsg}</p>
+          <a
+            href="https://wa.me/31618820000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity"
+          >
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            {w.whatsappBtn}
+          </a>
+        </div>
+        <p className="text-brand-muted text-sm">
+          {w.notHeard} <a href="tel:0206731800" className="font-semibold text-brand-primary underline underline-offset-2">020-673 1800</a>.
+        </p>
         <button
           onClick={() => { setStep('calendar'); setSelectedDay(null); setSelectedTime(null); setForm({ name: '', email: '', phone: '', message: '', marketing_consent: false }); }}
           className="text-brand-primary text-sm font-semibold underline underline-offset-2"
