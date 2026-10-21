@@ -25,7 +25,7 @@ const content = {
         title: '1. Verwerkingsverantwoordelijke',
         body: [
           'De verwerkingsverantwoordelijke voor uw persoonsgegevens is:',
-          'Health4Life Chiropractic\nDr. M. Jahani DC\nMaasstraat 103, 1073 PR Amsterdam\nTelefoon: 020-673 1800\nE-mail: info@amsterdamchiropractic.com',
+          'Health4Life Chiropractic\nDr. M. Jahani DC\nMaasstraat 103, 1073 PR Amsterdam\nTelefoon: 020-673 1800\nE-mail: health4life@amsterdamchiropractic.com',
         ],
       },
       {
@@ -62,7 +62,7 @@ const content = {
       {
         title: '7. Uw rechten',
         body: [
-          'Op grond van de AVG heeft u de volgende rechten:\n\n• Recht op inzage — u kunt opvragen welke gegevens wij van u verwerken.\n• Recht op rectificatie — u kunt onjuiste gegevens laten corrigeren.\n• Recht op verwijdering — u kunt vragen om verwijdering van uw gegevens.\n• Recht op beperking van de verwerking.\n• Recht van bezwaar — u kunt bezwaar maken tegen de verwerking.\n• Recht op dataportabiliteit — u kunt uw gegevens in een gangbaar formaat opvragen.\n• Recht om toestemming in te trekken — u kunt uw toestemming voor analytics te allen tijde intrekken.\n\nOm een recht uit te oefenen kunt u contact met ons opnemen via info@amsterdamchiropractic.com. Wij reageren binnen 30 dagen.',
+          'Op grond van de AVG heeft u de volgende rechten:\n\n• Recht op inzage — u kunt opvragen welke gegevens wij van u verwerken.\n• Recht op rectificatie — u kunt onjuiste gegevens laten corrigeren.\n• Recht op verwijdering — u kunt vragen om verwijdering van uw gegevens.\n• Recht op beperking van de verwerking.\n• Recht van bezwaar — u kunt bezwaar maken tegen de verwerking.\n• Recht op dataportabiliteit — u kunt uw gegevens in een gangbaar formaat opvragen.\n• Recht om toestemming in te trekken — u kunt uw toestemming voor analytics te allen tijde intrekken.\n\nOm een recht uit te oefenen kunt u contact met ons opnemen via health4life@amsterdamchiropractic.com. Wij reageren binnen 30 dagen.',
         ],
       },
       {
@@ -96,7 +96,7 @@ const content = {
         title: '1. Data Controller',
         body: [
           'The data controller responsible for your personal data is:',
-          'Health4Life Chiropractic\nDr. M. Jahani DC\nMaasstraat 103, 1073 PR Amsterdam\nPhone: 020-673 1800\nEmail: info@amsterdamchiropractic.com',
+          'Health4Life Chiropractic\nDr. M. Jahani DC\nMaasstraat 103, 1073 PR Amsterdam\nPhone: 020-673 1800\nEmail: health4life@amsterdamchiropractic.com',
         ],
       },
       {
@@ -133,7 +133,7 @@ const content = {
       {
         title: '7. Your rights',
         body: [
-          'Under the GDPR you have the following rights:\n\n• Right of access — you can request what data we hold about you.\n• Right to rectification — you can have incorrect data corrected.\n• Right to erasure — you can request deletion of your data.\n• Right to restriction of processing.\n• Right to object to processing.\n• Right to data portability — you can request your data in a machine-readable format.\n• Right to withdraw consent — you can withdraw your analytics consent at any time.\n\nTo exercise a right, contact us at info@amsterdamchiropractic.com. We will respond within 30 days.',
+          'Under the GDPR you have the following rights:\n\n• Right of access — you can request what data we hold about you.\n• Right to rectification — you can have incorrect data corrected.\n• Right to erasure — you can request deletion of your data.\n• Right to restriction of processing.\n• Right to object to processing.\n• Right to data portability — you can request your data in a machine-readable format.\n• Right to withdraw consent — you can withdraw your analytics consent at any time.\n\nTo exercise a right, contact us at health4life@amsterdamchiropractic.com. We will respond within 30 days.',
         ],
       },
       {
@@ -199,7 +199,7 @@ export default function PrivacyPage() {
           <div className="mt-16 bg-brand-light rounded-2xl p-8 text-center">
             <p className="text-brand-dark font-semibold mb-4">{c.contact}</p>
             <a
-              href="mailto:info@amsterdamchiropractic.com"
+              href="mailto:health4life@amsterdamchiropractic.com"
               className="inline-flex items-center gap-2 bg-brand-primary text-white font-semibold px-6 py-3 rounded-full hover:bg-brand-primary-hover transition-colors text-sm"
             >
               <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5">

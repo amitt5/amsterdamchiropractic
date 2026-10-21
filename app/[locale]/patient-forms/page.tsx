@@ -82,8 +82,8 @@ export default function PatientFormsPage() {
                 <h3 className="font-bold text-brand-dark mb-2 text-lg">{c.instructionsTitle}</h3>
                 <p className="text-brand-muted text-sm leading-relaxed">
                   {c.instructionsText}{' '}
-                  <a href="mailto:info@amsterdamchiropractic.com" className="text-brand-primary font-semibold hover:underline">
-                    info@amsterdamchiropractic.com
+                  <a href="mailto:health4life@amsterdamchiropractic.com" className="text-brand-primary font-semibold hover:underline">
+                    health4life@amsterdamchiropractic.com
                   </a>.
                 </p>
               </div>

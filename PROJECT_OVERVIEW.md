@@ -244,7 +244,7 @@ vercel
 **Location:** Maasstraat 103, 1078 HH Amsterdam  
 **Phone:** 020-673 1800  
 **WhatsApp:** 06-1882-0000  
-**Email:** info@amsterdamchiropractic.com  
+**Email:** health4life@amsterdamchiropractic.com  
 **Website:** www.amsterdamchiropractic.com (original)
 
 **Hours:**
@@ -321,7 +321,7 @@ vercel
 
 **Created by:** Claude Code (Anthropic)  
 **For:** CatchVisitors AI Voice Assistant Platform  
-**Contact:** info@amsterdamchiropractic.com
+**Contact:** health4life@amsterdamchiropractic.com
 
 ---
 
