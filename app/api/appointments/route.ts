@@ -23,20 +23,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
   }
 
-  // Save to Supabase
-  const { error: dbError } = await supabase.from('appointments').insert({
-    date,
-    time,
-    name,
-    email,
-    phone,
-    message: message || null,
-    marketing_consent: marketing_consent ?? false,
-  });
-
-  if (dbError) {
-    console.error('Supabase insert error:', dbError);
-    return NextResponse.json({ error: 'Failed to save appointment' }, { status: 500 });
+  // Save to Supabase — a failed save must not lose the request, the emails below still go out
+  let dbSaved = false;
+  try {
+    const { error: dbError } = await supabase.from('appointments').insert({
+      date,
+      time,
+      name,
+      email,
+      phone,
+      message: message || null,
+      marketing_consent: marketing_consent ?? false,
+    });
+    if (dbError) console.error('Supabase insert error:', dbError);
+    else dbSaved = true;
+  } catch (err) {
+    console.error('Supabase insert error:', err);
   }
 
   // Fire Meta CAPI Lead event (fire-and-forget, don't block response)
@@ -106,7 +108,10 @@ export async function POST(req: NextRequest) {
 
   if (emailError) {
     console.error('Resend email error:', emailError);
-    // Don't fail the request — data is already saved, email is secondary
+    // Neither saved nor emailed — the request is lost, so tell the patient it failed
+    if (!dbSaved) {
+      return NextResponse.json({ error: 'Failed to save appointment' }, { status: 500 });
+    }
   }
 
   // Send confirmation email to the patient (bilingual)
