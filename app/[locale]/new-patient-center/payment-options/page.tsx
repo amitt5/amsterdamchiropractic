@@ -34,7 +34,7 @@ export default function PaymentOptionsPage() {
       flexNote: 'Please speak with our front desk to discuss your options.',
       bookBtn: 'Book Your Appointment',
       rows: [
-        { label: 'First Consultation — Adult (incl. acupuncture + adjustment)', price: '€130' },
+        { label: 'First Consultation — Adult (incl. acupuncture + adjustment)', price: '€160' },
         { label: 'First Consultation — Children (under 12)', price: '€110' },
         { label: 'Follow-up Chiropractic Consultation', price: 'from €85' },
         { label: 'Follow-up Consultation (Chiropractic + Medical Acupuncture)', price: 'from €85' },
@@ -66,7 +66,7 @@ export default function PaymentOptionsPage() {
       flexNote: 'Neem contact op met onze receptie om uw mogelijkheden te bespreken.',
       bookBtn: 'Afspraak Boeken',
       rows: [
-        { label: 'Eerste Consultatie — Volwassenen (incl. acupunctuur + aanpassing)', price: '€130' },
+        { label: 'Eerste Consultatie — Volwassenen (incl. acupunctuur + aanpassing)', price: '€160' },
         { label: 'Eerste Consultatie — Kinderen (onder 12 jaar)', price: '€110' },
         { label: 'Vervolgconsultatie Chiropractie', price: 'v/a €85' },
         { label: 'Vervolgconsultatie (Chiropractie + Medische Acupunctuur)', price: 'v/a €85' },
